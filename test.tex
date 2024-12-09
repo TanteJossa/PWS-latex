@@ -1,0 +1,19 @@
+\documentclass{article}
+\usepackage{tikzpagenodes}
+
+\makeatletter
+\let\tikzpage=\oddpage@page
+\makeatother
+
+\newcommand{\pagetest}{\noindent
+\begin{tikzpicture}[remember picture,overlay]
+\node[right]{current page = \tikzpage{} which may not equal testsetstset \thepage};
+\end{tikzpicture}
+}
+
+\begin{document}
+\pagetest
+\vspace{60\baselineskip}
+
+\pagetest
+\end{document}
