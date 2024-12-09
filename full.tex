@@ -208,7 +208,7 @@ Daarom zijn we daarna overgestapt op een openCV systeem.
 \noindent
 \begin{longtable}{@{}p{0.65\linewidth}|p{\picwidth\linewidth}}
 \multicolumn{1}{c}{Stap} & \multicolumn{1}{c}{Voorbeeld}
-    \\
+    
     \endhead
     \hline
     0. crop input & 
@@ -797,7 +797,7 @@ Hier kan ook op vraagniveau een scherm zijn om vragen eruit te gooien of half te
 \end{multicols}
 \pagebreak
 \subsubsection{Enquete}
-\begin{tabularx}{}{@{}ll}
+\begin{tabularx}{\linewidth}{ll}
     \textbf{Eigenaar: } & \textit{Jonathan en Joost} \\
     \textbf{Doel(en): } & 
         \makecell[tl]{
@@ -814,6 +814,147 @@ Hier kan ook op vraagniveau een scherm zijn om vragen eruit te gooien of half te
         }\\
     \parbox[t]{3cm}{\raggedright \textbf{Geschatte  tijdskosten:} } & 20 uur \\
 \end{tabularx}
+\begin{multicols}{2}
+Om te testen of docenten uberhaupt open staan voor een ai model hebben we een enquête verstuurd naar alle docenten van Het Amsterdams Lyceum. 
+Om een betrouwbare enquête te maken moet je als eerste het doel van de enquête duidelijk hebben. In ons onderzoek waren dat de volgende:
+\begin{minipage}{\linewidth}
+\begin{itemize}
+    \item target voor ons programma stellen
+    \item mogelijke acceptatie in kaart brengen
+\end{itemize}
+\end{minipage}
+Daarnaast moet elke vraag ook een duidelijk doel hebben, anders is het mogelijk dat je 2x dezelfde vraag stelt of naar informatie gaat vrageb niet niet relevant is.\\
+Ten slotte moesten we bij elke vraag nagaan of de vraag op verschillende manieren geinterpreteerd kan worden.\\
+Dit waren de vragen die we hebben bedacht:
+% TODO: verklaringen toevoegen
+\end{multicols}%
+\begin{longtable}{p{0.5\linewidth}|p{0.25\linewidth}|p{0.25\linewidth}}
+    Vraag & Doel & Verklaring \\
+    \endhead
+    \hline 
+    \begin{minipage}[t]{\linewidth}
+        \textbf{1. Wat is uw vakgebied? (Indien meerdere, kies vak met meeste uren a.u.b.) }
+        \hspace{4em} Vakken        
+    \end{minipage} & kunnen filtreren op vakgebied en vakgroep ($\alpha, \beta, \gamma$) & \\
+    \hline 
+    \begin{minipage}[t]{\linewidth}
+        \textbf{2. Hoeveel jaar bent u al docent? }
+        \begin{itemize}
+            \item 1-5 jaar
+            \item 5-10 jaar
+            \item Meer dan tien jaar
+            \item Minder dan één jaar
+        \end{itemize}
+    \end{minipage} & kunnen filtreren op lesgeef ervaring & \\
+    \hline 
+    \begin{minipage}[t]{\linewidth}
+        \textbf{3. Bent u bekend met het concept van (generatieve) AI? }
+        \begin{itemize}
+            \item Ja, ik ben goed op de hoogte
+            \item Ja, ik heb er wel eens over gehoord
+            \item Nee, ik ben niet bekend met deze technologie
+        \end{itemize}
+    \end{minipage} & kunnen filtreren op ai ervaring & \\
+    \hline 
+    \begin{minipage}[t]{\linewidth}
+        \textbf{4. Wat zouden voor u redenen zijn om AI te gebruiken voor het nakijken van proefwerken? (Meerdere antwoorden mogelijk) }
+        \begin{itemize}
+            \item Tijdbesparing
+            \item Objectiviteit in de beoordeling
+            \item Vermindering van de werkdruk
+            \item Snelheid van de terugkoppeling naar studenten
+            \item Betere nauwkeurigheid
+            \item Ik zou nooit overwegen AI hierbij te gebruiken
+            \item Anders: \textit{zelf invullen}
+
+        \end{itemize}
+    \end{minipage} & weten wat het hoofddoel moet zijn van ons programma en wat waar we minder aandacht aan kunnen besteden & \\
+    \hline 
+    \begin{minipage}[t]{\linewidth}
+        \textbf{5. Wat zijn uw belangrijkste zorgen bij het gebruik van AI voor het nakijken van proefwerken? (Tot 4 antwoorden mogelijk) }
+        \begin{itemize}
+            \item Gebrek aan menselijke empathie in de beoordeling
+            \item Mogelijke technische fouten
+            \item Onvoldoende aandacht voor subjectieve antwoorden
+            \item Data- en privacykwesties van studenten
+            \item Oneerlijke of bevooroordeelde beoordelingen
+            \item Afhankelijkheid van technologie
+            \item Anders: \textit{zelf invullen}
+        \end{itemize}
+    \end{minipage} & weten waar we op moeten focussen en wrten of bepaalde problemen een grote bottleneck zullen zijn voor de acceptatie van ons programma voor docenten & \\
+    \hline 
+    \begin{minipage}[t]{\linewidth}
+        \textbf{6. Denkt u dat AI zelfstandig toetsen zou kunnen nakijken}
+        \begin{itemize}
+            \item Ja
+            \item Nee
+            \item Weet ik niet
+        \end{itemize}
+    \end{minipage} & weten hoe positief docenten in een mogelijkheid zijn en om te vergelijken met vakgebied en lesgeef ervaring & \\
+    \hline 
+    \begin{minipage}[t]{\linewidth}
+        \textbf{7. Hoeveel leerlingen trekken uw beoordeling per toets - terecht of niet - in twijfel? (Een getal)}\\
+        \vspace{4em} Zelf een getal invullen
+    \end{minipage} & 
+        \begin{minipage}[t]{\linewidth}
+            Een objectief target halen waarmee we ons programma kunnen vergelijken:\\ 
+            meer oneens is slechter of te streng naar gekeken \\ 
+            te weinig is te makkelijk nagekeken 
+        \end{minipage}
+        & \\
+    \hline 
+    \begin{minipage}[t]{\linewidth}
+        \textbf{8. Welke invloed denkt u dat de inzet van AI kan hebben op de relatie tussen docent en student? (Open vraag) }\\
+        \vspace{4em} Zelf een getal invullen
+
+    \end{minipage} & Als docenten nog wat kwijt willen kunnen ze dat hier doen, misschien staat er wat interessants tussen & \\
+\end{longtable}
+\begin{multicols}{2}
+Ons 2e doel van dit onderdeel was \textbf{Hoe zorg je ervoor dat mensen jouw enquête willen invullen?}.\\
+Uit ons kleine omgevingsonderzoek blijkt dat docenten van Het Amsterdams Lyceum niet vaak reageren op (onbelangrijke) mail. Een score van 30\% zou al aan de hoge kant zijn. We hebben een zakelijk mailtje proberen samen te stellen die ervoor zorgt dat docenten wilden reageren. \\
+\fbox{\begin{minipage}{\linewidth}
+    
+Geachte docenten van Het Amsterdams Lyceum,\\
+\\
+In het kader van ons profielwerkstuk, maken wij een programma dat dat toetsen kan inscannen, nakijken en analyseren. \\
+Daarnaast zijn we geïnteresseerd in hoe docent denken over het nakijken met AI, hierbij zouden wij graag uw hulp willen.\\
+\\
+https://forms.office.com/e/j5cYFrAy7p 
+\\
+Hoogachtend,\\
+\\
+Joost Koch & Jonathan Wijker
+\end{minipage}}
+Op dit mailtje hebben we 22 reacties gekregen. Dat vonden wij redelijk tegenvallen.
+Een rede voor deze teleurstellende respons zou kunnen zijn dat we de mail verstuurd hebben op donderdag 17 oktober. Dat was de donderdag voor de activiteitenweek, waardoor docenten met uitzicht op een vakantie misschien geen zin hadden in het invullen van een PWS-enquête.\\
+\\
+Daarna hebben de gekeken wat het ideale moment zou zijn voor een docent om zin te hebben in het invullen van een enquête. Toen kwamen we na overleg met diverse docenten erachter dat de week voor de toetsweek het rustigst is, want de meeste docenten hebben alle lesstof al behandeld, geen toetsen om na te kijken en hebben de toetsen en SE's al af en ingelevert.  \\
+\\
+We hebben ons tweede mailtje op de maandag voor de toetsweek gestuurd. We hebben ook de docenten extra proberen te vleien door duidelijk aan te geven dat het weinig tijd kost en dat we weten hoe druk docenten het eigenlijk hebben.
+\fbox{\begin{minipage}{\linewidth}
+    
+Geachte docent,
+
+Onlangs hebben wij u een enquête gestuurd en we hebben al wat reacties mogen ontvangen, bedankt daarvoor.
+We snappen dat u het komende tijd druk heeft met de toetsweek, maar hopen dat u komende week ergens een gaatje van 2-3 minuten kunt vinden om alsnog onze enquête in te vullen. Dit zouden we erg waarderen!
+ 
+https://forms.office.com/e/j5cYFrAy7p
+
+
+Hoogachtend,
+ 
+Joost Koch & Jonathan Wijker
+\end{minipage}}
+Dit leverde 28 extra responses op, waardoor we op een totaal van 50 zitten. Dit is statistisch gezien goed genoeg om iets over de meningen van de docenten te zeggen op Het Amsterdams Lyceum. \\
+% TODO: deze claim over statistiek met bron
+We moeten er wel rekening mee houden dat sommige secties misschien minder zullen hebben gereageerd, waardoor ons resultaat over die sectie minder betrouwbaar zal zijn.\\
+\\
+% TODO: tijden checken (gaan we)
+Voor het analyseren gaan we Google Sheet pivot tables gebruiken om snel verbanden tussen de data te zien. Ook zullen we kijken of ChatGPT of Google Gemini relevante ontdekkingen kunnen doen in de data. 
+
+
+\end{multicols}
+
 
 
 \section{Resultaten}
@@ -824,8 +965,7 @@ Hier kan ook op vraagniveau een scherm zijn om vragen eruit te gooien of half te
 \subsection{Analyseren}
 
 \subsection{Enquête}
-Vooraf het maken van ons model is aan alle docenten van Het Amsterdams Lyceum gevraagd wat hun gedachtes waren over het nakijken m.b.v. artificiële intelligentie.
-In de enquête werden diverse vragen gesteld om een breed beeld te krijgen van de standpunten en ervaringen van de docenten. Zo werd er gevraagd naar hun vakgebied en het aantal jaren dat ze al voor de klas staan. Ook werd geïnformeerd naar hun bekendheid met (generatieve) AI. Belangrijke thema's waren de redenen waarom docenten AI zouden willen gebruiken bij het nakijken van proefwerken en de zorgen die ze hierbij hebben. Daarnaast werd er gevraagd of zij denken dat AI zelfstandig toetsen kan nakijken en hoeveel leerlingen doorgaans hun beoordeling in twijfel trekken. Tot slot werd er ingegaan op de mogelijke invloed van AI op de relatie tussen docent en student.
+
 
 \begin{table}[h!]
 \centering
@@ -905,6 +1045,8 @@ Minder dan één jaar & 7.500 & 2 \\
 \subsection{Analyseren}
 
 \subsection{Enquete}
+
+
 \section{Discussie}
 \subsection{Foutenanalyse}
 \subsubsection{Inscannen}
