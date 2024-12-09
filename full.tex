@@ -89,7 +89,7 @@
 \tableofcontents
 
 \pagebreak
-\section{Introduction}
+\section{Introductie}
 \begin{multicols}{2}
 \subsection{Achtergrond/Doelstelling} 
 
@@ -120,12 +120,35 @@ Deze vraag hebben we onderverdeeld in 4 deelvragen:\\
 
 \section{Hypothese}
 \subsection{Inscannen}
+\begin{multicols}{2}
+    
+Wij denken dat, als je de secties hebt geëxtraheerd, het inscannen van tekst meestal goed zal gaan. Dat komt omdat op elke telefoon al foto tekstherkenning zit (als je op een foto in de gallerij een tekst ingedrukt houdt op nieuwere telefoons). Ook denken wij dat de grootste fouten gaan onstaan bij het niet goed herkennen van de secties. Als dit fout gaat kan tekstherkenningssoftware niet de hele vraag inscannen, waardoor het onmogelijk wordt deze vraag betrouwbaar na te kijken. \\\\
+In dit ondezoek zullen we vooral focussen op handgeschreven teksten, omdat wij denken dat het inscannen van tekeningen zeer lastig zal zijn, omdat de tekening omgezet moet worden naar tekstuele data of een dataobject die bijhouden wat er wel en niet getekend is. In een tekening kan heel veel fout zijn, wat niet in die datastructuur zou zitten. Dan zou een leering punten krijgen voor een fout antwoord. Het betrouwbaar extraheren van die diagram features zal ook lastig worden.
+\end{multicols}
 
 \subsection{Nakijken}
-    Computerprogramma's die gebruikmaken van kunstmatige intelligentie, zoals getrainde transformer-modellen en grote taalmodellen, kunnen toetsen met korte open vragen met een nauwkeurigheid en consistentie vergelijkbaar aan of hoger dan die van menselijke beoordelaars automatisch nakijken; echter, om ethische overwegingen en mogelijke vooroordelen in de beoordelingen aan te pakken, blijft menselijk toezicht noodzakelijk (\cite{gobrecht2024humansubjectivityerrornovel, kumar2020scoredusingautosas, schneider2024llmbasedautogradingshorttextual}).
+\begin{multicols}{2}
+Computerprogramma's die gebruikmaken van kunstmatige intelligentie, zoals getrainde transformer-modellen en grote taalmodellen, kunnen toetsen met korte open vragen met een nauwkeurigheid en consistentie vergelijkbaar aan of hoger dan die van menselijke beoordelaars automatisch nakijken; echter, om ethische overwegingen en mogelijke vooroordelen in de beoordelingen aan te pakken, blijft menselijk toezicht noodzakelijk (\cite{gobrecht2024humansubjectivityerrornovel, kumar2020scoredusingautosas, schneider2024llmbasedautogradingshorttextual}).
+\end{multicols}
 \subsection{Analyseren}
 
 \subsection{Enquete}
+\begin{multicols}{2}
+Zie materiaal en methode voor vragen.
+Wij denken dat docenten over het algemeen pessimistisch zullen zijn over ai. 
+voorspelling per vraag:
+\begin{enumerate}
+\item nvt
+\item wij denken dat lesgeefervaring weinig uitmaakt in deze kwestie
+\item ja wel eens van gehoord (68%) en goed op de hoogte (30%)
+\item tijdbesparing gaat een belangrijke zijn en er zullen ook docenten zijn (die vermoedelijk niet bekend zijn met ai) die het nooit zullen gebruiken
+\item technische fouten en privacy zullen een grote rol spelen
+\item we denken dat de talen secties pessimistischer in het gebruik van ai zullen zijn dan de exacte vakken
+\item meeste docenten zullen drie of vier antwoorden, maar een brede standaarddeviatie (miss wel 3 of groter) want de sfeer om het oneens met een antwoord te zijn verschilt per docent
+\item hier zullen we zien waar docenten nog meer denken. Wij denken dat aansprakelijkheid/verantwoordelijkheid van een docent over een cijfer vaker naar voren zal komen
+\end{enumerate}
+\end{multicols}
+
 \pagebreak
 
 \section{Methode}
@@ -334,7 +357,7 @@ Om dit in te scannen zijn er 2 dingen nodig: \\
     \hline
 
 \end{longtable}
-\pagebreak 
+ 
 % TODO: fix the table being below the listing
 \begin{multicols}{2}
    Dit levert een lijst van coördinaten van de vierkantjes op\\(y,hoogte,x,meest linker coordinaat van blokje)\\
@@ -365,8 +388,8 @@ Om dit in te scannen zijn er 2 dingen nodig: \\
     \end{listing}\\ 
 \end{multicols}
 
+\pagebreak
 \begin{multicols}{2}
-    
 \paragraph*{Vraagnummer herkenning} Om de vraag te herkennen hebben we eerst gebruik gemaakt van Microsoft Azure document intelligence die kan checkboxes herkennen.\\
 De volgende foto:
 \begin{figure}[H]
@@ -381,21 +404,20 @@ Gaf het volgende resultaat:
                framesep=3mm,
                linenos=true,
                xleftmargin=21pt,
-               tabsize=4]{js},
+               tabsize=2]{js},
 "key_value_pairs": [
     {
         "key": {
             "content": "2.1",
-          ...
-        },
-        "value": {
-            "content": ":selected:",
             ...
-        },
-     ...
-     },
-  "confidence": 0.995,
-  ...
+            },
+            "value": {
+                "content": ":selected:",
+                ...
+            },
+        "confidence": 0.995,
+        ...
+    },
 ]
 \end{minted}
 \caption{Vierkant detectie output} 
@@ -428,7 +450,7 @@ Prompt:
 
 
 \end{multicols}
-
+\pagebreak
 \textbf{Google Gemini 1.5pro}: Werkt
 \begin{listing}[H]
     
@@ -452,7 +474,9 @@ Prompt:
 }
         \end{minted}
 \end{listing}
-\\
+\pagebreak
+\begin{samepage}
+    
 \textbf{OpenAI gpt4o}: Werkt
 \begin{listing}[H]
     
@@ -460,7 +484,7 @@ Prompt:
                    framesep=3mm,
                    linenos=true,
                    xleftmargin=21pt,
-                   fontsize=\footnotesize,
+                   fontsize=\scriptsize,
                    tabsize=4]{js}
 {
     'certainty': 0.9, 
@@ -515,18 +539,16 @@ Prompt:
 \begin{multicols}{2}
 We kunnen nu de secties scheiden en de vraagnummers relatief betrouwbaar extraheren.
 \end{multicols}
+\end{samepage}
 
+\pagebreak
 
-
-
-\\
-\textbf{QR-code}\\
 \begin{multicols}{2}
-De qr code maakt gebruikt van een scanner die de qrcodes linksboven en rechtsonder het antwoordveld herkent. Waardoor je direct kan gaan snijden.
+\paragraph*{QR-code}De qr code maakt gebruikt van een scanner die de qrcodes linksboven en rechtsonder het antwoordveld herkent. Waardoor je direct kan gaan snijden.\\
 \end{multicols}
 
-
-\paragraph*{Tekstherkenning}
+\noindent
+\textbf{Tekstherkenning}
 \begin{multicols}{2}
 Nu hebben we van elk type sectie een foto van het antwoordveld uit de vorige stap. Het lastigste van dit onderdeel is de handschriften omzetten naar geschreven tekst. Om erachter te komen wat de beste methode is hebben we veel getest met instellingen zoals: promps, temperatuur, foto en type-model.\\
 \\
@@ -697,105 +719,9 @@ Dit geeft \large$4_{\textsc{modellen}} \cdot 4_{\textsc{temperaturen}}  \cdot 6_
     \parbox[t]{3cm}{\raggedright \textbf{Geschatte  tijdskosten:} } & 15 uur \\
 \end{tabularx}
 % TODO: beslissen of dit in ons PWS moet
-\begin{multicols}{2}
-\paragraph*{Opbouw analyse} Om een toets betrouwbaar te analyseren moet met verschillende dingen rekening houden. Een van de belangrijkste dingen voor een analyse is het doel van de docent vaststellen. Wil een docent een kennismeting doen waar de mensen die het half snappen een onvoldoende krijgen of dat die net een 5.5 krijgen. Wil een docent dat het goed genoeg begrijpen van de stof beloont wordt met een 8.0 of met een 6.0. Deze dingen zijn belangrijk voor het beoogde gemiddelde en de standaarddeviatie van een toets.
-\begin{minipage}{1\linewidth}
-    
-\textbf{Gemmidelde: }
-\[
-\mu = \frac{1}{N} \sum_{i=1}^N x_i
-\]
-waarbij:
-\begin{itemize}
-    \item \( x_i \): de individuele datapunten,
-    \item \( N \): het totale aantal datapunten,
-    \item \( \mu \): het gemiddelde.
-\end{itemize}
-\end{minipage}
-\begin{minipage}{\linewidth}
-\textbf{Standaard deviatie: }
-
-\[
-s = \sqrt{\frac{1}{N} \sum_{i=1}^N (x_i - \bar{x})^2}
-\]
-waarbij:
-\begin{itemize}
-    \item \( s \): de standaarddeviatie van de steekproef,
-    \item \( \bar{x} \): het gemiddelde van de steekproef.
-\end{itemize}
-\end{minipage}
-\begin{minipage}{\linewidth}
-\textbf{De covariantie} meet de gezamenlijke variabiliteit van twee variabelen en wordt berekend met:
-\[
-\text{Cov}(X, Y) = \frac{1}{N} \sum_{i=1}^N (x_i - \mu_X)(y_i - \mu_Y)
-\]
-waarbij:
-\begin{itemize}
-    \item \(X, Y\): twee willekeurige variabelen,
-    \item \(x_i, y_i\): de individuele waarnemingen van \(X\) en \(Y\),
-    \item \(\mu_X, \mu_Y\): de gemiddelden van \(X\) en \(Y\),
-    \item \(N\): het totale aantal waarnemingen.
-\end{itemize}
-\end{minipage}
-\end{multicols}
-\vspace{3em}
-% TODO: gemmidelde en aanpassingen daarop uitleggen en totale cijferberekeningen
-\begin{multicols}{2}
-
-\pagebreak
-\paragraph*{Vraagniveau} Om met deze waardes een analyse te doen van een toets op vraagniveau kan je bepaalde berekeningen gebruiken. Als je wilt weten of een vraag in de toets thuishoortkan je de correlatie berekenen tussen hoe de leerlingen de vraag hebben gemaakt ten opzichte van de rest van de toets.
-\begin{minipage}{\linewidth}% chatgpt
-\textbf{De RIR} meet de correlatie tussen de score van een item en de totale score, exclusief dat item:
-\[
-RIR = \frac{\text{Cov}(x_i, S_{-i})}{\sigma_{x_i} \cdot \sigma_{S_{-i}}}
-\]
-waarbij:
-\begin{itemize}
-    \item \(x_i\): de score van een individueel item,
-    \item \(S_{-i}\): de totale score exclusief \(x_i\),
-    \item \(\text{Cov}(x_i, S_{-i})\): de covariantie tussen \(x_i\) en \(S_{-i}\),
-    \item \(\sigma_{x_i}\): de standaarddeviatie van \(x_i\),
-    \item \(\sigma_{S_{-i}}\): de standaarddeviatie van \(S_{-i}\).
-\end{itemize}
-\end{minipage}
-\begin{minipage}{\linewidth}% chatgpt
-\textbf{De RIT} meet de correlatie tussen de score van een item en de totale score, inclusief dat item:
-\[
-RIT = \frac{\text{Cov}(x_i, S)}{\sigma_{x_i} \cdot \sigma_{S}}
-\]
-waarbij:
-\begin{itemize}
-    \item \(x_i\): de score van een individueel item,
-    \item \(S\): de totale score inclusief \(x_i\),
-    \item \(\text{Cov}(x_i, S)\): de covariantie tussen \(x_i\) en \(S\),
-    \item \(\sigma_{x_i}\): de standaarddeviatie van \(x_i\),
-    \item \(\sigma_{S}\): de standaarddeviatie van \(S\).
-\end{itemize}
-\end{minipage}
-\end{multicols}
+Bij het inscannen gaan we onderzoek doen naar welke statistische berekeningen nodig zijn voor correct analyse. 
 
 
-\pagebreak
-\begin{multicols}{2}
-\paragraph*{Representatie en UI} Om deze formules bruikbaar te maken voor docenten zou je een interface kunnen maken met \textbf{een input, analyse en bewerk/pas-aan scherm}.\\\\
-In die \textbf{inlaad pagina} moet een docent toetsresultaten uit een Excel of uit een van onze andere modules kunnen inladen. Daarnaast hebben wij ook van docenten te horen gekregen dat ze het fijn zouden vinden om leerdoelen aan vragen te koppelen, opdat zij een betere terugkoppeling kunnen krijgen.%
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\linewidth]{./images/methoden/analyseren/ui/inlaad-pagina.png}
-    \caption{Voorbeeld inlaadpagina}
-    \label{fig:enter-label}
-\end{figure}
-\noindent In het \textbf{analyse scherm} moet voor een docent overzichtelijk weergegeven zijn welke vragen goed en minder goed gingen en de scores van de leerlingen. Hier moet ook te zien zijn welke vragen waarschijnlijk niet thuishoren in de toets, omdat de mensen met een hoog cijfer hem fout hebben, dit kan komen dat die leerlingen te ver doordenken en daardoor de vraag fout hebben. De vraag is of je die leerlingen wilt afstraffen voor het verder denken dan het juiste antwoord. \\
-\\
-Het is ook mogelijk om hier opvallende correlaties tussen vragen weer te geven. Hier kan bijvoorbeeld worden laten zien dat mensen die vraag 5 fout hebben ook vraag 8 fout hebben. Dan is het mogelijk dat er 2x om dezelfde kennis wordt gevraagd, iets wat een toetsresultaat minder betrouwbaar maakt, omdat de stof disproposioneel wordt getoetst (dit geld ook voor een hoge correlatie tussen 2 juist gemaakte vragen). \\
-\\
-Het kan ook mogelijk zijn om de correlaties tussen leerlingen te tonen om eventuele spiekers te vangen. Hierbij moet wel rekening gehouden worden met het feit dat 2 mensen met een hoog cijfer, waarschijnlijk beide dezelfde vragen goed en fout hebben. Deze coorelatie wordt wel interessant bij bijvoorbeeld 2 6.5'en en precies dezelfde fouten.\\
-\\
-Op \textbf{het bewerkscherm} kunnen bijvoorbeeld een aantal velden komen met de doelen van een docent. Bijvoorbeeld: een veld om het gewilde gemiddelde en de gewilde standaardeviatie in te stellen. Daarmee berekent hij dat een nieuwe formule. Hier kan ook worden of een lineare of non-lineare formule gebruikt wordt. Bij een non-lineare formule behoudt iedereen met een onvoldoende zijn onvoldoende, maar zijn die onvoldoendes minder hoog. \\
-Hier kan ook op vraagniveau een scherm zijn om vragen eruit te gooien of half te laten meetellen, als blijkt dat ze wegnemen van de kennismeting van de toets.
-% TODO: foto linear en non-linear
-\end{multicols}
-\pagebreak
 \subsubsection{Enquete}
 \begin{tabularx}{\linewidth}{ll}
     \textbf{Eigenaar: } & \textit{Jonathan en Joost} \\
@@ -909,8 +835,10 @@ Dit waren de vragen die we hebben bedacht:
 
     \end{minipage} & Als docenten nog wat kwijt willen kunnen ze dat hier doen, misschien staat er wat interessants tussen & \\
 \end{longtable}
+
+\pagebreak
 \begin{multicols}{2}
-Ons 2e doel van dit onderdeel was \textbf{Hoe zorg je ervoor dat mensen jouw enquête willen invullen?}.\\
+Ons 2e doel van dit onderdeel was: \textbf{Hoe zorg je ervoor dat mensen jouw enquête willen invullen?}\\
 Uit ons kleine omgevingsonderzoek blijkt dat docenten van Het Amsterdams Lyceum niet vaak reageren op (onbelangrijke) mail. Een score van 30\% zou al aan de hoge kant zijn. We hebben een zakelijk mailtje proberen samen te stellen die ervoor zorgt dat docenten wilden reageren. \\
 \fbox{\begin{minipage}{\linewidth}
     
@@ -933,16 +861,15 @@ Daarna hebben de gekeken wat het ideale moment zou zijn voor een docent om zin t
 We hebben ons tweede mailtje op de maandag voor de toetsweek gestuurd. We hebben ook de docenten extra proberen te vleien door duidelijk aan te geven dat het weinig tijd kost en dat we weten hoe druk docenten het eigenlijk hebben.
 \fbox{\begin{minipage}{\linewidth}
     
-Geachte docent,
-
-Onlangs hebben wij u een enquête gestuurd en we hebben al wat reacties mogen ontvangen, bedankt daarvoor.
-We snappen dat u het komende tijd druk heeft met de toetsweek, maar hopen dat u komende week ergens een gaatje van 2-3 minuten kunt vinden om alsnog onze enquête in te vullen. Dit zouden we erg waarderen!
- 
-https://forms.office.com/e/j5cYFrAy7p
-
-
-Hoogachtend,
- 
+Geachte docent,\\
+\\
+Onlangs hebben wij u een enquête gestuurd en we hebben al wat reacties mogen ontvangen, bedankt daarvoor.\\
+We snappen dat u het komende tijd druk heeft met de toetsweek, maar hopen dat u komende week ergens een gaatje van 2-3 minuten kunt vinden om alsnog onze enquête in te vullen. Dit zouden we erg waarderen!\\
+ \\
+https://forms.office.com/e/j5cYFrAy7p\\
+\\
+Hoogachtend,\\
+ \\
 Joost Koch & Jonathan Wijker
 \end{minipage}}
 Dit leverde 28 extra responses op, waardoor we op een totaal van 50 zitten. Dit is statistisch gezien goed genoeg om iets over de meningen van de docenten te zeggen op Het Amsterdams Lyceum. \\
@@ -963,6 +890,105 @@ Voor het analyseren gaan we Google Sheet pivot tables gebruiken om snel verbande
 \subsection{Nakijken}
 
 \subsection{Analyseren}
+\begin{multicols}{2}
+\paragraph*{Opbouw analyse} Om een toets betrouwbaar te analyseren moet met verschillende dingen rekening houden. Een van de belangrijkste dingen voor een analyse is het doel van de docent vaststellen. Wil een docent een kennismeting doen waar de mensen die het half snappen een onvoldoende krijgen of dat die net een 5.5 krijgen. Wil een docent dat het goed genoeg begrijpen van de stof beloont wordt met een 8.0 of met een 6.0. Deze dingen zijn belangrijk voor het beoogde gemiddelde en de standaarddeviatie van een toets.
+\begin{minipage}{1\linewidth}
+    
+\textbf{Gemmidelde: }
+\[
+\mu = \frac{1}{N} \sum_{i=1}^N x_i
+\]
+waarbij:
+\begin{itemize}
+    \item \( x_i \): de individuele datapunten,
+    \item \( N \): het totale aantal datapunten,
+    \item \( \mu \): het gemiddelde.
+\end{itemize}
+\end{minipage}
+\begin{minipage}{\linewidth}
+\textbf{Standaard deviatie: }
+
+\[
+s = \sqrt{\frac{1}{N} \sum_{i=1}^N (x_i - \bar{x})^2}
+\]
+waarbij:
+\begin{itemize}
+    \item \( s \): de standaarddeviatie van de steekproef,
+    \item \( \bar{x} \): het gemiddelde van de steekproef.
+\end{itemize}
+\end{minipage}
+\begin{minipage}{\linewidth}
+\textbf{De covariantie} meet de gezamenlijke variabiliteit van twee variabelen en wordt berekend met:
+\[
+\text{Cov}(X, Y) = \frac{1}{N} \sum_{i=1}^N (x_i - \mu_X)(y_i - \mu_Y)
+\]
+waarbij:
+\begin{itemize}
+    \item \(X, Y\): twee willekeurige variabelen,
+    \item \(x_i, y_i\): de individuele waarnemingen van \(X\) en \(Y\),
+    \item \(\mu_X, \mu_Y\): de gemiddelden van \(X\) en \(Y\),
+    \item \(N\): het totale aantal waarnemingen.
+\end{itemize}
+\end{minipage}
+\end{multicols}
+\vspace{3em}
+% TODO: gemmidelde en aanpassingen daarop uitleggen en totale cijferberekeningen
+\begin{multicols}{2}
+
+\pagebreak
+\paragraph*{Vraagniveau} Om met deze waardes een analyse te doen van een toets op vraagniveau kan je bepaalde berekeningen gebruiken. Als je wilt weten of een vraag in de toets thuishoortkan je de correlatie berekenen tussen hoe de leerlingen de vraag hebben gemaakt ten opzichte van de rest van de toets.
+\begin{minipage}{\linewidth}% chatgpt
+\textbf{De RIR} meet de correlatie tussen de score van een item en de totale score, exclusief dat item:
+\[
+RIR = \frac{\text{Cov}(x_i, S_{-i})}{\sigma_{x_i} \cdot \sigma_{S_{-i}}}
+\]
+waarbij:
+\begin{itemize}
+    \item \(x_i\): de score van een individueel item,
+    \item \(S_{-i}\): de totale score exclusief \(x_i\),
+    \item \(\text{Cov}(x_i, S_{-i})\): de covariantie tussen \(x_i\) en \(S_{-i}\),
+    \item \(\sigma_{x_i}\): de standaarddeviatie van \(x_i\),
+    \item \(\sigma_{S_{-i}}\): de standaarddeviatie van \(S_{-i}\).
+\end{itemize}
+\end{minipage}
+\begin{minipage}{\linewidth}% chatgpt
+\textbf{De RIT} meet de correlatie tussen de score van een item en de totale score, inclusief dat item:
+\[
+RIT = \frac{\text{Cov}(x_i, S)}{\sigma_{x_i} \cdot \sigma_{S}}
+\]
+waarbij:
+\begin{itemize}
+    \item \(x_i\): de score van een individueel item,
+    \item \(S\): de totale score inclusief \(x_i\),
+    \item \(\text{Cov}(x_i, S)\): de covariantie tussen \(x_i\) en \(S\),
+    \item \(\sigma_{x_i}\): de standaarddeviatie van \(x_i\),
+    \item \(\sigma_{S}\): de standaarddeviatie van \(S\).
+\end{itemize}
+\end{minipage}
+\end{multicols}
+
+
+\pagebreak
+\begin{multicols}{2}
+\paragraph*{Representatie en UI} Om deze formules bruikbaar te maken voor docenten zou je een interface kunnen maken met \textbf{een input, analyse en bewerk/pas-aan scherm}.\\\\
+In die \textbf{inlaad pagina} moet een docent toetsresultaten uit een Excel of uit een van onze andere modules kunnen inladen. Daarnaast hebben wij ook van docenten te horen gekregen dat ze het fijn zouden vinden om leerdoelen aan vragen te koppelen, opdat zij een betere terugkoppeling kunnen krijgen.%
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{./images/methoden/analyseren/ui/inlaad-pagina.png}
+    \caption{Voorbeeld inlaadpagina}
+    \label{fig:enter-label}
+\end{figure}
+\noindent In het \textbf{analyse scherm} moet voor een docent overzichtelijk weergegeven zijn welke vragen goed en minder goed gingen en de scores van de leerlingen. Hier moet ook te zien zijn welke vragen waarschijnlijk niet thuishoren in de toets, omdat de mensen met een hoog cijfer hem fout hebben, dit kan komen dat die leerlingen te ver doordenken en daardoor de vraag fout hebben. De vraag is of je die leerlingen wilt afstraffen voor het verder denken dan het juiste antwoord. \\
+\\
+Het is ook mogelijk om hier opvallende correlaties tussen vragen weer te geven. Hier kan bijvoorbeeld worden laten zien dat mensen die vraag 5 fout hebben ook vraag 8 fout hebben. Dan is het mogelijk dat er 2x om dezelfde kennis wordt gevraagd, iets wat een toetsresultaat minder betrouwbaar maakt, omdat de stof disproposioneel wordt getoetst (dit geld ook voor een hoge correlatie tussen 2 juist gemaakte vragen). \\
+\\
+Het kan ook mogelijk zijn om de correlaties tussen leerlingen te tonen om eventuele spiekers te vangen. Hierbij moet wel rekening gehouden worden met het feit dat 2 mensen met een hoog cijfer, waarschijnlijk beide dezelfde vragen goed en fout hebben. Deze coorelatie wordt wel interessant bij bijvoorbeeld 2 6.5'en en precies dezelfde fouten.\\
+\\
+Op \textbf{het bewerkscherm} kunnen bijvoorbeeld een aantal velden komen met de doelen van een docent. Bijvoorbeeld: een veld om het gewilde gemiddelde en de gewilde standaardeviatie in te stellen. Daarmee berekent hij dat een nieuwe formule. Hier kan ook worden of een lineare of non-lineare formule gebruikt wordt. Bij een non-lineare formule behoudt iedereen met een onvoldoende zijn onvoldoende, maar zijn die onvoldoendes minder hoog. \\
+Hier kan ook op vraagniveau een scherm zijn om vragen eruit te gooien of half te laten meetellen, als blijkt dat ze wegnemen van de kennismeting van de toets.
+% TODO: foto linear en non-linear
+\end{multicols}
+\pagebreak
 
 \subsection{Enquête}
 
@@ -1060,6 +1086,7 @@ Minder dan één jaar & 7.500 & 2 \\
 
 
 \subsection{vervolgonderzoek}
+
 \section{Samenvatting onderzoek}
 
 \section{Referenties}
