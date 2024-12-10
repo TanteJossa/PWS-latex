@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber full"] 0 "full.bcf" "full.bbl" "full" 0 -1
-  "full.bcf" 1733775202 133161 c2d826c4f10708236eeedc441d469c9a "pdflatex"
+["biber full"] 0 "full.bcf" "full.bbl" "full" 1733861041 -1
+  "full.bcf" 1733861040 133161 c2d826c4f10708236eeedc441d469c9a "pdflatex"
   (generated)
   "full.bbl"
   "full.blg"
   (rewritten before read)
-["pdflatex"] 1733775195 "d:/GitHub/PWS-latex/full.tex" "full.pdf" "full" 1733775203 2
-  "C:/Users/joost/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1733739969 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
+["pdflatex"] 1733861028 "d:/GitHub/PWS-latex/full.tex" "full.pdf" "full" 1733861041 2
+  "C:/Users/joost/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1733856600 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/joost/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1733739357 14064 f47afa937792975a385975a57f983922 ""
   "C:/Users/joost/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1733739335 11986955 ef07e508c87f28136ccd7378d3bdde84 ""
   "C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/tcrm1200.tfm" 993062508 1444 95ffe0f19b974d50849790c8225c7ef7 ""
@@ -245,12 +245,12 @@
   "C:/Users/joost/AppData/Local/Programs/MiKTeX/tex/latex/varwidth/varwidth.sty" 1238469540 10894 d359a13923460b2a73d4312d613554c8 ""
   "C:/Users/joost/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/joost/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "d:/GitHub/PWS-latex/full.tex" 1733775184 48727 4fd05d6f36f542f903c70d808f742396 ""
-  "full.aux" 1733775202 8496 1ee9030bd8293fa6c528520f87ebb830 "pdflatex"
+  "d:/GitHub/PWS-latex/full.tex" 1733861005 49885 956deb2cdb4342635942a116b2e5377c ""
+  "full.aux" 1733861040 8992 48a2eaa730bf6d16c6d3103452acfc2d "pdflatex"
   "full.bbl" 1733774842 16463 3a4b3e998d188e1da5e864e69aa704bc "biber full"
-  "full.run.xml" 1733775202 2427 db3d7a7c7802f57aa12d635ca1c77e3c "pdflatex"
-  "full.tex" 1733775184 48727 4fd05d6f36f542f903c70d808f742396 ""
-  "full.toc" 1733775202 2145 764d3aad2935a712aa470545bef66747 "pdflatex"
+  "full.run.xml" 1733861040 2427 db3d7a7c7802f57aa12d635ca1c77e3c "pdflatex"
+  "full.tex" 1733861005 49885 956deb2cdb4342635942a116b2e5377c ""
+  "full.toc" 1733861040 2434 17b03ac99850eaafba250f52a416e120 "pdflatex"
   "images/methoden/analyseren/ui/inlaad-pagina.png" 1733739473 93634 83bd3fd2eb7c0b9e0649969225548bae ""
   "images/methoden/inscannen/croppen/crop_bw.png" 1733739472 76360 d7f96f5f0b3aaa6782626bc9b380497e ""
   "images/methoden/inscannen/croppen/crop_canny.png" 1733739472 4482 154cd110cfc9a9de542799ba0452baa4 ""

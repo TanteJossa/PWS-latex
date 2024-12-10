@@ -112,6 +112,8 @@ Deze vraag hebben we onderverdeeld in 4 deelvragen:\\
    \textbf{Analyseren } & \textbf{Kan een computerprogramma effectief toetsen analyseren?} \\
    \vspace{0.2cm}
    \textbf{Enquête } & \textbf{Staan docenten open voor zo'n programma en wat zijn de grootste objecties? } \\
+   \vspace{0.2cm}
+   \textbf{Toets } & \textbf{Kunnen we een toets afnemen bij een 3e klas op Het Amsterdams Lyceum en die met onze programmas nakijken? } \\
 \end{tabularx}
 
 %TODO: misschien iets over subdeelvragen
@@ -133,6 +135,7 @@ Computerprogramma's die gebruikmaken van kunstmatige intelligentie, zoals getrai
 \subsection{Analyseren}
 
 \subsection{Enquete}
+
 \begin{multicols}{2}
 Zie materiaal en methode voor vragen.
 Wij denken dat docenten over het algemeen pessimistisch zullen zijn over ai. 
@@ -150,6 +153,8 @@ voorspelling per vraag:
 \end{multicols}
 
 \pagebreak
+\subsection{Toets}
+\pagebreak
 
 \section{Methode}
 \subsection{Onderzoeksopzet}
@@ -165,6 +170,7 @@ Voor elke onderdeel hebben we een "hoofdverantwoordelijke" aangesteld, omdat het
 \end{multicols}
 
 \subsection{Methode}
+
 \subsubsection{Inscannen}
 \begin{tabularx}{}{@{}ll}
     \textbf{Eigenaar: } & \textit{Joost} \\
@@ -543,9 +549,7 @@ We kunnen nu de secties scheiden en de vraagnummers relatief betrouwbaar extrahe
 
 \pagebreak
 
-\begin{multicols}{2}
 \paragraph*{QR-code}De qr code maakt gebruikt van een scanner die de qrcodes linksboven en rechtsonder het antwoordveld herkent. Waardoor je direct kan gaan snijden.\\
-\end{multicols}
 
 \noindent
 \textbf{Tekstherkenning}
@@ -570,7 +574,7 @@ We hebben 4 modellen getest:
 \end{multicols}
 \pagebreak
 \begin{multicols}{2}
-Om te test waarmee hij moeite had hebben we 5 antwoordfoto's getest:
+Om te test waarmee hij moeite had hebben we 6 antwoordfoto's getest:
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{./images/methoden/inscannen/tekst/kort_leesbaar.png}
@@ -677,6 +681,8 @@ Dit geeft \large$4_{\textsc{modellen}} \cdot 4_{\textsc{temperaturen}}  \cdot 6_
 
 %Fase 3 bestand
 %TODO: bronnen
+\pagebreak
+
 \subsubsection{Nakijken}
 \begin{tabularx}{}{@{}ll}
     \textbf{Eigenaar: } & \textit{Jonathan} \\
@@ -698,6 +704,7 @@ Dit geeft \large$4_{\textsc{modellen}} \cdot 4_{\textsc{temperaturen}}  \cdot 6_
 \end{tabularx}
 
 \pagebreak
+
 \subsubsection{Analyseren}
 \begin{tabularx}{}{@{}ll}
     \textbf{Eigenaar: } & \textit{Joost} \\
@@ -718,9 +725,9 @@ Dit geeft \large$4_{\textsc{modellen}} \cdot 4_{\textsc{temperaturen}}  \cdot 6_
         }\\
     \parbox[t]{3cm}{\raggedright \textbf{Geschatte  tijdskosten:} } & 15 uur \\
 \end{tabularx}
-% TODO: beslissen of dit in ons PWS moet
+% TODO: beslissen of dit in ons PWS moet of dit gedeelte uitbreiden
 Bij het inscannen gaan we onderzoek doen naar welke statistische berekeningen nodig zijn voor correct analyse. 
-
+\pagebreak
 
 \subsubsection{Enquete}
 \begin{tabularx}{\linewidth}{ll}
@@ -881,14 +888,34 @@ Voor het analyseren gaan we Google Sheet pivot tables gebruiken om snel verbande
 
 
 \end{multicols}
+\pagebreak
 
-
-
+\subsubsection{Toets}
+\begin{tabularx}{}{@{}ll}
+    \textbf{Eigenaar: } & \textit{Jonathan} \\
+    \textbf{Doel(en): } & 
+        \makecell[tl]{
+            $\bullet$ Een toets maken die duidelijk is voor 3e klassers\\
+            $\bullet$ Een toets nakijken met onze programmas\\
+        } \\
+    \textbf{Subvragen: } & 
+        \makecell[tl]{
+            $\bullet$ Hoe maken we een toets die duidelijk is voor 3e klassers? \\
+            $\bullet$ Hoe kijken we een toets na met onze programmas? \\
+        }\\
+    \textbf{Kader(s): } & 
+        \makecell[tl]{
+            $\bullet$ Toetsen maken / scheikunde \\
+            $\bullet$ Programma testen \\
+        }\\
+    \parbox[t]{3cm}{\raggedright \textbf{Geschatte  tijdskosten:} } & 15 uur \\
+\end{tabularx}
+\pagebreak
 \section{Resultaten}
 \subsection{Inscannen}
-
+\pagebreak
 \subsection{Nakijken}
-
+\pagebreak
 \subsection{Analyseren}
 \begin{multicols}{2}
 \paragraph*{Opbouw analyse} Om een toets betrouwbaar te analyseren moet met verschillende dingen rekening houden. Een van de belangrijkste dingen voor een analyse is het doel van de docent vaststellen. Wil een docent een kennismeting doen waar de mensen die het half snappen een onvoldoende krijgen of dat die net een 5.5 krijgen. Wil een docent dat het goed genoeg begrijpen van de stof beloont wordt met een 8.0 of met een 6.0. Deze dingen zijn belangrijk voor het beoogde gemiddelde en de standaarddeviatie van een toets.
@@ -967,7 +994,6 @@ waarbij:
 \end{minipage}
 \end{multicols}
 
-
 \pagebreak
 \begin{multicols}{2}
 \paragraph*{Representatie en UI} Om deze formules bruikbaar te maken voor docenten zou je een interface kunnen maken met \textbf{een input, analyse en bewerk/pas-aan scherm}.\\\\
@@ -988,10 +1014,9 @@ Op \textbf{het bewerkscherm} kunnen bijvoorbeeld een aantal velden komen met de 
 Hier kan ook op vraagniveau een scherm zijn om vragen eruit te gooien of half te laten meetellen, als blijkt dat ze wegnemen van de kennismeting van de toets.
 % TODO: foto linear en non-linear
 \end{multicols}
+
 \pagebreak
-
 \subsection{Enquête}
-
 
 \begin{table}[h!]
 \centering
@@ -1063,28 +1088,43 @@ Minder dan één jaar & 7.500 & 2 \\
 \end{table}
 
 
+\pagebreak
+\subsection{Toets}
+
+\pagebreak
 \section{conclusie}
 \subsection{Inscannen}
 
+
 \subsection{Nakijken}
 
+
 \subsection{Analyseren}
+
 
 \subsection{Enquete}
 
 
+\subsection{Toets}
+
+\pagebreak
 \section{Discussie}
 \subsection{Foutenanalyse}
 \subsubsection{Inscannen}
 
+
 \subsubsection{Nakijken}
 
+
 \subsubsection{Analyseren}
+
 
 \subsubsection{Enquête}
 
 
+\subsubsection{Toets}
 
+\pagebreak
 \subsection{vervolgonderzoek}
 
 \section{Samenvatting onderzoek}

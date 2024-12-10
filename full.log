@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.9)  9 DEC 2024 21:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.9)  10 DEC 2024 21:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1164,82 +1164,89 @@ LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <30> not available
 (Font)              size <24.88> substituted on input line 92.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--115
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
 []|\OT1/cmr/bx/n/12 Kunnen toet-sen au-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--115
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
 []|\OT1/cmr/bx/n/12 Kunnen antwo-or-den
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--115
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
 \OT1/cmr/bx/n/12 nagekeken wor-den
  []
 
 
-Underfull \hbox (badness 6510) in paragraph at lines 115--115
+Underfull \hbox (badness 6510) in paragraph at lines 117--117
 []|\OT1/cmr/bx/n/12 Staan do-cen-ten open
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--116
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
+\OT1/cmr/bx/n/12 op Het Am-s-ter-dams
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--118
 
  []
 
 
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 125--127
+Underfull \hbox (badness 10000) in paragraph at lines 127--129
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--132
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
 []\OT1/cmr/m/n/12 Computerprogramma's die ge-bruik-
  []
 
 
-Underfull \hbox (badness 5893) in paragraph at lines 131--132
+Underfull \hbox (badness 5893) in paragraph at lines 133--134
 \OT1/cmr/m/n/12 ge-trainde transformer-modellen en grote
  []
 
 
-Underfull \hbox (badness 6173) in paragraph at lines 148--149
+Underfull \hbox (badness 6173) in paragraph at lines 151--152
 \OT1/cmr/m/n/12 nog meer denken. Wij denken
  []
 
 
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 157--165
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 162--170
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--165
+Underfull \hbox (badness 10000) in paragraph at lines 162--170
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--165
+Underfull \hbox (badness 10000) in paragraph at lines 162--170
 
  []
 
-d:/GitHub/PWS-latex/full.tex:169: Missing number, treated as zero.
+d:/GitHub/PWS-latex/full.tex:175: Missing number, treated as zero.
 <to be read again> 
                    \relax 
-l.169 \begin{tabularx}{}
+l.175 \begin{tabularx}{}
                         {@{}ll}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-d:/GitHub/PWS-latex/full.tex:169: Illegal unit of measure (pt inserted).
+d:/GitHub/PWS-latex/full.tex:175: Illegal unit of measure (pt inserted).
 <to be read again> 
                    \relax 
-l.169 \begin{tabularx}{}
+l.175 \begin{tabularx}{}
                         {@{}ll}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1250,106 +1257,106 @@ two letters. (See Chapter 27 of The TeXbook.)
 
 
 Package tabularx Warning: X Columns too narrow (table too wide)
-(tabularx)                 on input line 184.
+(tabularx)                 on input line 190.
 
 
-Overfull \hbox (299.36746pt too wide) in alignment at lines 184--184
+Overfull \hbox (299.36746pt too wide) in alignment at lines 190--190
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 187--192
+Underfull \hbox (badness 10000) in paragraph at lines 193--198
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 187--192
+Underfull \hbox (badness 10000) in paragraph at lines 193--198
 
  []
 
-[5]
-Underfull \hbox (badness 1019) in paragraph at lines 219--219
+[6]
+Underfull \hbox (badness 1019) in paragraph at lines 225--225
 []|\OT1/cmr/m/n/12 Gemodificeerd HAL-toetsblaadje met
  []
 
 
-Underfull \hbox (badness 2326) in paragraph at lines 219--219
+Underfull \hbox (badness 2326) in paragraph at lines 225--225
 []|\OT1/cmr/m/n/12 Toetsblaadje met qr-codes rond de
  []
 
 
-Underfull \hbox (badness 2799) in paragraph at lines 219--219
+Underfull \hbox (badness 2799) in paragraph at lines 225--225
 []|$\OMS/cmsy/m/n/12 ^^O$ \OT1/cmr/m/n/12 Ge-bruik code om vierkan-t-jes te
  []
 
 
 
-[6]
-<./images/methoden/inscannen/croppen/crop_input.png, id=29, 2273.04pt x 4039.2pt>
+[7]
+<./images/methoden/inscannen/croppen/crop_input.png, id=33, 2273.04pt x 4039.2pt>
 File: ./images/methoden/inscannen/croppen/crop_input.png Graphic file (type png)
 <use ./images/methoden/inscannen/croppen/crop_input.png>
-Package pdftex.def Info: ./images/methoden/inscannen/croppen/crop_input.png  used on input line 238.
+Package pdftex.def Info: ./images/methoden/inscannen/croppen/crop_input.png  used on input line 244.
 (pdftex.def)             Requested size: 140.92792pt x 250.41548pt.
-<./images/methoden/inscannen/croppen/crop_bw.png, id=30, 282.05376pt x 501.875pt>
+<./images/methoden/inscannen/croppen/crop_bw.png, id=34, 282.05376pt x 501.875pt>
 File: ./images/methoden/inscannen/croppen/crop_bw.png Graphic file (type png)
 <use ./images/methoden/inscannen/croppen/crop_bw.png>
-Package pdftex.def Info: ./images/methoden/inscannen/croppen/crop_bw.png  used on input line 242.
+Package pdftex.def Info: ./images/methoden/inscannen/croppen/crop_bw.png  used on input line 248.
 (pdftex.def)             Requested size: 140.92792pt x 250.76074pt.
-<./images/methoden/inscannen/croppen/crop_gaussian.png, id=31, 282.05376pt x 501.875pt>
+<./images/methoden/inscannen/croppen/crop_gaussian.png, id=35, 282.05376pt x 501.875pt>
 File: ./images/methoden/inscannen/croppen/crop_gaussian.png Graphic file (type png)
 <use ./images/methoden/inscannen/croppen/crop_gaussian.png>
-Package pdftex.def Info: ./images/methoden/inscannen/croppen/crop_gaussian.png  used on input line 247.
+Package pdftex.def Info: ./images/methoden/inscannen/croppen/crop_gaussian.png  used on input line 253.
 (pdftex.def)             Requested size: 140.92792pt x 250.76074pt.
-<./images/methoden/inscannen/croppen/crop_canny.png, id=32, 282.05376pt x 501.875pt>
+<./images/methoden/inscannen/croppen/crop_canny.png, id=36, 282.05376pt x 501.875pt>
 File: ./images/methoden/inscannen/croppen/crop_canny.png Graphic file (type png)
 <use ./images/methoden/inscannen/croppen/crop_canny.png>
-Package pdftex.def Info: ./images/methoden/inscannen/croppen/crop_canny.png  used on input line 251.
+Package pdftex.def Info: ./images/methoden/inscannen/croppen/crop_canny.png  used on input line 257.
 (pdftex.def)             Requested size: 140.92792pt x 250.76074pt.
-<./images/methoden/inscannen/croppen/crop_output.png, id=33, 1916.15875pt x 2246.3925pt>
+<./images/methoden/inscannen/croppen/crop_output.png, id=37, 1916.15875pt x 2246.3925pt>
 File: ./images/methoden/inscannen/croppen/crop_output.png Graphic file (type png)
 <use ./images/methoden/inscannen/croppen/crop_output.png>
-Package pdftex.def Info: ./images/methoden/inscannen/croppen/crop_output.png  used on input line 255.
+Package pdftex.def Info: ./images/methoden/inscannen/croppen/crop_output.png  used on input line 261.
 (pdftex.def)             Requested size: 140.92792pt x 165.21584pt.
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 1 on input line 258.
+(longtable)                in table 1 on input line 264.
 
-[7 <./images/methoden/inscannen/croppen/crop_input.png> <./images/methoden/inscannen/croppen/crop_bw.png (PNG copy)>]
-<./images/methoden/inscannen/preprocessing/pre_red_pen.png, id=38, 2113.8975pt x 1425.325pt>
+[8 <./images/methoden/inscannen/croppen/crop_input.png> <./images/methoden/inscannen/croppen/crop_bw.png (PNG copy)>]
+<./images/methoden/inscannen/preprocessing/pre_red_pen.png, id=41, 2113.8975pt x 1425.325pt>
 File: ./images/methoden/inscannen/preprocessing/pre_red_pen.png Graphic file (type png)
 <use ./images/methoden/inscannen/preprocessing/pre_red_pen.png>
-Package pdftex.def Info: ./images/methoden/inscannen/preprocessing/pre_red_pen.png  used on input line 264.
+Package pdftex.def Info: ./images/methoden/inscannen/preprocessing/pre_red_pen.png  used on input line 270.
 (pdftex.def)             Requested size: 469.75499pt x 316.72603pt.
 
 
-[8 <./images/methoden/inscannen/croppen/crop_gaussian.png (PNG copy)> <./images/methoden/inscannen/croppen/crop_canny.png (PNG copy)> <./images/methoden/inscannen/croppen/crop_output.png (PNG copy)>]
+[9 <./images/methoden/inscannen/croppen/crop_gaussian.png (PNG copy)> <./images/methoden/inscannen/croppen/crop_canny.png (PNG copy)> <./images/methoden/inscannen/croppen/crop_output.png (PNG copy)>]
 
-[9 <./images/methoden/inscannen/preprocessing/pre_red_pen.png>]
-<./images/methoden/inscannen/sectie/hand/handgeschreven.png, id=47, 365.365pt x 513.92pt>
+[10 <./images/methoden/inscannen/preprocessing/pre_red_pen.png>]
+<./images/methoden/inscannen/sectie/hand/handgeschreven.png, id=50, 365.365pt x 513.92pt>
 File: ./images/methoden/inscannen/sectie/hand/handgeschreven.png Graphic file (type png)
 <use ./images/methoden/inscannen/sectie/hand/handgeschreven.png>
-Package pdftex.def Info: ./images/methoden/inscannen/sectie/hand/handgeschreven.png  used on input line 276.
+Package pdftex.def Info: ./images/methoden/inscannen/sectie/hand/handgeschreven.png  used on input line 282.
 (pdftex.def)             Requested size: 229.87749pt x 323.34784pt.
-<./images/methoden/inscannen/sectie/hand/kant_google.png, id=48, 68.255pt x 513.92pt>
+<./images/methoden/inscannen/sectie/hand/kant_google.png, id=51, 68.255pt x 513.92pt>
 File: ./images/methoden/inscannen/sectie/hand/kant_google.png Graphic file (type png)
 <use ./images/methoden/inscannen/sectie/hand/kant_google.png>
-Package pdftex.def Info: ./images/methoden/inscannen/sectie/hand/kant_google.png  used on input line 283.
+Package pdftex.def Info: ./images/methoden/inscannen/sectie/hand/kant_google.png  used on input line 289.
 (pdftex.def)             Requested size: 37.78926pt x 284.52756pt.
-<./images/methoden/inscannen/sectie/hand/kant_microsoft.png, id=49, 65.24374pt x 513.92pt>
+<./images/methoden/inscannen/sectie/hand/kant_microsoft.png, id=52, 65.24374pt x 513.92pt>
 File: ./images/methoden/inscannen/sectie/hand/kant_microsoft.png Graphic file (type png)
 <use ./images/methoden/inscannen/sectie/hand/kant_microsoft.png>
-Package pdftex.def Info: ./images/methoden/inscannen/sectie/hand/kant_microsoft.png  used on input line 285.
+Package pdftex.def Info: ./images/methoden/inscannen/sectie/hand/kant_microsoft.png  used on input line 291.
 (pdftex.def)             Requested size: 36.12209pt x 284.52756pt.
-<./images/methoden/inscannen/sectie/hand/google.png, id=50, 358.33875pt x 513.92pt>
+<./images/methoden/inscannen/sectie/hand/google.png, id=53, 358.33875pt x 513.92pt>
 File: ./images/methoden/inscannen/sectie/hand/google.png Graphic file (type png)
 <use ./images/methoden/inscannen/sectie/hand/google.png>
-Package pdftex.def Info: ./images/methoden/inscannen/sectie/hand/google.png  used on input line 292.
+Package pdftex.def Info: ./images/methoden/inscannen/sectie/hand/google.png  used on input line 298.
 (pdftex.def)             Requested size: 229.87749pt x 329.69185pt.
-<./images/methoden/inscannen/sectie/hand/section.png, id=51, 365.365pt x 513.92pt>
+<./images/methoden/inscannen/sectie/hand/section.png, id=54, 365.365pt x 513.92pt>
 File: ./images/methoden/inscannen/sectie/hand/section.png Graphic file (type png)
 <use ./images/methoden/inscannen/sectie/hand/section.png>
-Package pdftex.def Info: ./images/methoden/inscannen/sectie/hand/section.png  used on input line 298.
+Package pdftex.def Info: ./images/methoden/inscannen/sectie/hand/section.png  used on input line 304.
 (pdftex.def)             Requested size: 229.87749pt x 323.34784pt.
 
 
@@ -1366,108 +1373,108 @@ Package multicol Warning: Floats and marginpars not allowed inside `multicols' e
 
 
 
-[10 <./images/methoden/inscannen/sectie/hand/handgeschreven.png> <./images/methoden/inscannen/sectie/hand/kant_google.png> <./images/methoden/inscannen/sectie/hand/kant_microsoft.png>]
+[11 <./images/methoden/inscannen/sectie/hand/handgeschreven.png> <./images/methoden/inscannen/sectie/hand/kant_google.png> <./images/methoden/inscannen/sectie/hand/kant_microsoft.png>]
 
-d:/GitHub/PWS-latex/full.tex:308: LaTeX Error: There's no line here to end.
+d:/GitHub/PWS-latex/full.tex:314: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.308 \begin
+l.314 \begin
             {multicols}{2}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<./images/methoden/inscannen/sectie/checkbox/template.png, id=58, 758.08218pt x 392.21532pt>
+<./images/methoden/inscannen/sectie/checkbox/template.png, id=61, 758.08218pt x 392.21532pt>
 File: ./images/methoden/inscannen/sectie/checkbox/template.png Graphic file (type png)
 <use ./images/methoden/inscannen/sectie/checkbox/template.png>
-Package pdftex.def Info: ./images/methoden/inscannen/sectie/checkbox/template.png  used on input line 313.
+Package pdftex.def Info: ./images/methoden/inscannen/sectie/checkbox/template.png  used on input line 319.
 (pdftex.def)             Requested size: 229.87749pt x 118.92827pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 321--324
+Underfull \hbox (badness 10000) in paragraph at lines 327--330
 
  []
 
-<./images/methoden/inscannen/sectie/checkbox/hoogte/input.png, id=59, 612.8496pt x 844.1136pt>
+<./images/methoden/inscannen/sectie/checkbox/hoogte/input.png, id=62, 612.8496pt x 844.1136pt>
 File: ./images/methoden/inscannen/sectie/checkbox/hoogte/input.png Graphic file (type png)
 <use ./images/methoden/inscannen/sectie/checkbox/hoogte/input.png>
-Package pdftex.def Info: ./images/methoden/inscannen/sectie/checkbox/hoogte/input.png  used on input line 336.
+Package pdftex.def Info: ./images/methoden/inscannen/sectie/checkbox/hoogte/input.png  used on input line 342.
 (pdftex.def)             Requested size: 176.15811pt x 242.62282pt.
-<./images/methoden/inscannen/sectie/checkbox/hoogte/code-binary.png, id=60, 1041.8925pt x 509.905pt>
+<./images/methoden/inscannen/sectie/checkbox/hoogte/code-binary.png, id=63, 1041.8925pt x 509.905pt>
 File: ./images/methoden/inscannen/sectie/checkbox/hoogte/code-binary.png Graphic file (type png)
 <use ./images/methoden/inscannen/sectie/checkbox/hoogte/code-binary.png>
-Package pdftex.def Info: ./images/methoden/inscannen/sectie/checkbox/hoogte/code-binary.png  used on input line 341.
+Package pdftex.def Info: ./images/methoden/inscannen/sectie/checkbox/hoogte/code-binary.png  used on input line 347.
 (pdftex.def)             Requested size: 176.15811pt x 86.20808pt.
-<./images/methoden/inscannen/sectie/checkbox/hoogte/binary.png, id=61, 851.18pt x 1172.38pt>
+<./images/methoden/inscannen/sectie/checkbox/hoogte/binary.png, id=64, 851.18pt x 1172.38pt>
 File: ./images/methoden/inscannen/sectie/checkbox/hoogte/binary.png Graphic file (type png)
 <use ./images/methoden/inscannen/sectie/checkbox/hoogte/binary.png>
-Package pdftex.def Info: ./images/methoden/inscannen/sectie/checkbox/hoogte/binary.png  used on input line 343.
+Package pdftex.def Info: ./images/methoden/inscannen/sectie/checkbox/hoogte/binary.png  used on input line 349.
 (pdftex.def)             Requested size: 176.15811pt x 242.62926pt.
-<./images/methoden/inscannen/sectie/checkbox/hoogte/code-contour.png, id=62, 1041.8925pt x 395.4775pt>
+<./images/methoden/inscannen/sectie/checkbox/hoogte/code-contour.png, id=65, 1041.8925pt x 395.4775pt>
 File: ./images/methoden/inscannen/sectie/checkbox/hoogte/code-contour.png Graphic file (type png)
 <use ./images/methoden/inscannen/sectie/checkbox/hoogte/code-contour.png>
-Package pdftex.def Info: ./images/methoden/inscannen/sectie/checkbox/hoogte/code-contour.png  used on input line 347.
+Package pdftex.def Info: ./images/methoden/inscannen/sectie/checkbox/hoogte/code-contour.png  used on input line 353.
 (pdftex.def)             Requested size: 176.15811pt x 66.86217pt.
-<./images/methoden/inscannen/sectie/checkbox/hoogte/countour.png, id=63, 851.18pt x 1172.38pt>
+<./images/methoden/inscannen/sectie/checkbox/hoogte/countour.png, id=66, 851.18pt x 1172.38pt>
 File: ./images/methoden/inscannen/sectie/checkbox/hoogte/countour.png Graphic file (type png)
 <use ./images/methoden/inscannen/sectie/checkbox/hoogte/countour.png>
-Package pdftex.def Info: ./images/methoden/inscannen/sectie/checkbox/hoogte/countour.png  used on input line 349.
+Package pdftex.def Info: ./images/methoden/inscannen/sectie/checkbox/hoogte/countour.png  used on input line 355.
 (pdftex.def)             Requested size: 176.15811pt x 242.62926pt.
-<./images/methoden/inscannen/sectie/checkbox/hoogte/code-contour-filter.png, id=64, 1041.8925pt x 1577.895pt>
+<./images/methoden/inscannen/sectie/checkbox/hoogte/code-contour-filter.png, id=67, 1041.8925pt x 1577.895pt>
 File: ./images/methoden/inscannen/sectie/checkbox/hoogte/code-contour-filter.png Graphic file (type png)
 <use ./images/methoden/inscannen/sectie/checkbox/hoogte/code-contour-filter.png>
-Package pdftex.def Info: ./images/methoden/inscannen/sectie/checkbox/hoogte/code-contour-filter.png  used on input line 353.
+Package pdftex.def Info: ./images/methoden/inscannen/sectie/checkbox/hoogte/code-contour-filter.png  used on input line 359.
 (pdftex.def)             Requested size: 176.15811pt x 266.76993pt.
-<./images/methoden/inscannen/sectie/checkbox/hoogte/contour-filtered.png, id=65, 851.18pt x 1172.38pt>
+<./images/methoden/inscannen/sectie/checkbox/hoogte/contour-filtered.png, id=68, 851.18pt x 1172.38pt>
 File: ./images/methoden/inscannen/sectie/checkbox/hoogte/contour-filtered.png Graphic file (type png)
 <use ./images/methoden/inscannen/sectie/checkbox/hoogte/contour-filtered.png>
-Package pdftex.def Info: ./images/methoden/inscannen/sectie/checkbox/hoogte/contour-filtered.png  used on input line 355.
+Package pdftex.def Info: ./images/methoden/inscannen/sectie/checkbox/hoogte/contour-filtered.png  used on input line 361.
 (pdftex.def)             Requested size: 176.15811pt x 242.62926pt.
 
-Overfull \hbox (30.79996pt too wide) in alignment at lines 332--359
+Overfull \hbox (30.79996pt too wide) in alignment at lines 338--365
  [] [] [] 
  []
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 2 on input line 359.
+(longtable)                in table 2 on input line 365.
 
-[11 <./images/methoden/inscannen/sectie/checkbox/template.png> <./images/methoden/inscannen/sectie/checkbox/hoogte/input.png>] [12 <./images/methoden/inscannen/sectie/checkbox/hoogte/code-binary.png> <./images/methoden/inscannen/sectie/checkbox/hoogte/binary.png (PNG copy)> <./images/methoden/inscannen/sectie/checkbox/hoogte/code-contour.png> <./images/methoden/inscannen/sectie/checkbox/hoogte/countour.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 363--369
+[12 <./images/methoden/inscannen/sectie/checkbox/template.png> <./images/methoden/inscannen/sectie/checkbox/hoogte/input.png>] [13 <./images/methoden/inscannen/sectie/checkbox/hoogte/code-binary.png> <./images/methoden/inscannen/sectie/checkbox/hoogte/binary.png (PNG copy)> <./images/methoden/inscannen/sectie/checkbox/hoogte/code-contour.png> <./images/methoden/inscannen/sectie/checkbox/hoogte/countour.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 369--375
 \OT1/cmr/m/n/12 (y,hoogte,x,meest linker co-or-di-naat van
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 363--369
+Underfull \hbox (badness 10000) in paragraph at lines 369--375
 
  []
 
-d:/GitHub/PWS-latex/full.tex:375: FancyVerb Error:
+d:/GitHub/PWS-latex/full.tex:381: FancyVerb Error:
   Extraneous input `,' between \begin{minted}[<key=value>] and line end
 .
 \FV@Error ... {FancyVerb Error:
 \space \space #1
 }
                                                   
-l.375                    tabsize=4]{js},
+l.381                    tabsize=4]{js},
                                         
 This input will be discarded. Hit <return> to continue.
 
 \pydata@fh@_E9DC924F238FA6CC29465942875FE8F0.data.minted=\write7
 \openout7 = `_E9DC924F238FA6CC29465942875FE8F0.data.minted'.
 
-runsystem(latexminted config  --timestamp 20241209211315 E9DC924F238FA6CC29465942875FE8F0)...disabled (restricted).
+runsystem(latexminted config  --timestamp 20241210210349 E9DC924F238FA6CC29465942875FE8F0)...disabled (restricted).
 
 
-d:/GitHub/PWS-latex/full.tex:385: Package minted Error: minted v3+ executable is not installed, is not added to PATH, or is not permitted with restricted shell escape; or MiKTeX is being used with -aux-directory or -output-directory without setting a TEXMF_OUTPUT_DIRECTORY environment variable.
+d:/GitHub/PWS-latex/full.tex:391: Package minted Error: minted v3+ executable is not installed, is not added to PATH, or is not permitted with restricted shell escape; or MiKTeX is being used with -aux-directory or -output-directory without setting a TEXMF_OUTPUT_DIRECTORY environment variable.
 
 See the minted package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.385     \end{minted}
+l.391     \end{minted}
                       
 This error message was generated by an \errmessage
 command, so I can't give any explicit help.
@@ -1475,35 +1482,35 @@ Pretend that you're Hercule Poirot: Examine all clues,
 and deduce the truth by order and method.
 
 
-d:/GitHub/PWS-latex/full.tex:385: Package minted Error: Missing definition for highlighting style "default" (minted executable is unavailable or disabled); attempting to substitute fallback style.
+d:/GitHub/PWS-latex/full.tex:391: Package minted Error: Missing definition for highlighting style "default" (minted executable is unavailable or disabled); attempting to substitute fallback style.
 
 See the minted package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.385     \end{minted}
+l.391     \end{minted}
                       
 (That was another \errmessage.)
 
 
-d:/GitHub/PWS-latex/full.tex:385: Package minted Error: Cannot highlight code (minted executable is unavailable or disabled); attempting to typeset without highlighting.
+d:/GitHub/PWS-latex/full.tex:391: Package minted Error: Cannot highlight code (minted executable is unavailable or disabled); attempting to typeset without highlighting.
 
 See the minted package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.385     \end{minted}
+l.391     \end{minted}
                       
 (That was another \errmessage.)
 
 
-d:/GitHub/PWS-latex/full.tex:389: LaTeX Error: There's no line here to end.
+d:/GitHub/PWS-latex/full.tex:395: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.389 \end
+l.395 \end
           {multicols}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1511,76 +1518,76 @@ or  <return>  to continue without it.
 
 
 
-[13 <./images/methoden/inscannen/sectie/checkbox/hoogte/code-contour-filter.png> <./images/methoden/inscannen/sectie/checkbox/hoogte/contour-filtered.png (PNG copy)>]
-<./images/methoden/inscannen/sectie/checkbox/vraagnummer/answer_section.png, id=82, 64.24pt x 138.5175pt>
+[14 <./images/methoden/inscannen/sectie/checkbox/hoogte/code-contour-filter.png> <./images/methoden/inscannen/sectie/checkbox/hoogte/contour-filtered.png (PNG copy)>]
+<./images/methoden/inscannen/sectie/checkbox/vraagnummer/answer_section.png, id=85, 64.24pt x 138.5175pt>
 File: ./images/methoden/inscannen/sectie/checkbox/vraagnummer/answer_section.png Graphic file (type png)
 <use ./images/methoden/inscannen/sectie/checkbox/vraagnummer/answer_section.png>
-Package pdftex.def Info: ./images/methoden/inscannen/sectie/checkbox/vraagnummer/answer_section.png  used on input line 397.
+Package pdftex.def Info: ./images/methoden/inscannen/sectie/checkbox/vraagnummer/answer_section.png  used on input line 403.
 (pdftex.def)             Requested size: 45.9748pt x 99.13435pt.
 
-d:/GitHub/PWS-latex/full.tex:407: FancyVerb Error:
+d:/GitHub/PWS-latex/full.tex:413: FancyVerb Error:
   Extraneous input `,' between \begin{minted}[<key=value>] and line end
 .
 \FV@Error ... {FancyVerb Error:
 \space \space #1
 }
                                                   
-l.407                tabsize=2]{js},
+l.413                tabsize=2]{js},
                                     
 This input will be discarded. Hit <return> to continue.
 
 
-d:/GitHub/PWS-latex/full.tex:422: Package minted Error: Cannot highlight code (minted executable is unavailable or disabled); attempting to typeset without highlighting.
+d:/GitHub/PWS-latex/full.tex:428: Package minted Error: Cannot highlight code (minted executable is unavailable or disabled); attempting to typeset without highlighting.
 
 See the minted package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.422 \end{minted}
+l.428 \end{minted}
                   
 (That was another \errmessage.)
 
 
-d:/GitHub/PWS-latex/full.tex:426: LaTeX Error: There's no line here to end.
+d:/GitHub/PWS-latex/full.tex:432: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.426 H
+l.432 H
        et probleem is dat de confidence bij elke individuele checkbox heel h...
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<./images/methoden/inscannen/sectie/checkbox/vraagnummer/section_selection_input.png, id=83, 55.20625pt x 140.525pt>
+<./images/methoden/inscannen/sectie/checkbox/vraagnummer/section_selection_input.png, id=86, 55.20625pt x 140.525pt>
 File: ./images/methoden/inscannen/sectie/checkbox/vraagnummer/section_selection_input.png Graphic file (type png)
 <use ./images/methoden/inscannen/sectie/checkbox/vraagnummer/section_selection_input.png>
-Package pdftex.def Info: ./images/methoden/inscannen/sectie/checkbox/vraagnummer/section_selection_input.png  used on input line 433.
+Package pdftex.def Info: ./images/methoden/inscannen/sectie/checkbox/vraagnummer/section_selection_input.png  used on input line 439.
 (pdftex.def)             Requested size: 75.85999pt x 193.10773pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 426--436
+Underfull \hbox (badness 10000) in paragraph at lines 432--442
 
  []
 
-<./images/methoden/inscannen/sectie/checkbox/vraagnummer/code-question-selector-format.png, id=84, 1041.8925pt x 662.475pt>
+<./images/methoden/inscannen/sectie/checkbox/vraagnummer/code-question-selector-format.png, id=87, 1041.8925pt x 662.475pt>
 File: ./images/methoden/inscannen/sectie/checkbox/vraagnummer/code-question-selector-format.png Graphic file (type png)
 <use ./images/methoden/inscannen/sectie/checkbox/vraagnummer/code-question-selector-format.png>
-Package pdftex.def Info: ./images/methoden/inscannen/sectie/checkbox/vraagnummer/code-question-selector-format.png  used on input line 439.
+Package pdftex.def Info: ./images/methoden/inscannen/sectie/checkbox/vraagnummer/code-question-selector-format.png  used on input line 445.
 (pdftex.def)             Requested size: 229.87749pt x 146.1594pt.
-d:/GitHub/PWS-latex/full.tex:445: Missing number, treated as zero.
+d:/GitHub/PWS-latex/full.tex:451: Missing number, treated as zero.
 <to be read again> 
                    \protect 
-l.445 \parindent \textit
+l.451 \parindent \textit
                         {You'll get a picture of checkboxes that a student u...
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-d:/GitHub/PWS-latex/full.tex:445: Illegal unit of measure (pt inserted).
+d:/GitHub/PWS-latex/full.tex:451: Illegal unit of measure (pt inserted).
 <to be read again> 
                    \protect 
-l.445 \parindent \textit
+l.451 \parindent \textit
                         {You'll get a picture of checkboxes that a student u...
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1591,52 +1598,52 @@ two letters. (See Chapter 27 of The TeXbook.)
 
 
 
-[14 <./images/methoden/inscannen/sectie/checkbox/vraagnummer/answer_section.png> <./images/methoden/inscannen/sectie/checkbox/vraagnummer/section_selection_input.png (PNG copy)> <./images/methoden/inscannen/sectie/checkbox/vraagnummer/code-question-selector-format.png>]
+[15 <./images/methoden/inscannen/sectie/checkbox/vraagnummer/answer_section.png> <./images/methoden/inscannen/sectie/checkbox/vraagnummer/section_selection_input.png (PNG copy)> <./images/methoden/inscannen/sectie/checkbox/vraagnummer/code-question-selector-format.png>]
 
-d:/GitHub/PWS-latex/full.tex:475: Package minted Error: Cannot highlight code (minted executable is unavailable or disabled); attempting to typeset without highlighting.
+d:/GitHub/PWS-latex/full.tex:481: Package minted Error: Cannot highlight code (minted executable is unavailable or disabled); attempting to typeset without highlighting.
 
 See the minted package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.475         \end{minted}
+l.481         \end{minted}
                           
 (That was another \errmessage.)
 
 
 
-[15]
+[16]
 
-d:/GitHub/PWS-latex/full.tex:537: Package minted Error: Cannot highlight code (minted executable is unavailable or disabled); attempting to typeset without highlighting.
+d:/GitHub/PWS-latex/full.tex:543: Package minted Error: Cannot highlight code (minted executable is unavailable or disabled); attempting to typeset without highlighting.
 
 See the minted package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.537 \end{minted}
+l.543 \end{minted}
                   
 (That was another \errmessage.)
 
 
 
-[16]
-Underfull \hbox (badness 10000) in paragraph at lines 547--548
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 552--553
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 553--556
+Underfull \hbox (badness 10000) in paragraph at lines 557--560
 
  []
 
 
-d:/GitHub/PWS-latex/full.tex:563: LaTeX Error: There's no line here to end.
+d:/GitHub/PWS-latex/full.tex:567: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.563 4
+l.567 4
         verschillende temperaturen getest:
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1644,117 +1651,87 @@ or  <return>  to continue without it.
 
 
 
-[17]
-<./images/methoden/inscannen/tekst/kort_leesbaar.png, id=100, 745.78625pt x 137.51375pt>
+[18]
+<./images/methoden/inscannen/tekst/kort_leesbaar.png, id=103, 745.78625pt x 137.51375pt>
 File: ./images/methoden/inscannen/tekst/kort_leesbaar.png Graphic file (type png)
 <use ./images/methoden/inscannen/tekst/kort_leesbaar.png>
-Package pdftex.def Info: ./images/methoden/inscannen/tekst/kort_leesbaar.png  used on input line 576.
+Package pdftex.def Info: ./images/methoden/inscannen/tekst/kort_leesbaar.png  used on input line 580.
 (pdftex.def)             Requested size: 229.87749pt x 42.3854pt.
-<./images/methoden/inscannen/tekst/kort_leesbaar_uitgekrast.png, id=101, 745.78625pt x 138.5175pt>
+<./images/methoden/inscannen/tekst/kort_leesbaar_uitgekrast.png, id=104, 745.78625pt x 138.5175pt>
 File: ./images/methoden/inscannen/tekst/kort_leesbaar_uitgekrast.png Graphic file (type png)
 <use ./images/methoden/inscannen/tekst/kort_leesbaar_uitgekrast.png>
-Package pdftex.def Info: ./images/methoden/inscannen/tekst/kort_leesbaar_uitgekrast.png  used on input line 584.
+Package pdftex.def Info: ./images/methoden/inscannen/tekst/kort_leesbaar_uitgekrast.png  used on input line 588.
 (pdftex.def)             Requested size: 229.87749pt x 42.6948pt.
-<./images/methoden/inscannen/tekst/kort_onleesbaar.png, id=102, 745.78625pt x 137.51375pt>
+<./images/methoden/inscannen/tekst/kort_onleesbaar.png, id=105, 745.78625pt x 137.51375pt>
 File: ./images/methoden/inscannen/tekst/kort_onleesbaar.png Graphic file (type png)
 <use ./images/methoden/inscannen/tekst/kort_onleesbaar.png>
-Package pdftex.def Info: ./images/methoden/inscannen/tekst/kort_onleesbaar.png  used on input line 593.
+Package pdftex.def Info: ./images/methoden/inscannen/tekst/kort_onleesbaar.png  used on input line 597.
 (pdftex.def)             Requested size: 229.87749pt x 42.3854pt.
-<./images/methoden/inscannen/tekst/slecht_leesbaar_pijlen.png, id=103, 745.78625pt x 136.51pt>
+<./images/methoden/inscannen/tekst/slecht_leesbaar_pijlen.png, id=106, 745.78625pt x 136.51pt>
 File: ./images/methoden/inscannen/tekst/slecht_leesbaar_pijlen.png Graphic file (type png)
 <use ./images/methoden/inscannen/tekst/slecht_leesbaar_pijlen.png>
-Package pdftex.def Info: ./images/methoden/inscannen/tekst/slecht_leesbaar_pijlen.png  used on input line 601.
+Package pdftex.def Info: ./images/methoden/inscannen/tekst/slecht_leesbaar_pijlen.png  used on input line 605.
 (pdftex.def)             Requested size: 229.87749pt x 42.07603pt.
-<./images/methoden/inscannen/tekst/gekreukeld_netjes.png, id=104, 1461.04608pt x 338.2534pt>
+<./images/methoden/inscannen/tekst/gekreukeld_netjes.png, id=107, 1461.04608pt x 338.2534pt>
 File: ./images/methoden/inscannen/tekst/gekreukeld_netjes.png Graphic file (type png)
 <use ./images/methoden/inscannen/tekst/gekreukeld_netjes.png>
-Package pdftex.def Info: ./images/methoden/inscannen/tekst/gekreukeld_netjes.png  used on input line 610.
+Package pdftex.def Info: ./images/methoden/inscannen/tekst/gekreukeld_netjes.png  used on input line 614.
 (pdftex.def)             Requested size: 229.87749pt x 53.21841pt.
-<./images/methoden/inscannen/tekst/gekreukeld_met_pijlen.png, id=105, 1563.11815pt x 343.46877pt>
+<./images/methoden/inscannen/tekst/gekreukeld_met_pijlen.png, id=108, 1563.11815pt x 343.46877pt>
 File: ./images/methoden/inscannen/tekst/gekreukeld_met_pijlen.png Graphic file (type png)
 <use ./images/methoden/inscannen/tekst/gekreukeld_met_pijlen.png>
-Package pdftex.def Info: ./images/methoden/inscannen/tekst/gekreukeld_met_pijlen.png  used on input line 617.
+Package pdftex.def Info: ./images/methoden/inscannen/tekst/gekreukeld_met_pijlen.png  used on input line 621.
 (pdftex.def)             Requested size: 229.87749pt x 50.51183pt.
 
 
-[18 <./images/methoden/inscannen/tekst/kort_leesbaar.png (PNG copy)> <./images/methoden/inscannen/tekst/kort_leesbaar_uitgekrast.png (PNG copy)> <./images/methoden/inscannen/tekst/kort_onleesbaar.png (PNG copy)> <./images/methoden/inscannen/tekst/slecht_leesbaar_pijlen.png (PNG copy)> <./images/methoden/inscannen/tekst/gekreukeld_netjes.png (PNG copy)> <./images/methoden/inscannen/tekst/gekreukeld_met_pijlen.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 627--628
+[19 <./images/methoden/inscannen/tekst/kort_leesbaar.png (PNG copy)> <./images/methoden/inscannen/tekst/kort_leesbaar_uitgekrast.png (PNG copy)> <./images/methoden/inscannen/tekst/kort_onleesbaar.png (PNG copy)> <./images/methoden/inscannen/tekst/slecht_leesbaar_pijlen.png (PNG copy)> <./images/methoden/inscannen/tekst/gekreukeld_netjes.png (PNG copy)> <./images/methoden/inscannen/tekst/gekreukeld_met_pijlen.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 631--632
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 629--630
+Underfull \hbox (badness 10000) in paragraph at lines 633--634
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 630--636
+Underfull \hbox (badness 10000) in paragraph at lines 634--640
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 636--638
+Underfull \hbox (badness 10000) in paragraph at lines 640--642
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 646--647
+Underfull \hbox (badness 10000) in paragraph at lines 650--651
 
- []
-
-
-
-[19]
-Overfull \hbox (8.56717pt too wide) in paragraph at lines 675--677
-[]\OT1/cmr/m/n/12 Dit geeft $\OT1/cmr/m/n/14.4 4[] \OMS/cmsy/m/n/14.4 ^^A \OT1/cmr/m/n/14.4 4[] \OMS/cmsy/m/n/14.4 ^^A \OT1/cmr/m/n/14.4 6[] \OMS/cmsy/m/n/14.4 ^^A \OT1/cmr/m/n/14.4 3[] \OMS/cmsy/m/n/14.4 ^^A \OT1/cmr/m/n/14.4 3[] \OMS/cmsy/m/n/14.4 ^^A
- []
-
-d:/GitHub/PWS-latex/full.tex:681: Missing number, treated as zero.
-<to be read again> 
-                   \relax 
-l.681 \begin{tabularx}{}
-                        {@{}ll}
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-d:/GitHub/PWS-latex/full.tex:681: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \relax 
-l.681 \begin{tabularx}{}
-                        {@{}ll}
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-
-Package tabularx Warning: X Columns too narrow (table too wide)
-(tabularx)                 on input line 698.
-
-
-Overfull \hbox (484.6322pt too wide) in alignment at lines 698--698
-[][] 
  []
 
 
 
 [20]
-d:/GitHub/PWS-latex/full.tex:702: Missing number, treated as zero.
+Overfull \hbox (8.56717pt too wide) in paragraph at lines 679--681
+[]\OT1/cmr/m/n/12 Dit geeft $\OT1/cmr/m/n/14.4 4[] \OMS/cmsy/m/n/14.4 ^^A \OT1/cmr/m/n/14.4 4[] \OMS/cmsy/m/n/14.4 ^^A \OT1/cmr/m/n/14.4 6[] \OMS/cmsy/m/n/14.4 ^^A \OT1/cmr/m/n/14.4 3[] \OMS/cmsy/m/n/14.4 ^^A \OT1/cmr/m/n/14.4 3[] \OMS/cmsy/m/n/14.4 ^^A
+ []
+
+
+
+[21]
+d:/GitHub/PWS-latex/full.tex:687: Missing number, treated as zero.
 <to be read again> 
                    \relax 
-l.702 \begin{tabularx}{}
+l.687 \begin{tabularx}{}
                         {@{}ll}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-d:/GitHub/PWS-latex/full.tex:702: Illegal unit of measure (pt inserted).
+d:/GitHub/PWS-latex/full.tex:687: Illegal unit of measure (pt inserted).
 <to be read again> 
                    \relax 
-l.702 \begin{tabularx}{}
+l.687 \begin{tabularx}{}
                         {@{}ll}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1765,95 +1742,130 @@ two letters. (See Chapter 27 of The TeXbook.)
 
 
 Package tabularx Warning: X Columns too narrow (table too wide)
-(tabularx)                 on input line 720.
+(tabularx)                 on input line 704.
 
 
-Overfull \hbox (505.81671pt too wide) in alignment at lines 720--720
+Overfull \hbox (484.6322pt too wide) in alignment at lines 704--704
 [][] 
  []
 
 
-Overfull \hbox (160.5841pt too wide) in alignment at lines 742--742
+
+[22]
+d:/GitHub/PWS-latex/full.tex:709: Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.709 \begin{tabularx}{}
+                        {@{}ll}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+d:/GitHub/PWS-latex/full.tex:709: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.709 \begin{tabularx}{}
+                        {@{}ll}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+Package tabularx Warning: X Columns too narrow (table too wide)
+(tabularx)                 on input line 727.
+
+
+Overfull \hbox (505.81671pt too wide) in alignment at lines 727--727
 [][] 
  []
 
 
-Overfull \hbox (36.79996pt too wide) in alignment at lines 757--759
+
+[23]
+Overfull \hbox (160.5841pt too wide) in alignment at lines 749--749
+[][] 
+ []
+
+
+Overfull \hbox (36.79996pt too wide) in alignment at lines 764--766
  [] [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 764--764
+Underfull \hbox (badness 10000) in paragraph at lines 771--771
 []|\OT1/cmr/m/n/12 kunnen fil-tr-eren op
  []
 
 
-Underfull \hbox (badness 5331) in paragraph at lines 797--797
+Underfull \hbox (badness 5331) in paragraph at lines 804--804
 \OT1/cmr/m/n/12 doel moet zijn van
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 806--807
+Underfull \hbox (badness 10000) in paragraph at lines 813--814
 []\OT1/cmr/m/n/12 Oneerlijke of bevooro-ordeelde beo-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 810--810
+Underfull \hbox (badness 10000) in paragraph at lines 817--817
 []|\OT1/cmr/m/n/12 weten waar we op
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 810--810
+Underfull \hbox (badness 10000) in paragraph at lines 817--817
 \OT1/cmr/m/n/12 moeten fo-cussen en
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 810--810
+Underfull \hbox (badness 10000) in paragraph at lines 817--817
 \OT1/cmr/m/n/12 wrten of bepaalde
  []
 
 
-Underfull \hbox (badness 3646) in paragraph at lines 810--810
+Underfull \hbox (badness 3646) in paragraph at lines 817--817
 \OT1/cmr/m/n/12 prob-le-men een grote
  []
 
 
-Underfull \hbox (badness 2393) in paragraph at lines 810--810
+Underfull \hbox (badness 2393) in paragraph at lines 817--817
 \OT1/cmr/m/n/12 ons pro-gramma voor
  []
 
 
-Underfull \hbox (badness 6125) in paragraph at lines 826--829
+Underfull \hbox (badness 6125) in paragraph at lines 833--836
 []\OT1/cmr/m/n/12 Een ob-jec-tief tar-get
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 826--829
+Underfull \hbox (badness 10000) in paragraph at lines 833--836
 \OT1/cmr/m/n/12 pro-gramma kun-nen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 826--829
+Underfull \hbox (badness 10000) in paragraph at lines 833--836
 \OT1/cmr/m/n/12 of te streng naar
  []
 
 
-Underfull \hbox (badness 1342) in paragraph at lines 836--836
+Underfull \hbox (badness 1342) in paragraph at lines 843--843
 \OT1/cmr/m/n/12 dat hier doen, miss-
  []
 
 
-Overfull \hbox (36.79996pt too wide) in alignment at lines 759--837
+Overfull \hbox (36.79996pt too wide) in alignment at lines 766--844
  [] [] [] 
  []
 
-[21] [22]
+[24] [25]
 
-[23]
-d:/GitHub/PWS-latex/full.tex:855: Misplaced alignment tab character &.
+[26]
+d:/GitHub/PWS-latex/full.tex:862: Misplaced alignment tab character &.
 <argument> ...7p \\ Hoogachtend,\\ \\ Joost Koch &
                                                    Jonathan Wijker \end {min...
-l.855 \end{minipage}}
+l.862 \end{minipage}}
                      
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1863,29 +1875,29 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 855--855
+Underfull \hbox (badness 10000) in paragraph at lines 862--862
 
  []
 
 
-Underfull \hbox (badness 6380) in paragraph at lines 855--855
+Underfull \hbox (badness 6380) in paragraph at lines 862--862
 \OT1/cmr/m/n/12 In het kader van ons profiel-w-erk-stuk,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 855--855
+Underfull \hbox (badness 10000) in paragraph at lines 862--862
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 855--855
+Underfull \hbox (badness 10000) in paragraph at lines 862--862
 
  []
 
-d:/GitHub/PWS-latex/full.tex:874: Misplaced alignment tab character &.
+d:/GitHub/PWS-latex/full.tex:881: Misplaced alignment tab character &.
 <argument> ...\\ \\ Hoogachtend,\\ \\ Joost Koch &
                                                    Jonathan Wijker \end {min...
-l.874 \end{minipage}}
+l.881 \end{minipage}}
                      
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1895,98 +1907,135 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 874--874
+Underfull \hbox (badness 10000) in paragraph at lines 881--881
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 874--874
+Underfull \hbox (badness 10000) in paragraph at lines 881--881
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 874--874
+Underfull \hbox (badness 10000) in paragraph at lines 881--881
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 874--874
+Underfull \hbox (badness 10000) in paragraph at lines 881--881
 
  []
 
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 841--881
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 848--888
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 841--881
+Underfull \hbox (badness 10000) in paragraph at lines 848--888
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 841--881
+Underfull \hbox (badness 10000) in paragraph at lines 848--888
 
  []
 
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 841--881
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 848--888
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 841--881
+Underfull \hbox (badness 10000) in paragraph at lines 848--888
 
  []
 
 
 
-[24]
-Underfull \hbox (badness 7963) in paragraph at lines 916--917
-[]$\OML/cmm/m/it/12 s$\OT1/cmr/m/n/12 : de stan-daard-de-vi-atie van de
+[27]
+d:/GitHub/PWS-latex/full.tex:894: Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.894 \begin{tabularx}{}
+                        {@{}ll}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+d:/GitHub/PWS-latex/full.tex:894: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.894 \begin{tabularx}{}
+                        {@{}ll}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+Package tabularx Warning: X Columns too narrow (table too wide)
+(tabularx)                 on input line 912.
+
+
+Overfull \hbox (407.01773pt too wide) in alignment at lines 912--912
+[][] 
  []
 
 
-Overfull \vbox (67.09573pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (67.09573pt too high) has occurred while \output is active []
-
- [25]
-
-[26]
-<./images/methoden/analyseren/ui/inlaad-pagina.png, id=142, 1445.4pt x 685.8122pt>
-File: ./images/methoden/analyseren/ui/inlaad-pagina.png Graphic file (type png)
-<use ./images/methoden/analyseren/ui/inlaad-pagina.png>
-Package pdftex.def Info: ./images/methoden/analyseren/ui/inlaad-pagina.png  used on input line 977.
-(pdftex.def)             Requested size: 229.87749pt x 109.06245pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 973--980
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 981--990
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 981--990
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 981--990
-
- []
-
-
-
-[27 <./images/methoden/analyseren/ui/inlaad-pagina.png>]
 
 [28]
 
 [29]
+
+[30]
+Underfull \hbox (badness 7963) in paragraph at lines 943--944
+[]$\OML/cmm/m/it/12 s$\OT1/cmr/m/n/12 : de stan-daard-de-vi-atie van de
+ []
+
+[31]
+
+[32]
+<./images/methoden/analyseren/ui/inlaad-pagina.png, id=161, 1445.4pt x 685.8122pt>
+File: ./images/methoden/analyseren/ui/inlaad-pagina.png Graphic file (type png)
+<use ./images/methoden/analyseren/ui/inlaad-pagina.png>
+Package pdftex.def Info: ./images/methoden/analyseren/ui/inlaad-pagina.png  used on input line 1003.
+(pdftex.def)             Requested size: 229.87749pt x 109.06245pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 999--1006
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1007--1016
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1007--1016
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1007--1016
+
+ []
+
+
+
+[33 <./images/methoden/analyseren/ui/inlaad-pagina.png>]
+
+[34]
+
+[35]
+
+[36]
+
+[37]
+
+[38]
 
 Package longtable Warning: Table widths have changed. Rerun LaTeX.
 
@@ -2015,20 +2064,20 @@ Package logreq Info: Writing requests to 'full.run.xml'.
 \openout1 = `full.run.xml'.
 
  )
-(\end occurred when \ifx on line 407 was incomplete)
-(\end occurred when \ifx on line 375 was incomplete) 
+(\end occurred when \ifx on line 413 was incomplete)
+(\end occurred when \ifx on line 381 was incomplete) 
 Here is how much of TeX's memory you used:
  42116 strings out of 473681
  1019901 string characters out of 5719194
- 2114623 words of memory out of 5000000
+ 2112623 words of memory out of 5000000
  64597 multiletter control sequences out of 15000+600000
  566593 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,18n,133p,1201b,5183s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on full.pdf (29 pages, 21602656 bytes).
+Output written on full.pdf (38 pages, 21608497 bytes).
 PDF statistics:
- 227 PDF objects out of 1000 (max. 8388607)
+ 258 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  158 words of extra memory for PDF output out of 10000 (max. 10000000)
 
