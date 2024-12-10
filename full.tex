@@ -391,7 +391,8 @@ Om dit in te scannen zijn er 2 dingen nodig: \\
     \end{minted}
     \caption{Vierkant detectie output} 
     \label{json-example}
-    \end{listing}\\ 
+    \end{listing}
+
 \end{multicols}
 
 \pagebreak
@@ -428,7 +429,8 @@ Gaf het volgende resultaat:
 \end{minted}
 \caption{Vierkant detectie output} 
 \label{json-example}
-\end{listing}\\ 
+\end{listing}
+
 Het probleem is dat de confidence bij elke individuele checkbox heel hoog is (\>0.99), ook al staat er alleen een klein lijntje in de checkbox. Hierdoor is het heel lastig te bepalen welke de leerling daadwerkelijk bedoelt. \\
 \\
 Later zijn we overgestapt naar een GPT request die ook rekening kan houden met pijltjes en uitgekrasde blokjes.\\
@@ -447,8 +449,8 @@ Input:
     \label{fig:enter-label}
 \end{figure}
 
-Prompt:
-\parindent \textit{You'll get a picture of checkboxes that a student used to select an answer
+Prompt:\\
+\textit{You'll get a picture of checkboxes that a student used to select an answer
     your job is to see which check box is most likly the one to be ment to be checked
     only 1 can be chosen
     pick zero if no boxes are checked 
@@ -678,6 +680,28 @@ In de volgende combinaties
 \vspace{3em}
 Dit geeft \large$4_{\textsc{modellen}} \cdot 4_{\textsc{temperaturen}}  \cdot 6_{\textsc{antwoorden}} \cdot 3_{\textsc{prompts}}  \cdot 3_{\textsc{herhalingen per request}}  \cdot 6_{\textsc{context addities}}= 5184 \textsc{ Requests}$ \normalsize
 % TODO: uitleg over kosten en hoeveel requests per seconde enz
+\vspace{l}
+Om te weten welk resultaat een correct resultaat geeft wordt voor elk resultaat een score berekend. Hoe lager de score hoe "beter" het resultaat. Deze score hangt bij ons af van twee dingen. \\
+\textbf{1. Aantal afwijkingen van bedoelde geschreven tekst.}\\
+\textbf{2. Aantal niet correct Nederlandse woorden}\\
+\hspace{3em}\textit{Een leerling heeft vermoedelijke een Nederlands antwoord geschreven, dus een Nederlands resultaat is beter. Er wordt ook rekening gehouden met de betekenis van het resultaat vs het beoogde resultaat.}\\
+\\
+\begin{minipage}{0.5\linewidth}
+Voor het berekenen van de score wordt eerst de BLEU score gebruikt die een database heeft van alle Nederlandse woorden en die de betekenis van een zin kan begrijpen. Hij geeft een score dichter bij als twee zinnen qua betekenis en Nederlands meer op elkaar lijken. \\
+\\
+Daarnaast wordt gekeken naar de veranderingen van de reference naar de gegenereerde tekst. Hoe langer de fout hoe groter de aftrek. \\
+\\
+Daarna krijgt elke waarde een factor die is bepaald door te testen met een aantal tests, waarvan bekend is wat de gewensde volgorde van \"op elkaar lijken\" is. 
+Zie de appendix voor tests.
+\end{minipage}%
+\begin{minipage}{0.5\linewidth}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{./images/methoden/inscannen/score/code-score.png}
+    \caption{Score berekenen}
+    \label{fig:enter-label}
+\end{figure}
+\end{minipage}
 
 %Fase 3 bestand
 %TODO: bronnen
@@ -706,7 +730,7 @@ Dit geeft \large$4_{\textsc{modellen}} \cdot 4_{\textsc{temperaturen}}  \cdot 6_
 \pagebreak
 
 \subsubsection{Analyseren}
-\begin{tabularx}{}{@{}ll}
+\begin{tabularx}{\linewidth}{@{}ll}
     \textbf{Eigenaar: } & \textit{Joost} \\
     \textbf{Doel(en): } & 
         \makecell[tl]{
@@ -726,6 +750,7 @@ Dit geeft \large$4_{\textsc{modellen}} \cdot 4_{\textsc{temperaturen}}  \cdot 6_
     \parbox[t]{3cm}{\raggedright \textbf{Geschatte  tijdskosten:} } & 15 uur \\
 \end{tabularx}
 % TODO: beslissen of dit in ons PWS moet of dit gedeelte uitbreiden
+\\
 Bij het inscannen gaan we onderzoek doen naar welke statistische berekeningen nodig zijn voor correct analyse. 
 \pagebreak
 
@@ -891,7 +916,7 @@ Voor het analyseren gaan we Google Sheet pivot tables gebruiken om snel verbande
 \pagebreak
 
 \subsubsection{Toets}
-\begin{tabularx}{}{@{}ll}
+\begin{tabularx}{0.5\linewidth}{ll}
     \textbf{Eigenaar: } & \textit{Jonathan} \\
     \textbf{Doel(en): } & 
         \makecell[tl]{
@@ -913,6 +938,117 @@ Voor het analyseren gaan we Google Sheet pivot tables gebruiken om snel verbande
 \pagebreak
 \section{Resultaten}
 \subsection{Inscannen}
+
+
+\noindent\begin{table}[h]\begin{tabularx}{\textwidth}{X *2{r}}
+    \toprule
+    \multicolumn{1}{c}{\textbf{Model}} & \multicolumn{1}{c}{\textbf{\#}} \\  % Changed
+    \midrule
+    gemini-1.5-flash-8b & 1125 \\
+    gemini-1.5-pro-002 & 787 \\
+    gpt-4o & 1029 \\
+    gpt-4o-mini & 1167 \\
+    \midrule
+    \textbf{Grand Total} & \textbf{4108} \\
+    \bottomrule
+\end{tabularx}%
+\end{table}
+
+\noindent\begin{table}[h]\begin{tabularx}{\textwidth}{X *4{r}}
+\toprule
+\multicolumn{1}{c}{\textbf{Model}} & \multicolumn{1}{c}{\textbf{avg cor score}} & \multicolumn{1}{c}{\textbf{stdev cor score}} & \multicolumn{1}{c}{\textbf{avg change count}} \\
+\midrule
+gemini-1.5-pro-002 & 0.484 & 0.491 & 3.085 \\
+gpt-4o-mini & 0.591 & 1.668 & 5.509 \\
+gpt-4o & 0.881 & 2.639 & 4.022 \\
+gemini-1.5-flash-8b & 1.289 & 2.099 & 6.251 \\
+\midrule
+\textbf{Grand Total} & \textbf{0.834} & \textbf{1.970} & \textbf{4.875} \\
+\bottomrule
+\end{tabularx}%
+\end{table}
+
+
+\noindent\begin{table}[h]\begin{tabularx}{\textwidth}{X *4{r}}
+\toprule
+\multicolumn{1}{c}{\textbf{Image}} & \multicolumn{1}{c}{\textbf{avg cor score}} & \multicolumn{1}{c}{\textbf{stdev cor score}} & \multicolumn{1}{c}{\textbf{avg change count}} \\
+\midrule
+kort\_leesbaar & 0.197 & 1.234 & 1.797 \\
+kort\_leesbaar\_uitgekrast & 0.287 & 0.688 & 1.903 \\
+gekreukeld\_met\_pijlen & 1.111 & 0.163 & 8.740 \\
+slecht\_leesbaar\_pijlen & 1.341 & 1.172 & 10.311 \\
+kort\_onleesbaar & 1.496 & 3.629 & 4.267 \\
+\midrule
+\textbf{Grand Total} & \textbf{0.834} & \textbf{1.970} & \textbf{4.875} \\
+\bottomrule
+\end{tabularx}%
+\end{table}
+
+
+
+
+
+\noindent\begin{table}[h]\begin{tabularx}{\textwidth}{X *3{r}}
+\toprule
+\multicolumn{1}{c}{\textbf{Base Command}} & \multicolumn{1}{c}{\textbf{avg cor score}} & \multicolumn{1}{c}{\textbf{stdev cor score}} \\
+\midrule
+lange uitleg bij elk veld, zonder context & 0.752 & 1.520 \\
+huidige opdracht met uitleg bij elk veld & 0.817 & 1.755 \\
+de makkelijkste opdracht zonder extra uitleg & 0.920 & 2.443 \\
+\midrule
+\textbf{Grand Total} & \textbf{0.834} & \textbf{1.970} \\
+\bottomrule
+\end{tabularx}%
+\end{table}
+
+
+\noindent\begin{table}[h]\begin{tabularx}{\textwidth}{X *4{r}}
+\toprule
+\multicolumn{1}{c}{\textbf{Addition}} & \multicolumn{1}{c}{\textbf{avg raw score}} & \multicolumn{1}{c}{\textbf{stdev  raw  score}} & \multicolumn{1}{c}{\textbf{avg cor score}} \\
+\midrule
+antwoordmodel bij vraag & 0.850 & 2.108 & 0.692 \\
+toets & 1.569 & 17.000 & 0.709 \\
+ & 0.812 & 1.481 & 0.740 \\
+stof-antwoordmodel bij vraag-specifieke vraag vraag & 0.777 & 0.858 & 0.791 \\
+stof & 0.941 & 1.575 & 0.798 \\
+antwoordmodel bij vraag-specifieke vraag vraag & 0.845 & 1.640 & 0.848 \\
+stof-toets-antwoordmodel & 1.146 & 2.762 & 1.276 \\
+\midrule
+\textbf{Grand Total} & \textbf{0.991} & \textbf{6.672} & \textbf{0.834} \\
+\bottomrule
+\end{tabularx}%
+\end{table}
+
+
+\noindent\begin{table}[h]\begin{tabularx}{\textwidth}{X *3{r}}
+\toprule
+\multicolumn{1}{c}{\textbf{Model}} & \multicolumn{1}{c}{\textbf{gem in s}} & \multicolumn{1}{c}{\textbf{stdev}} \\
+\midrule
+gemini-1.5-flash-8b & 0.00245 & 0.00125 \\
+gemini-1.5-pro-002 & 0.00466 & 0.00914 \\
+gpt-4o-mini & 5.47 & 4.51 \\
+gpt-4o & 7.61 & 7.53 \\
+\midrule
+\textbf{Grand Total} & 3.46 & 5.57 \\
+\bottomrule
+\end{tabularx}%
+\end{table}
+
+\noindent\begin{table}[h]
+\begin{tabularx}{\textwidth}{X *{2}{r}}
+\toprule
+\multicolumn{1}{c}{\textbf{Temperature}} & \multicolumn{1}{c}{\textbf{Avg. Corrected Certainty}} & \multicolumn{1}{c}{\textbf{Avg. Corrected Student Handwriting}} \\
+\midrule
+0   & 90.94 & 81.93 \\
+0.5 & 90.78 & 81.67 \\
+1   & 89.86 & 81.53 \\
+1.5 & 89.84 & 81.39 \\
+\midrule
+\textbf{Grand Total} & 90.40 & 81.65 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
 \pagebreak
 \subsection{Nakijken}
 \pagebreak
@@ -1020,7 +1156,7 @@ Hier kan ook op vraagniveau een scherm zijn om vragen eruit te gooien of half te
 
 \begin{table}[h!]
 \centering
-\resizebox{\textwidth}{!}{%
+
 \begin{tabular}{lcccc}
 \toprule
 \textbf{Hoeveel jaar bent u al docent?} & 
@@ -1037,14 +1173,15 @@ Minder dan één jaar & 1 & 1 & 0 & 2  \\
 \textbf{Grand Total} & \textbf{23} & \textbf{25} & \textbf{1} & \textbf{49} \\
 \bottomrule
 \end{tabular}%
-}
+
+
 \caption{Samenvatting van bekendheid met generatieve AI onder docenten.}
 \label{tab:docenten_technologie}
 \end{table}
 
 \begin{table}[h!]
 \centering
-\resizebox{\textwidth}{!}{%
+\resizebox{\linewidth}{!}{%
 \begin{tabular}{lcccc}
 \toprule
 \textbf{Hoeveel jaar bent u docent?} & 
@@ -1067,7 +1204,7 @@ Minder dan één jaar & 50.00 & 50.00 & 0.00 & 100.00 \\
 \end{table}
 \begin{table}[h!]
 \centering
-\resizebox{\textwidth}{!}{%
+\resizebox{\linewidth}{!}{%
 \begin{tabular}{lcc}
 \toprule
 \textbf{Hoeveel jaar bent u al docent?} & 
@@ -1087,6 +1224,32 @@ Minder dan één jaar & 7.500 & 2 \\
 \label{tab:gemiddelde_twijfel}
 \end{table}
 
+
+\begin{minipage}{0.35\linewidth}
+
+\end{minipage}%
+\begin{minipage}{0.65\linewidth}
+
+
+\end{minipage}
+
+
+\begin{minipage}{0.35\linewidth}
+
+\end{minipage}%
+\begin{minipage}{0.65\linewidth}
+
+
+\end{minipage}
+
+
+\begin{minipage}{0.35\linewidth}
+
+\end{minipage}%
+\begin{minipage}{0.65\linewidth}
+
+
+\end{minipage}
 
 \pagebreak
 \subsection{Toets}
@@ -1130,5 +1293,69 @@ Minder dan één jaar & 7.500 & 2 \\
 \section{Samenvatting onderzoek}
 
 \section{Referenties}
-\section{Bijlagen}
+\section{Appendix} %TODO; appendix of bijlagen
+
+\Large Methode - Inscannen - Score
+\large Cruijff
+\small
+\begin{longtable}{|p{0.20\textwidth}|p{0.20\textwidth}|p{0.15\textwidth}|p{0.08\textwidth}|p{0.15\textwidth}|p{0.06\textwidth}|p{0.06\textwidth}|}
+\hline
+\textbf{Quote} & \textbf{Quote Changed} & \textbf{Person} & \textbf{Year} & \textbf{Test} & \textbf{Score} & \textbf{Change Count} \\
+\hline
+\endhead
+%
+\endfoot
+%
+Je moet schieten, anders kun je niet scoren. & Je moet schieten, nders kun je niet scoren. & Johan Cruijff & 1980 & enkele letterverandering & 0.1937 & 1 \\
+\hline
+Je moet schieten, anders kun je niet scoren. & Je moet schoten, anders kun je niet scoren. & Johan Cruijff & 1980 & enkele woordverandering, geen betekenisverandering & 0.2146 & 1 \\
+\hline
+Je moet schieten, anders kun je niet scoren. & Je moet schoten, anders kun je niet scoren. & Johan Cruijff & 1980 & woordweglating & 0.2146 & 1 \\
+\hline
+Je moet schieten, anders kun je niet scoren. & Je moet roeien, anders kun je niet scoren. & Johan Cruijff & 1980 & enkele woordverandering, wel betekenisverandering & 0.3282 & 2 \\
+\hline
+Je moet schieten, anders kun je niet scoren. & Je moet schoten,. & Johan Cruijff & 1980 & zinsdeelweglating & 1.1590 & 2 \\
+\hline
+Je moet schieten, anders kun je niet scoren. &  & Johan Cruijff & 1980 & tekstweglating & 1.5 & 1 \\
+\hline
+\end{longtable}
+
+
+\large Diverse test quotes
+\small
+\begin{longtable}{|p{0.2\textwidth}|p{0.2\textwidth}|p{0.15\textwidth}|p{0.08\textwidth}|p{0.15\textwidth}|p{0.08\textwidth}|p{0.06\textwidth}|}
+\hline
+\textbf{Quote} & \textbf{Quote Changed} & \textbf{Person} & \textbf{Year} & \textbf{Test} & \textbf{Score} & \textbf{Change Count} \\
+\hline
+\endhead
+%
+\endfoot
+%
+Ik heb een heel zwaar leven. & Ik heb een heel zwaar leven. & Brigitte Kaandorp & 2009 & nulmeting & 0 & 0 \\
+\hline
+Een dag niet gelachen is een dag niet geleefd. & Een dag niet gelachen is een dag niet geleeft. & Charlie Chaplin & 1930 & enkele letterverandering , geen betekenisverandering & 0.1522 & 1 \\
+\hline
+Een dag niet gelachen is een dag niet geleefd. & Een  niet gelachen is een dag niet geleefd. & Charlie Chaplin & 1930 & woordweglating & 0.1673 & 1 \\
+\hline
+Rrrrrr, hah, is gewoon Boef man. Ha, jij bent vies maar ik doe gemener. In de club, kom je moeder tegen. En ik wil snel weg want we moeten wegen. En je klant is geholpen, je moet vroeger wezen. Ik was alles kwijt, maar floes herenigd. Voor me zondes af en toe gebeden. Ik ga uit eten voor een goede prijs. Ik ben een uitgever, ze boeken mij. Van alarm voorzien aan de achterkant. Dus ze komen via voor, maar wat dacht je dan? & Rrrrrr, hah, is gewoon Boef man.test, jij bent vies maar ik doe gemener. In de club, komtest moeder tegen. En ik wil snel weg wantest we moeten wegen. En je klant is geholpen, je moetest vroeger wezen. Ik was alles kwijt, maar floetest herenigd. Voor me zondes af en toe gebeden. Ik gtest uit eten voor een goede prijs. Ik ben een uitgever, ze boeken mij. Van alarm voortest aan de achterkant. Dus ze komen via voor, maar wat dacht je dan? & Boef & 2017 & random toevoeging woorden & 0.1928 & 7 \\
+\hline
+Ik begrijp niet waarom u hier zo negatief en vervelend over doet. (...) Laten we blij zijn met elkaar! Laten wij optimistisch zijn! Laten we zeggen: Nederland kan het weer! Die VOC-mentaliteit, over grenzen heen kijken, dynamiek! Toch? & Ik begrijp niet waarom u hier zo negatief en vervelend over doet. (...) Laten we blij zijn met elkaar! Laten wij optimistisch zijn! Laten we zeggen: Nederland kan het weer! Die & Jan-Peter Balkenende & 2006 & weglating einde van grotere tekst & 0.3767 & 1 \\
+\hline
+Ik heb nooit last van hoogtevrees, wel van dieptevrees. & Ik hebt ooit last van hoogtevrees, well vann dieptevrees. & Youp van 't Hek & 1998 & enkele letterweglating, betekenisverandering & 0.4277 & 4 \\
+\hline
+Praat Nederlands met me. Even Nederlands met me. Mijn gevoel zegt mij dat wij vanavond samen kijken. Naar de Champs-Élysées en naar de Notre Dame en naar de Seine. En daarna samen op La Tour Eiffel & Praat Nedertands met me. Even Neterlands met me. Mijn tevoet zegt mij dat wij vanatond samet kitken. Naar de Champs-Éltsées en naar de Notre Dameten naar detSeine. En daarta samet op La Tour Etffel & Kenny B & 2015 & random lettermutaties & 0.4820 & 13 \\
+\hline
+Als het niet kan zoals het moet, dan moet het maar zoals het kan. & Als het niet kan zoals  het maar zoals het kan. & Dolf Jansen & 2005 &  weglating in midden & 0.4901 & 1 \\
+\hline
+Ik ben niet dik, ik ben een ruimtewonder. & Ik bn nit dik, ik bn n ruimtwondr. & Brigitte Kaandorp & 2003 & letter e weggelaten & 0.6707 & 6 \\
+\hline
+Ik geloof in God, behalve als ik vis. & Ik geloof in God, be & Herman Brood & 1995 & weglating aan einde & 0.7644 & 1 \\
+\hline
+Ik ben niet gek, ik ben een vliegtuig. & Ik ben niet , ik  een . & Supergrover & 1974 & dubbelle woordweglating & 0.8947 & 3 \\
+\hline
+\end{longtable}
+\normalsize
+
+
+
 \end{document}

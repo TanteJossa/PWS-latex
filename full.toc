@@ -37,4 +37,4 @@
 \contentsline {subsection}{\numberline {B}vervolgonderzoek}{38}{}%
 \contentsline {section}{\numberline {7}Samenvatting onderzoek}{38}{}%
 \contentsline {section}{\numberline {8}Referenties}{38}{}%
-\contentsline {section}{\numberline {9}Bijlagen}{38}{}%
+\contentsline {section}{\numberline {9}Appendix}{38}{}%
