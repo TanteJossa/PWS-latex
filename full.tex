@@ -3,6 +3,9 @@
 \usepackage{graphicx} % Required for inserting images
 \usepackage{titlesec} % Used for formatting Table of Contents
 \usepackage{tocloft} % Used for formatting Table of Contents
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
 \usepackage[a4paper, total={6.5in, 9.6in}]{geometry}
 \usepackage{pgf-pie}  
 \usepackage{booktabs}
@@ -20,7 +23,9 @@
 \usepackage{float}
 \usepackage{subfig}
 \usepackage{listings}
+% \usepackage{minted}
 \usepackage{minted}
+
 
 % makecell
 \usepackage{makecell}
@@ -32,9 +37,17 @@
 \usepackage{tikz}
 \usetikzlibrary{calc}
 \usetikzlibrary{arrows}
+\usetikzlibrary{shapes.geometric, arrows}
 \usepackage{pgfplots}
 
 \addbibresource{references.bib}
+
+\usepackage{hyperref}
+\hypersetup{
+    % colorlinks=true, %set true if you want colored links
+    linktoc=all,     %set to all if you want both sections and subsections linked
+    % linkcolor=blue,  %choose some color if you want links to stand out
+}
 
 % Formatting Headings 
 \titlespacing*{\subsection}{2em}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
@@ -74,9 +87,8 @@
 \author{J. K. Wijker & J. K. Koch}
 
 
-\raggedbottom
+\raggedbottom%
 \begin{document}
-
 \maketitle
 \mbox{}
 \vfill
@@ -86,7 +98,8 @@
 \end{flushright}
 \thispagestyle{empty}
 \pagebreak
-\tableofcontents
+
+{\small\tableofcontents\normalsize}
 
 \pagebreak
 \section{Introductie}
@@ -143,7 +156,7 @@ voorspelling per vraag:
 \begin{enumerate}
 \item nvt
 \item wij denken dat lesgeefervaring weinig uitmaakt in deze kwestie
-\item ja wel eens van gehoord (68%) en goed op de hoogte (30%)
+\item ja wel eens van gehoord \(68\%\) en goed op de hoogte \(30\%\)
 \item tijdbesparing gaat een belangrijke zijn en er zullen ook docenten zijn (die vermoedelijk niet bekend zijn met ai) die het nooit zullen gebruiken
 \item technische fouten en privacy zullen een grote rol spelen
 \item we denken dat de talen secties pessimistischer in het gebruik van ai zullen zijn dan de exacte vakken
@@ -166,13 +179,60 @@ Ook moeten we, omdat we ons PWS bij het vak scheikunde doen, een proefje uitvoer
 \\\\
 Tijdens ons onderzoek hebben we naast een aantal bronnen ook een interview gedaan bij Daniel Marcus, een co-eigenaar van het bedrijf LevelUp Group. Een bedrijf die reclame analyse doet en gebruikt maakt van AI. In de methodes zullen we het noemen als er iets uit dat interview naar boven is gekomen wat handig bleek te zijn.
 \\\\
-Voor elke onderdeel hebben we een "hoofdverantwoordelijke" aangesteld, omdat het extra tijd kost om met zijn tweeën tegelijkertijd aan hetzelfde code project te werken. Als het nodig was hebben we elkaar natuurlijk wel geholpen in elkaars onderdelen.
+Voor elke onderdeel hebben we een "hoofdverantwoordelijke" aangesteld, omdat het extra tijd kost om met zijn tweeën tegelijkertijd aan hetzelfde code project te werken. Als het nodig was hebben we elkaar natuurlijk wel geholpen in elkaars onderdelen. 
+\\\\
+Hieronder kan je een diagram zien die we in onze motivatiebrief hebben gebruikt om te laten zien hoe we ons programma modulair willen opbouwen , welke data waar nodig is en welke verwachte outputs er nodig zijn.
 \end{multicols}
+
+% Define block styles
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black, fill=red!30]
+\tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=blue!30]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+
+\begin{center}
+\begin{tikzpicture}[node distance=2cm]
+
+% Nodes
+\node (textrecognition) [process] {Text herkenning};
+\node (examdata) [process, right of=textrecognition, xshift=7cm, yshift=2cm] {Toets en stof analysator};
+\node (gradingmodule) [process, below of=examdata] {Nakijk Module};
+\node (student) [process, below of=gradingmodule, yshift=-0.5cm, xshift=-3cm] {Leerling};
+\node (teacher_program) [process, below of=gradingmodule, yshift=-0.5cm, xshift=3cm] {Toets Analyse Programma};
+
+\node (teacher) [process, below of=teacher_program, yshift=-0.5cm] {Docent};
+
+% Labels
+\node (photos) [above of=textrecognition, yshift=0.5cm, text width=5cm] {foto's van toetsen van leerlingen};
+\node (lessoncontent) [above of=examdata, yshift=0.5cm, text width=3cm] {Lesstof, toetsvragen en toetsantwoorden};
+
+\node (test_data) [above of=gradingmodule, xshift=2.2cm, yshift=-1cm, text width=4cm] {Gestructureerde stof en toets-data};
+
+\node (student_data) [right of=textrecognition, yshift=1cm, xshift=2cm, text width=4.5cm] {Gestructureerde toetsdata van leerlingen };
+
+\node (student_result) [above of=student, xshift=-2cm, yshift=-1cm, text width=4.2cm] {Score en feedback per toets};
+
+\node (student_group_result) [above of=teacher_program, xshift=2.2cm, yshift=-1cm, text width=4.2cm] {Groeps-resultaat};
+
+% Arrows (horizontal/vertical only)
+\draw [arrow] (photos.south) -- (textrecognition.north);
+\draw [arrow] (lessoncontent.south) -- (examdata.north);
+\draw [arrow] (textrecognition.east) -- (gradingmodule.west);
+\draw [arrow] (examdata.south) -- (gradingmodule.north);
+\draw [arrow] (gradingmodule.south) -- ++(-3,0) -- (student.north);
+\draw [arrow] (gradingmodule.south) -- ++(3,0) -- (teacher_program.north);
+\draw [arrow] (teacher_program.south) -- (teacher.north);
+
+% Border
+% \draw [thick, rounded corners] (-4,-11) rectangle (9,3);
+
+\end{tikzpicture}
+\end{center}
+
 
 \subsection{Methode}
 
 \subsubsection{Inscannen}
-\begin{tabularx}{}{@{}ll}
+\begin{tabularx}{\linewidth}{@{}ll}
     \textbf{Eigenaar: } & \textit{Joost} \\
     \textbf{Doel(en): } & 
         \makecell[tl]{
@@ -184,7 +244,10 @@ Voor elke onderdeel hebben we een "hoofdverantwoordelijke" aangesteld, omdat het
         }\\
     \textbf{Kader(s): } & 
         \makecell[tl]{
-            $\bullet$ TODO
+            $\bullet$ Tekstherkenning\\
+            $\bullet$ Image manipulatie met code\\
+            $\bullet$ API management\\
+            $\bullet$ Modulair opbouwen systeem en unit tests\\
         }\\
     \parbox[t]{3cm}{\raggedright \textbf{Geschatte  tijdskosten:} } & 30 uur \\
 \end{tabularx}
@@ -310,7 +373,7 @@ Dus uiteindelijk hebben we besloten over te stappen naar een voorgeprint toetsbl
 \end{multicols} 
 \pagebreak
 
-\\
+
 \begin{multicols}{2} 
 \textbf{Checkbox}
 We zijn gestart met deze versie intwikkelen na het interview met Daniel Markus waarin naar voren kwam dat het te lastig is om de vraagnummers uit de handschriften van leerlingen te halen in de kantlijn en daar ook de sectieafbakening uit te halen. Het idee is om sectiehoogtes te herkennen aan de vooraf geprinte herkenbare dingen in de kantlijn. 
@@ -565,7 +628,7 @@ We hebben 4 modellen getest:
     \item \textbf{OpenAI} gpt-4o
     \item \textbf{OpenAI} gpt-4o-mini
 \end{itemize}
-\\
+
 4 verschillende temperaturen getest:
 \begin{itemize}
     \item 0
@@ -680,7 +743,7 @@ In de volgende combinaties
 \vspace{3em}
 Dit geeft \large$4_{\textsc{modellen}} \cdot 4_{\textsc{temperaturen}}  \cdot 6_{\textsc{antwoorden}} \cdot 3_{\textsc{prompts}}  \cdot 3_{\textsc{herhalingen per request}}  \cdot 6_{\textsc{context addities}}= 5184 \textsc{ Requests}$ \normalsize
 % TODO: uitleg over kosten en hoeveel requests per seconde enz
-\vspace{l}
+% \vspace{lem}
 Om te weten welk resultaat een correct resultaat geeft wordt voor elk resultaat een score berekend. Hoe lager de score hoe "beter" het resultaat. Deze score hangt bij ons af van twee dingen. \\
 \textbf{1. Aantal afwijkingen van bedoelde geschreven tekst.}\\
 \textbf{2. Aantal niet correct Nederlandse woorden}\\
@@ -708,7 +771,7 @@ Zie de appendix voor tests.
 \pagebreak
 
 \subsubsection{Nakijken}
-\begin{tabularx}{}{@{}ll}
+\begin{tabularx}{\linewidth}{ll}
     \textbf{Eigenaar: } & \textit{Jonathan} \\
     \textbf{Doel(en): } & 
         \makecell[tl]{
@@ -770,7 +833,7 @@ Bij het inscannen gaan we onderzoek doen naar welke statistische berekeningen no
         \makecell[tl]{
             $\bullet$ TODO
         }\\
-    \parbox[t]{3cm}{\raggedright \textbf{Geschatte  tijdskosten:} } & 20 uur \\
+    \parbox[t]{3cm}{\raggedright\textbf{Geschatte  tijdskosten:} } & 20 uur \\
 \end{tabularx}
 \begin{multicols}{2}
 Om te testen of docenten uberhaupt open staan voor een ai model hebben we een enquête verstuurd naar alle docenten van Het Amsterdams Lyceum. 
@@ -883,7 +946,7 @@ https://forms.office.com/e/j5cYFrAy7p
 \\
 Hoogachtend,\\
 \\
-Joost Koch & Jonathan Wijker
+Joost Koch \& Jonathan Wijker
 \end{minipage}}
 Op dit mailtje hebben we 22 reacties gekregen. Dat vonden wij redelijk tegenvallen.
 Een rede voor deze teleurstellende respons zou kunnen zijn dat we de mail verstuurd hebben op donderdag 17 oktober. Dat was de donderdag voor de activiteitenweek, waardoor docenten met uitzicht op een vakantie misschien geen zin hadden in het invullen van een PWS-enquête.\\
@@ -902,7 +965,7 @@ https://forms.office.com/e/j5cYFrAy7p\\
 \\
 Hoogachtend,\\
  \\
-Joost Koch & Jonathan Wijker
+Joost Koch \& Jonathan Wijker
 \end{minipage}}
 Dit leverde 28 extra responses op, waardoor we op een totaal van 50 zitten. Dit is statistisch gezien goed genoeg om iets over de meningen van de docenten te zeggen op Het Amsterdams Lyceum. \\
 % TODO: deze claim over statistiek met bron
@@ -940,9 +1003,9 @@ Voor het analyseren gaan we Google Sheet pivot tables gebruiken om snel verbande
 \subsection{Inscannen}
 
 
-\url{https://docs.google.com/spreadsheets/d/1wbHiG81i-UJ18s6gP3i_WtsPD-FBQTqg7AwNjN8Rm2g}
+\href{https://docs.google.com/spreadsheets/d/1wbHiG81i-UJ18s6gP3i_WtsPD-FBQTqg7AwNjN8Rm2g}{Resultaten}
 
-\noindent\begin{table}[h]\begin{tabularx}{\textwidth}{X *2{r}}
+\noindent\begin{table}[H]\begin{tabularx}{\textwidth}{X *2{r}}
     \toprule
     \multicolumn{1}{c}{\textbf{Model}} & \multicolumn{1}{c}{\textbf{\#}} \\  % Changed
     \midrule
@@ -956,7 +1019,7 @@ Voor het analyseren gaan we Google Sheet pivot tables gebruiken om snel verbande
 \end{tabularx}%
 \end{table}
 
-\noindent\begin{table}[h]\begin{tabularx}{\textwidth}{X *4{r}}
+\noindent\begin{table}[H]\begin{tabularx}{\textwidth}{X *4{r}}
 \toprule
 \multicolumn{1}{c}{\textbf{Model}} & \multicolumn{1}{c}{\textbf{avg cor score}} & \multicolumn{1}{c}{\textbf{stdev cor score}} & \multicolumn{1}{c}{\textbf{avg change count}} \\
 \midrule
@@ -971,7 +1034,7 @@ gemini-1.5-flash-8b & 1.289 & 2.099 & 6.251 \\
 \end{table}
 
 
-\noindent\begin{table}[h]\begin{tabularx}{\textwidth}{X *4{r}}
+\noindent\begin{table}[H]\begin{tabularx}{\textwidth}{X *4{r}}
 \toprule
 \multicolumn{1}{c}{\textbf{Image}} & \multicolumn{1}{c}{\textbf{avg cor score}} & \multicolumn{1}{c}{\textbf{stdev cor score}} & \multicolumn{1}{c}{\textbf{avg change count}} \\
 \midrule
@@ -990,7 +1053,7 @@ kort\_onleesbaar & 1.496 & 3.629 & 4.267 \\
 
 
 
-\noindent\begin{table}[h]\begin{tabularx}{\textwidth}{X *3{r}}
+\noindent\begin{table}[H]\begin{tabularx}{\textwidth}{X *3{r}}
 \toprule
 \multicolumn{1}{c}{\textbf{Base Command}} & \multicolumn{1}{c}{\textbf{avg cor score}} & \multicolumn{1}{c}{\textbf{stdev cor score}} \\
 \midrule
@@ -1004,16 +1067,16 @@ de makkelijkste opdracht zonder extra uitleg & 0.920 & 2.443 \\
 \end{table}
 
 
-\noindent\begin{table}[h]\begin{tabularx}{\textwidth}{X *4{r}}
+\noindent\begin{table}[H]\begin{tabularx}{\textwidth}{X *4{r}}
 \toprule
 \multicolumn{1}{c}{\textbf{Addition}} & \multicolumn{1}{c}{\textbf{avg raw score}} & \multicolumn{1}{c}{\textbf{stdev  raw  score}} & \multicolumn{1}{c}{\textbf{avg cor score}} \\
 \midrule
 antwoordmodel bij vraag & 0.850 & 2.108 & 0.692 \\
 toets & 1.569 & 17.000 & 0.709 \\
  & 0.812 & 1.481 & 0.740 \\
-stof-antwoordmodel bij vraag-specifieke vraag vraag & 0.777 & 0.858 & 0.791 \\
+stof-antwoordmodel bij vraag-specifieke vraag & 0.777 & 0.858 & 0.791 \\
 stof & 0.941 & 1.575 & 0.798 \\
-antwoordmodel bij vraag-specifieke vraag vraag & 0.845 & 1.640 & 0.848 \\
+antwoordmodel bij vraag-specifieke vraag & 0.845 & 1.640 & 0.848 \\
 stof-toets-antwoordmodel & 1.146 & 2.762 & 1.276 \\
 \midrule
 \textbf{Grand Total} & \textbf{0.991} & \textbf{6.672} & \textbf{0.834} \\
@@ -1022,7 +1085,7 @@ stof-toets-antwoordmodel & 1.146 & 2.762 & 1.276 \\
 \end{table}
 
 
-\noindent\begin{table}[h]\begin{tabularx}{\textwidth}{X *3{r}}
+\noindent\begin{table}[H]\begin{tabularx}{\textwidth}{X *3{r}}
 \toprule
 \multicolumn{1}{c}{\textbf{Model}} & \multicolumn{1}{c}{\textbf{gem in s}} & \multicolumn{1}{c}{\textbf{stdev}} \\
 \midrule
@@ -1036,7 +1099,7 @@ gpt-4o & 7.61 & 7.53 \\
 \end{tabularx}%
 \end{table}
 
-\noindent\begin{table}[h]
+\noindent\begin{table}[H]
 \begin{tabularx}{\textwidth}{X *{2}{r}}
 \toprule
 \multicolumn{1}{c}{\textbf{Temperature}} & \multicolumn{1}{c}{\textbf{Avg. Corrected Certainty}} & \multicolumn{1}{c}{\textbf{Avg. Corrected Student Handwriting}} \\
@@ -1050,9 +1113,11 @@ gpt-4o & 7.61 & 7.53 \\
 \bottomrule
 \end{tabularx}
 \end{table}
-
+test
 \pagebreak
+test
 \subsection{Nakijken}
+test
 \pagebreak
 \subsection{Analyseren}
 \begin{multicols}{2}
@@ -1155,103 +1220,239 @@ Hier kan ook op vraagniveau een scherm zijn om vragen eruit te gooien of half te
 
 \pagebreak
 \subsection{Enquête}
+\href{https://docs.google.com/spreadsheets/d/10Z6uwL6eRiDsPIC6HQ5hyizUN8RciJKFSDRZBGiKdDI}{resultaten}
 
-\begin{table}[h!]
-\centering
-
-\begin{tabular}{lcccc}
-\toprule
-\textbf{Hoeveel jaar bent u al docent?} & 
-\textbf{Ja} & 
-\textbf{Een beetje} & 
-\textbf{Nee} & 
-\textbf{Total} \\ 
-\midrule
-1-5 jaar          & 4 & 4 & 0 & 8  \\
-5-10 jaar         & 5 & 4 & 0 & 9  \\
-Meer dan tien jaar & 13 & 16 & 1 & 30 \\
-Minder dan één jaar & 1 & 1 & 0 & 2  \\
-\midrule
-\textbf{Grand Total} & \textbf{23} & \textbf{25} & \textbf{1} & \textbf{49} \\
-\bottomrule
-\end{tabular}%
-
-
-\caption{Samenvatting van bekendheid met generatieve AI onder docenten.}
-\label{tab:docenten_technologie}
+\noindent
+\begin{table}[H]
+    \caption{Bent u bekend met het concept van (generatieve) AI? vs lesgeef evraring}
+    \begin{tabular}{l c c c c c}
+        \toprule
+        \textbf{Docent?} & \textbf{Ja} & \textbf{Gehoord} & \textbf{Nee} & \textbf{Grand Total} \\
+        \midrule
+        1-5 jaar      & 4  & 4  &   &   & 8  \\
+        5-10 jaar     & 5  & 4  &   &   & 9  \\
+        Meer dan tien jaar & 13 & 16 & 1 &   & 30 \\
+        Minder dan één jaar & 1  & 1  &   &   & 2  \\
+        \midrule
+        \textbf{Grand Total} & 23 & 25 & 1 & 0 & 49 \\
+        \bottomrule
+    \end{tabular}
 \end{table}
 
-\begin{table}[h!]
-\centering
-\resizebox{\linewidth}{!}{%
-\begin{tabular}{lcccc}
-\toprule
-\textbf{Hoeveel jaar bent u docent?} & 
-\textbf{Ja (\%)} & 
-\textbf{Nee (\%)} & 
-\textbf{Weet ik niet (\%)} & 
-\textbf{Total (\%)} \\ 
-\midrule
-1-5 jaar          & 37.50 & 50.00 & 12.50 & 100.00 \\
-5-10 jaar         & 44.44 & 33.33 & 22.22 & 100.00 \\
-Meer dan tien jaar & 23.33 & 40.00 & 36.67 & 100.00 \\
-Minder dan één jaar & 50.00 & 50.00 & 0.00 & 100.00 \\
-\midrule
-\textbf{Grand Total} & \textbf{28.57} & \textbf{40.82} & \textbf{30.61} & \textbf{100.00} \\
-\bottomrule
-\end{tabular}%
-}
-\caption{Percentageverdeling van vertrouwen met nakijken door AI onder docenten.}
-\label{tab:docenten_percentage}
-\end{table}
-\begin{table}[h!]
-\centering
-\resizebox{\linewidth}{!}{%
-\begin{tabular}{lcc}
-\toprule
-\textbf{Hoeveel jaar bent u al docent?} & 
-\textbf{Gemiddeld aantal leerlingen} & 
-\textbf{Aantal docenten} \\ 
-\midrule
-1-5 jaar          & 3.375 & 8 \\
-5-10 jaar         & 1.222 & 9 \\
-Meer dan tien jaar & 1.862 & 30 \\
-Minder dan één jaar & 7.500 & 2 \\
-\midrule
-\textbf{Grand Total} & \textbf{2.229} & \textbf{49} \\
-\bottomrule
-\end{tabular}%
-}
-\caption{Gemiddelde van het aantal leerlingen dat de beoordeling van docenten in twijfel trekt, per ervaringscategorie.}
-\label{tab:gemiddelde_twijfel}
+\noindent
+\begin{table}[H]
+    \caption{Bent u bekend met het concept van (generatieve) AI? vs vakgroep}
+
+    \begin{tabular}{l c c c c}
+        \toprule
+        \textbf{Vakgroep} & \textbf{Op de hoogte} & \textbf{Ja} & \textbf{Nee} & \textbf{Totaal} \\
+        \midrule
+        alpha & 50.00\% & 50.00\% &  & 100.00\% \\
+        beta  & 50.00\% & 42.86\% & 7.14\% & 100.00\% \\
+        gamma & 28.57\% & 71.43\% &  & 100.00\% \\
+        \midrule
+        \textbf{Totaal} & 46.94\% & 51.02\% & 2.04\% & 100.00\% \\
+        \bottomrule
+    \end{tabular}
 \end{table}
 
+\noindent
+\begin{table}[H]
+\caption{Denkt u dat AI zelfstandig toetsen zou kunnen nakijken? vs lesgeef ervaring}
+    \begin{tabular}{l c c c c}
+        \toprule
+        \textbf{Docent?} & \textbf{Ja} & \textbf{Nee} & \textbf{Weet niet} & \textbf{Totaal} \\
+        \midrule
+        1-5 jaar      & 37.50\% & 50.00\% & 12.50\% & 100.00\% \\
+        5-10 jaar     & 44.44\% & 33.33\% & 22.22\% & 100.00\% \\
+        Meer dan 10 jaar & 23.33\% & 40.00\% & 36.67\% & 100.00\% \\
+        Minder dan 1 jaar &  & 50.00\% & 50.00\% & 100.00\% \\
+        \midrule
+        \textbf{Totaal} & 28.57\% & 40.82\% & 30.61\% & 100.00\% \\
+        \bottomrule
+    \end{tabular}
+\end{table}
 
-\begin{minipage}{0.35\linewidth}
-
-\end{minipage}%
-\begin{minipage}{0.65\linewidth}
-
-
-\end{minipage}
-
-
-\begin{minipage}{0.35\linewidth}
-
-\end{minipage}%
-\begin{minipage}{0.65\linewidth}
-
-
-\end{minipage}
-
-
-\begin{minipage}{0.35\linewidth}
-
-\end{minipage}%
-\begin{minipage}{0.65\linewidth}
+\noindent
+\begin{table}[H]
 
 
-\end{minipage}
+    \caption{Denkt u dat AI zelfstandig toetsen zou kunnen nakijken? vs vakgroep}
+
+    \begin{tabular}{l c c c c}
+        \toprule
+        \textbf{Vakgroep} & \textbf{Ja} & \textbf{Gehoord} & \textbf{Nee} & \textbf{Totaal} \\
+        \midrule
+        alpha & 28.57\% & 28.57\% &  & 57.14\% \\
+        beta  & 14.29\% & 12.24\% & 2.04\% & 28.57\% \\
+        gamma & 4.08\%  & 10.20\% &  & 14.29\% \\
+        \midrule
+        \textbf{Totaal} & 46.94\% & 51.02\% & 2.04\% & 100.00\% \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\noindent
+\begin{table}[H]
+
+    \caption{Denkt u dat AI zelfstandig toetsen zou kunnen nakijken? vs Bent u bekend met het concept van (generatieve) AI?}
+
+    \begin{tabular}{l c c c}
+        \toprule
+        \textbf{AI Toetsen?} & \textbf{Ja} & \textbf{Gehoord} & \textbf{Nee} \\
+        \midrule
+        Ja      & 12.24\% & 16.33\% &  \\
+        Nee     & 20.41\% & 18.37\% & 2.04\% \\
+        Weet niet & 14.29\% & 16.33\% &  \\
+        \midrule
+        \textbf{Totaal} & 46.94\% & 51.02\% & 2.04\% \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\noindent
+\begin{table}[H]
+    \caption{Denkt u dat AI zelfstandig toetsen zou kunnen nakijken? vs vakgroep}
+
+    \begin{tabular}{l c c c c}
+        \toprule
+        \textbf{Vakgroep} & \textbf{Ja} & \textbf{Nee} & \textbf{Weet niet} & \textbf{Totaal} \\
+        \midrule
+        alpha & 7  & 11 & 10 & 28 \\
+        beta  & 4  & 5  & 5  & 14 \\
+        gamma & 3  & 4  &    & 7  \\
+        \midrule
+        \textbf{Totaal} & 14 & 20 & 15 & 49 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\noindent
+\begin{table}[H]
+    \caption{Hoeveel leerlingen trekken uw beoordeling per toets - terecht of niet - in twijfel? (Een getal) vs vakgroep}
+    \begin{tabular}{l r r}
+        \toprule
+        \textbf{Vakgroep} & \textbf{Avg. twijfel} & \textbf{Aantal} \\
+        \midrule
+        alpha & 1.593 & 28 \\
+        beta  & 2.000 & 14 \\
+        gamma & 5.143 & 7 \\
+        \midrule
+        \textbf{Totaal} & 2.229 & 49 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\noindent
+\begin{table}[H]
+    \caption{Wat zouden voor u redenen zijn om AI te gebruiken voor het nakijken van proefwerken? }
+    \begin{tabular}{l c c c c c c}
+        \toprule
+        \textbf{Voordelen} & \textbf{Tijdsbesp.} & \textbf{Objectiv.} & \textbf{Werkdruk} & \textbf{Snelheid} & \textbf{Nauwk.} & \textbf{Nooit} \\
+        \midrule
+        \textbf{Totaal} & 40 & 14 & 31 & 18 & 8 & 7 \\
+        \bottomrule
+        \textbf{Totaal  (\%)} & 33.90\% & 11.86\% & 26.27\% & 15.25\% & 6.78\% & 5.93\% \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+
+\noindent
+\begin{table}[H]
+    \caption{Wat zijn uw belangrijkste zorgen bij het gebruik van AI voor het nakijken van proefwerken? }
+    \begin{tabular}{l c c c c c c c}
+        \toprule
+        \textbf{Zorgen} & \textbf{Empathie} & \textbf{Tech. fout} & \textbf{Subjectiv.} & \textbf{Privacy} & \textbf{Bevoor.} & \textbf{Afhank.} & \textbf{Geen} \\
+        \midrule
+        \textbf{Totaal} & 20 & 26 & 31 & 11 & 11 & 15 & 0  \\
+        \textbf{Totaal (\%)} & 17.54\% & 22.81\% & 27.19\% & 9.65\% & 9.65\% & 13.16\% & 0.00\% \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\paragraph*{De gemaakte punten in de resultaten van de open vraag.}
+
+De vraag was: "Welke invloed denkt u dat de inzet van AI kan hebben op de relatie tussen docent en student?"
+
+Voor het maken van deze lijst is voor het sorteren en overzichtelijk maken van de punten gebruik gemaakt van het GPT model Gemini Experimental 1121 op aistudio.google.com. Zie appendix voor prompt.
+
+\begin{enumerate}
+    \item \textbf{Negatieve invloed op de relatie en kennis van de docent}
+        \begin{enumerate}
+        \item Docent is minder goed op de hoogte van de inhoud van het leerlingwerk, wat informatie geeft over wat de leerling bezighoudt.
+        \item Verminderd zicht op leerproces en denkstijl van de leerling.
+        \begin{itemize}
+        \item Docent kan sterke punten en ontwikkelpunten minder goed identificeren en hierop inspelen in de lessen.
+        \item Docent mist mogelijk belangrijke informatie uit persoonlijke verhalen in schrijfopdrachten.
+        \end{itemize}
+        \item Docent voelt minder verantwoordelijkheid voor het nakijken en leerling kan moeilijker zijn recht halen.
+        \item Minder intensief contact op niveau van interpretatie van antwoorden
+        \item Docent moet mogelijk de AI-correctie zelf controleren, wat extra werk oplevert.
+        \item Docent verliest mogelijk het zicht op de leercurve van de leerling.
+        \item De professionele expertise van de docent wordt ondermijnd.
+        \begin{itemize}
+        \item Leerlingen kunnen denken dat docenten makkelijk vervangbaar zijn.
+        \item Het werk van de docent kan in achting dalen bij leerlingen.
+        \end{itemize}
+    \end{enumerate}
+\item \textbf{Afstand en verminderd persoonlijk contact}
+    \begin{enumerate}
+        \item   AI als nakijker of tutor kan de band minder persoonlijk maken.
+        \item   Vervreemding tussen leraar en leerling en ten opzichte van zichzelf.
+        \item    Verlies van menselijk contact en emotionele band, cruciaal voor effectief leren.
+        \item   Dehumanisering van het onderwijs door rigide en onpersoonlijke AI-systemen.
+        \item   AI kan leiden tot apathie bij de leerling.
+        \item Relatie wordt anoniemer en onpersoonlijker.
+        \item   Leerlingen zouden kunnen denken dat leraren niet essentieel zijn als AI ze kan vervangen.
+    \end{enumerate}
+
+\item \textbf{Discussie en twijfel over objectiviteit en correctheid}
+    \begin{enumerate}
+        \item   Discussies over de correctheid van AI-gegeven antwoorden en beoordelingen.
+        \item   Leerlingen leren de subjectiviteit van zaken niet en dat niet alles zwart-wit is.
+        \item Leerlingen zullen minder de neiging hebben om in discussie te gaan over de resultaten.
+    \end{enumerate}
+
+\item   \textbf{Potentieel positieve invloed, afhankelijk van de implementatie}
+    \begin{enumerate}
+        \item   AI kan de relatie versterken als docent en leerling samen leren AI te gebruiken voor oefenen, feedback en beoordelen.
+        \item   Docent heeft meer tijd voor andere taken zoals het zoeken naar passend lesmateriaal.
+        \item   Docent kan meer ontspannen zijn door vermindering van nakijkwerk.
+        \item   AI kan een mediërende functie hebben door objectief vast te stellen of een antwoord fout is, waardoor docent en leerling zich kunnen richten op het 'waarom'.
+        \item  AI kan voor leerling objectiever overkomen, waardoor minder snel gedacht wordt dat een punt niet gegund wordt door persoonlijke redenen.
+        \item AI kan een suggestie van neutraliteit geven bij beoordeling.
+        \item   AI kan bijdragen aan de relatie mits verstandig, met dat doel en openlijk ingezet.
+        \item   Onderwijs kan beter worden afgestemd op individuele behoeften van leerlingen.
+        \item Positieve invloed mits correct werkend.
+    \end{enumerate}
+
+\item   \textbf{Geen of weinig invloed}
+    \begin{enumerate}
+        \item   De relatie wordt voornamelijk bepaald door direct contact en hoe omgegaan wordt met discussies over beoordeling.
+        \item   De relatie hoeft niet beïnvloed te worden.
+        \item   AI kan het probleem van een tekort aan docenten oplossen.
+        \item   Er is weinig ruimte voor AI om de relatie te verbeteren. Conflicten hebben vaak dieperliggende oorzaken dan meningsverschillen over nakijkwerk.
+        \item   Geen invloed op de relatie.
+        \item   Docent wil zelf verantwoordelijk blijven en met leerlingen in gesprek blijven.
+    \end{enumerate}
+    \item \textbf{Bezorgdheid over het gebruik van AI}
+    \begin{enumerate}
+        \item Zorgen over studenten die AI gebruiken om te schrijven en docenten die AI gebruiken om te controleren.
+        \item   AI wordt verkeerd ingezet, zou alleen voor routineklussen gebruikt moeten worden.
+        \item   AI wordt liever zoveel mogelijk buiten de deur en al helemaal uit het onderwijs gehouden.
+    \end{enumerate}
+
+\item   \textbf{Afhankelijkheid van het vak en type toets}
+    \begin{enumerate}
+        \item   Inzet van AI is afhankelijk van het vak; bijv. onhandig bij beeldende kunst, handig bij multiple choice.
+        \item   Niet alle toetsen zijn geschikt voor AI, bijvoorbeeld de beoordeling van de schoonheid van een tekening of website.
+    \end{enumerate}
+\item   \textbf{Onzekerheid over de invloed}
+\begin{enumerate}
+     \item  Het is nog te vroeg om te zeggen wat de invloed zal zijn.
+\end{enumerate}
+\end{enumerate}
 
 \pagebreak
 \subsection{Toets}
@@ -1298,7 +1499,7 @@ Minder dan één jaar & 7.500 & 2 \\
 \section{Appendix} %TODO; appendix of bijlagen
 
 \Large Methode - Inscannen - Score
-\large Cruijff
+\noindent\large Cruijff
 \small
 \begin{longtable}{|p{0.20\textwidth}|p{0.20\textwidth}|p{0.15\textwidth}|p{0.08\textwidth}|p{0.15\textwidth}|p{0.06\textwidth}|p{0.06\textwidth}|}
 \hline
@@ -1322,8 +1523,8 @@ Je moet schieten, anders kun je niet scoren. &  & Johan Cruijff & 1980 & tekstwe
 \hline
 \end{longtable}
 
-
-\large Diverse test quotes
+\pagebreak
+\noindent\large Diverse test quotes
 \small
 \begin{longtable}{|p{0.2\textwidth}|p{0.2\textwidth}|p{0.15\textwidth}|p{0.08\textwidth}|p{0.15\textwidth}|p{0.08\textwidth}|p{0.06\textwidth}|}
 \hline
@@ -1357,6 +1558,23 @@ Ik ben niet gek, ik ben een vliegtuig. & Ik ben niet , ik  een . & Supergrover &
 \hline
 \end{longtable}
 \normalsize
+
+\noindent\large Prompt resultaten open vragen\\
+\normalsize
+\noindent\fbox{\begin{minipage}{\linewidth}
+    
+je krijgt een aantal antwoorden op een open vraag in een enquete aan docenten\\
+\\
+jouw taak is om zo  precies en objectief mogelijk alle punten die worden gemaakt op een rijtje zetten van hoe \"belangrijk ze worden gevonden\"\\
+\\
+zorg dat de output in mooi opgemaakt latex is zonder overflow
+\\
+de vraag was: Welke invloed denkt u dat de inzet van AI kan hebben op de relatie tussen docent en student? (Open vraag)\\
+\\
+je mag de gemaakte punten in categoriën groepen, maar je moet altijd zo objectief mogelijk zijn, want dit komt in de resultaten van een onderzoek en daar mogen afsoluut geen assumpties in\\
+\\
+\{\href{https://docs.google.com/spreadsheets/d/10Z6uwL6eRiDsPIC6HQ5hyizUN8RciJKFSDRZBGiKdDI}{Resultaten}\}
+\end{minipage}}
 
 
 

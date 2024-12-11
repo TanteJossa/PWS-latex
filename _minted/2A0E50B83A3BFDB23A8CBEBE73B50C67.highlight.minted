@@ -1,0 +1,50 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{l+s+s1}{\PYGZsq{}certainty\PYGZsq{}}\PYG{o}{:}\PYG{+w}{ }\PYG{l+m+mf}{0.9}\PYG{p}{,}
+\PYG{+w}{    }\PYG{l+s+s1}{\PYGZsq{}checkboxes\PYGZsq{}}\PYG{o}{:}\PYG{+w}{ }\PYG{p}{[}
+\PYG{+w}{        }\PYG{p}{\PYGZob{}}
+\PYG{+w}{            }\PYG{l+s+s1}{\PYGZsq{}certainty\PYGZsq{}}\PYG{o}{:}\PYG{+w}{ }\PYG{l+m+mf}{0.9}\PYG{p}{,}
+\PYG{+w}{            }\PYG{l+s+s1}{\PYGZsq{}checked\PYGZus{}chance\PYGZsq{}}\PYG{o}{:}\PYG{+w}{ }\PYG{l+m+mf}{0.9}\PYG{p}{,}
+\PYG{+w}{            }\PYG{l+s+s1}{\PYGZsq{}number\PYGZsq{}}\PYG{o}{:}\PYG{+w}{ }\PYG{l+m+mf}{1}\PYG{p}{,}
+\PYG{+w}{            }\PYG{l+s+s1}{\PYGZsq{}percentage\PYGZus{}filled\PYGZsq{}}\PYG{o}{:}\PYG{+w}{ }\PYG{l+m+mf}{0.9}
+\PYG{+w}{        }\PYG{p}{\PYGZcb{}}\PYG{p}{,}
+\PYG{+w}{        }\PYG{p}{\PYGZob{}}
+\PYG{+w}{            }\PYG{l+s+s1}{\PYGZsq{}certainty\PYGZsq{}}\PYG{o}{:}\PYG{+w}{ }\PYG{l+m+mf}{0.1}\PYG{p}{,}
+\PYG{+w}{            }\PYG{l+s+s1}{\PYGZsq{}checked\PYGZus{}chance\PYGZsq{}}\PYG{o}{:}\PYG{+w}{ }\PYG{l+m+mf}{0.1}\PYG{p}{,}
+\PYG{+w}{            }\PYG{l+s+s1}{\PYGZsq{}number\PYGZsq{}}\PYG{o}{:}\PYG{+w}{ }\PYG{l+m+mf}{2}\PYG{p}{,}
+\PYG{+w}{            }\PYG{l+s+s1}{\PYGZsq{}percentage\PYGZus{}filled\PYGZsq{}}\PYG{o}{:}\PYG{+w}{ }\PYG{l+m+mf}{0.0}
+\PYG{+w}{        }\PYG{p}{\PYGZcb{}}\PYG{p}{,}
+\PYG{+w}{        }\PYG{p}{\PYGZob{}}
+\PYG{+w}{            }\PYG{l+s+s1}{\PYGZsq{}certainty\PYGZsq{}}\PYG{o}{:}\PYG{+w}{ }\PYG{l+m+mf}{0.1}\PYG{p}{,}
+\PYG{+w}{            }\PYG{l+s+s1}{\PYGZsq{}checked\PYGZus{}chance\PYGZsq{}}\PYG{o}{:}\PYG{+w}{ }\PYG{l+m+mf}{0.1}\PYG{p}{,}
+\PYG{+w}{            }\PYG{l+s+s1}{\PYGZsq{}number\PYGZsq{}}\PYG{o}{:}\PYG{+w}{ }\PYG{l+m+mf}{3}\PYG{p}{,}
+\PYG{+w}{            }\PYG{l+s+s1}{\PYGZsq{}percentage\PYGZus{}filled\PYGZsq{}}\PYG{o}{:}\PYG{+w}{ }\PYG{l+m+mf}{0.0}
+\PYG{+w}{        }\PYG{p}{\PYGZcb{}}\PYG{p}{,}
+\PYG{+w}{        }\PYG{p}{\PYGZob{}}
+\PYG{+w}{            }\PYG{l+s+s1}{\PYGZsq{}certainty\PYGZsq{}}\PYG{o}{:}\PYG{+w}{ }\PYG{l+m+mf}{0.2}\PYG{p}{,}
+\PYG{+w}{            }\PYG{l+s+s1}{\PYGZsq{}checked\PYGZus{}chance\PYGZsq{}}\PYG{o}{:}\PYG{+w}{ }\PYG{l+m+mf}{0.2}\PYG{p}{,}
+\PYG{+w}{            }\PYG{l+s+s1}{\PYGZsq{}number\PYGZsq{}}\PYG{o}{:}\PYG{+w}{ }\PYG{l+m+mf}{4}\PYG{p}{,}
+\PYG{+w}{            }\PYG{l+s+s1}{\PYGZsq{}percentage\PYGZus{}filled\PYGZsq{}}\PYG{o}{:}\PYG{+w}{ }\PYG{l+m+mf}{0.1}
+\PYG{+w}{        }\PYG{p}{\PYGZcb{}}\PYG{p}{,}
+\PYG{+w}{        }\PYG{p}{\PYGZob{}}
+\PYG{+w}{            }\PYG{l+s+s1}{\PYGZsq{}certainty\PYGZsq{}}\PYG{o}{:}\PYG{+w}{ }\PYG{l+m+mf}{0.1}\PYG{p}{,}
+\PYG{+w}{            }\PYG{l+s+s1}{\PYGZsq{}checked\PYGZus{}chance\PYGZsq{}}\PYG{o}{:}\PYG{+w}{ }\PYG{l+m+mf}{0.1}\PYG{p}{,}
+\PYG{+w}{            }\PYG{l+s+s1}{\PYGZsq{}number\PYGZsq{}}\PYG{o}{:}\PYG{+w}{ }\PYG{l+m+mf}{5}\PYG{p}{,}
+\PYG{+w}{            }\PYG{l+s+s1}{\PYGZsq{}percentage\PYGZus{}filled\PYGZsq{}}\PYG{o}{:}\PYG{+w}{ }\PYG{l+m+mf}{0.0}
+\PYG{+w}{        }\PYG{p}{\PYGZcb{}}\PYG{p}{,}
+\PYG{+w}{        }\PYG{p}{\PYGZob{}}
+\PYG{+w}{            }\PYG{l+s+s1}{\PYGZsq{}certainty\PYGZsq{}}\PYG{o}{:}\PYG{+w}{ }\PYG{l+m+mf}{0.1}\PYG{p}{,}
+\PYG{+w}{            }\PYG{l+s+s1}{\PYGZsq{}checked\PYGZus{}chance\PYGZsq{}}\PYG{o}{:}\PYG{+w}{ }\PYG{l+m+mf}{0.1}\PYG{p}{,}
+\PYG{+w}{            }\PYG{l+s+s1}{\PYGZsq{}number\PYGZsq{}}\PYG{o}{:}\PYG{+w}{ }\PYG{l+m+mf}{6}\PYG{p}{,}
+\PYG{+w}{            }\PYG{l+s+s1}{\PYGZsq{}percentage\PYGZus{}filled\PYGZsq{}}\PYG{o}{:}\PYG{+w}{ }\PYG{l+m+mf}{0.0}
+\PYG{+w}{        }\PYG{p}{\PYGZcb{}}\PYG{p}{,}
+\PYG{+w}{        }\PYG{p}{\PYGZob{}}
+\PYG{+w}{            }\PYG{l+s+s1}{\PYGZsq{}certainty\PYGZsq{}}\PYG{o}{:}\PYG{+w}{ }\PYG{l+m+mf}{0.3}\PYG{p}{,}
+\PYG{+w}{            }\PYG{l+s+s1}{\PYGZsq{}checked\PYGZus{}chance\PYGZsq{}}\PYG{o}{:}\PYG{+w}{ }\PYG{l+m+mf}{0.3}\PYG{p}{,}
+\PYG{+w}{            }\PYG{l+s+s1}{\PYGZsq{}number\PYGZsq{}}\PYG{o}{:}\PYG{+w}{ }\PYG{l+m+mf}{7}\PYG{p}{,}
+\PYG{+w}{            }\PYG{l+s+s1}{\PYGZsq{}percentage\PYGZus{}filled\PYGZsq{}}\PYG{o}{:}\PYG{+w}{ }\PYG{l+m+mf}{0.2}
+\PYG{+w}{        }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{p}{]}\PYG{p}{,}
+\PYG{+w}{    }\PYG{l+s+s1}{\PYGZsq{}most\PYGZus{}certain\PYGZus{}checked\PYGZus{}number\PYGZsq{}}\PYG{o}{:}\PYG{+w}{ }\PYG{l+m+mf}{1}
+\PYG{p}{\PYGZcb{}}
+\end{MintedVerbatim}

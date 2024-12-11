@@ -1,0 +1,16 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{l+s+s2}{\PYGZdq{}key\PYGZus{}value\PYGZus{}pairs\PYGZdq{}}\PYG{o}{:}\PYG{+w}{ }\PYG{p}{[}
+\PYG{+w}{    }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{l+s+s2}{\PYGZdq{}key\PYGZdq{}}\PYG{o}{:}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{            }\PYG{l+s+s2}{\PYGZdq{}content\PYGZdq{}}\PYG{o}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}2.1\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{            }\PYG{p}{...}
+\PYG{+w}{            }\PYG{p}{\PYGZcb{}}\PYG{p}{,}
+\PYG{+w}{            }\PYG{l+s+s2}{\PYGZdq{}value\PYGZdq{}}\PYG{o}{:}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{                }\PYG{l+s+s2}{\PYGZdq{}content\PYGZdq{}}\PYG{o}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}:selected:\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{                }\PYG{p}{...}
+\PYG{+w}{            }\PYG{p}{\PYGZcb{}}\PYG{p}{,}
+\PYG{+w}{        }\PYG{l+s+s2}{\PYGZdq{}confidence\PYGZdq{}}\PYG{o}{:}\PYG{+w}{ }\PYG{l+m+mf}{0.995}\PYG{p}{,}
+\PYG{+w}{        }\PYG{p}{...}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}\PYG{p}{,}
+\PYG{p}{]}
+\end{MintedVerbatim}
