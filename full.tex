@@ -23,9 +23,7 @@
 \usepackage{float}
 \usepackage{subfig}
 \usepackage{listings}
-% \usepackage{minted}
 \usepackage{minted}
-\usepackage{fancyvrb}
 
 % makecell
 \usepackage{makecell}
@@ -57,7 +55,7 @@
 \titleformat{\section}[block]{\LARGE\bfseries}{\thesection.}{2em}{}
 
 
-%\setlength{\parindent}{2em} % Set the paragraph indentation to match the subsection indentation
+\setlength{\parindent}{2em} % Set the paragraph indentation to match the subsection indentation
 
 \setlength{\cftsecnumwidth}{3em}
 \setlength{\cftsubsecnumwidth}{3.5em}
@@ -72,22 +70,23 @@
 \renewcommand{\cftsecpagefont}{\normalfont}
 \renewcommand{\cftsecindent}{1.5em}
 \renewcommand{\cftsubsecindent}{3em}
-\newcommand\dotover{\leavevmode\cleaders\hb@xt@ .22em{\hss $\cdot$\hss}\hfill\kern\z@}
+\newcommand\dotover{\leavevmode\cleaders\hb@xt@ .22em{\hss$\cdot$\hss}\hfill\kern\z@}
 \newcommand{\dotfrac}[2]{
 \ooalign{$\genfrac{}{}{0pt}{0}{#1}{#2}$\cr\dotover\cr}
 }
 
 
-% Formatting Sections
+% % Formatting Sections
 \sectionfont{\fontsize{30}{40}\selectfont}
 \newcommand{\subsectionindent}{\hspace{21em}}
 
+% \renewcommand\maketitle{}
 
-\title{Onze Progressie naar Volledig Automatische Beoordeling met Behulp van LLM's}
-\author{J. K. Wijker & J. K. Koch}
+\title{Onze Progressie naar Volledig Automatische Beoordeling met behulp van LLM's}
+\author{J. K. Wijker \& J. K. Koch}
 
 
-\raggedbottom%
+% \raggedbottom%
 \begin{document}
 \maketitle
 \mbox{}
@@ -112,11 +111,11 @@ Beiden zijn we geïnteresseerd in computers en informatica, maar we willen ook i
 
 \subsection{Probleemstelling}
 Het nakijken en analyseren van een toets kost veel tijd voor docenten. Wij willen kijken of door de nieuwe mogelijkheden van kunstmatige intelligentie het mogelijk is toetsen automatisch na te kijken, opdat wij elke leerling met behulpzame feedback kunnen voorzien en de docenten een overzichtelijke weergaven geven in het niveau van een klas.
-Daarom hebben wij de volgende onderzoeksvraag: \\ % Fase 2
-\textbf{Is er een mogelijkheid om een (computer)programma te maken dat een (scheikunde) toets na kan kijken, kan analyseren en feedback kan schrijven waar een docent of leerling iets aan heeft voor 2025?}
+Daarom hebben wij de volgende onderzoeksvraag: % Fase 2
+\textbf{Is er een mogelijkheid om een (computer) programma te maken dat een (scheikunde) toets na kan kijken, kan analyseren en feedback kan schrijven waar een docent of leerling iets aan heeft voor 2025?}
 \\\\
 Deze vraag hebben we onderverdeeld in 4 deelvragen:\\
-\begin{tabularx}{\linewidth}{@{}lX}
+\begin{tabularx}{\linewidth}{lX}
     \vspace{0.2cm}
    \textbf{Inscannen } & \textbf{Kunnen toetsen automatisch worden gescand en in een digitaal (tekst) formaat omgezet worden?} \\
    \vspace{0.2cm}
@@ -132,6 +131,7 @@ Deze vraag hebben we onderverdeeld in 4 deelvragen:\\
 %TODO: misschien iets over subdeelvragen
 \end{multicols}
 \pagebreak
+
 
 \section{Hypothese}
 \subsection{Inscannen}
@@ -426,7 +426,8 @@ Om dit in te scannen zijn er 2 dingen nodig: \\
     \hline
 
 \end{longtable}
- 
+
+
 % TODO: fix the table being below the listing
 \begin{multicols}{2}
    Dit levert een lijst van coördinaten van de vierkantjes op\\(y,hoogte,x,meest linker coordinaat van blokje)\\
@@ -441,7 +442,7 @@ Om dit in te scannen zijn er 2 dingen nodig: \\
                    framesep=3mm,
                    linenos=true,
                    xleftmargin=21pt,
-                   tabsize=4]{js},
+                   tabsize=4]{json}
     [
         [184, 20, 44, 63], 
         [321, 19, 43, 61], 
@@ -459,6 +460,7 @@ Om dit in te scannen zijn er 2 dingen nodig: \\
 \end{multicols}
 
 \pagebreak
+
 \begin{multicols}{2}
 \paragraph*{Vraagnummer herkenning} Om de vraag te herkennen hebben we eerst gebruik gemaakt van Microsoft Azure document intelligence die kan checkboxes herkennen.\\
 De volgende foto:
@@ -474,7 +476,9 @@ Gaf het volgende resultaat:
                framesep=3mm,
                linenos=true,
                xleftmargin=21pt,
-               tabsize=2]{js},
+               tabsize=1]{js}
+
+
 "key_value_pairs": [
     {
         "key": {
@@ -489,6 +493,7 @@ Gaf het volgende resultaat:
         ...
     },
 ]
+
 \end{minted}
 \caption{Vierkant detectie output} 
 \label{json-example}
@@ -522,6 +527,7 @@ Prompt:\\
 
 \end{multicols}
 \pagebreak
+
 \textbf{Google Gemini 1.5pro}: Werkt
 \begin{listing}[H]
     
@@ -694,6 +700,8 @@ er meer brandstof (kaarsevet) is en hij dus langer warmte, brandstof en zuurstof
 
 \end{multicols}
 \pagebreak
+
+\pagebreak
 \noindent3 verschillende prompts:\\
 \begin{itemize}
     \item \textbf{de makkelijkste opdracht zonder extra uitleg} Zet de foto om naar tekst.\\
@@ -818,6 +826,7 @@ Zie de appendix voor tests.
 Bij het inscannen gaan we onderzoek doen naar welke statistische berekeningen nodig zijn voor correct analyse. 
 \pagebreak
 
+
 \subsubsection{Enquete}
 \begin{tabularx}{\linewidth}{ll}
     \textbf{Eigenaar: } & \textit{Jonathan en Joost} \\
@@ -870,7 +879,7 @@ Dit waren de vragen die we hebben bedacht:
     \end{minipage} & kunnen filtreren op lesgeef ervaring & \\
     \hline 
     \begin{minipage}[t]{\linewidth}
-        \textbf{3. Bent u bekend met het concept van (generatieve) AI\? }
+        \textbf{3. Bent u bekend met het concept van ( generatieve ) AI? }
         \begin{itemize}
             \item Ja, ik ben goed op de hoogte
             \item Ja, ik heb er wel eens over gehoord
@@ -893,7 +902,7 @@ Dit waren de vragen die we hebben bedacht:
     \end{minipage} & weten wat het hoofddoel moet zijn van ons programma en wat waar we minder aandacht aan kunnen besteden & \\
     \hline 
     \begin{minipage}[t]{\linewidth}
-        \textbf{5. Wat zijn uw belangrijkste zorgen bij het gebruik van AI voor het nakijken van proefwerken? (Tot 4 antwoorden mogelijk) }
+        \textbf{5. Wat zijn uw belangrijkste zorgen bij het gebruik van AI voor het nakijken van proefwerken? }
         \begin{itemize}
             \item Gebrek aan menselijke empathie in de beoordeling
             \item Mogelijke technische fouten
@@ -933,6 +942,7 @@ Dit waren de vragen die we hebben bedacht:
 \end{longtable}
 
 \pagebreak
+
 \begin{multicols}{2}
 Ons 2e doel van dit onderdeel was: \textbf{Hoe zorg je ervoor dat mensen jouw enquête willen invullen?}\\
 Uit ons kleine omgevingsonderzoek blijkt dat docenten van Het Amsterdams Lyceum niet vaak reageren op (onbelangrijke) mail. Een score van 30\% zou al aan de hoge kant zijn. We hebben een zakelijk mailtje proberen samen te stellen die ervoor zorgt dat docenten wilden reageren. \\
@@ -1037,15 +1047,16 @@ Voor het analyseren gaan we Google Sheet pivot tables gebruiken om snel verbande
 \end{table}
 
 
+
 \noindent\begin{table}[H]\begin{tabularx}{\textwidth}{X *3{r}}
     \toprule
     \multicolumn{1}{c}{\textbf{image}} & \multicolumn{1}{c}{\textbf{avg cor score}} & \multicolumn{1}{c}{\textbf{STDEV cor score}} & \multicolumn{1}{c}{\textbf{avg cor change count}} \\
     \midrule
-    kort_leesbaar & 0.1867 & 1.1019 & 1.8679 \\
-    kort_leesbaar_uitgekrast & 0.2567 & 0.6206 & 1.7862 \\
-    gekreukeld_met_pijlen & 1.1113 & 0.2310 & 10.0095 \\
-    kort_onleesbaar & 1.2250 & 3.2430 & 3.9123 \\
-    slecht_leesbaar_pijlen & 1.3226 & 1.0186 & 11.7194 \\
+    kort leesbaar & 0.1867 & 1.1019 & 1.8679 \\
+    kort leesbaar uitgekrast & 0.2567 & 0.6206 & 1.7862 \\
+    gekreukeld met pijlen & 1.1113 & 0.2310 & 10.0095 \\
+    kort onleesbaar & 1.2250 & 3.2430 & 3.9123 \\
+    slecht leesbaar pijlen & 1.3226 & 1.0186 & 11.7194 \\
     \midrule
     \textbf{Grand Total} & \textbf{0.7763} & \textbf{1.7469} & \textbf{5.3703} \\
     \bottomrule
@@ -1067,6 +1078,7 @@ Voor het analyseren gaan we Google Sheet pivot tables gebruiken om snel verbande
     \bottomrule
 \end{tabularx}%
 \end{table}
+
 
 \noindent\begin{table}[H]\begin{tabularx}{\textwidth}{X *3{r}}
     \toprule
@@ -1227,7 +1239,7 @@ Hier kan ook op vraagniveau een scherm zijn om vragen eruit te gooien of half te
 
 \noindent
 \begin{table}[H]
-    \caption{Bent u bekend met het concept van (generatieve) AI\? vs lesgeef evraring}
+    \caption{Bent u bekend met het concept van (generatieve) AI? vs lesgeef evraring}
     \begin{tabular}{l c c c c c}
         \toprule
         \textbf{Docent?} & \textbf{Ja} & \textbf{Gehoord} & \textbf{Nee} & \textbf{Grand Total} \\
@@ -1561,7 +1573,7 @@ Ik ben niet gek, ik ben een vliegtuig. & Ik ben niet , ik  een . & Supergrover &
 \hline
 \end{longtable}
 \normalsize
-
+\pagebreak
 \noindent\large Prompt resultaten open vragen\\
 \normalsize
 \noindent\fbox{\begin{minipage}{\linewidth}
@@ -1574,11 +1586,9 @@ zorg dat de output in mooi opgemaakt latex is zonder overflow
 \\
 de vraag was: Welke invloed denkt u dat de inzet van AI kan hebben op de relatie tussen docent en student? (Open vraag)\\
 \\
-je mag de gemaakte punten in categoriën groepen, maar je moet altijd zo objectief mogelijk zijn, want dit komt in de resultaten van een onderzoek en daar mogen afsoluut geen assumpties in\\
+je mag de gemaakte punten in categoriën groepen, maar je moet altijd zo objectief mogelijk zijn, want dit komt in de resultaten van een onderzoek en daar mogen absoluut geen assumpties in\\
 \\
 \{\href{https://docs.google.com/spreadsheets/d/10Z6uwL6eRiDsPIC6HQ5hyizUN8RciJKFSDRZBGiKdDI}{Resultaten}\}
 \end{minipage}}
-
-
 
 \end{document}
