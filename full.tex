@@ -25,7 +25,7 @@
 \usepackage{listings}
 % \usepackage{minted}
 \usepackage{minted}
-
+\usepackage{fancyvrb}
 
 % makecell
 \usepackage{makecell}
@@ -99,7 +99,7 @@
 \thispagestyle{empty}
 \pagebreak
 
-{\small\tableofcontents\normalsize}
+{\small\tableofcontents \normalsize}
 
 \pagebreak
 \section{Introductie}
@@ -621,10 +621,11 @@ We kunnen nu de secties scheiden en de vraagnummers relatief betrouwbaar extrahe
 \begin{multicols}{2}
 Nu hebben we van elk type sectie een foto van het antwoordveld uit de vorige stap. Het lastigste van dit onderdeel is de handschriften omzetten naar geschreven tekst. Om erachter te komen wat de beste methode is hebben we veel getest met instellingen zoals: promps, temperatuur, foto en type-model.\\
 \\
-We hebben 4 modellen getest:
+We hebben 5 modellen getest:
 \begin{itemize}
     \item \textbf{Google} gemini-1.5-pro-002
     \item \textbf{Google} gemini-1.5-flash-8b
+    \item \textbf{Google} gemini-2.0-flash-exp (11/12/24 uitgekomen)
     \item \textbf{OpenAI} gpt-4o
     \item \textbf{OpenAI} gpt-4o-mini
 \end{itemize}
@@ -639,7 +640,7 @@ We hebben 4 modellen getest:
 \end{multicols}
 \pagebreak
 \begin{multicols}{2}
-Om te test waarmee hij moeite had hebben we 6 antwoordfoto's getest:
+Om te test waarmee hij moeite had hebben we 5 antwoordfoto's getest:
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{./images/methoden/inscannen/tekst/kort_leesbaar.png}
@@ -674,13 +675,13 @@ er meer brandstof (kaarsevet) is en hij dus langer warmte, brandstof en zuurstof
 
     \label{fig:enter-label}
 \end{figure}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\linewidth]{./images/methoden/inscannen/tekst/gekreukeld_netjes.png}
-    \textit{Dit is een antwoord op vraag 2 en er is sprake van onvolledige verbranding.}
-    \caption{Gekreukeld netjes}
-    \label{fig:enter-label}
-\end{figure}
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=1\linewidth]{./images/methoden/inscannen/tekst/gekreukeld_netjes.png}
+%     \textit{Dit is een antwoord op vraag 2 en er is sprake van onvolledige verbranding.}
+%     \caption{Gekreukeld netjes}
+%     \label{fig:enter-label}
+% \end{figure}
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{./images/methoden/inscannen/tekst/gekreukeld_met_pijlen.png}
@@ -741,7 +742,7 @@ In de volgende combinaties
 
 
 \vspace{3em}
-Dit geeft \large$4_{\textsc{modellen}} \cdot 4_{\textsc{temperaturen}}  \cdot 6_{\textsc{antwoorden}} \cdot 3_{\textsc{prompts}}  \cdot 3_{\textsc{herhalingen per request}}  \cdot 6_{\textsc{context addities}}= 5184 \textsc{ Requests}$ \normalsize
+Dit geeft \large$5_{\textsc{modellen}} \cdot 4_{\textsc{temperaturen}}  \cdot 5_{\textsc{antwoorden}} \cdot 3_{\textsc{prompts}}  \cdot 3_{\textsc{herhalingen per request}}  \cdot 6_{\textsc{context addities}}= 5400 \textsc{ Requests}$ \normalsize
 % TODO: uitleg over kosten en hoeveel requests per seconde enz
 % \vspace{lem}
 Om te weten welk resultaat een correct resultaat geeft wordt voor elk resultaat een score berekend. Hoe lager de score hoe "beter" het resultaat. Deze score hangt bij ons af van twee dingen. \\
@@ -869,7 +870,7 @@ Dit waren de vragen die we hebben bedacht:
     \end{minipage} & kunnen filtreren op lesgeef ervaring & \\
     \hline 
     \begin{minipage}[t]{\linewidth}
-        \textbf{3. Bent u bekend met het concept van (generatieve) AI? }
+        \textbf{3. Bent u bekend met het concept van (generatieve) AI\? }
         \begin{itemize}
             \item Ja, ik ben goed op de hoogte
             \item Ja, ik heb er wel eens over gehoord
@@ -1011,108 +1012,110 @@ Voor het analyseren gaan we Google Sheet pivot tables gebruiken om snel verbande
     \midrule
     gemini-1.5-flash-8b & 1125 \\
     gemini-1.5-pro-002 & 787 \\
+    gemini-2.0-flash-exp & 1257 \\
     gpt-4o & 1029 \\
     gpt-4o-mini & 1167 \\
     \midrule
-    \textbf{Grand Total} & \textbf{4108} \\
+    \textbf{Grand Total} & \textbf{5365} \\
+    \bottomrule
+\end{tabularx}%
+\end{table}
+
+\noindent\begin{table}[H]\begin{tabularx}{\textwidth}{X *3{r}}
+    \toprule
+    \multicolumn{1}{c}{\textbf{Model}} & \multicolumn{1}{c}{\textbf{avg cor score}} & \multicolumn{1}{c}{\textbf{stdev cor score}} & \multicolumn{1}{c}{\textbf{avg cor change count}} \\
+    \midrule
+    gemini-1.5-pro-002 & 0.4838 & 0.4913 & 3.0851 \\
+    gemini-2.0-flash-exp & 0.5874 & 0.5414 & 6.9880 \\
+    gpt-4o-mini & 0.5905 & 1.6675 & 5.5089 \\
+    gpt-4o & 0.8812 & 2.6390 & 4.0223 \\
+    gemini-1.5-flash-8b & 1.2887 & 2.0987 & 6.2506 \\
+    \midrule
+    \textbf{Grand Total} & \textbf{0.7763} & \textbf{1.7469} & \textbf{5.3703} \\
+    \bottomrule
+\end{tabularx}%
+\end{table}
+
+
+\noindent\begin{table}[H]\begin{tabularx}{\textwidth}{X *3{r}}
+    \toprule
+    \multicolumn{1}{c}{\textbf{image}} & \multicolumn{1}{c}{\textbf{avg cor score}} & \multicolumn{1}{c}{\textbf{STDEV cor score}} & \multicolumn{1}{c}{\textbf{avg cor change count}} \\
+    \midrule
+    kort_leesbaar & 0.1867 & 1.1019 & 1.8679 \\
+    kort_leesbaar_uitgekrast & 0.2567 & 0.6206 & 1.7862 \\
+    gekreukeld_met_pijlen & 1.1113 & 0.2310 & 10.0095 \\
+    kort_onleesbaar & 1.2250 & 3.2430 & 3.9123 \\
+    slecht_leesbaar_pijlen & 1.3226 & 1.0186 & 11.7194 \\
+    \midrule
+    \textbf{Grand Total} & \textbf{0.7763} & \textbf{1.7469} & \textbf{5.3703} \\
+    \bottomrule
+\end{tabularx}%
+\end{table}
+
+
+
+
+\noindent\begin{table}[H]\begin{tabularx}{\textwidth}{X *3{r}}
+    \toprule
+    \multicolumn{1}{c}{\textbf{base\_command}} & \multicolumn{1}{c}{\textbf{avg cor score}} & \multicolumn{1}{c}{\textbf{stdev cor score}} & \multicolumn{1}{c}{\textbf{avg cor change count}} \\
+    \midrule
+    lange uitleg bij elk veld, zonder context & 0.6768 & 1.3409 & 4.6585 \\
+    huidige opdracht met uitleg bij elk veld & 0.7828 & 1.5641 & 5.8461 \\
+    de makkelijkste opdracht zonder extra uitleg & 0.8583 & 2.1735 & 5.5504 \\
+    \midrule
+    \textbf{Grand Total} & \textbf{0.7763} & \textbf{1.7469} & \textbf{5.3703} \\
+    \bottomrule
+\end{tabularx}%
+\end{table}
+
+\noindent\begin{table}[H]\begin{tabularx}{\textwidth}{X *3{r}}
+    \toprule
+    \multicolumn{1}{c}{\textbf{addition}} & \multicolumn{1}{c}{\textbf{avg cor score}} & \multicolumn{1}{c}{\textbf{stdev cor score}} & \multicolumn{1}{c}{\textbf{avg cor change count}} \\
+    \midrule
+    toets & 0.6546 & 1.4049 & 4.4909 \\
+    antwoordmodel bij vraag & 0.6619 & 1.3282 & 5.6849 \\
+    & 0.7291 & 1.2057 & 6.2406 \\
+    stof-antwoordmodel bij vraag-specifieke vraag vraag & 0.7434 & 2.2330 & 4.7515 \\
+    stof & 0.7464 & 1.1751 & 5.576 \\
+    antwoordmodel bij vraag-specifieke vraag vraag & 0.7807 & 1.9973 & 5.3795 \\
+    stof-toets-antwoordmodel & 1.1869 & 2.7581 & 5.5953 \\
+    \midrule
+    \textbf{Grand Total} & \textbf{0.7842} & \textbf{1.8166} & \textbf{5.3907} \\
+    \bottomrule
+\end{tabularx}%
+\end{table}
+
+
+\noindent\begin{table}[H]\begin{tabularx}{\textwidth}{X *2{r}}
+    \toprule
+    \multicolumn{1}{c}{\textbf{Model}} & \multicolumn{1}{c}{\textbf{avg delta time in s}} & \multicolumn{1}{c}{\textbf{stdev delta time in s}} \\
+    \midrule
+    gemini-1.5-flash-8b & 0.0024 & 0.0012 \\
+    gemini-2.0-flash-exp & 0.0033 & 0.0014 \\
+    gemini-1.5-pro-002 & 0.0046 & 0.0091 \\
+    gpt-4o-mini & 5.4742 & 4.5081 \\
+    gpt-4o & 7.6063 & 7.5320 \\
+    \midrule
+    \textbf{Grand Total} & \textbf{2.6516} & \textbf{5.0869} \\
     \bottomrule
 \end{tabularx}%
 \end{table}
 
 \noindent\begin{table}[H]\begin{tabularx}{\textwidth}{X *4{r}}
-\toprule
-\multicolumn{1}{c}{\textbf{Model}} & \multicolumn{1}{c}{\textbf{avg cor score}} & \multicolumn{1}{c}{\textbf{stdev cor score}} & \multicolumn{1}{c}{\textbf{avg change count}} \\
-\midrule
-gemini-1.5-pro-002 & 0.484 & 0.491 & 3.085 \\
-gpt-4o-mini & 0.591 & 1.668 & 5.509 \\
-gpt-4o & 0.881 & 2.639 & 4.022 \\
-gemini-1.5-flash-8b & 1.289 & 2.099 & 6.251 \\
-\midrule
-\textbf{Grand Total} & \textbf{0.834} & \textbf{1.970} & \textbf{4.875} \\
-\bottomrule
+    \toprule
+    \multicolumn{1}{c}{\textbf{Model}} & \multicolumn{1}{c}{\textbf{avg cor certainty}} & \multicolumn{1}{c}{\textbf{stdev cor certainty}} & \multicolumn{1}{c}{\textbf{avg cor student handwriting}} & \multicolumn{1}{c}{\textbf{stdev cor student handwriting}} \\
+    \midrule
+    gemini-1.5-pro-002 & 96.0585 & 1.9220 & 77.2206 & 16.9986 \\
+    gemini-2.0-flash-exp & 94.8678 & 0.8026 & 81.1512 & 8.46961884 \\
+    gemini-1.5-flash-8b & 92.9004 & 7.7042 & 84.9376 & 9.6381 \\
+    gpt-4o & 89.5170 & 10.7645 & 86.03292 & 9.2210 \\
+    gpt-4o-mini & 87.9820 & 5.3663 & 75.4734 & 9.8103 \\
+    \midrule
+    \textbf{Grand Total} & \textbf{91.1381} & \textbf{7.7582} & \textbf{81.5676} & \textbf{10.7848} \\
+    \bottomrule
 \end{tabularx}%
 \end{table}
 
-
-\noindent\begin{table}[H]\begin{tabularx}{\textwidth}{X *4{r}}
-\toprule
-\multicolumn{1}{c}{\textbf{Image}} & \multicolumn{1}{c}{\textbf{avg cor score}} & \multicolumn{1}{c}{\textbf{stdev cor score}} & \multicolumn{1}{c}{\textbf{avg change count}} \\
-\midrule
-kort\_leesbaar & 0.197 & 1.234 & 1.797 \\
-kort\_leesbaar\_uitgekrast & 0.287 & 0.688 & 1.903 \\
-gekreukeld\_met\_pijlen & 1.111 & 0.163 & 8.740 \\
-slecht\_leesbaar\_pijlen & 1.341 & 1.172 & 10.311 \\
-kort\_onleesbaar & 1.496 & 3.629 & 4.267 \\
-\midrule
-\textbf{Grand Total} & \textbf{0.834} & \textbf{1.970} & \textbf{4.875} \\
-\bottomrule
-\end{tabularx}%
-\end{table}
-
-
-
-
-
-\noindent\begin{table}[H]\begin{tabularx}{\textwidth}{X *3{r}}
-\toprule
-\multicolumn{1}{c}{\textbf{Base Command}} & \multicolumn{1}{c}{\textbf{avg cor score}} & \multicolumn{1}{c}{\textbf{stdev cor score}} \\
-\midrule
-lange uitleg bij elk veld, zonder context & 0.752 & 1.520 \\
-huidige opdracht met uitleg bij elk veld & 0.817 & 1.755 \\
-de makkelijkste opdracht zonder extra uitleg & 0.920 & 2.443 \\
-\midrule
-\textbf{Grand Total} & \textbf{0.834} & \textbf{1.970} \\
-\bottomrule
-\end{tabularx}%
-\end{table}
-
-
-\noindent\begin{table}[H]\begin{tabularx}{\textwidth}{X *4{r}}
-\toprule
-\multicolumn{1}{c}{\textbf{Addition}} & \multicolumn{1}{c}{\textbf{avg raw score}} & \multicolumn{1}{c}{\textbf{stdev  raw  score}} & \multicolumn{1}{c}{\textbf{avg cor score}} \\
-\midrule
-antwoordmodel bij vraag & 0.850 & 2.108 & 0.692 \\
-toets & 1.569 & 17.000 & 0.709 \\
- & 0.812 & 1.481 & 0.740 \\
-stof-antwoordmodel bij vraag-specifieke vraag & 0.777 & 0.858 & 0.791 \\
-stof & 0.941 & 1.575 & 0.798 \\
-antwoordmodel bij vraag-specifieke vraag & 0.845 & 1.640 & 0.848 \\
-stof-toets-antwoordmodel & 1.146 & 2.762 & 1.276 \\
-\midrule
-\textbf{Grand Total} & \textbf{0.991} & \textbf{6.672} & \textbf{0.834} \\
-\bottomrule
-\end{tabularx}%
-\end{table}
-
-
-\noindent\begin{table}[H]\begin{tabularx}{\textwidth}{X *3{r}}
-\toprule
-\multicolumn{1}{c}{\textbf{Model}} & \multicolumn{1}{c}{\textbf{gem in s}} & \multicolumn{1}{c}{\textbf{stdev}} \\
-\midrule
-gemini-1.5-flash-8b & 0.00245 & 0.00125 \\
-gemini-1.5-pro-002 & 0.00466 & 0.00914 \\
-gpt-4o-mini & 5.47 & 4.51 \\
-gpt-4o & 7.61 & 7.53 \\
-\midrule
-\textbf{Grand Total} & 3.46 & 5.57 \\
-\bottomrule
-\end{tabularx}%
-\end{table}
-
-\noindent\begin{table}[H]
-\begin{tabularx}{\textwidth}{X *{2}{r}}
-\toprule
-\multicolumn{1}{c}{\textbf{Temperature}} & \multicolumn{1}{c}{\textbf{Avg. Corrected Certainty}} & \multicolumn{1}{c}{\textbf{Avg. Corrected Student Handwriting}} \\
-\midrule
-0   & 90.94 & 81.93 \\
-0.5 & 90.78 & 81.67 \\
-1   & 89.86 & 81.53 \\
-1.5 & 89.84 & 81.39 \\
-\midrule
-\textbf{Grand Total} & 90.40 & 81.65 \\
-\bottomrule
-\end{tabularx}
-\end{table}
 test
 \pagebreak
 test
@@ -1224,13 +1227,13 @@ Hier kan ook op vraagniveau een scherm zijn om vragen eruit te gooien of half te
 
 \noindent
 \begin{table}[H]
-    \caption{Bent u bekend met het concept van (generatieve) AI? vs lesgeef evraring}
+    \caption{Bent u bekend met het concept van (generatieve) AI\? vs lesgeef evraring}
     \begin{tabular}{l c c c c c}
         \toprule
         \textbf{Docent?} & \textbf{Ja} & \textbf{Gehoord} & \textbf{Nee} & \textbf{Grand Total} \\
         \midrule
-        1-5 jaar      & 4  & 4  &   &   & 8  \\
-        5-10 jaar     & 5  & 4  &   &   & 9  \\
+        1\-5 jaar      & 4  & 4  &   &   & 8  \\
+        5\-10 jaar     & 5  & 4  &   &   & 9  \\
         Meer dan tien jaar & 13 & 16 & 1 &   & 30 \\
         Minder dan één jaar & 1  & 1  &   &   & 2  \\
         \midrule
