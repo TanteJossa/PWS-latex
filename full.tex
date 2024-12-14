@@ -179,7 +179,7 @@ Ook moeten we, omdat we ons PWS bij het vak scheikunde doen, een proefje uitvoer
 \\\\
 Tijdens ons onderzoek hebben we naast een aantal bronnen ook een interview gedaan bij Daniel Marcus, een co-eigenaar van het bedrijf LevelUp Group. Een bedrijf die reclame analyse doet en gebruikt maakt van AI. In de methodes zullen we het noemen als er iets uit dat interview naar boven is gekomen wat handig bleek te zijn.
 \\\\
-Voor elke onderdeel hebben we een "hoofdverantwoordelijke" aangesteld, omdat het extra tijd kost om met zijn tweeën tegelijkertijd aan hetzelfde code project te werken. Als het nodig was hebben we elkaar natuurlijk wel geholpen in elkaars onderdelen. 
+Voor elke onderdeel hebben we een \"hoofdverantwoordelijke\" aangesteld, omdat het extra tijd kost om met zijn tweeën tegelijkertijd aan hetzelfde code project te werken. Als het nodig was hebben we elkaar natuurlijk wel geholpen in elkaars onderdelen. 
 \\\\
 Hieronder kan je een diagram zien die we in onze motivatiebrief hebben gebruikt om te laten zien hoe we ons programma modulair willen opbouwen , welke data waar nodig is en welke verwachte outputs er nodig zijn.
 \end{multicols}
@@ -240,7 +240,8 @@ Hieronder kan je een diagram zien die we in onze motivatiebrief hebben gebruikt 
         } \\
     \textbf{Subvragen: } & 
         \makecell[tl]{
-            $\bullet$ Welke AI modellen en types zijn er? \\
+            $\bullet$ Welke manieren zijn er om een de vraagsecties op een foto te scheiden? \\
+            $\bullet$ Wat is de beste manier om tekst uit een ingescande sectie te halen? \\
         }\\
     \textbf{Kader(s): } & 
         \makecell[tl]{
@@ -249,42 +250,42 @@ Hieronder kan je een diagram zien die we in onze motivatiebrief hebben gebruikt 
             $\bullet$ API management\\
             $\bullet$ Modulair opbouwen systeem en unit tests\\
         }\\
-    \parbox[t]{3cm}{\raggedright \textbf{Geschatte  tijdskosten:} } & 30 uur \\
+    \parbox[t]{3cm}{\raggedright\textbf{Geschatte  tijdskosten:} } & 30 uur \\
 \end{tabularx}
 
 \begin{multicols}{2}
 In dit onderdeel wordt een foto of scan van de toets omgezet naar computertekst.
 \\\\
-TODO: uitleg over hoe deze stappen zijn bedacht (logboek)
+% TODO: uitleg over hoe deze stappen zijn bedacht (logboek)
 \\\\
 \pagebreak
 \end{multicols}
 \noindent Deze module bestaat uit een aantal stappen: \\
 \begin{tabularx}{\linewidth}{@{}lX}
-    1. \textbf{Croppen } & 
+    1.\textbf{ Croppen } & 
         Uit een foto van een blaadje de toets knippen, zodat alles op een voorspelbare plek op de foto staat. \\
-    2. \textbf{Preprocessing } & 
+    2.\textbf{ Preprocessing } & 
         Om in de volgende stap de juiste resultaten te krijgen moeten er eerst een aantal dingen gebeuren, zoals de rode pen weghalen en het beeld scherper maken.\\
-    3. \textbf{Sectie herkenning } & 
+    3.\textbf{ Sectie herkenning } & 
         \adjustbox{valign=t}{\begin{tabularx}{\linewidth}{@{}lX}
-            1. \textbf{Handgeschreven} & Herken de handgeschreven cijfers en letters in de kantlijn \\
-            2. \textbf{Checkbox} & Gemodificeerd HAL-toetsblaadje met herkenbare blokjes en checkboxes voor de vraag, ontwikkeld na een interview met Daniel Markus.  \\
-            3. \textbf{QR-code} & Toetsblaadje met qr-codes rond de antwoordgebieden voor sectie-positie en vraagidentificatie
+            1.\textbf{ Handgeschreven} & Herken de handgeschreven cijfers en letters in de kantlijn \\
+            2.\textbf{ Checkbox} & Gemodificeerd HAL-toetsblaadje met herkenbare blokjes en checkboxes voor de vraag, ontwikkeld na een interview met Daniel Markus.  \\
+            3.\textbf{ QR-code} & Toetsblaadje met qr-codes rond de antwoordgebieden voor sectie-positie en vraagidentificatie
             
         \end{tabularx}} 
     \\
         
-    4. \textbf{Vraagherkenning} & 
+    4.\textbf{ Vraagherkenning} & 
         \adjustbox{valign=t}{\begin{tabularx}{\linewidth}{@{}lX}
-            1. \textbf{Handgeschreven} & Gebruik een tekstherkenningssoftware om het vraagnummer te lezen in de kantlijn \\
-            2. \textbf{Checkbox} & 
+            1.\textbf{ Handgeschreven} & Gebruik een tekstherkenningssoftware om het vraagnummer te lezen in de kantlijn \\
+            2.\textbf{ Checkbox} & 
                 $\bullet$ Gebruik code om vierkantjes te herkennen en kijken welke het meeste is ingevult \newline
                 $\bullet$ Gebruik een GPT model om te zeggen welk vakje is gekozen, dit kan rekening houden met pijlen en andere veranderingen zoals uitkrassen
             \\
-            3. \textbf{QR-code} & Vraaginformatie in QR-code
+            3.\textbf{ QR-code} & Vraaginformatie in QR-code
         \end{tabularx}} 
     \\
-    5. \textbf{Tekstherkenning} & De tekst wordt uit het antwoordgebied gehaald door een GPT of tekstherkenningssoftware.
+    5.\textbf{ Tekstherkenning} & De tekst wordt uit het antwoordgebied gehaald door een GPT of tekstherkenningssoftware.
 \end{tabularx}
 
 \textit{Hier volgt een uitwerking van de genomen stappen. }
@@ -300,7 +301,6 @@ Daarom zijn we daarna overgestapt op een openCV systeem.
 \noindent
 \begin{longtable}{@{}p{0.65\linewidth}|p{\picwidth\linewidth}}
 \multicolumn{1}{c}{Stap} & \multicolumn{1}{c}{Voorbeeld}
-    
     \endhead
     \hline
     0. crop input & 
@@ -332,7 +332,7 @@ De rode tekst wordt verwijderd door te checken voor elke pixel met een te hoge r
     \centering
     \includegraphics[width=\linewidth]{./images/methoden/inscannen/preprocessing/pre_red_pen.png}
     \caption{Code voor de rode pen extractie}
-    \label{fig:enter-label}
+    \label{fig:red-pen-code}
 \end{figure}
 \pagebreak
 \paragraph*{Sectie herkenning} We hebben 3 soorten sectie herkenning voor de drie verschillende manieren die we hebben ontwikkeld. 
@@ -343,8 +343,7 @@ Voor de tekstherkenningssoftware hebben we in het begin python pytesseract gebru
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth]{./images/methoden/inscannen/sectie/hand/handgeschreven.png}
-    \caption{Pytesseract output}
-    \label{fig:enter-label}
+    \caption{Pytesseract output}\label{fig:pytesseract-output}
 \end{figure}
 Daarna hebben we getest met Handprint een python module die verschillende api's kan gebruiken, zoals:
 \begin{figure}[H]%
@@ -352,21 +351,18 @@ Daarna hebben we getest met Handprint een python module die verschillende api's 
     \subfloat[\centering Google document AI]{{\includegraphics[height=10cm]{./images/methoden/inscannen/sectie/hand/kant_google.png} }}%
     \qquad
     \subfloat[\centering Microsoft Azure document AI]{{\includegraphics[height=10cm]{./images/methoden/inscannen/sectie/hand/kant_microsoft.png} }}%
-    \caption{Handprint voorbeelden}%
-    \label{fig:example}%
+    \caption{Handprint voorbeelden}\label{fig:example}%
 \end{figure}
 De herkende getallen in de kantlijn kloppen vaak niet, waardoor het vraagnummer bepalen onmogelijk wordt. Als je geen rekening houdt met dat het getallen moeten zijn komen de secties er redelijk goed uit rollen.
 \begin{figure}
     \centering
     \includegraphics[width=1\linewidth]{./images/methoden/inscannen/sectie/hand/google.png}
-    \caption{Google document API}
-    \label{fig:enter-label}
+    \caption{Google document API}\label{fig:google-doc-api}
 \end{figure}
 \begin{figure}
     \centering
     \includegraphics[width=1\linewidth]{./images/methoden/inscannen/sectie/hand/section.png}
-    \caption{Secties door Google document AI}
-    \label{fig:enter-label}
+    \caption{Secties door Google document AI}\label{fig:sec-google-doc-api}
 \end{figure}
 Deze methode was met geen enkel model betrouwbaar genoeg.
 Dus uiteindelijk hebben we besloten over te stappen naar een voorgeprint toetsblaadje, waarmee het makkelijker is  om de vraag en sectie te extraheren.
@@ -380,8 +376,7 @@ We zijn gestart met deze versie intwikkelen na het interview met Daniel Markus w
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth]{./images/methoden/inscannen/sectie/checkbox/template.png}
-    \caption{Checkbox template}
-    \label{fig:enter-label}
+    \caption{Checkbox template}\label{fig:checkbox-template}
 \end{figure}
 \end{multicols} 
 
@@ -453,8 +448,7 @@ Om dit in te scannen zijn er 2 dingen nodig: \\
         [1001, 19, 43, 61]
     ]
     \end{minted}
-    \caption{Vierkant detectie output} 
-    \label{json-example}
+    \caption{Vierkant detectie output}\label{json-example}
     \end{listing}
 
 \end{multicols}
@@ -468,7 +462,7 @@ De volgende foto:
     \centering
     \includegraphics[width=0.2\linewidth]{./images/methoden/inscannen/sectie/checkbox/vraagnummer/answer_section.png}
     \caption{Vraagnummer sectie Azure}
-    \label{fig:enter-label}
+    \label{fig:sec-azure}
 \end{figure}
 Gaf het volgende resultaat: 
 \begin{listing}[H]
@@ -508,13 +502,13 @@ Input:
     \centering
     \includegraphics[width=0.33\linewidth]{./images/methoden/inscannen/sectie/checkbox/vraagnummer/section_selection_input.png}
     \caption{Vraag nummer sectie GPT}
-    \label{fig:enter-label}
+    \label{fig:gpt-question-num}
 \end{figure}
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{./images/methoden/inscannen/sectie/checkbox/vraagnummer/code-question-selector-format.png}
     \caption{Output JSON format}
-    \label{fig:enter-label}
+    \label{fig:question-num-json}
 \end{figure}
 
 Prompt:\\
@@ -627,22 +621,26 @@ We kunnen nu de secties scheiden en de vraagnummers relatief betrouwbaar extrahe
 \begin{multicols}{2}
 Nu hebben we van elk type sectie een foto van het antwoordveld uit de vorige stap. Het lastigste van dit onderdeel is de handschriften omzetten naar geschreven tekst. Om erachter te komen wat de beste methode is hebben we veel getest met instellingen zoals: promps, temperatuur, foto en type-model.\\
 \\
-We hebben 5 modellen getest:
+\begin{minipage}{\textwidth}
+We hebben 5 modellen getest:\ref{fig:score-model}
 \begin{itemize}
     \item \textbf{Google} gemini-1.5-pro-002
     \item \textbf{Google} gemini-1.5-flash-8b
-    \item \textbf{Google} gemini-2.0-flash-exp (11/12/24 uitgekomen)
+    \item \textbf{Google} gemini-2.0-flash-exp \newline (11/12/24 uitgekomen)
     \item \textbf{OpenAI} gpt-4o
     \item \textbf{OpenAI} gpt-4o-mini
 \end{itemize}
+\end{minipage}
 
-4 verschillende temperaturen getest:
+\noindent\begin{minipage}{\textwidth}
+4 verschillende temperaturen getest:\ref{fig:score-image}
 \begin{itemize}
     \item 0
     \item 0.5
     \item 1
     \item 1.5
 \end{itemize}
+\end{minipage}
 \end{multicols}
 \pagebreak
 \begin{multicols}{2}
@@ -653,7 +651,7 @@ Om te test waarmee hij moeite had hebben we 5 antwoordfoto's getest:
     \textit{Dit is een antwoord op vraag 2 en er is sprake van\\
 onvolledige verbranding.}
     \caption{Kort en leesbaar}
-    \label{fig:enter-label}
+    \label{fig:img-short-readable}
 \end{figure}
 \begin{figure}[H]
     \centering
@@ -662,7 +660,7 @@ onvolledige verbranding.}
     \textit{Dit is een antwoord op vraag 2 en er is sprake van onvolledige verbranding.}
     \caption{Kort netjes met uitgekrasde tekst}
 
-    \label{fig:enter-label}
+    \label{fig:img-short-crossed}
 \end{figure}
 \begin{figure}[H]
     \centering
@@ -670,7 +668,7 @@ onvolledige verbranding.}
     \textit{Dit is een antwoord op vraag 2 en er is sprake van onvolledige verbranding.}
     \caption{Kort slecht handschrift}
 
-    \label{fig:enter-label}
+    \label{fig:img-short-unreadable}
 \end{figure}
 \begin{figure}[H]
     \centering
@@ -679,7 +677,7 @@ onvolledige verbranding.}
 er meer brandstof (kaarsevet) is en hij dus langer warmte, brandstof en zuurstof heeft.}
     \caption{Slecht leesbaar met pijlen}
 
-    \label{fig:enter-label}
+    \label{fig:img-short-unreadable-arrow}
 \end{figure}
 % \begin{figure}[H]
 %     \centering
@@ -694,9 +692,8 @@ er meer brandstof (kaarsevet) is en hij dus langer warmte, brandstof en zuurstof
     \textit{Dit is een langer antwoord op vraag 6 het waxine lichtje brandt langer omdat \\
 er meer brandstof (kaarsevet) is en hij dus langer warmte, brandstof en zuurstof heeft.}
     \caption{Gekreukeld met pijlen}
-    \label{fig:enter-label}
+    \label{fig:img-wrinkeled-arrow}
 \end{figure}
-
 
 \end{multicols}
 \pagebreak
@@ -721,7 +718,7 @@ voeg alle text corrections samen in correctly\_spelled\_text om zo het antwoord 
 certainty is hoe zeker je bent dat je de tekst compleet hebt getranscribeerd: 0 betekend dat een docent er nog zelf naar moet kijken en 100 betekend dat er geen foutje mogelijk is.
 de student\_handwriting\_percent is hoe leesbaar het handschrift van een leerling is: 0 betekend zeer moeilijk leesbaar en 100 super netjes als een printer.
 
-voer deze opdracht zo goed mogelijk uit."\\
+voer deze opdracht zo goed mogelijk uit.\" \\
 \end{itemize}
 
 \begin{minipage}{0.45\linewidth}
@@ -771,7 +768,7 @@ Zie de appendix voor tests.
     \centering
     \includegraphics[width=\linewidth]{./images/methoden/inscannen/score/code-score.png}
     \caption{Score berekenen}
-    \label{fig:enter-label}
+    \label{fig:score-calc-code}
 \end{figure}
 \end{minipage}
 
@@ -924,7 +921,7 @@ Dit waren de vragen die we hebben bedacht:
     \end{minipage} & weten hoe positief docenten in een mogelijkheid zijn en om te vergelijken met vakgebied en lesgeef ervaring & \\
     \hline 
     \begin{minipage}[t]{\linewidth}
-        \textbf{7. Hoeveel leerlingen trekken uw beoordeling per toets - terecht of niet - in twijfel? (Een getal)}\\
+        \textbf{7. Hoeveel leerlingen trekken uw beoordeling per toets \- terecht of niet \- in twijfel? (Een getal)}\\
         \vspace{4em} Zelf een getal invullen
     \end{minipage} & 
         \begin{minipage}[t]{\linewidth}
@@ -1007,7 +1004,7 @@ Voor het analyseren gaan we Google Sheet pivot tables gebruiken om snel verbande
             $\bullet$ Toetsen maken / scheikunde \\
             $\bullet$ Programma testen \\
         }\\
-    \parbox[t]{3cm}{\raggedright \textbf{Geschatte  tijdskosten:} } & 15 uur \\
+    \parbox[t]{3cm}{\raggedright\textbf{Geschatte  tijdskosten:} } & 15 uur \\
 \end{tabularx}
 \pagebreak
 \section{Resultaten}
@@ -1016,7 +1013,10 @@ Voor het analyseren gaan we Google Sheet pivot tables gebruiken om snel verbande
 
 \href{https://docs.google.com/spreadsheets/d/1wbHiG81i-UJ18s6gP3i_WtsPD-FBQTqg7AwNjN8Rm2g}{Resultaten}
 
-\noindent\begin{table}[H]\begin{tabularx}{\textwidth}{X *2{r}}
+\noindent\begin{table}[H]
+\caption{\# per model}
+\label{fig:count-model}
+\begin{tabularx}{\textwidth}{X *2{r}}
     \toprule
     \multicolumn{1}{c}{\textbf{Model}} & \multicolumn{1}{c}{\textbf{\#}} \\  % Changed
     \midrule
@@ -1028,10 +1028,16 @@ Voor het analyseren gaan we Google Sheet pivot tables gebruiken om snel verbande
     \midrule
     \textbf{Grand Total} & \textbf{5365} \\
     \bottomrule
+    
 \end{tabularx}%
 \end{table}
 
-\noindent\begin{table}[H]\begin{tabularx}{\textwidth}{X *3{r}}
+
+
+\noindent\begin{table}[H]
+\caption{score per model}
+\label{fig:score-model}
+\begin{tabularx}{\textwidth}{X *3{r}}
     \toprule
     \multicolumn{1}{c}{\textbf{Model}} & \multicolumn{1}{c}{\textbf{avg cor score}} & \multicolumn{1}{c}{\textbf{stdev cor score}} & \multicolumn{1}{c}{\textbf{avg cor change count}} \\
     \midrule
@@ -1048,15 +1054,18 @@ Voor het analyseren gaan we Google Sheet pivot tables gebruiken om snel verbande
 
 
 
-\noindent\begin{table}[H]\begin{tabularx}{\textwidth}{X *3{r}}
+\noindent\begin{table}[H]
+\caption{score per testfoto}
+\label{fig:score-image}
+\begin{tabularx}{\textwidth}{X *3{r}}
     \toprule
-    \multicolumn{1}{c}{\textbf{image}} & \multicolumn{1}{c}{\textbf{avg cor score}} & \multicolumn{1}{c}{\textbf{STDEV cor score}} & \multicolumn{1}{c}{\textbf{avg cor change count}} \\
+    \multicolumn{1}{c}{\textbf{image}} & \multicolumn{1}{c}{\textbf{avg cor score}} & \multicolumn{1}{c}{\textbf{stdev cor score}} & \multicolumn{1}{c}{\textbf{avg cor change count}} \\
     \midrule
-    kort leesbaar & 0.1867 & 1.1019 & 1.8679 \\
-    kort leesbaar uitgekrast & 0.2567 & 0.6206 & 1.7862 \\
-    gekreukeld met pijlen & 1.1113 & 0.2310 & 10.0095 \\
-    kort onleesbaar & 1.2250 & 3.2430 & 3.9123 \\
-    slecht leesbaar pijlen & 1.3226 & 1.0186 & 11.7194 \\
+    image \ref{fig:img-short-readable} kort leesbaar & 0.1867 & 1.1019 & 1.8679 \\
+    image \ref{fig:img-short-crossed} kort leesbaar uitgekrast & 0.2567 & 0.6206 & 1.7862 \\
+    image \ref{fig:img-wrinkeled-arrow} gekreukeld met pijlen & 1.1113 & 0.2310 & 10.0095 \\
+    image \ref{fig:img-short-unreadable} kort onleesbaar & 1.2250 & 3.2430 & 3.9123 \\
+    image \ref{fig:img-short-unreadable-arrow} slecht leesbaar pijlen & 1.3226 & 1.0186 & 11.7194 \\
     \midrule
     \textbf{Grand Total} & \textbf{0.7763} & \textbf{1.7469} & \textbf{5.3703} \\
     \bottomrule
@@ -1066,11 +1075,14 @@ Voor het analyseren gaan we Google Sheet pivot tables gebruiken om snel verbande
 
 
 
-\noindent\begin{table}[H]\begin{tabularx}{\textwidth}{X *3{r}}
+\noindent\begin{table}[H]
+\caption{score per opdracht}
+\label{fig:score-command}
+\begin{tabularx}{\textwidth}{X *3{r}}
     \toprule
     \multicolumn{1}{c}{\textbf{base\_command}} & \multicolumn{1}{c}{\textbf{avg cor score}} & \multicolumn{1}{c}{\textbf{stdev cor score}} & \multicolumn{1}{c}{\textbf{avg cor change count}} \\
     \midrule
-    lange uitleg bij elk veld, zonder context & 0.6768 & 1.3409 & 4.6585 \\
+    lange uitleg bij elk veld & 0.6768 & 1.3409 & 4.6585 \\
     huidige opdracht met uitleg bij elk veld & 0.7828 & 1.5641 & 5.8461 \\
     de makkelijkste opdracht zonder extra uitleg & 0.8583 & 2.1735 & 5.5504 \\
     \midrule
@@ -1080,7 +1092,10 @@ Voor het analyseren gaan we Google Sheet pivot tables gebruiken om snel verbande
 \end{table}
 
 
-\noindent\begin{table}[H]\begin{tabularx}{\textwidth}{X *3{r}}
+\noindent\begin{table}[H]
+\caption{score per context additie}
+\label{fig:score-addition}
+\begin{tabularx}{\textwidth}{X *3{r}}
     \toprule
     \multicolumn{1}{c}{\textbf{addition}} & \multicolumn{1}{c}{\textbf{avg cor score}} & \multicolumn{1}{c}{\textbf{stdev cor score}} & \multicolumn{1}{c}{\textbf{avg cor change count}} \\
     \midrule
@@ -1098,22 +1113,28 @@ Voor het analyseren gaan we Google Sheet pivot tables gebruiken om snel verbande
 \end{table}
 
 
-\noindent\begin{table}[H]\begin{tabularx}{\textwidth}{X *2{r}}
+\noindent\begin{table}[H]
+\caption{zekerheid en handschriftscore per model} 
+\label{fig:time-model} 
+\begin{tabularx}{\textwidth}{X *2{r}}
     \toprule
     \multicolumn{1}{c}{\textbf{Model}} & \multicolumn{1}{c}{\textbf{avg delta time in s}} & \multicolumn{1}{c}{\textbf{stdev delta time in s}} \\
     \midrule
-    gemini-1.5-flash-8b & 0.0024 & 0.0012 \\
-    gemini-2.0-flash-exp & 0.0033 & 0.0014 \\
-    gemini-1.5-pro-002 & 0.0046 & 0.0091 \\
-    gpt-4o-mini & 5.4742 & 4.5081 \\
-    gpt-4o & 7.6063 & 7.5320 \\
+    gemini-1.5-flash-8b & 2.4 & 1.2 \\
+    gemini-2.0-flash-exp & 3.3 & 1.4 \\
+    gemini-1.5-pro-002 & 4.6 & 9.1 \\
+    gpt-4o-mini & 5.4 & 4.5 \\
+    gpt-4o & 7.6 & 7.5 \\
     \midrule
     \textbf{Grand Total} & \textbf{2.6516} & \textbf{5.0869} \\
     \bottomrule
 \end{tabularx}%
 \end{table}
 
-\noindent\begin{table}[H]\begin{tabularx}{\textwidth}{X *4{r}}
+\noindent\begin{table}[H]
+\caption{}
+\label{fig:certainty-model}
+\begin{tabularx}{\textwidth}{X *4{r}}
     \toprule
     \multicolumn{1}{c}{\textbf{Model}} & \multicolumn{1}{c}{\textbf{avg  certainty}} & \multicolumn{1}{c}{\textbf{stdev certainty}} & \multicolumn{1}{c}{\textbf{avg handwriting}} & \multicolumn{1}{c}{\textbf{stdev handwriting}} \\
     \midrule
@@ -1128,11 +1149,8 @@ Voor het analyseren gaan we Google Sheet pivot tables gebruiken om snel verbande
 \end{tabularx}%
 \end{table}
 
-test
 \pagebreak
-test
 \subsection{Nakijken}
-test
 \pagebreak
 \subsection{Analyseren}
 \begin{multicols}{2}
@@ -1220,7 +1238,7 @@ In die \textbf{inlaad pagina} moet een docent toetsresultaten uit een Excel of u
     \centering
     \includegraphics[width=1\linewidth]{./images/methoden/analyseren/ui/inlaad-pagina.png}
     \caption{Voorbeeld inlaadpagina}
-    \label{fig:enter-label}
+    \label{fig:example-load-page}
 \end{figure}
 \noindent In het \textbf{analyse scherm} moet voor een docent overzichtelijk weergegeven zijn welke vragen goed en minder goed gingen en de scores van de leerlingen. Hier moet ook te zien zijn welke vragen waarschijnlijk niet thuishoren in de toets, omdat de mensen met een hoog cijfer hem fout hebben, dit kan komen dat die leerlingen te ver doordenken en daardoor de vraag fout hebben. De vraag is of je die leerlingen wilt afstraffen voor het verder denken dan het juiste antwoord. \\
 \\
@@ -1244,8 +1262,8 @@ Hier kan ook op vraagniveau een scherm zijn om vragen eruit te gooien of half te
         \toprule
         \textbf{Docent?} & \textbf{Ja} & \textbf{Gehoord} & \textbf{Nee} & \textbf{Grand Total} \\
         \midrule
-        1\-5 jaar      & 4  & 4  &   &   & 8  \\
-        5\-10 jaar     & 5  & 4  &   &   & 9  \\
+        1-5 jaar      & 4  & 4  &   &   & 8  \\
+        5-10 jaar     & 5  & 4  &   &   & 9  \\
         Meer dan tien jaar & 13 & 16 & 1 &   & 30 \\
         Minder dan één jaar & 1  & 1  &   &   & 2  \\
         \midrule
@@ -1475,14 +1493,56 @@ Voor het maken van deze lijst is voor het sorteren en overzichtelijk maken van d
 \pagebreak
 \section{conclusie}
 \subsection{Inscannen}
+\textbf{Vragen:}\\
+\textbf{1. Welke manieren zijn er om een de vraagsecties op een foto te scheiden?} 
+\begin{multicols}{2}
+Van de 3 manieren die we hebben getest blijkt dat 1 methode onbruikbaar is en de andere 2 bruikbaar, maar in andere omstandigheden.\\
+De methode die niet werkt is de kantlijnmethode. Het is niet mogelijk om ervan uit te gaan dat leerlingen alleen maar vraagnummers in de kantlijn zetten en daar alle secites op te baseren, want een kleine textherkennings fout kan antwoord op een vraag splitsen, waardoor iemand alle punten misloopt. \\
+\\
+De \textbf{QR-code} methode werkt goed voor werkbladen. Bijvoorbeeld een examen waar een leerling zo min mogelijk wil uitprinten. De leerling zou dan bijvoorbeeld een examenvraag uitprinten met daaronder direct het qr-antwoordveld, daar een foto van nemen die dan direct nagekeken wordt. 
+\\
+De \textbf{Checkbox} methode is de methode die het beste toepasbaar is voor een toets. Doordat er weinig/geen fouten worden gemaakt in het herkennen van een sectie, wat het doel is van deze deelvraag. Er is wel een leercurve voor de leerling. Na onze toets in de 3e klas blijkt dat die gymnasium 3 leerlingen er weinig moeite mee hadden, nadat wij het voordeden. Het kost een docent wel extra werk om tijdens het innemen van de toets te checken of iedereen op elk blaadje zijn id heeft opgeschreven. Bij ons toetsje waren er nog een aantal leerlingen die het nummer op de achterkant waren vergeten. Er was 1 sectienummer verkeerd ingelezen, maar dat soort errors kunnen gedetecteerd worden, door bijvoorbeeld te checken of deze leerling deze vragen misschien al een keer beantwoord heeft. Als dat zo is kan een docent met de hand checken welk leerling ID erbij past. 
 
+% TODO: vergelijking met hypothese
+\end{multicols}
+
+
+\noindent\textbf{2. Wat is de beste manier om tekst uit een ingescande sectie te halen?}
+\begin{multicols}{2}
+Uit de tests kunnen we ten eerste vaststellen dat de modellen van Google sneller zijn dan de modellen van OpenAI, zie:tabel \ref{fig:time-model}. Zoals verwacht zijn de flash modellen het snelst, maar we vonden het wel opvallend dat het verschil oploopt tot wel 3x sneller. \\
+We verwachtten dat het \"nieuwste\" model meestal de beste score zou hebben, maar dat is kennenlijk niet helemaal waar, want de tekstherkenning van 1.5 pro heeft een betere gemmidelde score dan de gemini flash 2.0, die midden december 2024 is uitgekomen. Zie:tabel \ref{fig:score-model}. Dat is vooral te zien aan het gemmidelde aantal aanpassingen in een tekst, die bij flash 2.0 meer dan 2x zo groot is als 1.5 pro. Het (verwaarloosbare) nadeel is dat de standaarddeviatie van gemnini 1.5 pro meer dan 6x zo groot is als die van flash 2.0. \\
+\\
+Zoals we verwacht hadden geeft geeft een langere prompt een beter resultaat, zie:tabel \ref{fig:score-command}. Daarom hebben we ervoor gekozen om hiermee onze 3e klas toets in te scannen. 
+\\
+Wat ons ook opviel is dat de context van de hele toets de beste inscanresultaten gaf. Wij hadden verwacht dat de rubric en de vraag de laagste (beste) score zou geven, maar het blijkt dat de toets de beste context geeft. Kennelijk begrijpen de modellen beter welke woorden iemand wil gebruiken als ze de hele toets hebben. Dat is ook te zien aan de gemmidelde veranderingen. Het is wel opvallend dat bij de rubric en de vraag geeft ook zo'n lage change count. De standaarddeviatie is daarintegen wel hoog, dus die combinatie is bij sommige vragen misschien beter dan de hele toets. Toch gaan we kiezen voor de vraag en antwoordmodel additie, want een hele toets zorgt voor een grote vermeerdering in tokens/kosten. Daarnaast neem de tijd per request toe.\\
+\\
+\noindent De opdracht die we gaan gebruiken:\\
+\begin{tabularx}{\textwidth}{ll}
+    \textbf{Model} & Gemini 1.5 pro 002 \\
+    \textbf{Temperatuur} & 0.5 \\
+    \textbf{Prompt} & lange uitleg bij elk veld \\
+    \textbf{Additie} & vraag en antwoordmodel \\
+\end{tabularx}
+
+\end{multicols}
 
 \subsection{Nakijken}
 
 
 \subsection{Analyseren}
+\begin{multicols}{2}
+% TODO: zeggen dat dit met ai gemaakt is
+Dit onderzoek analyseert toetsresultaten, met als doel betrouwbare kennismetingen. Cruciaal is dat de analyse aansluit bij het beoogde doel van de docent, wat invloed heeft op het gewenste gemiddelde en de standaarddeviatie.
 
+Naast bekende statistische maten als gemiddelde, standaarddeviatie en covariantie, zijn op vraagniveau de Item-Rest Correlatie (RIR) en Item-Totaal Correlatie (RIT) toegepast om de bijdrage van individuele vragen aan de totale score te beoordelen.
 
+Een voorgestelde gebruikersinterface (UI) met een input-, analyse- en bewerkscherm faciliteert de praktische toepassing. 
+\begin{itemize}
+    \item \textbf{Input:} Toetsresultaten uploaden en leerdoelen koppelen.
+    \item \textbf{Analyse:} Prestaties op vraag- en leerlingniveau, inclusief correlaties.
+    \item \textbf{Bewerking:} Gewenst gemiddelde/standaarddeviatie instellen, vragen aanpassen.
+\end{itemize}
+\end{multicols}
 \subsection{Enquete}
 
 
