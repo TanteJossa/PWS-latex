@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.11)  14 DEC 2024 15:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.11)  16 DEC 2024 15:56
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1279,22 +1279,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 113--130
 
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 140--142
+Underfull \hbox (badness 10000) in paragraph at lines 139--141
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--147
+Underfull \hbox (badness 10000) in paragraph at lines 145--146
 []\T1/cmr/m/n/12 Computerprogramma's die ge-bruik-
  []
 
 
-Underfull \hbox (badness 5939) in paragraph at lines 146--147
+Underfull \hbox (badness 5939) in paragraph at lines 145--146
 \T1/cmr/m/n/12 ge-trainde transformer-modellen en grote
  []
 
 
-Underfull \hbox (badness 6188) in paragraph at lines 164--165
+Underfull \hbox (badness 6188) in paragraph at lines 163--164
 \T1/cmr/m/n/12 nog meer denken. Wij denken
  []
 
@@ -1303,135 +1303,135 @@ Underfull \hbox (badness 6188) in paragraph at lines 164--165
 [4]
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 175--185
+Underfull \hbox (badness 10000) in paragraph at lines 174--184
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 175--185
+Underfull \hbox (badness 10000) in paragraph at lines 174--184
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 175--185
+Underfull \hbox (badness 10000) in paragraph at lines 174--184
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 175--185
+Underfull \hbox (badness 10000) in paragraph at lines 174--184
 \T1/cmr/m/n/12 Voor elke on-derdeel hebben we een
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 175--185
+Underfull \hbox (badness 10000) in paragraph at lines 174--184
 
  []
 
 
-Overfull \hbox (72.9872pt too wide) in paragraph at lines 228--229
+Overfull \hbox (72.9872pt too wide) in paragraph at lines 227--228
  [] 
  []
 
 
-Overfull \hbox (9.5033pt too wide) in alignment at lines 254--254
+Overfull \hbox (9.5033pt too wide) in alignment at lines 253--253
 [][] 
  []
 
 
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 257--262
+Underfull \hbox (badness 10000) in paragraph at lines 256--261
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 257--262
+Underfull \hbox (badness 10000) in paragraph at lines 256--261
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 257--262
+Underfull \hbox (badness 10000) in paragraph at lines 256--261
 
  []
 
 [7]
-Underfull \hbox (badness 1902) in paragraph at lines 289--289
+Underfull \hbox (badness 1902) in paragraph at lines 288--288
 []|\T1/cmr/m/n/12 Toetsblaadje met qr-codes rond de
  []
 
 
-Underfull \hbox (badness 2096) in paragraph at lines 289--289
+Underfull \hbox (badness 2096) in paragraph at lines 288--288
 \T1/cmr/m/n/12 antwo-ordge-bieden voor sectie-positie
  []
 
 
-Underfull \hbox (badness 2401) in paragraph at lines 289--289
+Underfull \hbox (badness 2401) in paragraph at lines 288--288
 []|$\OMS/cmsy/m/n/12 ^^O$ \T1/cmr/m/n/12 Ge-bruik code om vierkan-t-jes te
  []
 
 
 
 [8]
-<./images/methoden/inscannen/croppen/crop_input.png, id=308, 2273.04pt x 4039.2pt>
+<./images/methoden/inscannen/croppen/crop_input.png, id=314, 2273.04pt x 4039.2pt>
 File: ./images/methoden/inscannen/croppen/crop_input.png Graphic file (type png)
 <use ./images/methoden/inscannen/croppen/crop_input.png>
-Package pdftex.def Info: ./images/methoden/inscannen/croppen/crop_input.png  used on input line 307.
+Package pdftex.def Info: ./images/methoden/inscannen/croppen/crop_input.png  used on input line 306.
 (pdftex.def)             Requested size: 140.92792pt x 250.41548pt.
-<./images/methoden/inscannen/croppen/crop_bw.png, id=309, 282.05376pt x 501.875pt>
+<./images/methoden/inscannen/croppen/crop_bw.png, id=315, 282.05376pt x 501.875pt>
 File: ./images/methoden/inscannen/croppen/crop_bw.png Graphic file (type png)
 <use ./images/methoden/inscannen/croppen/crop_bw.png>
-Package pdftex.def Info: ./images/methoden/inscannen/croppen/crop_bw.png  used on input line 311.
+Package pdftex.def Info: ./images/methoden/inscannen/croppen/crop_bw.png  used on input line 310.
 (pdftex.def)             Requested size: 140.92792pt x 250.76074pt.
-<./images/methoden/inscannen/croppen/crop_gaussian.png, id=310, 282.05376pt x 501.875pt>
+<./images/methoden/inscannen/croppen/crop_gaussian.png, id=316, 282.05376pt x 501.875pt>
 File: ./images/methoden/inscannen/croppen/crop_gaussian.png Graphic file (type png)
 <use ./images/methoden/inscannen/croppen/crop_gaussian.png>
-Package pdftex.def Info: ./images/methoden/inscannen/croppen/crop_gaussian.png  used on input line 316.
+Package pdftex.def Info: ./images/methoden/inscannen/croppen/crop_gaussian.png  used on input line 315.
 (pdftex.def)             Requested size: 140.92792pt x 250.76074pt.
-<./images/methoden/inscannen/croppen/crop_canny.png, id=311, 282.05376pt x 501.875pt>
+<./images/methoden/inscannen/croppen/crop_canny.png, id=317, 282.05376pt x 501.875pt>
 File: ./images/methoden/inscannen/croppen/crop_canny.png Graphic file (type png)
 <use ./images/methoden/inscannen/croppen/crop_canny.png>
-Package pdftex.def Info: ./images/methoden/inscannen/croppen/crop_canny.png  used on input line 320.
+Package pdftex.def Info: ./images/methoden/inscannen/croppen/crop_canny.png  used on input line 319.
 (pdftex.def)             Requested size: 140.92792pt x 250.76074pt.
-<./images/methoden/inscannen/croppen/crop_output.png, id=312, 1916.15875pt x 2246.3925pt>
+<./images/methoden/inscannen/croppen/crop_output.png, id=318, 1916.15875pt x 2246.3925pt>
 File: ./images/methoden/inscannen/croppen/crop_output.png Graphic file (type png)
 <use ./images/methoden/inscannen/croppen/crop_output.png>
-Package pdftex.def Info: ./images/methoden/inscannen/croppen/crop_output.png  used on input line 324.
+Package pdftex.def Info: ./images/methoden/inscannen/croppen/crop_output.png  used on input line 323.
 (pdftex.def)             Requested size: 140.92792pt x 165.21584pt.
  [9 <./images/methoden/inscannen/croppen/crop_input.png> <./images/methoden/inscannen/croppen/crop_bw.png (PNG copy)>]
-<./images/methoden/inscannen/preprocessing/pre_red_pen.png, id=318, 2113.8975pt x 1425.325pt>
+<./images/methoden/inscannen/preprocessing/pre_red_pen.png, id=324, 2113.8975pt x 1425.325pt>
 File: ./images/methoden/inscannen/preprocessing/pre_red_pen.png Graphic file (type png)
 <use ./images/methoden/inscannen/preprocessing/pre_red_pen.png>
-Package pdftex.def Info: ./images/methoden/inscannen/preprocessing/pre_red_pen.png  used on input line 333.
+Package pdftex.def Info: ./images/methoden/inscannen/preprocessing/pre_red_pen.png  used on input line 332.
 (pdftex.def)             Requested size: 469.75499pt x 316.72603pt.
 
 
 [10 <./images/methoden/inscannen/croppen/crop_gaussian.png (PNG copy)> <./images/methoden/inscannen/croppen/crop_canny.png (PNG copy)> <./images/methoden/inscannen/croppen/crop_output.png (PNG copy)>]
 
 [11 <./images/methoden/inscannen/preprocessing/pre_red_pen.png>]
-<./images/methoden/inscannen/sectie/hand/handgeschreven.png, id=331, 365.365pt x 513.92pt>
+<./images/methoden/inscannen/sectie/hand/handgeschreven.png, id=337, 365.365pt x 513.92pt>
 File: ./images/methoden/inscannen/sectie/hand/handgeschreven.png Graphic file (type png)
 <use ./images/methoden/inscannen/sectie/hand/handgeschreven.png>
-Package pdftex.def Info: ./images/methoden/inscannen/sectie/hand/handgeschreven.png  used on input line 345.
+Package pdftex.def Info: ./images/methoden/inscannen/sectie/hand/handgeschreven.png  used on input line 344.
 (pdftex.def)             Requested size: 229.87749pt x 323.34784pt.
-<./images/methoden/inscannen/sectie/hand/kant_google.png, id=332, 68.255pt x 513.92pt>
+<./images/methoden/inscannen/sectie/hand/kant_google.png, id=338, 68.255pt x 513.92pt>
 File: ./images/methoden/inscannen/sectie/hand/kant_google.png Graphic file (type png)
 <use ./images/methoden/inscannen/sectie/hand/kant_google.png>
-Package pdftex.def Info: ./images/methoden/inscannen/sectie/hand/kant_google.png  used on input line 351.
+Package pdftex.def Info: ./images/methoden/inscannen/sectie/hand/kant_google.png  used on input line 350.
 (pdftex.def)             Requested size: 37.78926pt x 284.52756pt.
-<./images/methoden/inscannen/sectie/hand/kant_microsoft.png, id=333, 65.24374pt x 513.92pt>
+<./images/methoden/inscannen/sectie/hand/kant_microsoft.png, id=339, 65.24374pt x 513.92pt>
 File: ./images/methoden/inscannen/sectie/hand/kant_microsoft.png Graphic file (type png)
 <use ./images/methoden/inscannen/sectie/hand/kant_microsoft.png>
-Package pdftex.def Info: ./images/methoden/inscannen/sectie/hand/kant_microsoft.png  used on input line 353.
+Package pdftex.def Info: ./images/methoden/inscannen/sectie/hand/kant_microsoft.png  used on input line 352.
 (pdftex.def)             Requested size: 36.12209pt x 284.52756pt.
-<./images/methoden/inscannen/sectie/hand/google.png, id=334, 358.33875pt x 513.92pt>
+<./images/methoden/inscannen/sectie/hand/google.png, id=340, 358.33875pt x 513.92pt>
 File: ./images/methoden/inscannen/sectie/hand/google.png Graphic file (type png)
 <use ./images/methoden/inscannen/sectie/hand/google.png>
-Package pdftex.def Info: ./images/methoden/inscannen/sectie/hand/google.png  used on input line 359.
+Package pdftex.def Info: ./images/methoden/inscannen/sectie/hand/google.png  used on input line 358.
 (pdftex.def)             Requested size: 229.87749pt x 329.69185pt.
-<./images/methoden/inscannen/sectie/hand/section.png, id=335, 365.365pt x 513.92pt>
+<./images/methoden/inscannen/sectie/hand/section.png, id=341, 365.365pt x 513.92pt>
 File: ./images/methoden/inscannen/sectie/hand/section.png Graphic file (type png)
 <use ./images/methoden/inscannen/sectie/hand/section.png>
-Package pdftex.def Info: ./images/methoden/inscannen/sectie/hand/section.png  used on input line 364.
+Package pdftex.def Info: ./images/methoden/inscannen/sectie/hand/section.png  used on input line 363.
 (pdftex.def)             Requested size: 229.87749pt x 323.34784pt.
 
 
@@ -1449,104 +1449,104 @@ Package multicol Warning: Floats and marginpars not allowed inside `multicols' e
 
 
 [12 <./images/methoden/inscannen/sectie/hand/handgeschreven.png> <./images/methoden/inscannen/sectie/hand/kant_google.png> <./images/methoden/inscannen/sectie/hand/kant_microsoft.png>]
-<./images/methoden/inscannen/sectie/checkbox/template.png, id=348, 758.08218pt x 392.21532pt>
+<./images/methoden/inscannen/sectie/checkbox/template.png, id=353, 758.08218pt x 392.21532pt>
 File: ./images/methoden/inscannen/sectie/checkbox/template.png Graphic file (type png)
 <use ./images/methoden/inscannen/sectie/checkbox/template.png>
-Package pdftex.def Info: ./images/methoden/inscannen/sectie/checkbox/template.png  used on input line 378.
+Package pdftex.def Info: ./images/methoden/inscannen/sectie/checkbox/template.png  used on input line 377.
 (pdftex.def)             Requested size: 229.87749pt x 118.92827pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 385--388
+Underfull \hbox (badness 10000) in paragraph at lines 384--387
 
  []
 
 
-Overfull \hbox (30.79996pt too wide) in alignment at lines 393--396
+Overfull \hbox (30.79996pt too wide) in alignment at lines 392--395
  [] [] [] 
  []
 
-<./images/methoden/inscannen/sectie/checkbox/hoogte/input.png, id=349, 612.8496pt x 844.1136pt>
+<./images/methoden/inscannen/sectie/checkbox/hoogte/input.png, id=354, 612.8496pt x 844.1136pt>
 File: ./images/methoden/inscannen/sectie/checkbox/hoogte/input.png Graphic file (type png)
 <use ./images/methoden/inscannen/sectie/checkbox/hoogte/input.png>
-Package pdftex.def Info: ./images/methoden/inscannen/sectie/checkbox/hoogte/input.png  used on input line 400.
+Package pdftex.def Info: ./images/methoden/inscannen/sectie/checkbox/hoogte/input.png  used on input line 399.
 (pdftex.def)             Requested size: 176.15811pt x 242.62282pt.
-<./images/methoden/inscannen/sectie/checkbox/hoogte/code-binary.png, id=350, 1041.8925pt x 509.905pt>
+<./images/methoden/inscannen/sectie/checkbox/hoogte/code-binary.png, id=355, 1041.8925pt x 509.905pt>
 File: ./images/methoden/inscannen/sectie/checkbox/hoogte/code-binary.png Graphic file (type png)
 <use ./images/methoden/inscannen/sectie/checkbox/hoogte/code-binary.png>
-Package pdftex.def Info: ./images/methoden/inscannen/sectie/checkbox/hoogte/code-binary.png  used on input line 405.
+Package pdftex.def Info: ./images/methoden/inscannen/sectie/checkbox/hoogte/code-binary.png  used on input line 404.
 (pdftex.def)             Requested size: 176.15811pt x 86.20808pt.
-<./images/methoden/inscannen/sectie/checkbox/hoogte/binary.png, id=351, 851.18pt x 1172.38pt>
+<./images/methoden/inscannen/sectie/checkbox/hoogte/binary.png, id=356, 851.18pt x 1172.38pt>
 File: ./images/methoden/inscannen/sectie/checkbox/hoogte/binary.png Graphic file (type png)
 <use ./images/methoden/inscannen/sectie/checkbox/hoogte/binary.png>
-Package pdftex.def Info: ./images/methoden/inscannen/sectie/checkbox/hoogte/binary.png  used on input line 407.
+Package pdftex.def Info: ./images/methoden/inscannen/sectie/checkbox/hoogte/binary.png  used on input line 406.
 (pdftex.def)             Requested size: 176.15811pt x 242.62926pt.
-<./images/methoden/inscannen/sectie/checkbox/hoogte/code-contour.png, id=352, 1041.8925pt x 395.4775pt>
+<./images/methoden/inscannen/sectie/checkbox/hoogte/code-contour.png, id=357, 1041.8925pt x 395.4775pt>
 File: ./images/methoden/inscannen/sectie/checkbox/hoogte/code-contour.png Graphic file (type png)
 <use ./images/methoden/inscannen/sectie/checkbox/hoogte/code-contour.png>
-Package pdftex.def Info: ./images/methoden/inscannen/sectie/checkbox/hoogte/code-contour.png  used on input line 411.
+Package pdftex.def Info: ./images/methoden/inscannen/sectie/checkbox/hoogte/code-contour.png  used on input line 410.
 (pdftex.def)             Requested size: 176.15811pt x 66.86217pt.
-<./images/methoden/inscannen/sectie/checkbox/hoogte/countour.png, id=353, 851.18pt x 1172.38pt>
+<./images/methoden/inscannen/sectie/checkbox/hoogte/countour.png, id=358, 851.18pt x 1172.38pt>
 File: ./images/methoden/inscannen/sectie/checkbox/hoogte/countour.png Graphic file (type png)
 <use ./images/methoden/inscannen/sectie/checkbox/hoogte/countour.png>
-Package pdftex.def Info: ./images/methoden/inscannen/sectie/checkbox/hoogte/countour.png  used on input line 413.
+Package pdftex.def Info: ./images/methoden/inscannen/sectie/checkbox/hoogte/countour.png  used on input line 412.
 (pdftex.def)             Requested size: 176.15811pt x 242.62926pt.
-<./images/methoden/inscannen/sectie/checkbox/hoogte/code-contour-filter.png, id=354, 1041.8925pt x 1577.895pt>
+<./images/methoden/inscannen/sectie/checkbox/hoogte/code-contour-filter.png, id=359, 1041.8925pt x 1577.895pt>
 File: ./images/methoden/inscannen/sectie/checkbox/hoogte/code-contour-filter.png Graphic file (type png)
 <use ./images/methoden/inscannen/sectie/checkbox/hoogte/code-contour-filter.png>
-Package pdftex.def Info: ./images/methoden/inscannen/sectie/checkbox/hoogte/code-contour-filter.png  used on input line 417.
+Package pdftex.def Info: ./images/methoden/inscannen/sectie/checkbox/hoogte/code-contour-filter.png  used on input line 416.
 (pdftex.def)             Requested size: 176.15811pt x 266.76993pt.
-<./images/methoden/inscannen/sectie/checkbox/hoogte/contour-filtered.png, id=355, 851.18pt x 1172.38pt>
+<./images/methoden/inscannen/sectie/checkbox/hoogte/contour-filtered.png, id=360, 851.18pt x 1172.38pt>
 File: ./images/methoden/inscannen/sectie/checkbox/hoogte/contour-filtered.png Graphic file (type png)
 <use ./images/methoden/inscannen/sectie/checkbox/hoogte/contour-filtered.png>
-Package pdftex.def Info: ./images/methoden/inscannen/sectie/checkbox/hoogte/contour-filtered.png  used on input line 419.
+Package pdftex.def Info: ./images/methoden/inscannen/sectie/checkbox/hoogte/contour-filtered.png  used on input line 418.
 (pdftex.def)             Requested size: 176.15811pt x 242.62926pt.
 
-Overfull \hbox (30.79996pt too wide) in alignment at lines 396--423
+Overfull \hbox (30.79996pt too wide) in alignment at lines 395--422
  [] [] [] 
  []
 
 [13 <./images/methoden/inscannen/sectie/checkbox/template.png> <./images/methoden/inscannen/sectie/checkbox/hoogte/input.png>] [14 <./images/methoden/inscannen/sectie/checkbox/hoogte/code-binary.png> <./images/methoden/inscannen/sectie/checkbox/hoogte/binary.png (PNG copy)> <./images/methoden/inscannen/sectie/checkbox/hoogte/code-contour.png> <./images/methoden/inscannen/sectie/checkbox/hoogte/countour.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 428--434
+Underfull \hbox (badness 10000) in paragraph at lines 427--433
 \T1/cmr/m/n/12 (y,hoogte,x,meest linker co-or-di-naat van
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 428--434
+Underfull \hbox (badness 10000) in paragraph at lines 427--433
 
  []
 
 \pydata@fh@_E9DC924F238FA6CC29465942875FE8F0.data.minted=\write8
 \openout8 = `_E9DC924F238FA6CC29465942875FE8F0.data.minted'.
 
-runsystem(latexminted config  --timestamp 20241214155859 E9DC924F238FA6CC29465942875FE8F0)...executed.
+runsystem(latexminted config  --timestamp 20241216155603 E9DC924F238FA6CC29465942875FE8F0)...executed.
 
 (_E9DC924F238FA6CC29465942875FE8F0.config.minted)
-runsystem(latexminted cleanconfig  --timestamp 20241214155859 E9DC924F238FA6CC29465942875FE8F0)...executed.
+runsystem(latexminted cleanconfig  --timestamp 20241216155603 E9DC924F238FA6CC29465942875FE8F0)...executed.
 
  (_minted/default.style.minted) (_minted/867809D514D1C5F22F4E88019D72ADF8.highlight.minted)
-Package hyperref Info: bookmark level for unknown listing defaults to 0 on input line 451.
+Package hyperref Info: bookmark level for unknown listing defaults to 0 on input line 450.
 
 
 [15 <./images/methoden/inscannen/sectie/checkbox/hoogte/code-contour-filter.png> <./images/methoden/inscannen/sectie/checkbox/hoogte/contour-filtered.png (PNG copy)>]
-<./images/methoden/inscannen/sectie/checkbox/vraagnummer/answer_section.png, id=379, 64.24pt x 138.5175pt>
+<./images/methoden/inscannen/sectie/checkbox/vraagnummer/answer_section.png, id=384, 64.24pt x 138.5175pt>
 File: ./images/methoden/inscannen/sectie/checkbox/vraagnummer/answer_section.png Graphic file (type png)
 <use ./images/methoden/inscannen/sectie/checkbox/vraagnummer/answer_section.png>
-Package pdftex.def Info: ./images/methoden/inscannen/sectie/checkbox/vraagnummer/answer_section.png  used on input line 463.
+Package pdftex.def Info: ./images/methoden/inscannen/sectie/checkbox/vraagnummer/answer_section.png  used on input line 462.
 (pdftex.def)             Requested size: 45.9748pt x 99.13435pt.
  (_minted/3FAB52E71704725B11CA4E298ACA7659.highlight.minted)
-<./images/methoden/inscannen/sectie/checkbox/vraagnummer/section_selection_input.png, id=380, 55.20625pt x 140.525pt>
+<./images/methoden/inscannen/sectie/checkbox/vraagnummer/section_selection_input.png, id=385, 55.20625pt x 140.525pt>
 File: ./images/methoden/inscannen/sectie/checkbox/vraagnummer/section_selection_input.png Graphic file (type png)
 <use ./images/methoden/inscannen/sectie/checkbox/vraagnummer/section_selection_input.png>
-Package pdftex.def Info: ./images/methoden/inscannen/sectie/checkbox/vraagnummer/section_selection_input.png  used on input line 503.
+Package pdftex.def Info: ./images/methoden/inscannen/sectie/checkbox/vraagnummer/section_selection_input.png  used on input line 502.
 (pdftex.def)             Requested size: 75.85999pt x 193.10773pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 496--506
+Underfull \hbox (badness 10000) in paragraph at lines 495--505
 
  []
 
-<./images/methoden/inscannen/sectie/checkbox/vraagnummer/code-question-selector-format.png, id=381, 1041.8925pt x 662.475pt>
+<./images/methoden/inscannen/sectie/checkbox/vraagnummer/code-question-selector-format.png, id=386, 1041.8925pt x 662.475pt>
 File: ./images/methoden/inscannen/sectie/checkbox/vraagnummer/code-question-selector-format.png Graphic file (type png)
 <use ./images/methoden/inscannen/sectie/checkbox/vraagnummer/code-question-selector-format.png>
-Package pdftex.def Info: ./images/methoden/inscannen/sectie/checkbox/vraagnummer/code-question-selector-format.png  used on input line 509.
+Package pdftex.def Info: ./images/methoden/inscannen/sectie/checkbox/vraagnummer/code-question-selector-format.png  used on input line 508.
 (pdftex.def)             Requested size: 229.87749pt x 146.1594pt.
 
 
@@ -1559,338 +1559,338 @@ File: ts1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 ))
 
 [18]
-Underfull \hbox (badness 10000) in paragraph at lines 617--618
+Underfull \hbox (badness 10000) in paragraph at lines 616--617
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 622--634
+Underfull \hbox (badness 10000) in paragraph at lines 621--633
 
  []
 
 
-Overfull \hbox (239.8775pt too wide) in paragraph at lines 622--634
+Overfull \hbox (239.8775pt too wide) in paragraph at lines 621--633
 []$ 
  []
 
 
-Overfull \hbox (239.8775pt too wide) in paragraph at lines 635--644
+Overfull \hbox (239.8775pt too wide) in paragraph at lines 634--643
 $[]$ 
  []
 
 
 
 [19]
-<./images/methoden/inscannen/tekst/kort_leesbaar.png, id=413, 745.78625pt x 137.51375pt>
+<./images/methoden/inscannen/tekst/kort_leesbaar.png, id=418, 745.78625pt x 137.51375pt>
 File: ./images/methoden/inscannen/tekst/kort_leesbaar.png Graphic file (type png)
 <use ./images/methoden/inscannen/tekst/kort_leesbaar.png>
-Package pdftex.def Info: ./images/methoden/inscannen/tekst/kort_leesbaar.png  used on input line 650.
+Package pdftex.def Info: ./images/methoden/inscannen/tekst/kort_leesbaar.png  used on input line 649.
 (pdftex.def)             Requested size: 229.87749pt x 42.3854pt.
-<./images/methoden/inscannen/tekst/kort_leesbaar_uitgekrast.png, id=414, 745.78625pt x 138.5175pt>
+<./images/methoden/inscannen/tekst/kort_leesbaar_uitgekrast.png, id=419, 745.78625pt x 138.5175pt>
 File: ./images/methoden/inscannen/tekst/kort_leesbaar_uitgekrast.png Graphic file (type png)
 <use ./images/methoden/inscannen/tekst/kort_leesbaar_uitgekrast.png>
-Package pdftex.def Info: ./images/methoden/inscannen/tekst/kort_leesbaar_uitgekrast.png  used on input line 658.
+Package pdftex.def Info: ./images/methoden/inscannen/tekst/kort_leesbaar_uitgekrast.png  used on input line 657.
 (pdftex.def)             Requested size: 229.87749pt x 42.6948pt.
-<./images/methoden/inscannen/tekst/kort_onleesbaar.png, id=415, 745.78625pt x 137.51375pt>
+<./images/methoden/inscannen/tekst/kort_onleesbaar.png, id=420, 745.78625pt x 137.51375pt>
 File: ./images/methoden/inscannen/tekst/kort_onleesbaar.png Graphic file (type png)
 <use ./images/methoden/inscannen/tekst/kort_onleesbaar.png>
-Package pdftex.def Info: ./images/methoden/inscannen/tekst/kort_onleesbaar.png  used on input line 667.
+Package pdftex.def Info: ./images/methoden/inscannen/tekst/kort_onleesbaar.png  used on input line 666.
 (pdftex.def)             Requested size: 229.87749pt x 42.3854pt.
-<./images/methoden/inscannen/tekst/slecht_leesbaar_pijlen.png, id=416, 745.78625pt x 136.51pt>
+<./images/methoden/inscannen/tekst/slecht_leesbaar_pijlen.png, id=421, 745.78625pt x 136.51pt>
 File: ./images/methoden/inscannen/tekst/slecht_leesbaar_pijlen.png Graphic file (type png)
 <use ./images/methoden/inscannen/tekst/slecht_leesbaar_pijlen.png>
-Package pdftex.def Info: ./images/methoden/inscannen/tekst/slecht_leesbaar_pijlen.png  used on input line 675.
+Package pdftex.def Info: ./images/methoden/inscannen/tekst/slecht_leesbaar_pijlen.png  used on input line 674.
 (pdftex.def)             Requested size: 229.87749pt x 42.07603pt.
-<./images/methoden/inscannen/tekst/gekreukeld_met_pijlen.png, id=417, 1563.11815pt x 343.46877pt>
+<./images/methoden/inscannen/tekst/gekreukeld_met_pijlen.png, id=422, 1563.11815pt x 343.46877pt>
 File: ./images/methoden/inscannen/tekst/gekreukeld_met_pijlen.png Graphic file (type png)
 <use ./images/methoden/inscannen/tekst/gekreukeld_met_pijlen.png>
-Package pdftex.def Info: ./images/methoden/inscannen/tekst/gekreukeld_met_pijlen.png  used on input line 691.
+Package pdftex.def Info: ./images/methoden/inscannen/tekst/gekreukeld_met_pijlen.png  used on input line 690.
 (pdftex.def)             Requested size: 229.87749pt x 50.51183pt.
 
 
 [20 <./images/methoden/inscannen/tekst/kort_leesbaar.png (PNG copy)> <./images/methoden/inscannen/tekst/kort_leesbaar_uitgekrast.png (PNG copy)> <./images/methoden/inscannen/tekst/kort_onleesbaar.png (PNG copy)> <./images/methoden/inscannen/tekst/slecht_leesbaar_pijlen.png (PNG copy)> <./images/methoden/inscannen/tekst/gekreukeld_met_pijlen.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 702--703
+Underfull \hbox (badness 10000) in paragraph at lines 701--702
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 704--705
+Underfull \hbox (badness 10000) in paragraph at lines 703--704
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 705--711
+Underfull \hbox (badness 10000) in paragraph at lines 704--710
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 711--713
+Underfull \hbox (badness 10000) in paragraph at lines 710--712
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 721--722
+Underfull \hbox (badness 10000) in paragraph at lines 720--721
 
  []
 
 
 
 [21]
-Underfull \hbox (badness 10000) in paragraph at lines 759--765
+Underfull \hbox (badness 10000) in paragraph at lines 758--764
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 759--765
+Underfull \hbox (badness 10000) in paragraph at lines 758--764
 
  []
 
 
-Underfull \hbox (badness 1377) in paragraph at lines 759--765
+Underfull \hbox (badness 1377) in paragraph at lines 758--764
 \T1/cmr/m/n/12 Daarna kri-jgt elke waarde een fac-tor die
  []
 
-<./images/methoden/inscannen/score/code-score.png, id=431, 1367.1075pt x 1120.185pt>
+<./images/methoden/inscannen/score/code-score.png, id=436, 1367.1075pt x 1120.185pt>
 File: ./images/methoden/inscannen/score/code-score.png Graphic file (type png)
 <use ./images/methoden/inscannen/score/code-score.png>
-Package pdftex.def Info: ./images/methoden/inscannen/score/code-score.png  used on input line 769.
+Package pdftex.def Info: ./images/methoden/inscannen/score/code-score.png  used on input line 768.
 (pdftex.def)             Requested size: 234.87749pt x 192.44586pt.
 
-Overfull \hbox (8.1198pt too wide) in paragraph at lines 750--774
+Overfull \hbox (8.1198pt too wide) in paragraph at lines 749--773
 []\T1/cmr/m/n/12 Dit geeft $\OT1/cmr/m/n/14.4 5[] \OMS/cmsy/m/n/14.4 ^^A \OT1/cmr/m/n/14.4 4[] \OMS/cmsy/m/n/14.4 ^^A \OT1/cmr/m/n/14.4 5[] \OMS/cmsy/m/n/14.4 ^^A \OT1/cmr/m/n/14.4 3[] \OMS/cmsy/m/n/14.4 ^^A \OT1/cmr/m/n/14.4 3[] \OMS/cmsy/m/n/14.4 ^^A
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 750--774
+Underfull \hbox (badness 10000) in paragraph at lines 749--773
 
  []
 
 
 
 [22 <./images/methoden/inscannen/score/code-score.png>]
-Overfull \hbox (20.78944pt too wide) in alignment at lines 797--797
+Overfull \hbox (20.78944pt too wide) in alignment at lines 796--796
 [][] 
  []
 
 
 
 [23]
-Overfull \hbox (35.9689pt too wide) in alignment at lines 820--820
+Overfull \hbox (35.9689pt too wide) in alignment at lines 819--819
 [][] 
  []
 
 
 
 [24]
-Overfull \hbox (160.46353pt too wide) in alignment at lines 844--844
+Overfull \hbox (160.46353pt too wide) in alignment at lines 843--843
 [][] 
  []
 
 
-Overfull \hbox (36.79996pt too wide) in alignment at lines 859--861
+Overfull \hbox (36.79996pt too wide) in alignment at lines 858--860
  [] [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 866--866
+Underfull \hbox (badness 10000) in paragraph at lines 865--865
 []|\T1/cmr/m/n/12 kunnen fil-tr-eren op
  []
 
 
-Underfull \hbox (badness 5359) in paragraph at lines 899--899
+Underfull \hbox (badness 5359) in paragraph at lines 898--898
 \T1/cmr/m/n/12 doel moet zijn van
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 908--909
+Underfull \hbox (badness 10000) in paragraph at lines 907--908
 []\T1/cmr/m/n/12 Oneerlijke of bevooro-ordeelde beo-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 912--912
+Underfull \hbox (badness 10000) in paragraph at lines 911--911
 []|\T1/cmr/m/n/12 weten waar we op
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 912--912
+Underfull \hbox (badness 10000) in paragraph at lines 911--911
 \T1/cmr/m/n/12 moeten fo-cussen en
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 912--912
+Underfull \hbox (badness 10000) in paragraph at lines 911--911
 \T1/cmr/m/n/12 wrten of bepaalde
  []
 
 
-Underfull \hbox (badness 3668) in paragraph at lines 912--912
+Underfull \hbox (badness 3668) in paragraph at lines 911--911
 \T1/cmr/m/n/12 prob-le-men een grote
  []
 
 
-Underfull \hbox (badness 2409) in paragraph at lines 912--912
+Underfull \hbox (badness 2409) in paragraph at lines 911--911
 \T1/cmr/m/n/12 ons pro-gramma voor
  []
 
 
-Underfull \hbox (badness 6157) in paragraph at lines 928--931
+Underfull \hbox (badness 6157) in paragraph at lines 927--930
 []\T1/cmr/m/n/12 Een ob-jec-tief tar-get
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 928--931
+Underfull \hbox (badness 10000) in paragraph at lines 927--930
 \T1/cmr/m/n/12 pro-gramma kun-nen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 928--931
+Underfull \hbox (badness 10000) in paragraph at lines 927--930
 \T1/cmr/m/n/12 of te streng naar
  []
 
 
-Underfull \hbox (badness 1354) in paragraph at lines 938--938
+Underfull \hbox (badness 1354) in paragraph at lines 937--937
 \T1/cmr/m/n/12 dat hier doen, miss-
  []
 
 
-Overfull \hbox (36.79996pt too wide) in alignment at lines 861--939
+Overfull \hbox (36.79996pt too wide) in alignment at lines 860--938
  [] [] [] 
  []
 
 [25] [26]
 
 [27]
-Underfull \hbox (badness 10000) in paragraph at lines 958--958
+Underfull \hbox (badness 10000) in paragraph at lines 957--957
 
  []
 
 
-Underfull \hbox (badness 6396) in paragraph at lines 958--958
+Underfull \hbox (badness 6396) in paragraph at lines 957--957
 \T1/cmr/m/n/12 In het kader van ons profiel-w-erk-stuk,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 958--958
+Underfull \hbox (badness 10000) in paragraph at lines 957--957
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 958--958
+Underfull \hbox (badness 10000) in paragraph at lines 957--957
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 977--977
+Underfull \hbox (badness 10000) in paragraph at lines 976--976
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 977--977
+Underfull \hbox (badness 10000) in paragraph at lines 976--976
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 977--977
+Underfull \hbox (badness 10000) in paragraph at lines 976--976
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 977--977
+Underfull \hbox (badness 10000) in paragraph at lines 976--976
 
  []
 
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 944--984
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 943--983
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 944--984
+Underfull \hbox (badness 10000) in paragraph at lines 943--983
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 944--984
+Underfull \hbox (badness 10000) in paragraph at lines 943--983
 
  []
 
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 944--984
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 943--983
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 944--984
+Underfull \hbox (badness 10000) in paragraph at lines 943--983
 
  []
 
 
 
 [28]
-Overfull \hbox (178.07054pt too wide) in alignment at lines 1008--1008
+Overfull \hbox (178.07054pt too wide) in alignment at lines 1007--1007
 [][] 
  []
 
 
 
 [29]
-Underfull \hbox (badness 2111) in paragraph at lines 1072--1072
+Underfull \hbox (badness 2111) in paragraph at lines 1071--1071
 []|\T1/cmr/m/n/12 image [][]11[][] kort lees-baar
  []
 
 
 
 [30]
-Underfull \hbox (badness 10000) in paragraph at lines 1112--1112
+Underfull \hbox (badness 10000) in paragraph at lines 1111--1111
 []|\T1/cmr/m/n/12 stof-antwoordmodel bij
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1112--1112
+Underfull \hbox (badness 10000) in paragraph at lines 1111--1111
 \T1/cmr/m/n/12 vraag-specifieke vraag
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1149--1149
+Underfull \hbox (badness 10000) in paragraph at lines 1148--1148
 []|\T1/cmr/m/n/12 gemini-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1149--1149
+Underfull \hbox (badness 10000) in paragraph at lines 1148--1148
 \T1/cmr/m/n/12 1.5-pro-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1149--1149
+Underfull \hbox (badness 10000) in paragraph at lines 1148--1148
 []|\T1/cmr/m/n/12 gemini-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1149--1149
+Underfull \hbox (badness 10000) in paragraph at lines 1148--1148
 \T1/cmr/m/n/12 2.0-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1149--1149
+Underfull \hbox (badness 10000) in paragraph at lines 1148--1148
 \T1/cmr/m/n/12 flash-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1149--1149
+Underfull \hbox (badness 10000) in paragraph at lines 1148--1148
 []|\T1/cmr/m/n/12 gemini-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1149--1149
+Underfull \hbox (badness 10000) in paragraph at lines 1148--1148
 \T1/cmr/m/n/12 1.5-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1149--1149
+Underfull \hbox (badness 10000) in paragraph at lines 1148--1148
 []|\T1/cmr/m/n/12 gpt-4o-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1149--1149
+Underfull \hbox (badness 10000) in paragraph at lines 1148--1148
 []|\T1/cmr/bx/n/12 Grand
  []
 
@@ -1901,35 +1901,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 1149--1149
 [32]
 
 [33]
-Underfull \hbox (badness 8000) in paragraph at lines 1179--1180
+Underfull \hbox (badness 8000) in paragraph at lines 1178--1179
 []$\OML/cmm/m/it/12 s$\T1/cmr/m/n/12 : de stan-daard-de-vi-atie van de
  []
 
 [34]
 
 [35]
-<./images/methoden/analyseren/ui/inlaad-pagina.png, id=525, 1445.4pt x 685.8122pt>
+<./images/methoden/analyseren/ui/inlaad-pagina.png, id=530, 1445.4pt x 685.8122pt>
 File: ./images/methoden/analyseren/ui/inlaad-pagina.png Graphic file (type png)
 <use ./images/methoden/analyseren/ui/inlaad-pagina.png>
-Package pdftex.def Info: ./images/methoden/analyseren/ui/inlaad-pagina.png  used on input line 1239.
+Package pdftex.def Info: ./images/methoden/analyseren/ui/inlaad-pagina.png  used on input line 1238.
 (pdftex.def)             Requested size: 229.87749pt x 109.06245pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1235--1242
+Underfull \hbox (badness 10000) in paragraph at lines 1234--1241
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1243--1252
+Underfull \hbox (badness 10000) in paragraph at lines 1242--1251
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1243--1252
+Underfull \hbox (badness 10000) in paragraph at lines 1242--1251
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1243--1252
+Underfull \hbox (badness 10000) in paragraph at lines 1242--1251
 
  []
 
@@ -1938,7 +1938,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1243--1252
 [36 <./images/methoden/analyseren/ui/inlaad-pagina.png>]
 
 [37]
-Overfull \hbox (34.52026pt too wide) in paragraph at lines 1397--1405
+Overfull \hbox (34.52026pt too wide) in paragraph at lines 1396--1404
 [][] 
  []
 
@@ -1947,7 +1947,7 @@ Overfull \hbox (34.52026pt too wide) in paragraph at lines 1397--1405
 [38]
 
 [39]
-Overfull \hbox (11.81241pt too wide) in paragraph at lines 1482--1483
+Overfull \hbox (11.81241pt too wide) in paragraph at lines 1481--1482
 []\T1/cmr/m/n/12 Niet alle toet-sen zijn geschikt voor AI, bi-jvoor-beeld de beo-ordel-ing van de schoonheid
  []
 
@@ -1956,259 +1956,197 @@ Overfull \hbox (11.81241pt too wide) in paragraph at lines 1482--1483
 [40]
 
 [41]
-Underfull \hbox (badness 10000) in paragraph at lines 1499--1505
+Underfull \hbox (badness 10000) in paragraph at lines 1498--1504
 
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 1525--1525
+Underfull \hbox (badness 10000) in alignment at lines 1524--1524
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1512--1526
+Underfull \hbox (badness 10000) in paragraph at lines 1511--1525
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1512--1526
+Underfull \hbox (badness 10000) in paragraph at lines 1511--1525
 
  []
 
 
-Overfull \hbox (239.8775pt too wide) in paragraph at lines 1512--1526
+Overfull \hbox (239.8775pt too wide) in paragraph at lines 1511--1525
 [] 
  []
 
 [42]
-Underfull \hbox (badness 10000) in paragraph at lines 1539--1540
+Underfull \hbox (badness 10000) in paragraph at lines 1538--1539
 []\T1/cmr/m/n/12 Een voorgestelde ge-bruik-ersin-ter-face
  []
 
 
 
 [43]
+Underfull \hbox (badness 10000) in paragraph at lines 1555--1558
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1561--1564
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1566--1569
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1573--1577
+
+ []
+
+
 
 [44]
-Overfull \hbox (1.42273pt too wide) in paragraph at lines 1581--1581
+Underfull \hbox (badness 10000) in paragraph at lines 1583--1591
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1583--1591
+
+ []
+
+
+Overfull \hbox (1.42273pt too wide) in paragraph at lines 1602--1602
 []|\T1/cmr/bx/n/10.95 Score| 
  []
 
 
-Overfull \hbox (12.80403pt too wide) in paragraph at lines 1581--1582
+Overfull \hbox (12.80403pt too wide) in paragraph at lines 1602--1603
 []|\T1/cmr/bx/n/10.95 Change
  []
 
 
-Overfull \hbox (5.52199pt too wide) in paragraph at lines 1581--1582
+Overfull \hbox (5.52199pt too wide) in paragraph at lines 1602--1603
 \T1/cmr/bx/n/10.95 Count| 
  []
 
 
-Overfull \hbox (40.21436pt too wide) in alignment at lines 1579--1583
+Overfull \hbox (40.21436pt too wide) in alignment at lines 1600--1604
  [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (40.21436pt too wide) in alignment at lines 1583--1585
+Overfull \hbox (40.21436pt too wide) in alignment at lines 1604--1606
  [] [] [] [] [] [] [] 
  []
 
 
-Underfull \hbox (badness 3158) in paragraph at lines 1587--1587
+Underfull \hbox (badness 3158) in paragraph at lines 1608--1608
 []|\T1/cmr/m/n/10.95 Je moet schi-eten,
  []
 
 
-Underfull \hbox (badness 3158) in paragraph at lines 1587--1587
+Underfull \hbox (badness 3158) in paragraph at lines 1608--1608
 []|\T1/cmr/m/n/10.95 Je moet schi-eten,
  []
 
 
-Underfull \hbox (badness 1502) in paragraph at lines 1587--1587
+Underfull \hbox (badness 1502) in paragraph at lines 1608--1608
 \T1/cmr/m/n/10.95 nders kun je niet
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1587--1587
+Underfull \hbox (badness 10000) in paragraph at lines 1608--1608
 []|\T1/cmr/m/n/10.95 enkele let-ter-
  []
 
 
-Overfull \hbox (2.06165pt too wide) in paragraph at lines 1587--1587
+Overfull \hbox (2.06165pt too wide) in paragraph at lines 1608--1608
 []|\T1/cmr/m/n/10.95 0.1937| 
  []
 
 
-Underfull \hbox (badness 3158) in paragraph at lines 1589--1589
+Underfull \hbox (badness 3158) in paragraph at lines 1610--1610
 []|\T1/cmr/m/n/10.95 Je moet schi-eten,
  []
 
 
-Underfull \hbox (badness 5607) in paragraph at lines 1589--1589
+Underfull \hbox (badness 5607) in paragraph at lines 1610--1610
 []|\T1/cmr/m/n/10.95 Je moet schoten,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1589--1589
+Underfull \hbox (badness 10000) in paragraph at lines 1610--1610
 []|\T1/cmr/m/n/10.95 enkele wo-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1589--1589
+Underfull \hbox (badness 10000) in paragraph at lines 1610--1610
 \T1/cmr/m/n/10.95 ord-veran-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1589--1589
+Underfull \hbox (badness 10000) in paragraph at lines 1610--1610
 \T1/cmr/m/n/10.95 der-ing, geen
  []
 
 
-Overfull \hbox (3.09886pt too wide) in paragraph at lines 1589--1589
+Overfull \hbox (3.09886pt too wide) in paragraph at lines 1610--1610
 \T1/cmr/m/n/10.95 betekenisveran-
  []
 
 
-Overfull \hbox (2.06165pt too wide) in paragraph at lines 1589--1589
+Overfull \hbox (2.06165pt too wide) in paragraph at lines 1610--1610
 []|\T1/cmr/m/n/10.95 0.2146| 
  []
 
 
-Underfull \hbox (badness 3158) in paragraph at lines 1591--1591
+Underfull \hbox (badness 3158) in paragraph at lines 1612--1612
 []|\T1/cmr/m/n/10.95 Je moet schi-eten,
  []
 
 
-Underfull \hbox (badness 5607) in paragraph at lines 1591--1591
+Underfull \hbox (badness 5607) in paragraph at lines 1612--1612
 []|\T1/cmr/m/n/10.95 Je moet schoten,
  []
 
 
-Overfull \hbox (3.63911pt too wide) in paragraph at lines 1591--1591
+Overfull \hbox (3.63911pt too wide) in paragraph at lines 1612--1612
 []|\T1/cmr/m/n/10.95 woordweglating| 
  []
 
 
-Overfull \hbox (2.06165pt too wide) in paragraph at lines 1591--1591
+Overfull \hbox (2.06165pt too wide) in paragraph at lines 1612--1612
 []|\T1/cmr/m/n/10.95 0.2146| 
  []
 
 
-Underfull \hbox (badness 3158) in paragraph at lines 1593--1593
+Underfull \hbox (badness 3158) in paragraph at lines 1614--1614
 []|\T1/cmr/m/n/10.95 Je moet schi-eten,
  []
 
 
-Underfull \hbox (badness 4582) in paragraph at lines 1593--1593
+Underfull \hbox (badness 4582) in paragraph at lines 1614--1614
 \T1/cmr/m/n/10.95 ders kun je niet
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1593--1593
+Underfull \hbox (badness 10000) in paragraph at lines 1614--1614
 []|\T1/cmr/m/n/10.95 enkele wo-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1593--1593
+Underfull \hbox (badness 10000) in paragraph at lines 1614--1614
 \T1/cmr/m/n/10.95 ord-veran-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1593--1593
+Underfull \hbox (badness 10000) in paragraph at lines 1614--1614
 \T1/cmr/m/n/10.95 der-ing, wel
- []
-
-
-Overfull \hbox (3.09886pt too wide) in paragraph at lines 1593--1593
-\T1/cmr/m/n/10.95 betekenisveran-
- []
-
-
-Overfull \hbox (2.06165pt too wide) in paragraph at lines 1593--1593
-[]|\T1/cmr/m/n/10.95 0.3282| 
- []
-
-
-Underfull \hbox (badness 3158) in paragraph at lines 1595--1595
-[]|\T1/cmr/m/n/10.95 Je moet schi-eten,
- []
-
-
-Overfull \hbox (11.56892pt too wide) in paragraph at lines 1595--1595
-[]|\T1/cmr/m/n/10.95 zinsdeelweglating| 
- []
-
-
-Overfull \hbox (2.06165pt too wide) in paragraph at lines 1595--1595
-[]|\T1/cmr/m/n/10.95 1.1590| 
- []
-
-
-Underfull \hbox (badness 3158) in paragraph at lines 1597--1597
-[]|\T1/cmr/m/n/10.95 Je moet schi-eten,
- []
-
-
-Overfull \hbox (40.21436pt too wide) in alignment at lines 1585--1599
- [] [] [] [] [] [] [] 
- []
-
-
-
-[45]
-Overfull \hbox (12.80403pt too wide) in paragraph at lines 1606--1607
-[]|\T1/cmr/bx/n/10.95 Change
- []
-
-
-Overfull \hbox (5.52199pt too wide) in paragraph at lines 1606--1607
-\T1/cmr/bx/n/10.95 Count| 
- []
-
-
-Overfull \hbox (49.61147pt too wide) in alignment at lines 1604--1608
- [] [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (49.61147pt too wide) in alignment at lines 1608--1610
- [] [] [] [] [] [] [] 
- []
-
-
-Underfull \hbox (badness 6575) in paragraph at lines 1612--1612
-[]|\T1/cmr/m/n/10.95 Ik heb een heel
- []
-
-
-Underfull \hbox (badness 6575) in paragraph at lines 1612--1612
-[]|\T1/cmr/m/n/10.95 Ik heb een heel
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1614--1614
-[]|\T1/cmr/m/n/10.95 Een dag niet
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1614--1614
-[]|\T1/cmr/m/n/10.95 Een dag niet
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1614--1614
-[]|\T1/cmr/m/n/10.95 enkele let-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1614--1614
-\T1/cmr/m/n/10.95 ter-veran-
- []
-
-
-Underfull \hbox (badness 1205) in paragraph at lines 1614--1614
-\T1/cmr/m/n/10.95 der-ing , geen
  []
 
 
@@ -2217,395 +2155,489 @@ Overfull \hbox (3.09886pt too wide) in paragraph at lines 1614--1614
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1616--1616
+Overfull \hbox (2.06165pt too wide) in paragraph at lines 1614--1614
+[]|\T1/cmr/m/n/10.95 0.3282| 
+ []
+
+
+Underfull \hbox (badness 3158) in paragraph at lines 1616--1616
+[]|\T1/cmr/m/n/10.95 Je moet schi-eten,
+ []
+
+
+Overfull \hbox (11.56892pt too wide) in paragraph at lines 1616--1616
+[]|\T1/cmr/m/n/10.95 zinsdeelweglating| 
+ []
+
+
+Overfull \hbox (2.06165pt too wide) in paragraph at lines 1616--1616
+[]|\T1/cmr/m/n/10.95 1.1590| 
+ []
+
+
+Underfull \hbox (badness 3158) in paragraph at lines 1618--1618
+[]|\T1/cmr/m/n/10.95 Je moet schi-eten,
+ []
+
+
+Overfull \hbox (40.21436pt too wide) in alignment at lines 1606--1620
+ [] [] [] [] [] [] [] 
+ []
+
+
+
+[45]
+Overfull \hbox (12.80403pt too wide) in paragraph at lines 1627--1628
+[]|\T1/cmr/bx/n/10.95 Change
+ []
+
+
+Overfull \hbox (5.52199pt too wide) in paragraph at lines 1627--1628
+\T1/cmr/bx/n/10.95 Count| 
+ []
+
+
+Overfull \hbox (49.61147pt too wide) in alignment at lines 1625--1629
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (49.61147pt too wide) in alignment at lines 1629--1631
+ [] [] [] [] [] [] [] 
+ []
+
+
+Underfull \hbox (badness 6575) in paragraph at lines 1633--1633
+[]|\T1/cmr/m/n/10.95 Ik heb een heel
+ []
+
+
+Underfull \hbox (badness 6575) in paragraph at lines 1633--1633
+[]|\T1/cmr/m/n/10.95 Ik heb een heel
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1635--1635
 []|\T1/cmr/m/n/10.95 Een dag niet
  []
 
 
-Overfull \hbox (3.63911pt too wide) in paragraph at lines 1616--1616
-[]|\T1/cmr/m/n/10.95 woordweglating| 
+Underfull \hbox (badness 10000) in paragraph at lines 1635--1635
+[]|\T1/cmr/m/n/10.95 Een dag niet
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1618--1618
-[]|\T1/cmr/m/n/10.95 Rrrrrr, hah, is
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1618--1618
-\T1/cmr/m/n/10.95 gewoon Boef
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1618--1618
-\T1/cmr/m/n/10.95 man. Ha, jij
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1618--1618
-\T1/cmr/m/n/10.95 je moet vroeger
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 1618--1618
-\T1/cmr/m/n/10.95 kwijt, maar floes
- []
-
-
-Underfull \hbox (badness 3078) in paragraph at lines 1618--1618
-\T1/cmr/m/n/10.95 zon-des af en toe
- []
-
-
-Underfull \hbox (badness 2443) in paragraph at lines 1618--1618
-\T1/cmr/m/n/10.95 mij. Van alarm
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1618--1618
-\T1/cmr/m/n/10.95 voorzien aan de
- []
-
-
-Underfull \hbox (badness 3514) in paragraph at lines 1618--1618
-\T1/cmr/m/n/10.95 achterkant. Dus
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1618--1618
-[]|\T1/cmr/m/n/10.95 Rrrrrr, hah, is
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1618--1618
-\T1/cmr/m/n/10.95 gewoon Boef
- []
-
-
-Underfull \hbox (badness 2302) in paragraph at lines 1618--1618
-\T1/cmr/m/n/10.95 man.test, jij bent
- []
-
-
-Underfull \hbox (badness 2326) in paragraph at lines 1618--1618
-\T1/cmr/m/n/10.95 vies maar ik doe
- []
-
-
-Underfull \hbox (badness 2884) in paragraph at lines 1618--1618
-\T1/cmr/m/n/10.95 gemener. In de
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1618--1618
-\T1/cmr/m/n/10.95 club, komtest
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1618--1618
-\T1/cmr/m/n/10.95 ik wil snel weg
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1618--1618
-\T1/cmr/m/n/10.95 is geholpen, je
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1618--1618
-\T1/cmr/m/n/10.95 moetest vroeger
- []
-
-
-Underfull \hbox (badness 3078) in paragraph at lines 1618--1618
-\T1/cmr/m/n/10.95 zon-des af en toe
- []
-
-
-Underfull \hbox (badness 1424) in paragraph at lines 1618--1618
-\T1/cmr/m/n/10.95 uit eten voor een
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1618--1618
-\T1/cmr/m/n/10.95 een uit-gever, ze
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1618--1618
-[]|\T1/cmr/m/n/10.95 random to-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1618--1618
-\T1/cmr/m/n/10.95 evoeg-ing
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1620--1620
-[]|\T1/cmr/m/n/10.95 Ik be-grijp niet
- []
-
-
-Underfull \hbox (badness 2197) in paragraph at lines 1620--1620
-\T1/cmr/m/n/10.95 negatief en verve-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1620--1620
-\T1/cmr/m/n/10.95 wij op-ti-mistisch
- []
-
-
-Underfull \hbox (badness 4303) in paragraph at lines 1620--1620
-\T1/cmr/m/n/10.95 zijn! Laten we
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1620--1620
-\T1/cmr/m/n/10.95 VOC-mentaliteit,
- []
-
-
-Underfull \hbox (badness 1502) in paragraph at lines 1620--1620
-\T1/cmr/m/n/10.95 over gren-zen heen
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1620--1620
-\T1/cmr/m/n/10.95 ki-jken, dy-namiek!
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1620--1620
-[]|\T1/cmr/m/n/10.95 Ik be-grijp niet
- []
-
-
-Underfull \hbox (badness 2197) in paragraph at lines 1620--1620
-\T1/cmr/m/n/10.95 negatief en verve-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1620--1620
-\T1/cmr/m/n/10.95 wij op-ti-mistisch
- []
-
-
-Underfull \hbox (badness 4303) in paragraph at lines 1620--1620
-\T1/cmr/m/n/10.95 zijn! Laten we
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1620--1620
-[]|\T1/cmr/m/n/10.95 Jan-Peter
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1620--1620
-[]|\T1/cmr/m/n/10.95 weglating
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1620--1620
-\T1/cmr/m/n/10.95 einde van
- []
-
-
-Underfull \hbox (badness 2065) in paragraph at lines 1622--1622
-[]|\T1/cmr/m/n/10.95 Ik heb nooit last
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1622--1622
-\T1/cmr/m/n/10.95 van hoogtevrees,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1622--1622
-\T1/cmr/m/n/10.95 hoogtevrees, well
- []
-
-
-Underfull \hbox (badness 6396) in paragraph at lines 1622--1622
-[]|\T1/cmr/m/n/10.95 Youp van 't
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1622--1622
+Underfull \hbox (badness 10000) in paragraph at lines 1635--1635
 []|\T1/cmr/m/n/10.95 enkele let-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1622--1622
-\T1/cmr/m/n/10.95 ter-weglat-ing,
+Underfull \hbox (badness 10000) in paragraph at lines 1635--1635
+\T1/cmr/m/n/10.95 ter-veran-
  []
 
 
-Overfull \hbox (3.09886pt too wide) in paragraph at lines 1622--1622
+Underfull \hbox (badness 1205) in paragraph at lines 1635--1635
+\T1/cmr/m/n/10.95 der-ing , geen
+ []
+
+
+Overfull \hbox (3.09886pt too wide) in paragraph at lines 1635--1635
 \T1/cmr/m/n/10.95 betekenisveran-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1624--1624
+Underfull \hbox (badness 10000) in paragraph at lines 1637--1637
+[]|\T1/cmr/m/n/10.95 Een dag niet
+ []
+
+
+Overfull \hbox (3.63911pt too wide) in paragraph at lines 1637--1637
+[]|\T1/cmr/m/n/10.95 woordweglating| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1639--1639
+[]|\T1/cmr/m/n/10.95 Rrrrrr, hah, is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1639--1639
+\T1/cmr/m/n/10.95 gewoon Boef
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1639--1639
+\T1/cmr/m/n/10.95 man. Ha, jij
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1639--1639
+\T1/cmr/m/n/10.95 je moet vroeger
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 1639--1639
+\T1/cmr/m/n/10.95 kwijt, maar floes
+ []
+
+
+Underfull \hbox (badness 3078) in paragraph at lines 1639--1639
+\T1/cmr/m/n/10.95 zon-des af en toe
+ []
+
+
+Underfull \hbox (badness 2443) in paragraph at lines 1639--1639
+\T1/cmr/m/n/10.95 mij. Van alarm
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1639--1639
+\T1/cmr/m/n/10.95 voorzien aan de
+ []
+
+
+Underfull \hbox (badness 3514) in paragraph at lines 1639--1639
+\T1/cmr/m/n/10.95 achterkant. Dus
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1639--1639
+[]|\T1/cmr/m/n/10.95 Rrrrrr, hah, is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1639--1639
+\T1/cmr/m/n/10.95 gewoon Boef
+ []
+
+
+Underfull \hbox (badness 2302) in paragraph at lines 1639--1639
+\T1/cmr/m/n/10.95 man.test, jij bent
+ []
+
+
+Underfull \hbox (badness 2326) in paragraph at lines 1639--1639
+\T1/cmr/m/n/10.95 vies maar ik doe
+ []
+
+
+Underfull \hbox (badness 2884) in paragraph at lines 1639--1639
+\T1/cmr/m/n/10.95 gemener. In de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1639--1639
+\T1/cmr/m/n/10.95 club, komtest
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1639--1639
+\T1/cmr/m/n/10.95 ik wil snel weg
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1639--1639
+\T1/cmr/m/n/10.95 is geholpen, je
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1639--1639
+\T1/cmr/m/n/10.95 moetest vroeger
+ []
+
+
+Underfull \hbox (badness 3078) in paragraph at lines 1639--1639
+\T1/cmr/m/n/10.95 zon-des af en toe
+ []
+
+
+Underfull \hbox (badness 1424) in paragraph at lines 1639--1639
+\T1/cmr/m/n/10.95 uit eten voor een
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1639--1639
+\T1/cmr/m/n/10.95 een uit-gever, ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1639--1639
+[]|\T1/cmr/m/n/10.95 random to-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1639--1639
+\T1/cmr/m/n/10.95 evoeg-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1641--1641
+[]|\T1/cmr/m/n/10.95 Ik be-grijp niet
+ []
+
+
+Underfull \hbox (badness 2197) in paragraph at lines 1641--1641
+\T1/cmr/m/n/10.95 negatief en verve-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1641--1641
+\T1/cmr/m/n/10.95 wij op-ti-mistisch
+ []
+
+
+Underfull \hbox (badness 4303) in paragraph at lines 1641--1641
+\T1/cmr/m/n/10.95 zijn! Laten we
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1641--1641
+\T1/cmr/m/n/10.95 VOC-mentaliteit,
+ []
+
+
+Underfull \hbox (badness 1502) in paragraph at lines 1641--1641
+\T1/cmr/m/n/10.95 over gren-zen heen
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1641--1641
+\T1/cmr/m/n/10.95 ki-jken, dy-namiek!
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1641--1641
+[]|\T1/cmr/m/n/10.95 Ik be-grijp niet
+ []
+
+
+Underfull \hbox (badness 2197) in paragraph at lines 1641--1641
+\T1/cmr/m/n/10.95 negatief en verve-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1641--1641
+\T1/cmr/m/n/10.95 wij op-ti-mistisch
+ []
+
+
+Underfull \hbox (badness 4303) in paragraph at lines 1641--1641
+\T1/cmr/m/n/10.95 zijn! Laten we
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1641--1641
+[]|\T1/cmr/m/n/10.95 Jan-Peter
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1641--1641
+[]|\T1/cmr/m/n/10.95 weglating
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1641--1641
+\T1/cmr/m/n/10.95 einde van
+ []
+
+
+Underfull \hbox (badness 2065) in paragraph at lines 1643--1643
+[]|\T1/cmr/m/n/10.95 Ik heb nooit last
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1643--1643
+\T1/cmr/m/n/10.95 van hoogtevrees,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1643--1643
+\T1/cmr/m/n/10.95 hoogtevrees, well
+ []
+
+
+Underfull \hbox (badness 6396) in paragraph at lines 1643--1643
+[]|\T1/cmr/m/n/10.95 Youp van 't
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1643--1643
+[]|\T1/cmr/m/n/10.95 enkele let-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1643--1643
+\T1/cmr/m/n/10.95 ter-weglat-ing,
+ []
+
+
+Overfull \hbox (3.09886pt too wide) in paragraph at lines 1643--1643
+\T1/cmr/m/n/10.95 betekenisveran-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1645--1645
 []|\T1/cmr/m/n/10.95 Praat Ned-er-lands
  []
 
 
-Underfull \hbox (badness 4954) in paragraph at lines 1624--1624
+Underfull \hbox (badness 4954) in paragraph at lines 1645--1645
 \T1/cmr/m/n/10.95 met me. Even
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1624--1624
+Underfull \hbox (badness 10000) in paragraph at lines 1645--1645
 \T1/cmr/m/n/10.95 Ned-er-lands met
  []
 
 
-Underfull \hbox (badness 1242) in paragraph at lines 1624--1624
+Underfull \hbox (badness 1242) in paragraph at lines 1645--1645
 \T1/cmr/m/n/10.95 me. Mijn gevoel
  []
 
 
-Underfull \hbox (badness 3815) in paragraph at lines 1624--1624
+Underfull \hbox (badness 3815) in paragraph at lines 1645--1645
 \T1/cmr/m/n/10.95 zegt mij dat wij
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1624--1624
+Underfull \hbox (badness 10000) in paragraph at lines 1645--1645
 \T1/cmr/m/n/10.95 vanavond samen
  []
 
 
-Underfull \hbox (badness 2042) in paragraph at lines 1624--1624
+Underfull \hbox (badness 2042) in paragraph at lines 1645--1645
 \T1/cmr/m/n/10.95 ki-jken. Naar de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1624--1624
+Underfull \hbox (badness 10000) in paragraph at lines 1645--1645
 \T1/cmr/m/n/10.95 Champs-Élysées
  []
 
 
-Underfull \hbox (badness 1424) in paragraph at lines 1624--1624
+Underfull \hbox (badness 1424) in paragraph at lines 1645--1645
 \T1/cmr/m/n/10.95 en naar de Notre
  []
 
 
-Underfull \hbox (badness 1194) in paragraph at lines 1624--1624
+Underfull \hbox (badness 1194) in paragraph at lines 1645--1645
 \T1/cmr/m/n/10.95 Dame en naar de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1624--1624
+Underfull \hbox (badness 10000) in paragraph at lines 1645--1645
 []|\T1/cmr/m/n/10.95 Praat Ned-er-tands
  []
 
 
-Underfull \hbox (badness 4954) in paragraph at lines 1624--1624
+Underfull \hbox (badness 4954) in paragraph at lines 1645--1645
 \T1/cmr/m/n/10.95 met me. Even
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1624--1624
+Underfull \hbox (badness 10000) in paragraph at lines 1645--1645
 \T1/cmr/m/n/10.95 Neter-lands met
  []
 
 
-Underfull \hbox (badness 1242) in paragraph at lines 1624--1624
+Underfull \hbox (badness 1242) in paragraph at lines 1645--1645
 \T1/cmr/m/n/10.95 me. Mijn tevoet
  []
 
 
-Underfull \hbox (badness 3815) in paragraph at lines 1624--1624
+Underfull \hbox (badness 3815) in paragraph at lines 1645--1645
 \T1/cmr/m/n/10.95 zegt mij dat wij
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1624--1624
+Underfull \hbox (badness 10000) in paragraph at lines 1645--1645
 \T1/cmr/m/n/10.95 vana-tond samet
  []
 
 
-Underfull \hbox (badness 1776) in paragraph at lines 1624--1624
+Underfull \hbox (badness 1776) in paragraph at lines 1645--1645
 \T1/cmr/m/n/10.95 kitken. Naar de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1624--1624
+Underfull \hbox (badness 10000) in paragraph at lines 1645--1645
 \T1/cmr/m/n/10.95 Champs-Éltsées
  []
 
 
-Underfull \hbox (badness 1424) in paragraph at lines 1624--1624
+Underfull \hbox (badness 1424) in paragraph at lines 1645--1645
 \T1/cmr/m/n/10.95 en naar de Notre
  []
 
 
-Underfull \hbox (badness 3417) in paragraph at lines 1626--1626
+Underfull \hbox (badness 3417) in paragraph at lines 1647--1647
 []|\T1/cmr/m/n/10.95 Als het niet kan
  []
 
 
-Underfull \hbox (badness 3417) in paragraph at lines 1626--1626
+Underfull \hbox (badness 3417) in paragraph at lines 1647--1647
 []|\T1/cmr/m/n/10.95 Als het niet kan
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1626--1626
+Underfull \hbox (badness 10000) in paragraph at lines 1647--1647
 []|\T1/cmr/m/n/10.95 weglating in
  []
 
 
-Underfull \hbox (badness 1400) in paragraph at lines 1630--1630
+Underfull \hbox (badness 1400) in paragraph at lines 1651--1651
 []|\T1/cmr/m/n/10.95 Ik geloof in God,
  []
 
 
-Underfull \hbox (badness 1881) in paragraph at lines 1630--1630
+Underfull \hbox (badness 1881) in paragraph at lines 1651--1651
 []|\T1/cmr/m/n/10.95 weglating aan
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1632--1632
+Underfull \hbox (badness 10000) in paragraph at lines 1653--1653
 []|\T1/cmr/m/n/10.95 dubbelle wo-
  []
 
 
-Overfull \hbox (49.61147pt too wide) in alignment at lines 1610--1634
+Overfull \hbox (49.61147pt too wide) in alignment at lines 1631--1655
  [] [] [] [] [] [] [] 
  []
 
 [46]
 
 [47]
-Underfull \hbox (badness 10000) in paragraph at lines 1652--1652
+Underfull \hbox (badness 10000) in paragraph at lines 1673--1673
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1652--1652
+Underfull \hbox (badness 10000) in paragraph at lines 1673--1673
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1652--1652
+Underfull \hbox (badness 10000) in paragraph at lines 1673--1673
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1652--1652
+Underfull \hbox (badness 10000) in paragraph at lines 1673--1673
 
  []
 
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 1637--1653
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 1658--1674
 [] 
  []
 
 
 
-[48] (full.aux)
+[48]
+
+[49] (full.aux)
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
@@ -2615,17 +2647,17 @@ L3 programming layer <2024-11-02>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `full.out' has not changed.
-(rerunfilecheck)             Checksum: B9ED4FAE6FEB19782BDA14A8084D167D;4204.
+(rerunfilecheck)             Checksum: D55C5ADDF7C1294A0D12A924B0EB3BFE;4284.
 Package logreq Info: Writing requests to 'full.run.xml'.
 \openout1 = `full.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 49593 strings out of 473681
- 1140607 string characters out of 5719193
+ 49595 strings out of 473681
+ 1140601 string characters out of 5719193
  2245563 words of memory out of 5000000
- 71755 multiletter control sequences out of 15000+600000
- 578742 words of font info for 79 fonts, out of 8000000 for 9000
+ 71754 multiletter control sequences out of 15000+600000
+ 578605 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,18n,133p,1217b,5183s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
@@ -2637,10 +2669,10 @@ pdfTeX warning (dest): name{cite.0@kumar2020scoredusingautosas} has been referen
 
 pdfTeX warning (dest): name{cite.0@gobrecht2024humansubjectivityerrornovel} has been referenced but does not exist, replaced by a fixed one
 
- <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1440.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1000.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tctt0800.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt0800.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2986.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.pk><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on full.pdf (48 pages, 21022030 bytes).
+ <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1440.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1000.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tctt0800.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt0800.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2986.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.pk><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on full.pdf (49 pages, 21040250 bytes).
 PDF statistics:
- 1422 PDF objects out of 1440 (max. 8388607)
- 195 named destinations out of 1000 (max. 500000)
- 478 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1479 PDF objects out of 1728 (max. 8388607)
+ 197 named destinations out of 1000 (max. 500000)
+ 486 words of extra memory for PDF output out of 10000 (max. 10000000)
 

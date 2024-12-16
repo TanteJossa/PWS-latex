@@ -34,7 +34,8 @@
 \contentsline {subsubsection}{\numberline {A.3}Analyseren}{44}{subsubsection.6.1.3}%
 \contentsline {subsubsection}{\numberline {A.4}Enquête}{44}{subsubsection.6.1.4}%
 \contentsline {subsubsection}{\numberline {A.5}Toets}{44}{subsubsection.6.1.5}%
-\contentsline {subsection}{\numberline {B}vervolgonderzoek}{45}{subsection.6.2}%
+\contentsline {subsection}{\numberline {B}vervolgonderzoek}{44}{subsection.6.2}%
 \contentsline {section}{\numberline {7}Samenvatting onderzoek}{45}{section.7}%
 \contentsline {section}{\numberline {8}Referenties}{45}{section.8}%
 \contentsline {section}{\numberline {9}Appendix}{45}{section.9}%
+\contentsline {section}{\numberline {10}logboek}{49}{section.10}%

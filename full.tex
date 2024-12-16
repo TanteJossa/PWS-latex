@@ -98,7 +98,7 @@
 \thispagestyle{empty}
 \pagebreak
 
-{\small\tableofcontents \normalsize}
+{\footnotesize\tableofcontents \normalsize}
 
 \pagebreak
 \section{Introductie}
@@ -128,7 +128,6 @@ Deze vraag hebben we onderverdeeld in 4 deelvragen:\\
    \textbf{Toets } & \textbf{Kunnen we een toets afnemen bij een 3e klas op Het Amsterdams Lyceum en die met onze programmas nakijken? } \\
 \end{tabularx}
 
-%TODO: misschien iets over subdeelvragen
 \end{multicols}
 \pagebreak
 
@@ -1551,24 +1550,46 @@ Een voorgestelde gebruikersinterface (UI) met een input-, analyse- en bewerksche
 \pagebreak
 \section{Discussie}
 \subsection{Foutenanalyse}
+\begin{multicols}{2}
 \subsubsection{Inscannen}
-
+$\bullet$ Tijdens het testen van instellingen zijn er een aantal gefaalt, omdat er te veel requests per seconde werden gestuurd. Dit kan ervoor hebben gezorgd dat de resultaten verdraaid zijn.\\
+$\bullet$ Er kan meer getest worden met de ideale prompt die een beter resultaat geeft. \\
+$\bullet$ Tijdens het toetsje zijn een aantal vragen verkeerd ingescand, omdat een leerling de checkbox verkeerd had ingevult. Het zou netter zijn om dit als een popup aan een docent te laten zien die dit dan corrigeert.\\
 
 \subsubsection{Nakijken}
-
-
 \subsubsection{Analyseren}
-
+$\bullet$ De bedachte UI is niet getest, waardoor er niet een 2e iteratie verbeteringen is gedaan.\\
+$\bullet$ We hebben geen echte toetsen geanalyseerd, omdat de toets die we zouden krijgen zo slecht gemaakt was dat er niets te analyseren was.\\
+$\bullet$ Tijdens het toetsje zijn een aantal vragen verkeerd ingescand, omdat een leerling de checkbox verkeerd had ingevult. Het zou netter zijn om dit als een popup aan een docent te laten zien die dit dan corrigeert.\\
 
 \subsubsection{Enquête}
-
-
+$\bullet$ We kregen terug van een aantal docenten dat de vraag aantal leerlingen die het oneens is met een becijfering niet exact gedefineerd was.\\
+$\bullet$ Er waren relatief weinig gamma resultaten, waardoor hun reactie statisch gezien minder waarde heeft.\\
+$\bullet$ Dit is een enquête gestuurd naar docenten van Het Amsterdams Lyceum en hiermee kunnen we nog weinig zeggen over of docenten in de rest van Nederland andere problemen hebben.\\
 \subsubsection{Toets}
 
-\pagebreak
-\subsection{vervolgonderzoek}
 
+\subsection{vervolgonderzoek}
+$\bullet$ Een onderzoek/test naar een interface die docenten kunnen gebruiken om de inscan en nakijk modules makkelijk tegebruiken\\
+$\bullet$ Een onderzoek naar wat docenten op andere scholen belangrijk vinden\\
+$\bullet$ Een onderzoek naar wat docenten van ons de resultaten van ons toetsje vinden en of dit hun mening verandert over de mogelijkheden van nakijken met AI\\
+$\bullet$ Een onderzoek naar hoe zo'n systeem geïntegreerd kan worden in het huidige onderwijs. Denk hierbij aan het printen van de custom toetsblaadjes of het omzetten van huidige toetsen naar een computerformat  die een ai kan gebruiken.\\
+
+\end{multicols}
+
+\pagebreak
 \section{Samenvatting onderzoek}
+\begin{multicols}{2}
+Het doel van dit onderzoek was om een programma te maken die het nakijken uit de handen van een docent neemt. \\
+\\
+Uit de enquete blijkt dat het grootste deel van de docenten de tijdsbesparing het grootste voordeel vindt. Dit doel hebben we bereikt doore en klas in te scannen in een paar minuten en na te kijken in een paar minuten. Daarnaast kost het geen extra moeite, naast het inscannen in een printer.\\
+\\
+De grootste zorg die docenten hadden is dat een ai te weinig aandacht had voor subjectieve beoordelingen en technische fouten. Uit het toetsje wat we hebben gegeven blijkt dat 
+TODO: wat blijkt uit het toetsje
+\\
+TODO: afsluiting
+    
+\end{multicols}
 
 \section{Referenties}
 \section{Appendix} %TODO; appendix of bijlagen
@@ -1650,5 +1671,9 @@ je mag de gemaakte punten in categoriën groepen, maar je moet altijd zo objecti
 \\
 \{\href{https://docs.google.com/spreadsheets/d/10Z6uwL6eRiDsPIC6HQ5hyizUN8RciJKFSDRZBGiKdDI}{Resultaten}\}
 \end{minipage}}
+
+\pagebreak
+\section{logboek}
+
 
 \end{document}
