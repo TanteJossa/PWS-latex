@@ -1,0 +1,19 @@
+[0] Config.pm:308> INFO - This is Biber 2.20
+[0] Config.pm:311> INFO - Logfile is 'full.blg'
+[176] biber-MSWIN64:340> INFO - === 
+[229] Biber.pm:420> INFO - Reading 'full.bcf'
+[458] Biber.pm:994> INFO - Found 20 citekeys in bib section 0
+[493] Biber.pm:4463> INFO - Processing section 0
+[513] Biber.pm:4654> INFO - Looking for bibtex file 'references.bib' for section 0
+[590] bibtex.pm:1713> INFO - LaTeX decoding ...
+[641] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
+[914] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[914] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[914] Biber.pm:4283> INFO - Sorting list 'nyt/apasortcite//global/global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[915] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
+[991] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[991] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[991] Biber.pm:4283> INFO - Sorting list 'nyt/global//global/global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[991] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
+[1034] bbl.pm:676> INFO - Writing 'full.bbl' with encoding 'UTF-8'
+[1076] bbl.pm:779> INFO - Output to full.bbl

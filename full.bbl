@@ -19,6 +19,195 @@
 
 \refsection{0}
   \datalist[entry]{nyt/apasortcite//global/global/global}
+    \entry{aclBLEUevaluation}{inbook}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=f7acd168ce346c83b255e5386dee1c67}{%
+           family={Callison-Burch},
+           familyi={C\bibinithyphendelim B\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4dcb3d6619bc196c48b0ac282e188f1c}{%
+           family={Osborne},
+           familyi={O\bibinitperiod},
+           given={Miles},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dac0b41a5ea5e261d00f3251b76b91bd}{%
+           family={Koehn},
+           familyi={K\bibinitperiod},
+           given={Philipp},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=97d98c3f5769d50f7f4576ea98e89f74}{%
+           family={McCarthy},
+           familyi={M\bibinitperiod},
+           given={Diana},
+           giveni={D\bibinitperiod}}}%
+        {{hash=7599d10f91a728c8276035d9521b145a}{%
+           family={Wintner},
+           familyi={W\bibinitperiod},
+           given={Shuly},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Trento, Italy}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computational Linguistics}%
+      }
+      \strng{namehash}{a2dfcde80f6ca8572c3e4dd5d4c41d90}
+      \strng{fullhash}{f02431d035f11d873c78c004afadf070}
+      \strng{fullhashraw}{f02431d035f11d873c78c004afadf070}
+      \strng{bibnamehash}{f02431d035f11d873c78c004afadf070}
+      \strng{authorbibnamehash}{f02431d035f11d873c78c004afadf070}
+      \strng{authornamehash}{a2dfcde80f6ca8572c3e4dd5d4c41d90}
+      \strng{authorfullhash}{f02431d035f11d873c78c004afadf070}
+      \strng{authorfullhashraw}{f02431d035f11d873c78c004afadf070}
+      \strng{editorbibnamehash}{7c81d666c7b9025472bec007efb0ddbc}
+      \strng{editornamehash}{7c81d666c7b9025472bec007efb0ddbc}
+      \strng{editorfullhash}{7c81d666c7b9025472bec007efb0ddbc}
+      \strng{editorfullhashraw}{7c81d666c7b9025472bec007efb0ddbc}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{11th Conference of the {E}uropean Chapter of the Association for Computational Linguistics}
+      \field{month}{4}
+      \field{title}{Re-evaluating the Role of {B}leu in Machine Translation Research}
+      \field{year}{2006}
+      \field{pages}{249\bibrangedash 256}
+      \range{pages}{8}
+      \verb{urlraw}
+      \verb https://aclanthology.org/E06-1032
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/E06-1032
+      \endverb
+    \endentry
+    \entry{cannyEdgeDetection}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fa344b67077711bfaa0525254de2977a}{%
+           family={Canny},
+           familyi={C\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{fa344b67077711bfaa0525254de2977a}
+      \strng{fullhash}{fa344b67077711bfaa0525254de2977a}
+      \strng{fullhashraw}{fa344b67077711bfaa0525254de2977a}
+      \strng{bibnamehash}{fa344b67077711bfaa0525254de2977a}
+      \strng{authorbibnamehash}{fa344b67077711bfaa0525254de2977a}
+      \strng{authornamehash}{fa344b67077711bfaa0525254de2977a}
+      \strng{authorfullhash}{fa344b67077711bfaa0525254de2977a}
+      \strng{authorfullhashraw}{fa344b67077711bfaa0525254de2977a}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Pattern Analysis and Machine Intelligence}
+      \field{number}{6}
+      \field{title}{A Computational Approach to Edge Detection}
+      \field{volume}{PAMI-8}
+      \field{year}{1986}
+      \field{pages}{679\bibrangedash 698}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1109/TPAMI.1986.4767851
+      \endverb
+      \keyw{Image edge detection;Detectors;Machine vision;Shape measurement;Performance analysis;Uncertainty;Gaussian approximation;Signal to noise ratio;Signal synthesis;Feature extraction;Edge detection;feature extraction;image processing;machine vision;multiscale image analysis}
+    \endentry
+    \entry{ding2009item}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=e0ba32131c7a334a9ec9fa7445d13e3e}{%
+           family={Ding},
+           familyi={D\bibinitperiod},
+           given={Lin},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3cc2d86e92c332267a05444c15f6259b}{%
+           family={Beichner},
+           familyi={B\bibinitperiod},
+           given={Robert\bibnamedelima J},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6cd6e2d47b7adc4016f8e7335157a0fc}
+      \strng{fullhash}{6cd6e2d47b7adc4016f8e7335157a0fc}
+      \strng{fullhashraw}{6cd6e2d47b7adc4016f8e7335157a0fc}
+      \strng{bibnamehash}{6cd6e2d47b7adc4016f8e7335157a0fc}
+      \strng{authorbibnamehash}{6cd6e2d47b7adc4016f8e7335157a0fc}
+      \strng{authornamehash}{6cd6e2d47b7adc4016f8e7335157a0fc}
+      \strng{authorfullhash}{6cd6e2d47b7adc4016f8e7335157a0fc}
+      \strng{authorfullhashraw}{6cd6e2d47b7adc4016f8e7335157a0fc}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Physics Teacher Education Online}
+      \field{number}{2}
+      \field{title}{Item analysis for classroom tests: A comprehensive guide}
+      \field{volume}{5}
+      \field{year}{2009}
+      \field{pages}{2\bibrangedash 12}
+      \range{pages}{11}
+      \verb{urlraw}
+      \verb https://www1.udel.edu/educ/gottfredson/451/unit9-guidance.htm
+      \endverb
+      \verb{url}
+      \verb https://www1.udel.edu/educ/gottfredson/451/unit9-guidance.htm
+      \endverb
+    \endentry
+    \entry{academypublicationBLEUtranslation}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=804b2af9711baa9806641509804e9bf9}{%
+           family={Ghassemiazghandi},
+           familyi={G\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{804b2af9711baa9806641509804e9bf9}
+      \strng{fullhash}{804b2af9711baa9806641509804e9bf9}
+      \strng{fullhashraw}{804b2af9711baa9806641509804e9bf9}
+      \strng{bibnamehash}{804b2af9711baa9806641509804e9bf9}
+      \strng{authorbibnamehash}{804b2af9711baa9806641509804e9bf9}
+      \strng{authornamehash}{804b2af9711baa9806641509804e9bf9}
+      \strng{authorfullhash}{804b2af9711baa9806641509804e9bf9}
+      \strng{authorfullhashraw}{804b2af9711baa9806641509804e9bf9}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{4}
+      \field{title}{An Evaluation of ChatGPT's Translation Accuracy Using BLEU Score}
+      \field{volume}{14}
+      \field{year}{2024}
+      \verb{doi}
+      \verb https://doi.org/10.17507/tpls.1404.07
+      \endverb
+      \verb{urlraw}
+      \verb https://tpls.academypublication.com/index.php/tpls/article/view/7867
+      \endverb
+      \verb{url}
+      \verb https://tpls.academypublication.com/index.php/tpls/article/view/7867
+      \endverb
+    \endentry
     \entry{gobrecht2024humansubjectivityerrornovel}{misc}{}{}
       \name{author}{8}{}{%
         {{un=0,uniquepart=base,hash=97806c2bf8110af9d5d7468f1cff89e7}{%
@@ -99,6 +288,106 @@
       \verb https://arxiv.org/abs/2405.04323
       \endverb
     \endentry
+    \entry{googlecloudvisionManual}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8b36e9207c24c76e6719268e49201d94}{%
+           family={Google},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{fullhash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{fullhashraw}{8b36e9207c24c76e6719268e49201d94}
+      \strng{bibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorbibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authornamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorfullhash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorfullhashraw}{8b36e9207c24c76e6719268e49201d94}
+      \field{extraname}{1}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Official documentation for Google Cloud Vision API}
+      \field{title}{Cloud Vision API Documentation}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://cloud.google.com/vision/docs
+      \endverb
+      \verb{url}
+      \verb https://cloud.google.com/vision/docs
+      \endverb
+    \endentry
+    \entry{geminiproManual}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8b36e9207c24c76e6719268e49201d94}{%
+           family={Google},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{fullhash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{fullhashraw}{8b36e9207c24c76e6719268e49201d94}
+      \strng{bibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorbibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authornamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorfullhash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorfullhashraw}{8b36e9207c24c76e6719268e49201d94}
+      \field{extraname}{2}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Official documentation for Gemini API}
+      \field{title}{Gemini API Documentation}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://ai.google.dev/gemini-api
+      \endverb
+      \verb{url}
+      \verb https://ai.google.dev/gemini-api
+      \endverb
+    \endentry
+    \entry{pytesseractManual}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f8ce7e99badcb9b68360c2db3c488e0d}{%
+           family={Hoffstaetter},
+           familyi={H\bibinitperiod},
+           given={Samuel},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f8ce7e99badcb9b68360c2db3c488e0d}
+      \strng{fullhash}{f8ce7e99badcb9b68360c2db3c488e0d}
+      \strng{fullhashraw}{f8ce7e99badcb9b68360c2db3c488e0d}
+      \strng{bibnamehash}{f8ce7e99badcb9b68360c2db3c488e0d}
+      \strng{authorbibnamehash}{f8ce7e99badcb9b68360c2db3c488e0d}
+      \strng{authornamehash}{f8ce7e99badcb9b68360c2db3c488e0d}
+      \strng{authorfullhash}{f8ce7e99badcb9b68360c2db3c488e0d}
+      \strng{authorfullhashraw}{f8ce7e99badcb9b68360c2db3c488e0d}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Official documentation for the pytesseract library}
+      \field{title}{pytesseract Documentation}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://pypi.org/project/pytesseract/
+      \endverb
+      \verb{url}
+      \verb https://pypi.org/project/pytesseract/
+      \endverb
+    \endentry
     \entry{kumar2020scoredusingautosas}{misc}{}{}
       \name{author}{6}{}{%
         {{un=0,uniquepart=base,hash=cb4c84053d844ebf3308a100d8cea482}{%
@@ -167,6 +456,301 @@
       \verb https://arxiv.org/abs/2012.11243
       \endverb
     \endentry
+    \entry{mdpiAIinEducation}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=b910ad9045b2ba02939821134617c030}{%
+           family={Lian},
+           familyi={L\bibinitperiod},
+           given={Ruimin},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fd0e87ce78c3ffc7e6a38ca815269abe}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Pengfei},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=33e6a7a4dcf8b493d8f1732a071dd11f}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Xiaoxuan},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8c20ef979e66862ef65998a961323f5a}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Qizhi},
+           giveni={Q\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f4db9373a5ba3555eac8a45bcd339479}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Yi},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {MDPI}%
+      }
+      \strng{namehash}{1b85fce999771d5ed00eba1c1b790e18}
+      \strng{fullhash}{525b238c47b2884db5c10d02af7f9e6a}
+      \strng{fullhashraw}{525b238c47b2884db5c10d02af7f9e6a}
+      \strng{bibnamehash}{525b238c47b2884db5c10d02af7f9e6a}
+      \strng{authorbibnamehash}{525b238c47b2884db5c10d02af7f9e6a}
+      \strng{authornamehash}{1b85fce999771d5ed00eba1c1b790e18}
+      \strng{authorfullhash}{525b238c47b2884db5c10d02af7f9e6a}
+      \strng{authorfullhashraw}{525b238c47b2884db5c10d02af7f9e6a}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Education Sciences}
+      \field{number}{2}
+      \field{title}{New Era of Artificial Intelligence in Education: Towards a Sustainable Multifaceted Revolution}
+      \field{volume}{14}
+      \field{year}{2024}
+      \field{pages}{167}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/su151612451
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/2071-1050/15/16/12451
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/2071-1050/15/16/12451
+      \endverb
+    \endentry
+    \entry{opencvManual}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=cc0cf7218ab317334b85758a2f6657ad}{%
+           family={Library},
+           familyi={L\bibinitperiod},
+           given={Open\bibnamedelimb Source\bibnamedelimb Computer\bibnamedelima Vision},
+           giveni={O\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{cc0cf7218ab317334b85758a2f6657ad}
+      \strng{fullhash}{cc0cf7218ab317334b85758a2f6657ad}
+      \strng{fullhashraw}{cc0cf7218ab317334b85758a2f6657ad}
+      \strng{bibnamehash}{cc0cf7218ab317334b85758a2f6657ad}
+      \strng{authorbibnamehash}{cc0cf7218ab317334b85758a2f6657ad}
+      \strng{authornamehash}{cc0cf7218ab317334b85758a2f6657ad}
+      \strng{authorfullhash}{cc0cf7218ab317334b85758a2f6657ad}
+      \strng{authorfullhashraw}{cc0cf7218ab317334b85758a2f6657ad}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Official documentation for the OpenCV library.}
+      \field{title}{OpenCV Documentation}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://docs.opencv.org/4.x/
+      \endverb
+      \verb{url}
+      \verb https://docs.opencv.org/4.x/
+      \endverb
+    \endentry
+    \entry{gaussianBlurOriginal}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0c8382c6d88ddaed3b9ec13784ace09d}{%
+           family={Lindeberg},
+           familyi={L\bibinitperiod},
+           given={Tony},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0c8382c6d88ddaed3b9ec13784ace09d}
+      \strng{fullhash}{0c8382c6d88ddaed3b9ec13784ace09d}
+      \strng{fullhashraw}{0c8382c6d88ddaed3b9ec13784ace09d}
+      \strng{bibnamehash}{0c8382c6d88ddaed3b9ec13784ace09d}
+      \strng{authorbibnamehash}{0c8382c6d88ddaed3b9ec13784ace09d}
+      \strng{authornamehash}{0c8382c6d88ddaed3b9ec13784ace09d}
+      \strng{authorfullhash}{0c8382c6d88ddaed3b9ec13784ace09d}
+      \strng{authorfullhashraw}{0c8382c6d88ddaed3b9ec13784ace09d}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{0-7923-9418-6}
+      \field{journaltitle}{Springer International Series in Engineering and Computer Science}
+      \field{month}{12}
+      \field{title}{Scale-Space Theory in Computer Vision}
+      \field{year}{1993}
+      \verb{doi}
+      \verb 10.1007/978-1-4757-6465-9
+      \endverb
+    \endentry
+    \entry{azureManual}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=140864078aeca1c7c35b4beb33c53c34}{%
+           family={Microsoft},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{fullhash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{fullhashraw}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{bibnamehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authorbibnamehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authornamehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authorfullhash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authorfullhashraw}{140864078aeca1c7c35b4beb33c53c34}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Official documentation for Azure AI Document Intelligence.}
+      \field{title}{Azure AI Document Intelligence Documentation}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/
+      \endverb
+      \verb{url}
+      \verb https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/
+      \endverb
+    \endentry
+    \entry{tesseractManual}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a3db25f1cbb351b94b3f68d10e275982}{%
+           family={OCR},
+           familyi={O\bibinitperiod},
+           given={Tesseract},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a3db25f1cbb351b94b3f68d10e275982}
+      \strng{fullhash}{a3db25f1cbb351b94b3f68d10e275982}
+      \strng{fullhashraw}{a3db25f1cbb351b94b3f68d10e275982}
+      \strng{bibnamehash}{a3db25f1cbb351b94b3f68d10e275982}
+      \strng{authorbibnamehash}{a3db25f1cbb351b94b3f68d10e275982}
+      \strng{authornamehash}{a3db25f1cbb351b94b3f68d10e275982}
+      \strng{authorfullhash}{a3db25f1cbb351b94b3f68d10e275982}
+      \strng{authorfullhashraw}{a3db25f1cbb351b94b3f68d10e275982}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Official documentation for the Tesseract OCR engine.}
+      \field{title}{Tesseract OCR Documentation}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://tesseract-ocr.github.io/tessdoc/
+      \endverb
+      \verb{url}
+      \verb https://tesseract-ocr.github.io/tessdoc/
+      \endverb
+    \endentry
+    \entry{openaiManual}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0523b13262b12c215d8009938f5c14f1}{%
+           family={OpenAI},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{fullhash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{fullhashraw}{0523b13262b12c215d8009938f5c14f1}
+      \strng{bibnamehash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{authorbibnamehash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{authornamehash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{authorfullhash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{authorfullhashraw}{0523b13262b12c215d8009938f5c14f1}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Official documentation for OpenAI API.}
+      \field{title}{OpenAI API Documentation}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://platform.openai.com/docs/api-reference
+      \endverb
+      \verb{url}
+      \verb https://platform.openai.com/docs/api-reference
+      \endverb
+    \endentry
+    \entry{mediumBLEU}{misc}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=7f72c67734e28d79452d687f2b2825d0}{%
+           family={Papineni},
+           familyi={P\bibinitperiod},
+           given={Kishore},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fcdf7cf3f3cfe87d0f08f8f4d98b1137}{%
+           family={Roukos},
+           familyi={R\bibinitperiod},
+           given={Salim},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=630f7af400534d0e9f11cc0befbb3fe3}{%
+           family={Ward},
+           familyi={W\bibinitperiod},
+           given={Todd},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ecc966c09b4816bda3be0efb9bedb125}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Wei-Jing},
+           giveni={W\bibinithyphendelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Philadelphia, Pennsylvania}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computational Linguistics}%
+      }
+      \strng{namehash}{d4eb40956a6de2c2fe50bfef6a72df63}
+      \strng{fullhash}{0a6e6b36539eaebe00a3fef93d4cd32a}
+      \strng{fullhashraw}{0a6e6b36539eaebe00a3fef93d4cd32a}
+      \strng{bibnamehash}{0a6e6b36539eaebe00a3fef93d4cd32a}
+      \strng{authorbibnamehash}{0a6e6b36539eaebe00a3fef93d4cd32a}
+      \strng{authornamehash}{d4eb40956a6de2c2fe50bfef6a72df63}
+      \strng{authorfullhash}{0a6e6b36539eaebe00a3fef93d4cd32a}
+      \strng{authorfullhashraw}{0a6e6b36539eaebe00a3fef93d4cd32a}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 40th Annual Meeting on Association for Computational Linguistics}
+      \field{series}{ACL '02}
+      \field{title}{BLEU: a method for automatic evaluation of machine translation}
+      \field{year}{2002}
+      \field{pages}{311\bibrangedash 318}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.3115/1073083.1073135
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.3115/1073083.1073135
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.3115/1073083.1073135
+      \endverb
+    \endentry
     \entry{schneider2024llmbasedautogradingshorttextual}{misc}{}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=d2952ae7a817db8473e2971cdb405ddc}{%
@@ -215,10 +799,342 @@
       \endverb
       \verb{url}
       \verb https://arxiv.org/abs/2309.11508
+      \endverb
+    \endentry
+    \entry{ding2013item}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=1f0829af98bb8e9199885b74e43f3840}{%
+           family={Talebi},
+           familyi={T\bibinitperiod},
+           given={Ghadam},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0767d2cf9d1da0d251442e90d2999980}{%
+           family={Ghaffari},
+           familyi={G\bibinitperiod},
+           given={Reza},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9df13ab503f2c850bf5d316251b4907f}{%
+           family={Eskandarzadeh},
+           familyi={E\bibinitperiod},
+           given={Eyoub},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=df545db15a9e559aa2bbce1563839eb9}{%
+           family={Oskouei},
+           familyi={O\bibinitperiod},
+           given={Ali},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{778a8bafdcb17595429ebab1c6f116ef}
+      \strng{fullhash}{2a118748434ac2e95c5b8a5f28bf3aa8}
+      \strng{fullhashraw}{2a118748434ac2e95c5b8a5f28bf3aa8}
+      \strng{bibnamehash}{2a118748434ac2e95c5b8a5f28bf3aa8}
+      \strng{authorbibnamehash}{2a118748434ac2e95c5b8a5f28bf3aa8}
+      \strng{authornamehash}{778a8bafdcb17595429ebab1c6f116ef}
+      \strng{authorfullhash}{2a118748434ac2e95c5b8a5f28bf3aa8}
+      \strng{authorfullhashraw}{2a118748434ac2e95c5b8a5f28bf3aa8}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Research and Development in Medical Education}
+      \field{month}{10}
+      \field{title}{Item Analysis an Effective Tool for Assessing Exam Quality, Designing Appropriate Exam and Determining Weakness in Teaching}
+      \field{volume}{2}
+      \field{year}{2013}
+      \verb{doi}
+      \verb 10.5681/rdme.2013.016
+      \endverb
+    \endentry
+    \entry{SuzukiContour}{article}{}{}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labeltitlesource}{title}
+      \field{issn}{0734-189X}
+      \field{journaltitle}{Computer Vision, Graphics, and Image Processing}
+      \field{note}{This is the original paper that describes the algorithm behind the contour finding implemented in OpenCV. It explains the method used for `cv2.findContours` with `cv2.RETR\_LIST` and `cv2.CHAIN\_APPROX\_SIMPLE` which retrieves all of the contours, with each contour stored with only the end points, reducing memory usage.}
+      \field{number}{1}
+      \field{title}{Topological structural analysis of digitized binary images by border following}
+      \field{volume}{30}
+      \field{year}{1985}
+      \field{pages}{32\bibrangedash 46}
+      \range{pages}{15}
+      \verb{doi}
+      \verb https://doi.org/10.1016/0734-189X\(85\)90016-7
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/0734189X85900167
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/0734189X85900167
+      \endverb
+    \endentry
+    \entry{YEUNG2023EVA}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=b3f459d21e1904e5e6ca389d6b276970}{%
+           family={Yeung},
+           familyi={Y\bibinitperiod},
+           given={W.E.},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=af25d212afc89c492fb161af1d69df79}{%
+           family={Qi},
+           familyi={Q\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6b44923428f805936659e71722691637}{%
+           family={Xiao},
+           familyi={X\bibinitperiod},
+           given={J.L.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=54d8e2d0f3732686701f010c7087b013}{%
+           family={Wong},
+           familyi={W\bibinitperiod},
+           given={F.R.},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Seville, Spain}%
+      }
+      \list{publisher}{1}{%
+        {IATED}%
+      }
+      \strng{namehash}{514334727f624b9012671187274c307e}
+      \strng{fullhash}{8b77405f22322c26dab95e80fe8f8180}
+      \strng{fullhashraw}{8b77405f22322c26dab95e80fe8f8180}
+      \strng{bibnamehash}{8b77405f22322c26dab95e80fe8f8180}
+      \strng{authorbibnamehash}{8b77405f22322c26dab95e80fe8f8180}
+      \strng{authornamehash}{514334727f624b9012671187274c307e}
+      \strng{authorfullhash}{8b77405f22322c26dab95e80fe8f8180}
+      \strng{authorfullhashraw}{8b77405f22322c26dab95e80fe8f8180}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-84-09-55942-8}
+      \field{issn}{2340-1095}
+      \field{journaltitle}{ICERI2023 Proceedings}
+      \field{month}{11}
+      \field{series}{16th annual International Conference of Education, Research and Innovation}
+      \field{title}{EVALUATING THE EFFECTIVENESS OF AI-BASED ESSAY GRADING TOOLS IN THE SUMMATIVE ASSESSMENT OF HIGHER EDUCATION}
+      \field{year}{2023}
+      \field{pages}{8069\bibrangedash 8073}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.21125/iceri.2023.2063
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.21125/iceri.2023.2063
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.21125/iceri.2023.2063
       \endverb
     \endentry
   \enddatalist
   \datalist[entry]{nyt/global//global/global/global}
+    \entry{aclBLEUevaluation}{inbook}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=f7acd168ce346c83b255e5386dee1c67}{%
+           family={Callison-Burch},
+           familyi={C\bibinithyphendelim B\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4dcb3d6619bc196c48b0ac282e188f1c}{%
+           family={Osborne},
+           familyi={O\bibinitperiod},
+           given={Miles},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dac0b41a5ea5e261d00f3251b76b91bd}{%
+           family={Koehn},
+           familyi={K\bibinitperiod},
+           given={Philipp},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=97d98c3f5769d50f7f4576ea98e89f74}{%
+           family={McCarthy},
+           familyi={M\bibinitperiod},
+           given={Diana},
+           giveni={D\bibinitperiod}}}%
+        {{hash=7599d10f91a728c8276035d9521b145a}{%
+           family={Wintner},
+           familyi={W\bibinitperiod},
+           given={Shuly},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Trento, Italy}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computational Linguistics}%
+      }
+      \strng{namehash}{a2dfcde80f6ca8572c3e4dd5d4c41d90}
+      \strng{fullhash}{f02431d035f11d873c78c004afadf070}
+      \strng{fullhashraw}{f02431d035f11d873c78c004afadf070}
+      \strng{bibnamehash}{f02431d035f11d873c78c004afadf070}
+      \strng{authorbibnamehash}{f02431d035f11d873c78c004afadf070}
+      \strng{authornamehash}{a2dfcde80f6ca8572c3e4dd5d4c41d90}
+      \strng{authorfullhash}{f02431d035f11d873c78c004afadf070}
+      \strng{authorfullhashraw}{f02431d035f11d873c78c004afadf070}
+      \strng{editorbibnamehash}{7c81d666c7b9025472bec007efb0ddbc}
+      \strng{editornamehash}{7c81d666c7b9025472bec007efb0ddbc}
+      \strng{editorfullhash}{7c81d666c7b9025472bec007efb0ddbc}
+      \strng{editorfullhashraw}{7c81d666c7b9025472bec007efb0ddbc}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{11th Conference of the {E}uropean Chapter of the Association for Computational Linguistics}
+      \field{month}{4}
+      \field{title}{Re-evaluating the Role of {B}leu in Machine Translation Research}
+      \field{year}{2006}
+      \field{pages}{249\bibrangedash 256}
+      \range{pages}{8}
+      \verb{urlraw}
+      \verb https://aclanthology.org/E06-1032
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/E06-1032
+      \endverb
+    \endentry
+    \entry{cannyEdgeDetection}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fa344b67077711bfaa0525254de2977a}{%
+           family={Canny},
+           familyi={C\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{fa344b67077711bfaa0525254de2977a}
+      \strng{fullhash}{fa344b67077711bfaa0525254de2977a}
+      \strng{fullhashraw}{fa344b67077711bfaa0525254de2977a}
+      \strng{bibnamehash}{fa344b67077711bfaa0525254de2977a}
+      \strng{authorbibnamehash}{fa344b67077711bfaa0525254de2977a}
+      \strng{authornamehash}{fa344b67077711bfaa0525254de2977a}
+      \strng{authorfullhash}{fa344b67077711bfaa0525254de2977a}
+      \strng{authorfullhashraw}{fa344b67077711bfaa0525254de2977a}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Pattern Analysis and Machine Intelligence}
+      \field{number}{6}
+      \field{title}{A Computational Approach to Edge Detection}
+      \field{volume}{PAMI-8}
+      \field{year}{1986}
+      \field{pages}{679\bibrangedash 698}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1109/TPAMI.1986.4767851
+      \endverb
+      \keyw{Image edge detection;Detectors;Machine vision;Shape measurement;Performance analysis;Uncertainty;Gaussian approximation;Signal to noise ratio;Signal synthesis;Feature extraction;Edge detection;feature extraction;image processing;machine vision;multiscale image analysis}
+    \endentry
+    \entry{ding2009item}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=e0ba32131c7a334a9ec9fa7445d13e3e}{%
+           family={Ding},
+           familyi={D\bibinitperiod},
+           given={Lin},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3cc2d86e92c332267a05444c15f6259b}{%
+           family={Beichner},
+           familyi={B\bibinitperiod},
+           given={Robert\bibnamedelima J},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6cd6e2d47b7adc4016f8e7335157a0fc}
+      \strng{fullhash}{6cd6e2d47b7adc4016f8e7335157a0fc}
+      \strng{fullhashraw}{6cd6e2d47b7adc4016f8e7335157a0fc}
+      \strng{bibnamehash}{6cd6e2d47b7adc4016f8e7335157a0fc}
+      \strng{authorbibnamehash}{6cd6e2d47b7adc4016f8e7335157a0fc}
+      \strng{authornamehash}{6cd6e2d47b7adc4016f8e7335157a0fc}
+      \strng{authorfullhash}{6cd6e2d47b7adc4016f8e7335157a0fc}
+      \strng{authorfullhashraw}{6cd6e2d47b7adc4016f8e7335157a0fc}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Physics Teacher Education Online}
+      \field{number}{2}
+      \field{title}{Item analysis for classroom tests: A comprehensive guide}
+      \field{volume}{5}
+      \field{year}{2009}
+      \field{pages}{2\bibrangedash 12}
+      \range{pages}{11}
+      \verb{urlraw}
+      \verb https://www1.udel.edu/educ/gottfredson/451/unit9-guidance.htm
+      \endverb
+      \verb{url}
+      \verb https://www1.udel.edu/educ/gottfredson/451/unit9-guidance.htm
+      \endverb
+    \endentry
+    \entry{academypublicationBLEUtranslation}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=804b2af9711baa9806641509804e9bf9}{%
+           family={Ghassemiazghandi},
+           familyi={G\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{804b2af9711baa9806641509804e9bf9}
+      \strng{fullhash}{804b2af9711baa9806641509804e9bf9}
+      \strng{fullhashraw}{804b2af9711baa9806641509804e9bf9}
+      \strng{bibnamehash}{804b2af9711baa9806641509804e9bf9}
+      \strng{authorbibnamehash}{804b2af9711baa9806641509804e9bf9}
+      \strng{authornamehash}{804b2af9711baa9806641509804e9bf9}
+      \strng{authorfullhash}{804b2af9711baa9806641509804e9bf9}
+      \strng{authorfullhashraw}{804b2af9711baa9806641509804e9bf9}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{4}
+      \field{title}{An Evaluation of ChatGPT's Translation Accuracy Using BLEU Score}
+      \field{volume}{14}
+      \field{year}{2024}
+      \verb{doi}
+      \verb https://doi.org/10.17507/tpls.1404.07
+      \endverb
+      \verb{urlraw}
+      \verb https://tpls.academypublication.com/index.php/tpls/article/view/7867
+      \endverb
+      \verb{url}
+      \verb https://tpls.academypublication.com/index.php/tpls/article/view/7867
+      \endverb
+    \endentry
     \entry{gobrecht2024humansubjectivityerrornovel}{misc}{}{}
       \name{author}{8}{}{%
         {{un=0,uniquepart=base,hash=97806c2bf8110af9d5d7468f1cff89e7}{%
@@ -299,6 +1215,106 @@
       \verb https://arxiv.org/abs/2405.04323
       \endverb
     \endentry
+    \entry{googlecloudvisionManual}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8b36e9207c24c76e6719268e49201d94}{%
+           family={Google},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{fullhash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{fullhashraw}{8b36e9207c24c76e6719268e49201d94}
+      \strng{bibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorbibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authornamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorfullhash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorfullhashraw}{8b36e9207c24c76e6719268e49201d94}
+      \field{extraname}{1}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Official documentation for Google Cloud Vision API}
+      \field{title}{Cloud Vision API Documentation}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://cloud.google.com/vision/docs
+      \endverb
+      \verb{url}
+      \verb https://cloud.google.com/vision/docs
+      \endverb
+    \endentry
+    \entry{geminiproManual}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8b36e9207c24c76e6719268e49201d94}{%
+           family={Google},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{fullhash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{fullhashraw}{8b36e9207c24c76e6719268e49201d94}
+      \strng{bibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorbibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authornamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorfullhash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorfullhashraw}{8b36e9207c24c76e6719268e49201d94}
+      \field{extraname}{2}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Official documentation for Gemini API}
+      \field{title}{Gemini API Documentation}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://ai.google.dev/gemini-api
+      \endverb
+      \verb{url}
+      \verb https://ai.google.dev/gemini-api
+      \endverb
+    \endentry
+    \entry{pytesseractManual}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f8ce7e99badcb9b68360c2db3c488e0d}{%
+           family={Hoffstaetter},
+           familyi={H\bibinitperiod},
+           given={Samuel},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f8ce7e99badcb9b68360c2db3c488e0d}
+      \strng{fullhash}{f8ce7e99badcb9b68360c2db3c488e0d}
+      \strng{fullhashraw}{f8ce7e99badcb9b68360c2db3c488e0d}
+      \strng{bibnamehash}{f8ce7e99badcb9b68360c2db3c488e0d}
+      \strng{authorbibnamehash}{f8ce7e99badcb9b68360c2db3c488e0d}
+      \strng{authornamehash}{f8ce7e99badcb9b68360c2db3c488e0d}
+      \strng{authorfullhash}{f8ce7e99badcb9b68360c2db3c488e0d}
+      \strng{authorfullhashraw}{f8ce7e99badcb9b68360c2db3c488e0d}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Official documentation for the pytesseract library}
+      \field{title}{pytesseract Documentation}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://pypi.org/project/pytesseract/
+      \endverb
+      \verb{url}
+      \verb https://pypi.org/project/pytesseract/
+      \endverb
+    \endentry
     \entry{kumar2020scoredusingautosas}{misc}{}{}
       \name{author}{6}{}{%
         {{un=0,uniquepart=base,hash=cb4c84053d844ebf3308a100d8cea482}{%
@@ -367,6 +1383,301 @@
       \verb https://arxiv.org/abs/2012.11243
       \endverb
     \endentry
+    \entry{mdpiAIinEducation}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=b910ad9045b2ba02939821134617c030}{%
+           family={Lian},
+           familyi={L\bibinitperiod},
+           given={Ruimin},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fd0e87ce78c3ffc7e6a38ca815269abe}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Pengfei},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=33e6a7a4dcf8b493d8f1732a071dd11f}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Xiaoxuan},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8c20ef979e66862ef65998a961323f5a}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Qizhi},
+           giveni={Q\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f4db9373a5ba3555eac8a45bcd339479}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Yi},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {MDPI}%
+      }
+      \strng{namehash}{1b85fce999771d5ed00eba1c1b790e18}
+      \strng{fullhash}{525b238c47b2884db5c10d02af7f9e6a}
+      \strng{fullhashraw}{525b238c47b2884db5c10d02af7f9e6a}
+      \strng{bibnamehash}{525b238c47b2884db5c10d02af7f9e6a}
+      \strng{authorbibnamehash}{525b238c47b2884db5c10d02af7f9e6a}
+      \strng{authornamehash}{1b85fce999771d5ed00eba1c1b790e18}
+      \strng{authorfullhash}{525b238c47b2884db5c10d02af7f9e6a}
+      \strng{authorfullhashraw}{525b238c47b2884db5c10d02af7f9e6a}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Education Sciences}
+      \field{number}{2}
+      \field{title}{New Era of Artificial Intelligence in Education: Towards a Sustainable Multifaceted Revolution}
+      \field{volume}{14}
+      \field{year}{2024}
+      \field{pages}{167}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/su151612451
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/2071-1050/15/16/12451
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/2071-1050/15/16/12451
+      \endverb
+    \endentry
+    \entry{opencvManual}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=cc0cf7218ab317334b85758a2f6657ad}{%
+           family={Library},
+           familyi={L\bibinitperiod},
+           given={Open\bibnamedelimb Source\bibnamedelimb Computer\bibnamedelima Vision},
+           giveni={O\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{cc0cf7218ab317334b85758a2f6657ad}
+      \strng{fullhash}{cc0cf7218ab317334b85758a2f6657ad}
+      \strng{fullhashraw}{cc0cf7218ab317334b85758a2f6657ad}
+      \strng{bibnamehash}{cc0cf7218ab317334b85758a2f6657ad}
+      \strng{authorbibnamehash}{cc0cf7218ab317334b85758a2f6657ad}
+      \strng{authornamehash}{cc0cf7218ab317334b85758a2f6657ad}
+      \strng{authorfullhash}{cc0cf7218ab317334b85758a2f6657ad}
+      \strng{authorfullhashraw}{cc0cf7218ab317334b85758a2f6657ad}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Official documentation for the OpenCV library.}
+      \field{title}{OpenCV Documentation}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://docs.opencv.org/4.x/
+      \endverb
+      \verb{url}
+      \verb https://docs.opencv.org/4.x/
+      \endverb
+    \endentry
+    \entry{gaussianBlurOriginal}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0c8382c6d88ddaed3b9ec13784ace09d}{%
+           family={Lindeberg},
+           familyi={L\bibinitperiod},
+           given={Tony},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0c8382c6d88ddaed3b9ec13784ace09d}
+      \strng{fullhash}{0c8382c6d88ddaed3b9ec13784ace09d}
+      \strng{fullhashraw}{0c8382c6d88ddaed3b9ec13784ace09d}
+      \strng{bibnamehash}{0c8382c6d88ddaed3b9ec13784ace09d}
+      \strng{authorbibnamehash}{0c8382c6d88ddaed3b9ec13784ace09d}
+      \strng{authornamehash}{0c8382c6d88ddaed3b9ec13784ace09d}
+      \strng{authorfullhash}{0c8382c6d88ddaed3b9ec13784ace09d}
+      \strng{authorfullhashraw}{0c8382c6d88ddaed3b9ec13784ace09d}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{0-7923-9418-6}
+      \field{journaltitle}{Springer International Series in Engineering and Computer Science}
+      \field{month}{12}
+      \field{title}{Scale-Space Theory in Computer Vision}
+      \field{year}{1993}
+      \verb{doi}
+      \verb 10.1007/978-1-4757-6465-9
+      \endverb
+    \endentry
+    \entry{azureManual}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=140864078aeca1c7c35b4beb33c53c34}{%
+           family={Microsoft},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{fullhash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{fullhashraw}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{bibnamehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authorbibnamehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authornamehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authorfullhash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authorfullhashraw}{140864078aeca1c7c35b4beb33c53c34}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Official documentation for Azure AI Document Intelligence.}
+      \field{title}{Azure AI Document Intelligence Documentation}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/
+      \endverb
+      \verb{url}
+      \verb https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/
+      \endverb
+    \endentry
+    \entry{tesseractManual}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a3db25f1cbb351b94b3f68d10e275982}{%
+           family={OCR},
+           familyi={O\bibinitperiod},
+           given={Tesseract},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a3db25f1cbb351b94b3f68d10e275982}
+      \strng{fullhash}{a3db25f1cbb351b94b3f68d10e275982}
+      \strng{fullhashraw}{a3db25f1cbb351b94b3f68d10e275982}
+      \strng{bibnamehash}{a3db25f1cbb351b94b3f68d10e275982}
+      \strng{authorbibnamehash}{a3db25f1cbb351b94b3f68d10e275982}
+      \strng{authornamehash}{a3db25f1cbb351b94b3f68d10e275982}
+      \strng{authorfullhash}{a3db25f1cbb351b94b3f68d10e275982}
+      \strng{authorfullhashraw}{a3db25f1cbb351b94b3f68d10e275982}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Official documentation for the Tesseract OCR engine.}
+      \field{title}{Tesseract OCR Documentation}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://tesseract-ocr.github.io/tessdoc/
+      \endverb
+      \verb{url}
+      \verb https://tesseract-ocr.github.io/tessdoc/
+      \endverb
+    \endentry
+    \entry{openaiManual}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0523b13262b12c215d8009938f5c14f1}{%
+           family={OpenAI},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{fullhash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{fullhashraw}{0523b13262b12c215d8009938f5c14f1}
+      \strng{bibnamehash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{authorbibnamehash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{authornamehash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{authorfullhash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{authorfullhashraw}{0523b13262b12c215d8009938f5c14f1}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Official documentation for OpenAI API.}
+      \field{title}{OpenAI API Documentation}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://platform.openai.com/docs/api-reference
+      \endverb
+      \verb{url}
+      \verb https://platform.openai.com/docs/api-reference
+      \endverb
+    \endentry
+    \entry{mediumBLEU}{misc}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=7f72c67734e28d79452d687f2b2825d0}{%
+           family={Papineni},
+           familyi={P\bibinitperiod},
+           given={Kishore},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fcdf7cf3f3cfe87d0f08f8f4d98b1137}{%
+           family={Roukos},
+           familyi={R\bibinitperiod},
+           given={Salim},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=630f7af400534d0e9f11cc0befbb3fe3}{%
+           family={Ward},
+           familyi={W\bibinitperiod},
+           given={Todd},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ecc966c09b4816bda3be0efb9bedb125}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Wei-Jing},
+           giveni={W\bibinithyphendelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Philadelphia, Pennsylvania}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computational Linguistics}%
+      }
+      \strng{namehash}{d4eb40956a6de2c2fe50bfef6a72df63}
+      \strng{fullhash}{0a6e6b36539eaebe00a3fef93d4cd32a}
+      \strng{fullhashraw}{0a6e6b36539eaebe00a3fef93d4cd32a}
+      \strng{bibnamehash}{0a6e6b36539eaebe00a3fef93d4cd32a}
+      \strng{authorbibnamehash}{0a6e6b36539eaebe00a3fef93d4cd32a}
+      \strng{authornamehash}{d4eb40956a6de2c2fe50bfef6a72df63}
+      \strng{authorfullhash}{0a6e6b36539eaebe00a3fef93d4cd32a}
+      \strng{authorfullhashraw}{0a6e6b36539eaebe00a3fef93d4cd32a}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 40th Annual Meeting on Association for Computational Linguistics}
+      \field{series}{ACL '02}
+      \field{title}{BLEU: a method for automatic evaluation of machine translation}
+      \field{year}{2002}
+      \field{pages}{311\bibrangedash 318}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.3115/1073083.1073135
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.3115/1073083.1073135
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.3115/1073083.1073135
+      \endverb
+    \endentry
     \entry{schneider2024llmbasedautogradingshorttextual}{misc}{}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=d2952ae7a817db8473e2971cdb405ddc}{%
@@ -415,6 +1726,149 @@
       \endverb
       \verb{url}
       \verb https://arxiv.org/abs/2309.11508
+      \endverb
+    \endentry
+    \entry{ding2013item}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=1f0829af98bb8e9199885b74e43f3840}{%
+           family={Talebi},
+           familyi={T\bibinitperiod},
+           given={Ghadam},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0767d2cf9d1da0d251442e90d2999980}{%
+           family={Ghaffari},
+           familyi={G\bibinitperiod},
+           given={Reza},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9df13ab503f2c850bf5d316251b4907f}{%
+           family={Eskandarzadeh},
+           familyi={E\bibinitperiod},
+           given={Eyoub},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=df545db15a9e559aa2bbce1563839eb9}{%
+           family={Oskouei},
+           familyi={O\bibinitperiod},
+           given={Ali},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{778a8bafdcb17595429ebab1c6f116ef}
+      \strng{fullhash}{2a118748434ac2e95c5b8a5f28bf3aa8}
+      \strng{fullhashraw}{2a118748434ac2e95c5b8a5f28bf3aa8}
+      \strng{bibnamehash}{2a118748434ac2e95c5b8a5f28bf3aa8}
+      \strng{authorbibnamehash}{2a118748434ac2e95c5b8a5f28bf3aa8}
+      \strng{authornamehash}{778a8bafdcb17595429ebab1c6f116ef}
+      \strng{authorfullhash}{2a118748434ac2e95c5b8a5f28bf3aa8}
+      \strng{authorfullhashraw}{2a118748434ac2e95c5b8a5f28bf3aa8}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Research and Development in Medical Education}
+      \field{month}{10}
+      \field{title}{Item Analysis an Effective Tool for Assessing Exam Quality, Designing Appropriate Exam and Determining Weakness in Teaching}
+      \field{volume}{2}
+      \field{year}{2013}
+      \verb{doi}
+      \verb 10.5681/rdme.2013.016
+      \endverb
+    \endentry
+    \entry{SuzukiContour}{article}{}{}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labeltitlesource}{title}
+      \field{issn}{0734-189X}
+      \field{journaltitle}{Computer Vision, Graphics, and Image Processing}
+      \field{note}{This is the original paper that describes the algorithm behind the contour finding implemented in OpenCV. It explains the method used for `cv2.findContours` with `cv2.RETR\_LIST` and `cv2.CHAIN\_APPROX\_SIMPLE` which retrieves all of the contours, with each contour stored with only the end points, reducing memory usage.}
+      \field{number}{1}
+      \field{title}{Topological structural analysis of digitized binary images by border following}
+      \field{volume}{30}
+      \field{year}{1985}
+      \field{pages}{32\bibrangedash 46}
+      \range{pages}{15}
+      \verb{doi}
+      \verb https://doi.org/10.1016/0734-189X\(85\)90016-7
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/0734189X85900167
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/0734189X85900167
+      \endverb
+    \endentry
+    \entry{YEUNG2023EVA}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=b3f459d21e1904e5e6ca389d6b276970}{%
+           family={Yeung},
+           familyi={Y\bibinitperiod},
+           given={W.E.},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=af25d212afc89c492fb161af1d69df79}{%
+           family={Qi},
+           familyi={Q\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6b44923428f805936659e71722691637}{%
+           family={Xiao},
+           familyi={X\bibinitperiod},
+           given={J.L.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=54d8e2d0f3732686701f010c7087b013}{%
+           family={Wong},
+           familyi={W\bibinitperiod},
+           given={F.R.},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Seville, Spain}%
+      }
+      \list{publisher}{1}{%
+        {IATED}%
+      }
+      \strng{namehash}{514334727f624b9012671187274c307e}
+      \strng{fullhash}{8b77405f22322c26dab95e80fe8f8180}
+      \strng{fullhashraw}{8b77405f22322c26dab95e80fe8f8180}
+      \strng{bibnamehash}{8b77405f22322c26dab95e80fe8f8180}
+      \strng{authorbibnamehash}{8b77405f22322c26dab95e80fe8f8180}
+      \strng{authornamehash}{514334727f624b9012671187274c307e}
+      \strng{authorfullhash}{8b77405f22322c26dab95e80fe8f8180}
+      \strng{authorfullhashraw}{8b77405f22322c26dab95e80fe8f8180}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-84-09-55942-8}
+      \field{issn}{2340-1095}
+      \field{journaltitle}{ICERI2023 Proceedings}
+      \field{month}{11}
+      \field{series}{16th annual International Conference of Education, Research and Innovation}
+      \field{title}{EVALUATING THE EFFECTIVENESS OF AI-BASED ESSAY GRADING TOOLS IN THE SUMMATIVE ASSESSMENT OF HIGHER EDUCATION}
+      \field{year}{2023}
+      \field{pages}{8069\bibrangedash 8073}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.21125/iceri.2023.2063
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.21125/iceri.2023.2063
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.21125/iceri.2023.2063
       \endverb
     \endentry
   \enddatalist

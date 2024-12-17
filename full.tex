@@ -75,7 +75,6 @@
 \ooalign{$\genfrac{}{}{0pt}{0}{#1}{#2}$\cr\dotover\cr}
 }
 
-
 % % Formatting Sections
 \sectionfont{\fontsize{30}{40}\selectfont}
 \newcommand{\subsectionindent}{\hspace{21em}}
@@ -106,11 +105,11 @@
 \subsection{Achtergrond/Doelstelling} 
 
 % motivatiebrief-finaal
-Beiden zijn we geïnteresseerd in computers en informatica, maar we willen ook iets doen of maken wat impact heeft. Afgelopen jaren op HAL merkten we het volgende: wanneer een docent een toets geeft en de resultaten tegenvallen, geeft de docent hiervan de leerlingen de schuld, zonder dit te verwijten aan de toets zelf. Dit beschouwen wij als een gemist leermoment. Wij hopen dat ons project ervoor gaat zorgen dat minder leerlingen zich benadeeld gaan voelen door een te lastige toets. 
+Beiden zijn we geïnteresseerd in computers en informatica, maar we willen ook iets doen of maken wat impact heeft. Afgelopen jaren op HAL merkten we het volgende: wanneer een docent een toets geeft en de resultaten tegenvallen, geeft de docent hiervan de leerlingen de schuld, zonder dit te verwijten aan de toets zelf. Dit beschouwen wij als een gemist leermoment. Wij hopen dat ons project ervoor gaat zorgen dat minder leerlingen zich benadeeld gaan voelen door een te lastige toets.
 
 
 \subsection{Probleemstelling}
-Het nakijken en analyseren van een toets kost veel tijd voor docenten. Wij willen kijken of door de nieuwe mogelijkheden van kunstmatige intelligentie het mogelijk is toetsen automatisch na te kijken, opdat wij elke leerling met behulpzame feedback kunnen voorzien en de docenten een overzichtelijke weergaven geven in het niveau van een klas.
+Het nakijken en analyseren van een toets kost veel tijd voor docenten. Wij willen kijken of door de nieuwe mogelijkheden van kunstmatige intelligentie het mogelijk is toetsen automatisch na te kijken (\cite{mdpiAIinEducation}), opdat wij elke leerling met behulpzame feedback kunnen voorzien en de docenten een overzichtelijke weergaven geven in het niveau van een klas (\cite{YEUNG2023EVA}).
 Daarom hebben wij de volgende onderzoeksvraag: % Fase 2
 \textbf{Is er een mogelijkheid om een (computer) programma te maken dat een (scheikunde) toets na kan kijken, kan analyseren en feedback kan schrijven waar een docent of leerling iets aan heeft voor 2025?}
 \\\\
@@ -290,7 +289,7 @@ In dit onderdeel wordt een foto of scan van de toets omgezet naar computertekst.
 \textit{Hier volgt een uitwerking van de genomen stappen. }
 \paragraph*{Croppen}
 \begin{multicols}{2} 
-Voor het croppen hebben we 2 verschillende manieren geprobeerd. De eerste is een neural network dat hoeken van een blaadje herkent op een foto waarna je het kan uitknippen met openCV. Er was een probleem met herkennen van een blaadje, soms knipte hij alleen het Amsterdams logo als pagina.
+Voor het croppen hebben we 2 verschillende manieren geprobeerd. De eerste is een neural network dat hoeken van een blaadje herkent op een foto waarna je het kan uitknippen met openCV (\cite{opencvManual}). Er was een probleem met herkennen van een blaadje, soms knipte hij alleen het Amsterdams logo als pagina.
 Daarom zijn we daarna overgestapt op een openCV systeem.
 \end{multicols}
 
@@ -311,15 +310,15 @@ Daarom zijn we daarna overgestapt op een openCV systeem.
        \\
         
     \hline
-    2. Dan wordt er een blur gebruikt om de contrasten te vinden. & 
+    2. Dan wordt er een blur gebruikt om de contrasten te vinden (\cite{gaussianBlurOriginal}). & 
         \adjustbox{valign=t}{\includegraphics[width=\linewidth]{./images/methoden/inscannen/croppen/crop_gaussian.png}}
        \\
     \hline
-    3. De cv2 Canny functie om die contrasten aan te geven met witte lijnen. & 
+    3. De cv2 Canny functie om die contrasten aan te geven met witte lijnen (\cite{cannyEdgeDetection}). & 
         \adjustbox{valign=t}{\includegraphics[width=\linewidth]{./images/methoden/inscannen/croppen/crop_canny.png}}
         \\
     \hline 
-    \parbox[t]{\linewidth}{4. Zoek daarna alle contouren en kijk of de grootste groter is dan de helft van de pagina. Stuur de gewarpde foto door als dat zo is.} & 
+    \parbox[t]{\linewidth}{4. Zoek daarna alle contouren (\cite{SuzukiContour}) en kijk of de grootste groter is dan de helft van de pagina. Stuur de gewarpde foto door als dat zo is.} & 
         \adjustbox{valign=t}{\includegraphics[width=\linewidth]{./images/methoden/inscannen/croppen/crop_output.png}}
     \\
     \hline
@@ -338,13 +337,13 @@ De rode tekst wordt verwijderd door te checken voor elke pixel met een te hoge r
 \begin{multicols}{2} 
 \textbf{Handgeschreven} 
 Dit was de eerste methode die we hebben geprobeerd. Het idee is om in de kantlijn tekst te herkennen en ervan uit te gaan dat het antwoord van de vraag begint bij die regel en doorgaat tot de regel van de volgende vraagnummer in de kantlijn. \\
-Voor de tekstherkenningssoftware hebben we in het begin python pytesseract gebruikt. Een lokaal programma dat tekstblokken kan herkennen.
+Voor de tekstherkenningssoftware hebben we in het begin python pytesseract gebruikt (\cite{tesseractManual, pytesseractManual}). Een lokaal programma dat tekstblokken kan herkennen.
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth]{./images/methoden/inscannen/sectie/hand/handgeschreven.png}
     \caption{Pytesseract output}\label{fig:pytesseract-output}
 \end{figure}
-Daarna hebben we getest met Handprint een python module die verschillende api's kan gebruiken, zoals:
+Daarna hebben we getest met Handprint een python module die verschillende api's kan gebruiken, zoals (\cite{azureManual, googlecloudvisionManual}):
 \begin{figure}[H]%
     \centering
     \subfloat[\centering Google document AI]{{\includegraphics[height=10cm]{./images/methoden/inscannen/sectie/hand/kant_google.png} }}%
@@ -447,7 +446,7 @@ Om dit in te scannen zijn er 2 dingen nodig: \\
         [1001, 19, 43, 61]
     ]
     \end{minted}
-    \caption{Vierkant detectie output}\label{json-example}
+    \caption{Vierkant detectie output}\label{json-example2}
     \end{listing}
 
 \end{multicols}
@@ -521,7 +520,7 @@ Prompt:\\
 \end{multicols}
 \pagebreak
 
-\textbf{Google Gemini 1.5pro}: Werkt
+\textbf{Google Gemini 1.5pro} : Werkt
 \begin{listing}[H]
     
     \begin{minted}[frame=single,
@@ -621,7 +620,7 @@ We kunnen nu de secties scheiden en de vraagnummers relatief betrouwbaar extrahe
 Nu hebben we van elk type sectie een foto van het antwoordveld uit de vorige stap. Het lastigste van dit onderdeel is de handschriften omzetten naar geschreven tekst. Om erachter te komen wat de beste methode is hebben we veel getest met instellingen zoals: promps, temperatuur, foto en type-model.\\
 \\
 \begin{minipage}{\textwidth}
-We hebben 5 modellen getest:\ref{fig:score-model}
+We hebben 5 GPT modellen getest (\cite{geminiproManual, openaiManual}):\ref{fig:score-model}
 \begin{itemize}
     \item \textbf{Google} gemini-1.5-pro-002
     \item \textbf{Google} gemini-1.5-flash-8b
@@ -755,7 +754,7 @@ Om te weten welk resultaat een correct resultaat geeft wordt voor elk resultaat 
 \hspace{3em}\textit{Een leerling heeft vermoedelijke een Nederlands antwoord geschreven, dus een Nederlands resultaat is beter. Er wordt ook rekening gehouden met de betekenis van het resultaat vs het beoogde resultaat.}\\
 \\
 \begin{minipage}{0.5\linewidth}
-Voor het berekenen van de score wordt eerst de BLEU score gebruikt die een database heeft van alle Nederlandse woorden en die de betekenis van een zin kan begrijpen. Hij geeft een score dichter bij als twee zinnen qua betekenis en Nederlands meer op elkaar lijken. \\
+Voor het berekenen van de score wordt eerst de BLEU score gebruikt die een database heeft van alle Nederlandse woorden en die de betekenis van een zin kan begrijpen (\cite{academypublicationBLEUtranslation, aclBLEUevaluation, mediumBLEU}). Hij geeft een score dichter bij als twee zinnen qua betekenis en Nederlands meer op elkaar lijken. \\
 \\
 Daarnaast wordt gekeken naar de veranderingen van de reference naar de gegenereerde tekst. Hoe langer de fout hoe groter de aftrek. \\
 \\
@@ -1198,7 +1197,7 @@ waarbij:
 \begin{multicols}{2}
 
 \pagebreak
-\paragraph*{Vraagniveau} Om met deze waardes een analyse te doen van een toets op vraagniveau kan je bepaalde berekeningen gebruiken. Als je wilt weten of een vraag in de toets thuishoortkan je de correlatie berekenen tussen hoe de leerlingen de vraag hebben gemaakt ten opzichte van de rest van de toets.
+\paragraph*{Vraagniveau} Om met deze waardes een analyse te doen van een toets op vraagniveau kan je bepaalde berekeningen gebruiken. Als je wilt weten of een vraag in de toets thuishoortkan je de correlatie berekenen tussen hoe de leerlingen de vraag hebben gemaakt ten opzichte van de rest van de toets (\cite{ding2013item, ding2009item}).
 \begin{minipage}{\linewidth}% chatgpt
 \textbf{De RIR} meet de correlatie tussen de score van een item en de totale score, exclusief dat item:
 \[
@@ -1227,6 +1226,7 @@ waarbij:
     \item \(\sigma_{S}\): de standaarddeviatie van \(S\).
 \end{itemize}
 \end{minipage}
+
 \end{multicols}
 
 \pagebreak
@@ -1592,6 +1592,9 @@ TODO: afsluiting
 \end{multicols}
 
 \section{Referenties}
+
+\printbibliography
+
 \section{Appendix} %TODO; appendix of bijlagen
 
 \Large Methode - Inscannen - Score

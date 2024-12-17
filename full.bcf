@@ -3070,9 +3070,26 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1" intorder="1">gobrecht2024humansubjectivityerrornovel</bcf:citekey>
-    <bcf:citekey order="1" intorder="2">kumar2020scoredusingautosas</bcf:citekey>
-    <bcf:citekey order="1" intorder="3">schneider2024llmbasedautogradingshorttextual</bcf:citekey>
+    <bcf:citekey order="1" intorder="1">mdpiAIinEducation</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">YEUNG2023EVA</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">gobrecht2024humansubjectivityerrornovel</bcf:citekey>
+    <bcf:citekey order="3" intorder="2">kumar2020scoredusingautosas</bcf:citekey>
+    <bcf:citekey order="3" intorder="3">schneider2024llmbasedautogradingshorttextual</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">opencvManual</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">gaussianBlurOriginal</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">cannyEdgeDetection</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">SuzukiContour</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">tesseractManual</bcf:citekey>
+    <bcf:citekey order="8" intorder="2">pytesseractManual</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">azureManual</bcf:citekey>
+    <bcf:citekey order="9" intorder="2">googlecloudvisionManual</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">geminiproManual</bcf:citekey>
+    <bcf:citekey order="10" intorder="2">openaiManual</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">academypublicationBLEUtranslation</bcf:citekey>
+    <bcf:citekey order="11" intorder="2">aclBLEUevaluation</bcf:citekey>
+    <bcf:citekey order="11" intorder="3">mediumBLEU</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">ding2013item</bcf:citekey>
+    <bcf:citekey order="12" intorder="2">ding2009item</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
@@ -3109,6 +3126,16 @@
                 type="entry"
                 sortingtemplatename="nyt"
                 sortingnamekeytemplatename="apasortcite"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global"
+                namehashtemplatename="global">
+  </bcf:datalist>
+  <bcf:datalist section="0"
+                name="nyt/global//global/global/global"
+                type="entry"
+                sortingtemplatename="nyt"
+                sortingnamekeytemplatename="global"
                 labelprefix=""
                 uniquenametemplatename="global"
                 labelalphanametemplatename="global"
