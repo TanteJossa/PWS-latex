@@ -454,7 +454,6 @@ Om dit in te scannen zijn er 2 dingen nodig: \\
 \end{longtable}
 
 
-% TODO: fix the table being below the listing
 \begin{multicols}{2}
    Dit levert een lijst van coördinaten van de vierkantjes op\\(y,hoogte,x,meest linker coordinaat van blokje)\\
    \\
@@ -779,6 +778,7 @@ In de volgende combinaties
 \vspace{3em}
 Dit geeft \large$5_{\textsc{modellen}} \cdot 4_{\textsc{temperaturen}}  \cdot 5_{\textsc{antwoorden}} \cdot 3_{\textsc{prompts}}  \cdot 3_{\textsc{herhalingen per request}}  \cdot 6_{\textsc{context addities}}= 5400 \textsc{ Requests}$ \normalsize
 % TODO: uitleg over kosten en hoeveel requests per seconde enz
+
 % \vspace{lem}
 Om te weten welk resultaat een correct resultaat geeft wordt voor elk resultaat een score berekend. Hoe lager de score hoe "beter" het resultaat. Deze score hangt bij ons af van twee dingen. \\
 \textbf{1. Aantal afwijkingen van bedoelde geschreven tekst.}\\
@@ -804,7 +804,6 @@ Zie de appendix voor tests.
 \end{minipage}
 
 %Fase 3 bestand
-%TODO: bronnen
 \pagebreak
 
 \subsubsection{Nakijken}
@@ -956,7 +955,6 @@ De prompt bepaalt hoe duidelijk de vraag, rubric, context en opdracht van het na
         }\\
     \parbox[t]{3cm}{\raggedright \textbf{Geschatte  tijdskosten:} } & 15 uur \\
 \end{tabularx}
-% TODO: beslissen of dit in ons PWS moet of dit gedeelte uitbreiden
 \\
 \begin{multicols}{2}
     
@@ -983,7 +981,8 @@ Daarnaast hosten we zelf de website op \url{https://toetspws.web.app/analyze}, w
         }\\
     \textbf{Kader(s): } & 
         \makecell[tl]{
-            $\bullet$ TODO
+            $\bullet$ Enquete maken\\
+            $\bullet$ Overtuigende mail\\
         }\\
     \parbox[t]{3cm}{\raggedright\textbf{Geschatte  tijdskosten:} } & 20 uur \\
 \end{tabularx}
@@ -999,7 +998,7 @@ Om een betrouwbare enquête te maken moet je als eerste het doel van de enquête
 Daarnaast moet elke vraag ook een duidelijk doel hebben, anders is het mogelijk dat je 2x dezelfde vraag stelt of naar informatie gaat vragen niet niet relevant is.\\
 Ten slotte moesten we bij elke vraag nagaan of de vraag op verschillende manieren geïnterpreteerd kan worden.\\
 Dit waren de vragen die we hebben bedacht:
-% TODO: verklaringen toevoegen
+
 \end{multicols}%
 \begin{longtable}{p{0.5\linewidth}|p{0.25\linewidth}|p{0.25\linewidth}}
     Vraag & Doel & Verklaring \\
@@ -1122,11 +1121,10 @@ Hoogachtend,\\
  \\
 Joost Koch \& Jonathan Wijker
 \end{minipage}}
-Dit leverde 28 extra responses op, waardoor we op een totaal van 50 zitten. Dit is statistisch gezien goed genoeg om iets over de meningen van de docenten te zeggen op Het Amsterdams Lyceum. \\
-% TODO: deze claim over statistiek met bron
+Dit leverde 28 extra responses op, waardoor we op een totaal van 50 zitten. Wij waren heel tevreden met deze hoge response. \\
+
 We moeten er wel rekening mee houden dat sommige secties misschien minder zullen hebben gereageerd, waardoor ons resultaat over die sectie minder betrouwbaar zal zijn.\\
 \\
-% TODO: tijden checken (gaan we)
 Voor het analyseren gaan we Google Sheet pivot tables gebruiken om snel verbanden tussen de data te zien. Ook zullen we kijken of ChatGPT of Google Gemini relevante ontdekkingen kunnen doen in de data. 
 
 
@@ -1461,7 +1459,18 @@ Het kan ook mogelijk zijn om de correlaties tussen leerlingen te tonen om eventu
 \\
 Op \textbf{het bewerkscherm} kunnen bijvoorbeeld een aantal velden komen met de doelen van een docent. Bijvoorbeeld: een veld om het gewilde gemiddelde en de gewilde standaarddeviatie in te stellen. Daarmee berekent hij dat een nieuwe formule. Hier kan ook worden of een lineare of non-lineare formule gebruikt wordt. Bij een non-lineare formule behoudt iedereen met een onvoldoende zijn onvoldoende, maar zijn die onvoldoendes minder hoog. \\
 Hier kan ook op vraagniveau een scherm zijn om vragen eruit te gooien of half te laten meetellen, als blijkt dat ze wegnemen van de kennismeting van de toets.
-% TODO: foto linear en non-linear
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{./images/methoden/analyseren/Niet-lineaire.png}
+    \caption{Non-linair}
+    \label{fig:non-linear}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{./images/methoden/analyseren/linair.png}
+    \caption{linair}
+    \label{fig:linair}
+\end{figure}
 \end{multicols}
 
 \pagebreak
