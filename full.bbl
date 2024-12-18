@@ -170,6 +170,67 @@
       \verb https://www1.udel.edu/educ/gottfredson/451/unit9-guidance.htm
       \endverb
     \endentry
+    \entry{Farquhar2024}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=bdbdbe1bd8dfd8cfa7ea2ddf5a869771}{%
+           family={Farquhar},
+           familyi={F\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=27397cd9a79f44f9b004071318d6509a}{%
+           family={Kossen},
+           familyi={K\bibinitperiod},
+           given={Jannik},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2b8f58bcce49cd11f2c9840ebe871823}{%
+           family={Kuhn},
+           familyi={K\bibinitperiod},
+           given={Lorenz},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d4f394bd4030e20e7b1399e0abe7dc6a}{%
+           family={Gal},
+           familyi={G\bibinitperiod},
+           given={Yarin},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1498c4ec6b4b50d968368d84194117dc}
+      \strng{fullhash}{3ee0b90be6dbbc2959700aa9a2929ca0}
+      \strng{fullhashraw}{3ee0b90be6dbbc2959700aa9a2929ca0}
+      \strng{bibnamehash}{3ee0b90be6dbbc2959700aa9a2929ca0}
+      \strng{authorbibnamehash}{3ee0b90be6dbbc2959700aa9a2929ca0}
+      \strng{authornamehash}{1498c4ec6b4b50d968368d84194117dc}
+      \strng{authorfullhash}{3ee0b90be6dbbc2959700aa9a2929ca0}
+      \strng{authorfullhashraw}{3ee0b90be6dbbc2959700aa9a2929ca0}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1476-4687}
+      \field{journaltitle}{Nature}
+      \field{month}{6}
+      \field{number}{8017}
+      \field{title}{Detecting hallucinations in large language models using semantic entropy}
+      \field{volume}{630}
+      \field{year}{2024}
+      \field{pages}{625\bibrangedash 630}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1038/s41586-024-07421-0
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1038/s41586-024-07421-0
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1038/s41586-024-07421-0
+      \endverb
+    \endentry
     \entry{academypublicationBLEUtranslation}{article}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=804b2af9711baa9806641509804e9bf9}{%
@@ -751,6 +812,116 @@
       \verb https://doi.org/10.3115/1073083.1073135
       \endverb
     \endentry
+    \entry{peeperkorn2024temperature}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=cbc92ef26e7d798a88077535782a73fe}{%
+           family={Peeperkorn},
+           familyi={P\bibinitperiod},
+           given={Max},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=52db3c458ce13313570c7d45467fc32a}{%
+           family={Kouwenhoven},
+           familyi={K\bibinitperiod},
+           given={Tom},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=00d0054d2b763892268758224004fc92}{%
+           family={Brown},
+           familyi={B\bibinitperiod},
+           given={Dan},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f9796b7fb7f6a9526c9f7cd61275b249}{%
+           family={Jordanous},
+           familyi={J\bibinitperiod},
+           given={Anna},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f894e30504ef934d80f324936c5faf1d}
+      \strng{fullhash}{4710e423912f45a61adf773309031f8a}
+      \strng{fullhashraw}{4710e423912f45a61adf773309031f8a}
+      \strng{bibnamehash}{4710e423912f45a61adf773309031f8a}
+      \strng{authorbibnamehash}{4710e423912f45a61adf773309031f8a}
+      \strng{authornamehash}{f894e30504ef934d80f324936c5faf1d}
+      \strng{authorfullhash}{4710e423912f45a61adf773309031f8a}
+      \strng{authorfullhashraw}{4710e423912f45a61adf773309031f8a}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2405.00492}
+      \field{title}{Is temperature the creativity parameter of large language models?}
+      \field{year}{2024}
+    \endentry
+    \entry{qian2024long}{article}{}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=bc1825558ab77c0fe14d10c492c77222}{%
+           family={Qian},
+           familyi={Q\bibinitperiod},
+           given={Hongjin},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7e48bdec050a7bea1bb0d4acff3023eb}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Zheng},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6d65862b32d88d540bffb1875cb56520}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Peitian},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c458a934075a32a647f02f2d73ac40d7}{%
+           family={Mao},
+           familyi={M\bibinitperiod},
+           given={Kelong},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=400181542a34d7c2c07b41cde7b60f91}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Yujia},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4f4900cae2c11cda82284d85107e92ae}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Xu},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9501b60d1d2fd8acf8b7d5f83111ba57}{%
+           family={Dou},
+           familyi={D\bibinitperiod},
+           given={Zhicheng},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{86e9b0f98fa474b77754365b43ee1230}
+      \strng{fullhash}{788a3beb2adf74e399a69e624c90562a}
+      \strng{fullhashraw}{788a3beb2adf74e399a69e624c90562a}
+      \strng{bibnamehash}{788a3beb2adf74e399a69e624c90562a}
+      \strng{authorbibnamehash}{788a3beb2adf74e399a69e624c90562a}
+      \strng{authornamehash}{86e9b0f98fa474b77754365b43ee1230}
+      \strng{authorfullhash}{788a3beb2adf74e399a69e624c90562a}
+      \strng{authorfullhashraw}{788a3beb2adf74e399a69e624c90562a}
+      \field{sortinit}{Q}
+      \field{sortinithash}{ce69a400a872ddd02ee7fdb3b38c6abd}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2405.15318}
+      \field{title}{Are Long-LLMs A Necessity For Long-Context Tasks?}
+      \field{year}{2024}
+    \endentry
     \entry{schneider2024llmbasedautogradingshorttextual}{misc}{}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=d2952ae7a817db8473e2971cdb405ddc}{%
@@ -875,6 +1046,68 @@
       \endverb
       \verb{url}
       \verb https://www.sciencedirect.com/science/article/pii/0734189X85900167
+      \endverb
+    \endentry
+    \entry{vuejsManual}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=210acc4851961df7553144e8b1d77f6f}{%
+           family={VueJs},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{210acc4851961df7553144e8b1d77f6f}
+      \strng{fullhash}{210acc4851961df7553144e8b1d77f6f}
+      \strng{fullhashraw}{210acc4851961df7553144e8b1d77f6f}
+      \strng{bibnamehash}{210acc4851961df7553144e8b1d77f6f}
+      \strng{authorbibnamehash}{210acc4851961df7553144e8b1d77f6f}
+      \strng{authornamehash}{210acc4851961df7553144e8b1d77f6f}
+      \strng{authorfullhash}{210acc4851961df7553144e8b1d77f6f}
+      \strng{authorfullhashraw}{210acc4851961df7553144e8b1d77f6f}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Official documentation for VueJs.}
+      \field{title}{VueJs Documentation}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://vuejs.org/guide
+      \endverb
+      \verb{url}
+      \verb https://vuejs.org/guide
+      \endverb
+    \endentry
+    \entry{vuetifyManual}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ed162a330c0cdb00be22eea9407b8e66}{%
+           family={VuetifyJs},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{ed162a330c0cdb00be22eea9407b8e66}
+      \strng{fullhash}{ed162a330c0cdb00be22eea9407b8e66}
+      \strng{fullhashraw}{ed162a330c0cdb00be22eea9407b8e66}
+      \strng{bibnamehash}{ed162a330c0cdb00be22eea9407b8e66}
+      \strng{authorbibnamehash}{ed162a330c0cdb00be22eea9407b8e66}
+      \strng{authornamehash}{ed162a330c0cdb00be22eea9407b8e66}
+      \strng{authorfullhash}{ed162a330c0cdb00be22eea9407b8e66}
+      \strng{authorfullhashraw}{ed162a330c0cdb00be22eea9407b8e66}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Official documentation for VuetifyJs.}
+      \field{title}{VuetifyJs Documentation}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://vuetifyjs.com/
+      \endverb
+      \verb{url}
+      \verb https://vuetifyjs.com/
       \endverb
     \endentry
     \entry{YEUNG2023EVA}{article}{}{}
@@ -1097,6 +1330,67 @@
       \verb https://www1.udel.edu/educ/gottfredson/451/unit9-guidance.htm
       \endverb
     \endentry
+    \entry{Farquhar2024}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=bdbdbe1bd8dfd8cfa7ea2ddf5a869771}{%
+           family={Farquhar},
+           familyi={F\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=27397cd9a79f44f9b004071318d6509a}{%
+           family={Kossen},
+           familyi={K\bibinitperiod},
+           given={Jannik},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2b8f58bcce49cd11f2c9840ebe871823}{%
+           family={Kuhn},
+           familyi={K\bibinitperiod},
+           given={Lorenz},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d4f394bd4030e20e7b1399e0abe7dc6a}{%
+           family={Gal},
+           familyi={G\bibinitperiod},
+           given={Yarin},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1498c4ec6b4b50d968368d84194117dc}
+      \strng{fullhash}{3ee0b90be6dbbc2959700aa9a2929ca0}
+      \strng{fullhashraw}{3ee0b90be6dbbc2959700aa9a2929ca0}
+      \strng{bibnamehash}{3ee0b90be6dbbc2959700aa9a2929ca0}
+      \strng{authorbibnamehash}{3ee0b90be6dbbc2959700aa9a2929ca0}
+      \strng{authornamehash}{1498c4ec6b4b50d968368d84194117dc}
+      \strng{authorfullhash}{3ee0b90be6dbbc2959700aa9a2929ca0}
+      \strng{authorfullhashraw}{3ee0b90be6dbbc2959700aa9a2929ca0}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1476-4687}
+      \field{journaltitle}{Nature}
+      \field{month}{6}
+      \field{number}{8017}
+      \field{title}{Detecting hallucinations in large language models using semantic entropy}
+      \field{volume}{630}
+      \field{year}{2024}
+      \field{pages}{625\bibrangedash 630}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1038/s41586-024-07421-0
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1038/s41586-024-07421-0
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1038/s41586-024-07421-0
+      \endverb
+    \endentry
     \entry{academypublicationBLEUtranslation}{article}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=804b2af9711baa9806641509804e9bf9}{%
@@ -1678,6 +1972,116 @@
       \verb https://doi.org/10.3115/1073083.1073135
       \endverb
     \endentry
+    \entry{peeperkorn2024temperature}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=cbc92ef26e7d798a88077535782a73fe}{%
+           family={Peeperkorn},
+           familyi={P\bibinitperiod},
+           given={Max},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=52db3c458ce13313570c7d45467fc32a}{%
+           family={Kouwenhoven},
+           familyi={K\bibinitperiod},
+           given={Tom},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=00d0054d2b763892268758224004fc92}{%
+           family={Brown},
+           familyi={B\bibinitperiod},
+           given={Dan},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f9796b7fb7f6a9526c9f7cd61275b249}{%
+           family={Jordanous},
+           familyi={J\bibinitperiod},
+           given={Anna},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f894e30504ef934d80f324936c5faf1d}
+      \strng{fullhash}{4710e423912f45a61adf773309031f8a}
+      \strng{fullhashraw}{4710e423912f45a61adf773309031f8a}
+      \strng{bibnamehash}{4710e423912f45a61adf773309031f8a}
+      \strng{authorbibnamehash}{4710e423912f45a61adf773309031f8a}
+      \strng{authornamehash}{f894e30504ef934d80f324936c5faf1d}
+      \strng{authorfullhash}{4710e423912f45a61adf773309031f8a}
+      \strng{authorfullhashraw}{4710e423912f45a61adf773309031f8a}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2405.00492}
+      \field{title}{Is temperature the creativity parameter of large language models?}
+      \field{year}{2024}
+    \endentry
+    \entry{qian2024long}{article}{}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=bc1825558ab77c0fe14d10c492c77222}{%
+           family={Qian},
+           familyi={Q\bibinitperiod},
+           given={Hongjin},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7e48bdec050a7bea1bb0d4acff3023eb}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Zheng},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6d65862b32d88d540bffb1875cb56520}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Peitian},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c458a934075a32a647f02f2d73ac40d7}{%
+           family={Mao},
+           familyi={M\bibinitperiod},
+           given={Kelong},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=400181542a34d7c2c07b41cde7b60f91}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Yujia},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4f4900cae2c11cda82284d85107e92ae}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Xu},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9501b60d1d2fd8acf8b7d5f83111ba57}{%
+           family={Dou},
+           familyi={D\bibinitperiod},
+           given={Zhicheng},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{86e9b0f98fa474b77754365b43ee1230}
+      \strng{fullhash}{788a3beb2adf74e399a69e624c90562a}
+      \strng{fullhashraw}{788a3beb2adf74e399a69e624c90562a}
+      \strng{bibnamehash}{788a3beb2adf74e399a69e624c90562a}
+      \strng{authorbibnamehash}{788a3beb2adf74e399a69e624c90562a}
+      \strng{authornamehash}{86e9b0f98fa474b77754365b43ee1230}
+      \strng{authorfullhash}{788a3beb2adf74e399a69e624c90562a}
+      \strng{authorfullhashraw}{788a3beb2adf74e399a69e624c90562a}
+      \field{sortinit}{Q}
+      \field{sortinithash}{ce69a400a872ddd02ee7fdb3b38c6abd}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2405.15318}
+      \field{title}{Are Long-LLMs A Necessity For Long-Context Tasks?}
+      \field{year}{2024}
+    \endentry
     \entry{schneider2024llmbasedautogradingshorttextual}{misc}{}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=d2952ae7a817db8473e2971cdb405ddc}{%
@@ -1802,6 +2206,68 @@
       \endverb
       \verb{url}
       \verb https://www.sciencedirect.com/science/article/pii/0734189X85900167
+      \endverb
+    \endentry
+    \entry{vuejsManual}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=210acc4851961df7553144e8b1d77f6f}{%
+           family={VueJs},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{210acc4851961df7553144e8b1d77f6f}
+      \strng{fullhash}{210acc4851961df7553144e8b1d77f6f}
+      \strng{fullhashraw}{210acc4851961df7553144e8b1d77f6f}
+      \strng{bibnamehash}{210acc4851961df7553144e8b1d77f6f}
+      \strng{authorbibnamehash}{210acc4851961df7553144e8b1d77f6f}
+      \strng{authornamehash}{210acc4851961df7553144e8b1d77f6f}
+      \strng{authorfullhash}{210acc4851961df7553144e8b1d77f6f}
+      \strng{authorfullhashraw}{210acc4851961df7553144e8b1d77f6f}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Official documentation for VueJs.}
+      \field{title}{VueJs Documentation}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://vuejs.org/guide
+      \endverb
+      \verb{url}
+      \verb https://vuejs.org/guide
+      \endverb
+    \endentry
+    \entry{vuetifyManual}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ed162a330c0cdb00be22eea9407b8e66}{%
+           family={VuetifyJs},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{ed162a330c0cdb00be22eea9407b8e66}
+      \strng{fullhash}{ed162a330c0cdb00be22eea9407b8e66}
+      \strng{fullhashraw}{ed162a330c0cdb00be22eea9407b8e66}
+      \strng{bibnamehash}{ed162a330c0cdb00be22eea9407b8e66}
+      \strng{authorbibnamehash}{ed162a330c0cdb00be22eea9407b8e66}
+      \strng{authornamehash}{ed162a330c0cdb00be22eea9407b8e66}
+      \strng{authorfullhash}{ed162a330c0cdb00be22eea9407b8e66}
+      \strng{authorfullhashraw}{ed162a330c0cdb00be22eea9407b8e66}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Official documentation for VuetifyJs.}
+      \field{title}{VuetifyJs Documentation}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://vuetifyjs.com/
+      \endverb
+      \verb{url}
+      \verb https://vuetifyjs.com/
       \endverb
     \endentry
     \entry{YEUNG2023EVA}{article}{}{}

@@ -24,6 +24,8 @@
 \usepackage{subfig}
 \usepackage{listings}
 \usepackage{minted}
+\usepackage{colortbl}
+\usepackage{xcolor}
 
 % makecell
 \usepackage{makecell}
@@ -45,6 +47,8 @@
     colorlinks=true, %set true if you want colored links
     linktoc=all,     %set to all if you want both sections and subsections linked
     linkcolor=blue,  %choose some color if you want links to stand out
+    citecolor=blue,
+    urlcolor=blue
 }
 
 % Formatting Headings 
@@ -81,7 +85,7 @@
 
 % \renewcommand\maketitle{}
 
-\title{Onze Progressie naar Volledig Automatische Beoordeling met behulp van LLM's}
+\title{Onderzoek naar het ontwerpen van een systeem voor Volledig Automatische Beoordeling met behulp van AI}
 \author{J. K. Wijker \& J. K. Koch}
 
 
@@ -105,18 +109,20 @@
 \subsection{Achtergrond/Doelstelling} 
 
 % motivatiebrief-finaal
-Beiden zijn we geïnteresseerd in computers en informatica, maar we willen ook iets doen of maken wat impact heeft. Afgelopen jaren op HAL merkten we het volgende: wanneer een docent een toets geeft en de resultaten tegenvallen, geeft de docent hiervan de leerlingen de schuld, zonder dit te verwijten aan de toets zelf. Dit beschouwen wij als een gemist leermoment. Wij hopen dat ons project ervoor gaat zorgen dat minder leerlingen zich benadeeld gaan voelen door een te lastige toets.
+Beiden zijn we geïnteresseerd in computers en informatica en we willen ook iets doen of maken wat impact heeft. Afgelopen jaren op HAL merkten we het volgende: tijdens de lessen was het voor de docent en de leerlingen niet altijd duidelijk welke stof nog niet goed begrepen werd, waardoor er een teleurstellend resultaat was bij een toets. Waarschijnlijk lag het niet aan de wil van de leerling om een hoog cijfer te halen of de wens van de docent om het zo goed mogelijk aan te leren, maar aan het niet weten wat de leerling nog niet weet. Dit beschouwen wij als een gemist leermoment. Wij hopen dat ons project ervoor gaat zorgen dat meer leerlingen vaker kunnen weten waar ze staan in de stof. Met ons systeem willen we toetsen makkelijker, sneller en laagdrempeliger maken.
 
 
 \subsection{Probleemstelling}
-Het nakijken en analyseren van een toets kost veel tijd voor docenten. Wij willen kijken of door de nieuwe mogelijkheden van kunstmatige intelligentie het mogelijk is toetsen automatisch na te kijken (\cite{mdpiAIinEducation}), opdat wij elke leerling met behulpzame feedback kunnen voorzien en de docenten een overzichtelijke weergaven geven in het niveau van een klas (\cite{YEUNG2023EVA}).
-Daarom hebben wij de volgende onderzoeksvraag: % Fase 2
-\textbf{Is er een mogelijkheid om een (computer) programma te maken dat een (scheikunde) toets na kan kijken, kan analyseren en feedback kan schrijven waar een docent of leerling iets aan heeft voor 2025?}
+
+Het nakijken en analyseren van een toets kost veel tijd voor docenten. Dit zorgt ervoor dat docenten minder vaak zullen kiezen voor een toets als (tussentijdse) kennismeting. Wij willen kijken of door de nieuwe mogelijkheden van kunstmatige intelligentie het mogelijk is toetsen automatisch na te kijken (\cite{mdpiAIinEducation}), opdat wij elke leerling met behulpzame feedback kunnen voorzien en de docenten een overzichtelijke weergave geven in het niveau van een klas (\cite{YEUNG2023EVA}). Daarnaast is het bekend dat feedback korter op het moment van toetsafname een positieve invloed heeft op het leerproces (\cite{powerFeedback}). 
+
+Daarom hebben wij de volgende onderzoeks-ontwerpopdracht: % Fase 2
+\textbf{Is er een mogelijkheid om een project te ontwikkelen waarin we het proces van afname tot feedback kunnen stroomlijnen met behulp van nieuwe vooruitgangen in AI en wat vinden docenten hiervan?}
 \\\\
 Deze vraag hebben we onderverdeeld in 4 deelvragen:\\
 \begin{tabularx}{\linewidth}{lX}
     \vspace{0.2cm}
-   \textbf{Inscannen } & \textbf{Kunnen toetsen automatisch worden gescand en in een digitaal (tekst) formaat omgezet worden?} \\
+   \textbf{Inscannen } & \textbf{Kunnen handgeschreven toetsen automatisch worden gescand en in een digitaal bruikbaar (tekst) formaat omgezet worden?} \\
    \vspace{0.2cm}
    \textbf{Nakijken } & \textbf{Kunnen antwoorden nagekeken worden door een computerprogramma en van feedback worden voorzien?} \\
    \vspace{0.2cm}
@@ -124,47 +130,54 @@ Deze vraag hebben we onderverdeeld in 4 deelvragen:\\
    \vspace{0.2cm}
    \textbf{Enquête } & \textbf{Staan docenten open voor zo'n programma en wat zijn de grootste objecties? } \\
    \vspace{0.2cm}
-   \textbf{Toets } & \textbf{Kunnen we een toets afnemen bij een 3e klas op Het Amsterdams Lyceum en die met onze programmas nakijken? } \\
+   \textbf{Praktijktest } & \textbf{Welke problemen komen we in de praktijk tegen als we een praktijktest afnemen? } \\
 \end{tabularx}
 
 \end{multicols}
 \pagebreak
 
 
-\section{Hypothese}
+\section{Hypothesen}
 \subsection{Inscannen}
 \begin{multicols}{2}
-    
-Wij denken dat, als je de secties hebt geëxtraheerd, het inscannen van tekst meestal goed zal gaan. Dat komt omdat op elke telefoon al foto tekstherkenning zit (als je op een foto in de gallerij een tekst ingedrukt houdt op nieuwere telefoons). Ook denken wij dat de grootste fouten gaan onstaan bij het niet goed herkennen van de secties. Als dit fout gaat kan tekstherkenningssoftware niet de hele vraag inscannen, waardoor het onmogelijk wordt deze vraag betrouwbaar na te kijken. \\\\
-In dit ondezoek zullen we vooral focussen op handgeschreven teksten, omdat wij denken dat het inscannen van tekeningen zeer lastig zal zijn, omdat de tekening omgezet moet worden naar tekstuele data of een dataobject die bijhouden wat er wel en niet getekend is. In een tekening kan heel veel fout zijn, wat niet in die datastructuur zou zitten. Dan zou een leering punten krijgen voor een fout antwoord. Het betrouwbaar extraheren van die diagram features zal ook lastig worden.
-\end{multicols}
+Een probleem bij handgeschreven teksten is het herkennen waar de juiste tekst staat, als er meerdere vragen op 1 bladzijde staan. Mensen kunnen heel makkelijk zien welke tekst bij welke vraag hoort, maar voor een programma is het heel lastig om dit concreet uit te werken. Als ons programma niet slaagt in het opsplitsen van de vragen zal het nakijken niet goed gaan, omdat je dan het antwoord op een andere vraag aan het vergelijken bent en dat gaat natuurlijk niet goed. Dit wordt ook de eerste stap van dit onderdeel.\\
+Wij denken dat, als je de secties hebt geëxtraheerd, het inscannen van tekst meestal goed zal gaan. Dat komt omdat op elke telefoon al foto tekstherkenning zit (als je op een foto in de gallerij een tekst ingedrukt houdt op nieuwere telefoons). 
+\\\\
+In dit onderzoek zullen we vooral focussen op handgeschreven teksten, omdat wij denken dat het inscannen van tekeningen zeer lastig zal zijn, omdat de tekening omgezet moet worden naar tekstuele data of een dataobject die bijhouden wat er wel en niet getekend is. In een tekening kan heel veel fout zijn, wat niet in die datastructuur zou zitten. Dan zou een leering punten krijgen voor een fout antwoord. Het betrouwbaar extraheren van die diagram features zal ook lastig worden.
+% \end{multicols}
 
 \subsection{Nakijken}
-\begin{multicols}{2}
+% \begin{multicols}{2}
+TODO: @jonathan moet ff goeie hypothese\\
 Computerprogramma's die gebruikmaken van kunstmatige intelligentie, zoals getrainde transformer-modellen en grote taalmodellen, kunnen toetsen met korte open vragen met een nauwkeurigheid en consistentie vergelijkbaar aan of hoger dan die van menselijke beoordelaars automatisch nakijken; echter, om ethische overwegingen en mogelijke vooroordelen in de beoordelingen aan te pakken, blijft menselijk toezicht noodzakelijk (\cite{gobrecht2024humansubjectivityerrornovel, kumar2020scoredusingautosas, schneider2024llmbasedautogradingshorttextual}).
-\end{multicols}
-\subsection{Analyseren}
-
-\subsection{Enquete}
-
-\begin{multicols}{2}
-Zie materiaal en methode voor vragen.
-Wij denken dat docenten over het algemeen pessimistisch zullen zijn over ai. 
-voorspelling per vraag:
-\begin{enumerate}
-\item nvt
-\item wij denken dat lesgeefervaring weinig uitmaakt in deze kwestie
-\item ja wel eens van gehoord \(68\%\) en goed op de hoogte \(30\%\)
-\item tijdbesparing gaat een belangrijke zijn en er zullen ook docenten zijn (die vermoedelijk niet bekend zijn met ai) die het nooit zullen gebruiken
-\item technische fouten en privacy zullen een grote rol spelen
-\item we denken dat de talen secties pessimistischer in het gebruik van ai zullen zijn dan de exacte vakken
-\item meeste docenten zullen drie of vier antwoorden, maar een brede standaarddeviatie (miss wel 3 of groter) want de sfeer om het oneens met een antwoord te zijn verschilt per docent
-\item hier zullen we zien waar docenten nog meer denken. Wij denken dat aansprakelijkheid/verantwoordelijkheid van een docent over een cijfer vaker naar voren zal komen
-\end{enumerate}
-\end{multicols}
+\\
+Wij verwachten dat onze AI bij scheikunde toetsen beter zal presteren bij open vragen met een duidelijk goed antwoord. Denk aan een simpele leg uit vraag.
+Echter, bij handgeschreven tekeningen en structuurdiagrammen (zoals molecuulstructuren of reactieschema's) voorzien wij de volgende problemen: 
+\begin{itemize} 
+    \item AI kan moeite hebben met het herkennen van subtiele verschillen in handgetekende diagrammen, zoals kleine verschuivingen in atomen of atoombindingen. 
+    \item De interpretatie van scheikundige notaties (zoals pijlen, ladingen, of dubbele bindingen) kan uitdagend zijn zonder expliciete training van het AI-model op scheikundige contexten. 
+\end{itemize}
+% \end{multicols}
+% \subsection{Analyseren}
 
 \pagebreak
-\subsection{Toets}
+\subsection{Enquete}
+
+% \begin{multicols}{2}
+We hebben docenten gevraagd naar hun mening over AI in een nakijksysteem voor toetsen. We verwachten dat er verschillen zullen zijn tussen beta en alfa docenten en dat het op de hoogte zijn van AI een grotere impact heeft dan aantal jaar lesgeef-ervaring.
+Zie materiaal en methode voor vragen.
+Wij denken dat docenten over het algemeen pessimistisch zullen zijn over ai. \\
+\begin{itemize}
+\item \textbf{Bekendheid:} Meer dan de helft denk ervaren te zijn met AI en een heel klein deel is niet bekend met AI.
+\item \textbf{Voordelen:} tijdbesparing gaat een belangrijke zijn en er zullen ook docenten zijn (die vermoedelijk niet bekend zijn met ai) die het nooit zullen gebruiken
+\item \textbf{Weerzijde AI:}technische fouten en privacy zullen een grote rol spelen. We denken dat de talen secties pessimistischer in het gebruik van ai zullen zijn dan de exacte vakken, want niet beta vakken zijn minder objectief.
+\item \textbf{Aantal leerlingen oneens over toets:} meeste docenten zullen drie of vier antwoorden, maar een brede standaarddeviatie (miss wel 3 of groter) want de sfeer om het oneens met een antwoord te zijn verschilt per docent.
+\end{itemize}
+
+% \pagebreak
+\subsection{Praktijktest}
+We denken dat we door onze programmeer kennis we in staat zijn een simpele toets na te kijken met onze programma's. Het ontwikkelen van deze toets en zorgen dat we rekening houden met wat de leerlingen wel en niet gaan antwoorden een extra uitdaging gaat zijn.
+\end{multicols}
 \pagebreak
 
 \section{Methode}
@@ -172,14 +185,13 @@ voorspelling per vraag:
 \begin{multicols}{2}
 Toen we begonnen was het niet duidelijk wat wel en niet mogelijk was met de huidige technologie. Dus hebben we ervoor gekozen om elke deelvraag van ons onderzoek apart te bouwen en aan het einde (als alles werkt) samen te voegen in 1 programma, zodat elk individueel kan falen zonder dat het de rest van het onderzoek beïnvloed.
 \\\\
-%TODO: verleden tijd checken
 Ook moeten we, omdat we ons PWS bij het vak scheikunde doen, een proefje uitvoeren. We gaan dat doen in de vorm van een practicum tijdens een toets.
 \\\\
 Tijdens ons onderzoek hebben we naast een aantal bronnen ook een interview gedaan bij Daniel Marcus, een co-eigenaar van het bedrijf LevelUp Group. Een bedrijf die reclame analyse doet en gebruikt maakt van AI. In de methodes zullen we het noemen als er iets uit dat interview naar boven is gekomen wat handig bleek te zijn.
 \\\\
-Voor elke onderdeel hebben we een \"hoofdverantwoordelijke\" aangesteld, omdat het extra tijd kost om met zijn tweeën tegelijkertijd aan hetzelfde code project te werken. Als het nodig was hebben we elkaar natuurlijk wel geholpen in elkaars onderdelen. 
+Voor elke onderdeel hebben we een "hoofdverantwoordelijke" aangesteld, omdat het extra tijd kost om met zijn tweeën tegelijkertijd aan hetzelfde code project te werken. Als het nodig was hebben we elkaar natuurlijk wel geholpen in elkaars onderdelen. 
 \\\\
-Hieronder kan je een diagram zien die we in onze motivatiebrief hebben gebruikt om te laten zien hoe we ons programma modulair willen opbouwen , welke data waar nodig is en welke verwachte outputs er nodig zijn.
+Hieronder wordt in een diagram getoond welk plan van aanpak we in onze motivatiebrief hebben gebruikt om te laten zien hoe we ons programma modulair wilden opbouwen, welke data waar nodig is en welke verwachte outputs er nodig zijn. De hoofdlijnen van dit plan hebben we op deze wijze uitgevoerd.
 \end{multicols}
 
 % Define block styles
@@ -187,11 +199,14 @@ Hieronder kan je een diagram zien die we in onze motivatiebrief hebben gebruikt 
 \tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=blue!30]
 \tikzstyle{arrow} = [thick,->,>=stealth]
 
+% \begin{figure}
+% 
+
 \begin{center}
 \begin{tikzpicture}[node distance=2cm]
 
 % Nodes
-\node (textrecognition) [process] {Text herkenning};
+\node (textrecognition) [process] {Inscannen};
 \node (examdata) [process, right of=textrecognition, xshift=7cm, yshift=2cm] {Toets en stof analysator};
 \node (gradingmodule) [process, below of=examdata] {Nakijk Module};
 \node (student) [process, below of=gradingmodule, yshift=-0.5cm, xshift=-3cm] {Leerling};
@@ -226,6 +241,8 @@ Hieronder kan je een diagram zien die we in onze motivatiebrief hebben gebruikt 
 \end{tikzpicture}
 \end{center}
 
+% \end{figure}
+\pagebreak
 
 \subsection{Methode}
 
@@ -234,7 +251,7 @@ Hieronder kan je een diagram zien die we in onze motivatiebrief hebben gebruikt 
     \textbf{Eigenaar: } & \textit{Joost} \\
     \textbf{Doel(en): } & 
         \makecell[tl]{
-            $\bullet$  \\
+            $\bullet$  Om een foto van een handgeschreven toetsantwoord om te zetten\\ in computertekst gesorteerd per vraag en per leerling\\
         } \\
     \textbf{Subvragen: } & 
         \makecell[tl]{
@@ -248,16 +265,25 @@ Hieronder kan je een diagram zien die we in onze motivatiebrief hebben gebruikt 
             $\bullet$ API management\\
             $\bullet$ Modulair opbouwen systeem en unit tests\\
         }\\
-    \parbox[t]{3cm}{\raggedright\textbf{Geschatte  tijdskosten:} } & 30 uur \\
+    \parbox[t]{3cm}{\raggedright\textbf{Geschatte  tijdskosten:} } & 45 uur \\
 \end{tabularx}
 
 \begin{multicols}{2}
-In dit onderdeel wordt een foto of scan van de toets omgezet naar computertekst.
+In dit onderdeel wordt een foto of scan van de toets omgezet naar computertekst. Alle code die in de komende module staat is zelf geschreven en is open-source. Dat betekent dat iedereen deze code kan gebruiken en aanpassen om zelf onderzoek mee te doen. Voor de inscanmodule heb ik een eigen API gemaakt die iedereen gratis kan gebruiken. Die API wordt in een docker omgeving gehost en alle code is te vinden op de volgende site, zodat de lezer het zelf ook kan uittesten. \\
+\textbf{Code: }\url{https://github.com/TanteJossa/PWS-inscannen}\\
+\textbf{Website: }\url{https://toetspws.web.app/}
 \\\\
-% TODO: uitleg over hoe deze stappen zijn bedacht (logboek)
+Ik zal in dit onderdeel niet alle iteraties beschrijven die we afgelopen jaar hebben ontworpen. Alle versies zijn op de Github terug te vinden, zodat gezien kan worden wat er wanneer is toegevoegd. 
 \\\\
-\pagebreak
+Daarnaast kan iedereen deze module gebruiken om zelf toetsen in te scannen door een POST request naar de volgende website te sturen: \\
+\url{https://toetspws-function-771520566941.europe-west4.run.app}\\
+De routes en keys kunnen gevonden worden in het volgende bestand: \\
+\href{https://github.com/TanteJossa/PWS-inscannen/blob/main/section_scanner/app/main.py}{MainFlaskApp.py}
+\\\\
+Hierna zal ik een selectie laten zien van goedwerkende of opvallende resultaten die in ik tegen ben gekomen tijdens het testen. De stappen zijn bedacht door het grote probleem in steeds kleinere onderdeeltjes/doelen te delen die na genoeg breuken oplosbaar zijn. 
 \end{multicols}
+\pagebreak
+\begin{minipage}{\textwidth}
 \noindent Deze module bestaat uit een aantal stappen: \\
 \begin{tabularx}{\linewidth}{@{}lX}
     1.\textbf{ Croppen } & 
@@ -277,7 +303,7 @@ In dit onderdeel wordt een foto of scan van de toets omgezet naar computertekst.
         \adjustbox{valign=t}{\begin{tabularx}{\linewidth}{@{}lX}
             1.\textbf{ Handgeschreven} & Gebruik een tekstherkenningssoftware om het vraagnummer te lezen in de kantlijn \\
             2.\textbf{ Checkbox} & 
-                $\bullet$ Gebruik code om vierkantjes te herkennen en kijken welke het meeste is ingevult \newline
+                $\bullet$ Gebruik code om vierkantjes te herkennen en kijken welke het meeste is ingevult \\
                 $\bullet$ Gebruik een GPT model om te zeggen welk vakje is gekozen, dit kan rekening houden met pijlen en andere veranderingen zoals uitkrassen
             \\
             3.\textbf{ QR-code} & Vraaginformatie in QR-code
@@ -285,7 +311,7 @@ In dit onderdeel wordt een foto of scan van de toets omgezet naar computertekst.
     \\
     5.\textbf{ Tekstherkenning} & De tekst wordt uit het antwoordgebied gehaald door een GPT of tekstherkenningssoftware.
 \end{tabularx}
-
+\end{minipage}
 \textit{Hier volgt een uitwerking van de genomen stappen. }
 \paragraph*{Croppen}
 \begin{multicols}{2} 
@@ -295,7 +321,7 @@ Daarom zijn we daarna overgestapt op een openCV systeem.
 
 
 \def\picwidth{0.3}
-\pagebreak
+
 \noindent
 \begin{longtable}{@{}p{0.65\linewidth}|p{\picwidth\linewidth}}
 \multicolumn{1}{c}{Stap} & \multicolumn{1}{c}{Voorbeeld}
@@ -305,16 +331,19 @@ Daarom zijn we daarna overgestapt op een openCV systeem.
         \adjustbox{valign=t}{\includegraphics[width=\linewidth]{./images/methoden/inscannen/croppen/crop_input.png}}
        \\
     \hline
-    1. De foto wordt eerst omzet naar grijstinten.  & 
+    1. De foto wordt eerst omzet naar grijstinten. Hierbij wordt het gemiddelde van de rgb waardes genomen.   & 
         \adjustbox{valign=t}{\includegraphics[width=\linewidth]{./images/methoden/inscannen/croppen/crop_bw.png}}
        \\
         
     \hline
-    2. Dan wordt er een blur gebruikt om de contrasten te vinden (\cite{gaussianBlurOriginal}). & 
+    2. Dan wordt er een Gaussian blur gebruikt om de contrasten te vinden. Die werkt door elke pixel te geven die een sommattie te geven van alle waardes eromheen waarbij een andere pixel minder invloeg heeft naarmate die verder weg is (\cite{gaussianBlurOriginal}). $$G(x,y) = \frac{1}{2\pi\sigma^2}e^{-\frac{x^2+y^2}{2\sigma^2}}$$. Zie 3 dimensionale weergave:
+    \adjustbox{valign=t}{\includegraphics[width=\linewidth]{./images/methoden/inscannen/croppen/gaussian.png}}    
+    & 
         \adjustbox{valign=t}{\includegraphics[width=\linewidth]{./images/methoden/inscannen/croppen/crop_gaussian.png}}
        \\
     \hline
-    3. De cv2 Canny functie om die contrasten aan te geven met witte lijnen (\cite{cannyEdgeDetection}). & 
+    3. De cv2 Canny functie om die contrasten aan te geven met witte lijnen (\cite{cannyEdgeDetection}). 
+    \adjustbox{valign=t}{\includegraphics[width=\linewidth]{./images/methoden/inscannen/croppen/cannyExplanation.png}}& 
         \adjustbox{valign=t}{\includegraphics[width=\linewidth]{./images/methoden/inscannen/croppen/crop_canny.png}}
         \\
     \hline 
@@ -363,7 +392,7 @@ De herkende getallen in de kantlijn kloppen vaak niet, waardoor het vraagnummer 
     \caption{Secties door Google document AI}\label{fig:sec-google-doc-api}
 \end{figure}
 Deze methode was met geen enkel model betrouwbaar genoeg.
-Dus uiteindelijk hebben we besloten over te stappen naar een voorgeprint toetsblaadje, waarmee het makkelijker is  om de vraag en sectie te extraheren.
+Dus uiteindelijk hebben we besloten over te stappen naar een voorgedrukte toetsblaadje, waarmee het makkelijker is  om de vraag en sectie te extraheren.
 \end{multicols} 
 \pagebreak
 
@@ -401,8 +430,12 @@ Om dit in te scannen zijn er 2 dingen nodig: \\
     \hline
     1. input naar grayscale en daarna binary met een cutoff van 150  & 
         \adjustbox{valign=t}{\includegraphics[width=\linewidth]{./images/methoden/inscannen/sectie/checkbox/hoogte/code-binary.png}}
+        Hier wordt de lijst pixels omgezet naar een waarde van 0 of 1, omdat arr\_image < 150 een waarde van true of false terug geeft die daarna naar een nummer (int) wordt omgezet.
            &
-            \adjustbox{valign=t}{\includegraphics[width=\linewidth]{./images/methoden/inscannen/sectie/checkbox/hoogte/binary.png}}
+
+           \adjustbox{valign=t}{
+            \includegraphics[width=\linewidth]{./images/methoden/inscannen/sectie/checkbox/hoogte/binary.png}}
+           
            \\
     \hline
     2. De contouren van objecten herkennen  & 
@@ -411,7 +444,7 @@ Om dit in te scannen zijn er 2 dingen nodig: \\
             \adjustbox{valign=t}{\includegraphics[width=\linewidth]{./images/methoden/inscannen/sectie/checkbox/hoogte/countour.png}}
            \\
     \hline
-    3. Filter de contouren op: grootte, vierkantheid en of ze gevult zijn & 
+    3. Filter de contouren op: grootte, vierkantheid en of ze gevuld zijn & 
         \adjustbox{valign=t}{\includegraphics[width=\linewidth]{./images/methoden/inscannen/sectie/checkbox/hoogte/code-contour-filter.png}}
            &
             \adjustbox{valign=t}{\includegraphics[width=\linewidth]{./images/methoden/inscannen/sectie/checkbox/hoogte/contour-filtered.png}}
@@ -454,7 +487,7 @@ Om dit in te scannen zijn er 2 dingen nodig: \\
 \pagebreak
 
 \begin{multicols}{2}
-\paragraph*{Vraagnummer herkenning} Om de vraag te herkennen hebben we eerst gebruik gemaakt van Microsoft Azure document intelligence die kan checkboxes herkennen.\\
+\paragraph*{Vraagnummer herkenning} Om de vraag te herkennen hebben we eerst gebruik gemaakt van Microsoft Azure document intelligence die kan checkboxes herkennen \href{https://azure.microsoft.com/en-us/products/ai-services/ai-document-intelligence}{Azure Document Intelligence}.\\
 De volgende foto:
 \begin{figure}[H]
     \centering
@@ -509,7 +542,7 @@ Input:
     \label{fig:question-num-json}
 \end{figure}
 
-Prompt:\\
+\noindent Prompt (in het Engels, want een model heeft meer op meer Engelse data getrained dan Nederlands ):\\
 \textit{You'll get a picture of checkboxes that a student used to select an answer
     your job is to see which check box is most likly the one to be ment to be checked
     only 1 can be chosen
@@ -605,9 +638,7 @@ Prompt:\\
 }
 \end{minted}
 \end{listing}
-\begin{multicols}{2}
-We kunnen nu de secties scheiden en de vraagnummers relatief betrouwbaar extraheren.
-\end{multicols}
+\noindent We kunnen nu de secties scheiden en de vraagnummers relatief betrouwbaar extraheren.
 \end{samepage}
 
 \pagebreak
@@ -620,7 +651,7 @@ We kunnen nu de secties scheiden en de vraagnummers relatief betrouwbaar extrahe
 Nu hebben we van elk type sectie een foto van het antwoordveld uit de vorige stap. Het lastigste van dit onderdeel is de handschriften omzetten naar geschreven tekst. Om erachter te komen wat de beste methode is hebben we veel getest met instellingen zoals: promps, temperatuur, foto en type-model.\\
 \\
 \begin{minipage}{\textwidth}
-We hebben 5 GPT modellen getest (\cite{geminiproManual, openaiManual}):\ref{fig:score-model}
+We hebben 5 GPT modellen getest\\ (\cite{geminiproManual, openaiManual}):\ref{fig:score-model}
 \begin{itemize}
     \item \textbf{Google} gemini-1.5-pro-002
     \item \textbf{Google} gemini-1.5-flash-8b
@@ -631,7 +662,8 @@ We hebben 5 GPT modellen getest (\cite{geminiproManual, openaiManual}):\ref{fig:
 \end{minipage}
 
 \noindent\begin{minipage}{\textwidth}
-4 verschillende temperaturen getest:\ref{fig:score-image}
+4 verschillende temperaturen getest \\
+De temperatuur heeft te maken met de creativiteit van het antwoord:\ref{fig:score-image}
 \begin{itemize}
     \item 0
     \item 0.5
@@ -761,6 +793,7 @@ Daarnaast wordt gekeken naar de veranderingen van de reference naar de gegeneree
 Daarna krijgt elke waarde een factor die is bepaald door te testen met een aantal tests, waarvan bekend is wat de gewensde volgorde van \"op elkaar lijken\" is. 
 Zie de appendix voor tests.
 \end{minipage}%
+\hspace{0.4cm}%
 \begin{minipage}{0.5\linewidth}
 \begin{figure}[H]
     \centering
@@ -775,26 +808,133 @@ Zie de appendix voor tests.
 \pagebreak
 
 \subsubsection{Nakijken}
-\begin{tabularx}{\linewidth}{ll}
-    \textbf{Eigenaar: } & \textit{Jonathan} \\
+\noindent\begin{tabularx}{\linewidth}{ll}
+    \textbf{Eigenaar: } & \textit{Jonathan} \\ \\
     \textbf{Doel(en): } & 
         \makecell[tl]{
             $\bullet$ Punten en feedback geven per gegeven antwoord \\
             $\bullet$ Feedback voor fouten met verwijzingen naar de lesstof
-        } \\
+        } \\ \\
     \textbf{Subvragen: } & 
         \makecell[tl]{
             $\bullet$ Welke AI modellen en types zijn er? \\
             $\bullet$ Welke werkt het beste voor ons en is er een back-up als een eigen model\\ trainen niet werkt?
-        } \\
+        } \\ \\
     \textbf{Kader(s): } & 
         \makecell[tl]{
-            $\bullet$ TODO
-        } \\
-    \parbox[t]{3cm}{\raggedright \textbf{Geschatte  tijdskosten:} } & 30 uur \\
+            $\bullet$ Machine Learning, \\
+            $\bullet$ API requests, \\
+            $\bullet$ Testen van variablen
+        } \\ \\
+    \parbox[t]{3cm}{\raggedright\textbf{Geschatte tijdskosten:} } & \makecell[tl]{
+            $\bullet$ 30 uur
+        }  \\
 \end{tabularx}
 
+\noindent Deze module is onderverdeeld in de volgende stappen:
+\begin{itemize} 
+    \item Het inladen van de vragen, rubrics en context. 
+    \item Het inladen van de studenten antwoorden. 
+    \item Het nakijken per vraag.
+    \item Het nakijken per student.
+    \item Het nakijken van een klas.
+\end{itemize}
+
+\noindent\textbf{Het inladen van de vragen, rubrics en context:}
+\noindent De vragen, rubrics en context staan in JSON-formaat \ref{fig:json_formaat}. \\
+\begin{figure}[H] % Position 'h' means 'here'
+    \centering
+    \includegraphics[width=0.6\textwidth]{./images/methoden/nakijken/json_structuur.png}
+    \caption{JSON formaat}
+    \label{fig:json_formaat}
+\end{figure}
+Je ziet hier ook versies staan. Later in het programma wordt daartussen onderscheid gemaakt. Er is voor een JSON-formaat gekozen, omdat je zo snel en gemakkelijk de vragen, rubrics en context in kan voeren. Het ophalen van die data is dan ook weer gemakkelijk met Python-code, zoals hieronder wordt getoond. Deze JSON-bestanden worden opgehaald met bijvoorbeeld de functie \ref{fig:vragen_inladen}.\\
+\begin{figure}[H] % Position 'h' means 'here'
+    \centering
+    \includegraphics[width=0.8\textwidth]{./images/methoden/nakijken/load_questions.png}
+    \caption{In laden van vragen}
+    \label{fig:vragen_inladen}
+\end{figure}
+Hierdoor heeft ons programma toegang tot de context van de vraag, de rubric van de vraag en de vraag zelf. 
+\\\\
+\textbf{Het inladen van de studenten antwoorden:}
+Van de inscanner krijg je een heel groot JSON-bestand terug. Het is erg lastig om hier meer te werken, omdat alle base64 encoded data van elke vraag erin staat. Deze data is louter voor vraag 5 nodig. De volgende code lost dat op \ref{fig:json_transformn}.
+
+\begin{figure}[H] % Position 'h' means 'here'
+    \centering
+    \includegraphics[width=0.8 \textwidth]{./images/methoden/nakijken/change_json.png}
+    \caption{JSON omzetten}
+    \label{fig:json_transformn}
+\end{figure}
+Hierna worden ze in individuele JSON-bestanden gezet waarna ze in het programma worden ingescand met de volgende functie \ref{fig:add_student}.
+\begin{figure}[H] % Position 'h' means 'here'
+    \centering
+    \includegraphics[width=0.9 \textwidth]{./images/methoden/nakijken/add_student.png}
+    \caption{Student toevoegen}
+    \label{fig:add_student}
+\end{figure}
+Nu is de student toegevoegd aan de klas en kan ons programma bij deze zijn antwoorden. Dit doen we in een for-loop waarbij we itereren over het mapje met alle JSON-bestanden van studenten.
+\\ \\
+\textbf{Het nakijken per vraag:} \\
+Om een vraag na te kijken maken wij een request naar of de OpenAI-api of de Gemini-API. Deze request sturen wij met de volgende codes \ref{fig:OpenAI_request} \ref{fig:gemini_reques}.
+
+\begin{figure}[H] % Position 'h' means 'here'
+    \centering
+    \includegraphics[width=0.9 \textwidth]{./images/methoden/nakijken/get_response.png}
+    \caption{Request OpenAI}
+    \label{fig:OpenAI_request}
+\end{figure}
+\begin{figure}[H] % Position 'h' means 'here'
+    \centering
+    \includegraphics[width=0.9 \textwidth]{./images/methoden/nakijken/response_gemini.png}
+    \caption{Request Gemini}
+    \label{fig:gemini_reques}
+\end{figure}
+We sturen per vraag een aantal dezelfde requests om hallucinaties te voorkomen. Dit idee komt uit het volgende artikel uit het tijdschrift Nature (\cite{Farquhar2024}). Deze requests sturen we asynchroon op de volgende manier \ref{fig:async}.
+\begin{figure}[H] % Position 'h' means 'here'
+    \centering
+    \includegraphics[width=0.9 \textwidth]{./images/methoden/nakijken/threading.png}
+    \caption{Asynchrone requests}
+    \label{fig:async}
+\end{figure}
+
+Als laatste tellen we van elke request op hoe vaak een rubricpunt wel of niet gegeven wordt. Het meest voorkomende antwoord veronderstellen wij als de waarheid. Deze slaan we dan ook op. Het optellen kan simpelweg gedaan worden met een for-loop waarbij je itereert over de resultaten.\vspace{0.25cm}
+\\
+
+\textbf{Het nakijken per student:} \\
+Alle resultaten per student zijn al ingeladen volgens hierboven beschreven methode. Het nakijken, het managen van een student en het managen van een klas zijn allemaal gescheiden klassen volgens OOP. Om een student na te kijken hoef je dan alleen maar de volgende functie asynchroon voor alle gemaakte vragen van een student aan te roepen \ref{fig:Vraag_nakijken}. 
+
+\begin{figure}[H] % Position 'h' means 'here'
+    \centering
+    \includegraphics[width=0.8 \textwidth]{./images/methoden/nakijken/grade_question.png}
+    \caption{Vraag nakijken}
+    \label{fig:Vraag_nakijken}
+\end{figure}
+Deze resultaten worden dan opgeslagen. En dan is één student nagekeken.
+\\ \\
+\textbf{Het nakijken van een klas:}\\
+Om de klas na te kijken maken we dus steeds een student-object. Als we de klas willen nakijken, dan itereren we over alle student-objecten en gebruiken we de functie om hem na te kijken. Met 10 requests per vraag, 7 vragen, 30 studenten en standaard rate-limits doet hij er iets meer dan 3 minuten over.
+\\ \\
+\textbf{Het optimaliseren van modelparameter}
+Om het AI-model zo goed mogelijk te laten presteren bij het nakijken van scheikunde toetsen, moeten de parameters van het model zorgvuldig worden afgestemd. Twee belangrijke parameters die hierbij een grote rol spelen zijn de temperatuur en de promptformulering.
+
+\begin{itemize} 
+\item \textbf{Temperatuur:}
+De temperatuur beïnvloedt de "creativiteit" van de gegenereerde antwoorden. Bij een lage temperatuur (bijvoorbeeld 0.2) worden antwoorden consistenter en voorspelbaarder, wat belangrijk is bij het nakijken van open vragen met objectief juiste antwoorden. Bij hogere temperaturen kunnen antwoorden diverser, maar minder betrouwbaar worden. Daarom voeren we meerdere experimenten uit om de optimale temperatuur te vinden (\cite{peeperkorn2024temperature}).
+\item \textbf{Promptformulering:}  
+De prompt bepaalt hoe duidelijk de vraag, rubric, context en opdracht van het nakijken aan het model wordt gepresenteerd. Een goed geformuleerde prompt helpt het model om de vraag en verwachtingen correct te interpreteren (\cite{qian2024long}). We testen verschillende versies van prompts, zoals:  
+    \begin{itemize}  
+        \item Een korte set instructies (Bij te veel instructies raakt het model misschien verward)
+        \item Een lange set instructies (Meer instructies geeft wellicht een duidelijker beeld van de opdracht) 
+    \end{itemize}
+\end{itemize}
+
+\noindent De combinatie van een optimale temperatuur en een zorgvuldig opgebouwde prompt zorgt ervoor dat de feedback nauwkeuriger en betrouwbaarder wordt. Dit wordt getest door verschillende instellingen uit te proberen op een set van voorbeeldantwoorden en de uitkomsten te vergelijken met menselijke beoordelingen. Per vraag testte we drie verschillende antwoorden. Een goed antwoord, en helemaal fout antwoord en een half goed, half fout antwoord.
+
+
 \pagebreak
+
+
 
 \subsubsection{Analyseren}
 \begin{tabularx}{\linewidth}{@{}ll}
@@ -818,9 +958,16 @@ Zie de appendix voor tests.
 \end{tabularx}
 % TODO: beslissen of dit in ons PWS moet of dit gedeelte uitbreiden
 \\
-Bij het inscannen gaan we onderzoek doen naar welke statistische berekeningen nodig zijn voor correct analyse. 
-\pagebreak
+\begin{multicols}{2}
+    
+Bij het inscannen gaan we onderzoek doen naar welke statistische berekeningen nodig zijn voor correct analyse. Ook gaan we uitzoeken wat voor interface nodig is en welke berekeningen of dingen we aan een docent kunnen laten zien om een duidlijk beeld te krijgen van de staat van de klas. We gaan gebruik maken van internet. \\
+\\
+Ook gaan we een test website maken met VueJs (\cite{vuejsManual}). De code voor deze website is open-source en is te vinden op \url{https://github.com/Thannie/Test-Analyzer}.
+Daarnaast hosten we zelf de website op \url{https://toetspws.web.app/analyze}, waar nu een testversie van een analyseer app staat met test data. In het analyseer menu in de fold-out correlaties is een mooie correlatie matrix te zien en in het grafiek menu een interactieve normaalverdeling als op bereken wordt geklikt. De interface hebben we gemaakt met Vuetify (\cite{vuetifyManual}), dat zorgt voor de mooie menu's  (merk op dat \url{https://toetspws.web.app/scan} naar de inscan website gaat, die gebruikt maakt van onze inscan API).\\
+\\
+\end{multicols}
 
+\pagebreak
 
 \subsubsection{Enquete}
 \begin{tabularx}{\linewidth}{ll}
@@ -849,8 +996,8 @@ Om een betrouwbare enquête te maken moet je als eerste het doel van de enquête
     \item mogelijke acceptatie in kaart brengen
 \end{itemize}
 \end{minipage}
-Daarnaast moet elke vraag ook een duidelijk doel hebben, anders is het mogelijk dat je 2x dezelfde vraag stelt of naar informatie gaat vrageb niet niet relevant is.\\
-Ten slotte moesten we bij elke vraag nagaan of de vraag op verschillende manieren geinterpreteerd kan worden.\\
+Daarnaast moet elke vraag ook een duidelijk doel hebben, anders is het mogelijk dat je 2x dezelfde vraag stelt of naar informatie gaat vragen niet niet relevant is.\\
+Ten slotte moesten we bij elke vraag nagaan of de vraag op verschillende manieren geïnterpreteerd kan worden.\\
 Dit waren de vragen die we hebben bedacht:
 % TODO: verklaringen toevoegen
 \end{multicols}%
@@ -894,7 +1041,7 @@ Dit waren de vragen die we hebben bedacht:
             \item Anders: \textit{zelf invullen}
 
         \end{itemize}
-    \end{minipage} & weten wat het hoofddoel moet zijn van ons programma en wat waar we minder aandacht aan kunnen besteden & \\
+    \end{minipage} & weten wat het hoofddoel moet zijn van ons programma en wat waar we minder aandacht aan kunnen besteden & optie 1 en 3 lijken op elkaar, maar zijn niet hetzelfde dat is later ook deels terug te zien in de resultaten\\
     \hline 
     \begin{minipage}[t]{\linewidth}
         \textbf{5. Wat zijn uw belangrijkste zorgen bij het gebruik van AI voor het nakijken van proefwerken? }
@@ -921,13 +1068,15 @@ Dit waren de vragen die we hebben bedacht:
     \begin{minipage}[t]{\linewidth}
         \textbf{7. Hoeveel leerlingen trekken uw beoordeling per toets \- terecht of niet \- in twijfel? (Een getal)}\\
         \vspace{4em} Zelf een getal invullen
-    \end{minipage} & 
+        \end{minipage} & 
         \begin{minipage}[t]{\linewidth}
             Een objectief target halen waarmee we ons programma kunnen vergelijken:\\ 
             meer oneens is slechter of te streng naar gekeken \\ 
             te weinig is te makkelijk nagekeken 
         \end{minipage}
-        & \\
+        & \begin{minipage}[t]{\linewidth}
+            Hier is een afweging gemaakt tussen een makkelijk te lezen vraag en een wiskundig correcte vraag. Het is hier niet expliciet gezegt dat het per toets per klas (van ongeveer 30 leerlingen) is.
+        \end{minipage}\\
     \hline 
     \begin{minipage}[t]{\linewidth}
         \textbf{8. Welke invloed denkt u dat de inzet van AI kan hebben op de relatie tussen docent en student? (Open vraag) }\\
@@ -984,7 +1133,7 @@ Voor het analyseren gaan we Google Sheet pivot tables gebruiken om snel verbande
 \end{multicols}
 \pagebreak
 
-\subsubsection{Toets}
+\subsubsection{Praktijktest}
 \begin{tabularx}{0.5\linewidth}{ll}
     \textbf{Eigenaar: } & \textit{Jonathan} \\
     \textbf{Doel(en): } & 
@@ -1007,7 +1156,11 @@ Voor het analyseren gaan we Google Sheet pivot tables gebruiken om snel verbande
 \pagebreak
 \section{Resultaten}
 \subsection{Inscannen}
-
+\noindent Hieronder zijn een aantal tabellen te zien met de resultaten van het inscanonderdeel uitgelegd in de methode. \\
+We hebben deze tabellen gekozen om te kijken wat de beste inputs voor ons inscansysteem zijn. \\
+Een lagere score is beter dan een hogere score, want hoe meer fouten hoe hoger de score. Ook willen we liever een lage standaarddeviatie, want dan is ons model voorspelbaarder. \\
+In de appendix is zijn een aantal test gegeven in een tabel met een quote van Johan Cruijff die een goed beeld geven van wat een score betekent en een aantal andere tests.\\
+De resultaten zijn niet normaal verdeeld, omdat een score niet kleiner dan 0 kan zijn, daardoor zal die vaak hoger zijn dan je zou denken. Er wordt vooral gekeken naar verschillende standaarddeviaties ten opzichte van elkaar. 
 
 \href{https://docs.google.com/spreadsheets/d/1wbHiG81i-UJ18s6gP3i_WtsPD-FBQTqg7AwNjN8Rm2g}{Resultaten}
 
@@ -1149,13 +1302,74 @@ Voor het analyseren gaan we Google Sheet pivot tables gebruiken om snel verbande
 
 \pagebreak
 \subsection{Nakijken}
+
+\href{https://docs.google.com/spreadsheets/d/10NNihuDYj4w9L_6Zt7fzNZCPK-7qFkCTgRn8BRHSbsM}{resultaten}
+
+\noindent\begin{table}[H]
+\caption{Correlatie modellen onder elkaar}
+\label{fig:correlatie-model}
+Kijk vooral naar de correlatie vs de mens, want die wordt gezien als "correct".
+\begin{tabularx}{\textwidth}{p{4cm} XXXXXXX}
+    \toprule
+    \textbf{Model} & \textbf{Mens} & \textbf{g-2.0-flash} & \textbf{g-1.5-pro} & \textbf{g-1.5-flash} & \textbf{4o} & \textbf{4o-mini} & \textbf{mode AI} \\
+    \midrule
+    Mens & \cellcolor[rgb]{0.275,0.514,0.275}{1.0000} \\
+    gemini-2.0-flash-exp & \cellcolor[rgb]{0.560,0.705,0.560}{0.9616} & \cellcolor[rgb]{0.275,0.514,0.275}{1.0000} \\
+    gemini-1.5-pro & \cellcolor[rgb]{0.978,0.986,0.978}{0.9054} & \cellcolor[rgb]{0.802,0.867,0.802}{0.9291} & \cellcolor[rgb]{0.275,0.514,0.275}{1.0000} \\
+    gemini-1.5-flash & \cellcolor[rgb]{0.951,0.967,0.951}{0.9090} & \cellcolor[rgb]{1.000,1.000,1.000}{0.9025} & \cellcolor[rgb]{0.648,0.764,0.648}{0.9497} & \cellcolor[rgb]{0.275,0.514,0.275}{1.0000} \\
+    4o & \cellcolor[rgb]{0.640,0.759,0.640}{0.9509} & \cellcolor[rgb]{0.596,0.729,0.596}{0.9568} & \cellcolor[rgb]{0.716,0.810,0.716}{0.9406} & \cellcolor[rgb]{0.658,0.770,0.658}{0.9485} & \cellcolor[rgb]{0.275,0.514,0.275}{1.0000} \\
+    4o-mini & \cellcolor[rgb]{0.914,0.942,0.914}{0.9141} & \cellcolor[rgb]{0.804,0.868,0.804}{0.9289} & \cellcolor[rgb]{0.914,0.943,0.914}{0.9140} & \cellcolor[rgb]{0.846,0.897,0.846}{0.9232} & \cellcolor[rgb]{0.726,0.816,0.726}{0.9394} & \cellcolor[rgb]{0.275,0.514,0.275}{1.0000} \\
+    mode AI & \cellcolor[rgb]{0.614,0.741,0.614}{0.9544} & \cellcolor[rgb]{0.512,0.673,0.512}{0.9680} & \cellcolor[rgb]{0.550,0.698,0.550}{0.9630} & \cellcolor[rgb]{0.633,0.754,0.633}{0.9518} & \cellcolor[rgb]{0.357,0.569,0.357}{0.9889} & \cellcolor[rgb]{0.673,0.781,0.673}{0.9464} & \cellcolor[rgb]{0.275,0.514,0.275}{1.0000} \\
+    \bottomrule
+\end{tabularx}
+\end{table}
+
+
+\noindent\begin{table}[H]
+\caption{Verschil met mens per nagekeken vraag \%}
+Hier is te zien dat de meeste modellen geen problemen hebben met vraag 1\\
+Vraag 5 is interessant om naar te kijken want dat was de foto/teken vraag.
+\begin{tabularx}{\textwidth}{X rrrrrrrr}
+    \toprule
+    \multicolumn{1}{c}{\textbf{Model}} & \multicolumn{1}{c}{\textbf{1}} & \multicolumn{1}{c}{\textbf{2}} & \multicolumn{1}{c}{\textbf{3}} & \multicolumn{1}{c}{\textbf{4}} & \multicolumn{1}{c}{\textbf{5}} & \multicolumn{1}{c}{\textbf{6}} & \multicolumn{1}{c}{\textbf{7}} & \multicolumn{1}{c}{\textbf{GrandTotal}} \\
+    \midrule
+    gemini-2.0-flash-exp & \cellcolor[rgb]{0.275,0.514,0.275}{0.00} & \cellcolor[rgb]{0.442,0.626,0.442}{4.44} & \cellcolor[rgb]{0.881,0.921,0.881}{16.09} & \cellcolor[rgb]{0.543,0.693,0.543}{7.11} & \cellcolor[rgb]{0.543,0.694,0.543}{7.12} & \cellcolor[rgb]{0.450,0.631,0.450}{4.65} & \cellcolor[rgb]{0.639,0.758,0.639}{9.67} & \cellcolor[rgb]{0.565,0.708,0.565}{7.69} \\
+    4o & \cellcolor[rgb]{0.439,0.624,0.439}{4.35} & \cellcolor[rgb]{0.360,0.571,0.360}{2.27} & \cellcolor[rgb]{0.510,0.671,0.510}{6.23} & \cellcolor[rgb]{0.683,0.787,0.683}{10.82} & \cellcolor[rgb]{0.458,0.637,0.458}{4.87} & \cellcolor[rgb]{0.608,0.737,0.608}{8.83} & \cellcolor[rgb]{0.717,0.810,0.717}{11.74} & \cellcolor[rgb]{0.554,0.701,0.554}{7.41} \\
+    gemini-1.5-flash & \cellcolor[rgb]{0.439,0.624,0.439}{4.35} & \cellcolor[rgb]{0.275,0.514,0.275}{0.00} & \cellcolor[rgb]{0.772,0.847,0.772}{13.19} & \cellcolor[rgb]{0.880,0.920,0.880}{16.06} & \cellcolor[rgb]{0.623,0.747,0.623}{9.23} & \cellcolor[rgb]{0.450,0.631,0.450}{4.65} & \cellcolor[rgb]{0.975,0.983,0.975}{18.56} & \cellcolor[rgb]{0.675,0.782,0.675}{10.63} \\
+    gemini-1.5-pro & \cellcolor[rgb]{0.439,0.624,0.439}{4.35} & \cellcolor[rgb]{0.360,0.571,0.360}{2.27} & \cellcolor[rgb]{0.931,0.953,0.931}{17.39} & \cellcolor[rgb]{0.767,0.844,0.767}{13.05} & \cellcolor[rgb]{0.623,0.747,0.623}{9.23} & \cellcolor[rgb]{0.608,0.737,0.608}{8.83} & \cellcolor[rgb]{0.918,0.945,0.918}{17.07} & \cellcolor[rgb]{0.694,0.795,0.694}{11.13} \\
+    o1-mini & \cellcolor[rgb]{0.275,0.514,0.275}{0.00} & \cellcolor[rgb]{0.903,0.935,0.903}{16.65} & \cellcolor[rgb]{0.829,0.885,0.829}{14.69} & \cellcolor[rgb]{0.387,0.589,0.387}{2.98} & \cellcolor[rgb]{1.000,1.000,1.000}{19.23} & \cellcolor[rgb]{0.450,0.631,0.450}{4.65} & \cellcolor[rgb]{0.556,0.703,0.556}{7.47} & \cellcolor[rgb]{0.656,0.769,0.656}{10.11} \\
+    mode & \cellcolor[rgb]{0.439,0.624,0.439}{4.35} & \cellcolor[rgb]{0.275,0.514,0.275}{0.00} & \cellcolor[rgb]{0.435,0.621,0.435}{4.25} & \cellcolor[rgb]{0.683,0.787,0.683}{10.82} & \cellcolor[rgb]{0.623,0.747,0.623}{9.23} & \cellcolor[rgb]{0.531,0.686,0.531}{6.79} & \cellcolor[rgb]{0.790,0.859,0.790}{13.66} & \cellcolor[rgb]{0.554,0.701,0.554}{7.41} \\
+    \bottomrule
+\end{tabularx}
+\end{table}
+
+\noindent\begin{table}[H]
+\caption{Aantal valse positieve en aantal valse negatieve}
+
+\label{fig:false-pos-neg}
+
+Dit is ten opzichte van de mens.\\
+een hogere waarde beterkend minder goed. \\
+Hier is te zien wanneer een model voordelig is voor de leerling.
+\begin{tabularx}{\textwidth}{p{4cm} XXXXXXXX}
+    \toprule
+    \multicolumn{1}{c}{\textbf{Model}} & \multicolumn{1}{c}{\textbf{1}} & \multicolumn{1}{c}{\textbf{2}} & \multicolumn{1}{c}{\textbf{3}} & \multicolumn{1}{c}{\textbf{4}} & \multicolumn{1}{c}{\textbf{5}} & \multicolumn{1}{c}{\textbf{6}} & \multicolumn{1}{c}{\textbf{7}} & \multicolumn{1}{c}{\textbf{GrandTotal}} \\
+    \midrule
+    gemini-2.0-flash-exp false positief & \cellcolor[rgb]{1.000,1.000,1.000}{0} & \cellcolor[rgb]{0.909,0.939,0.909}{2} & \cellcolor[rgb]{0.592,0.726,0.592}{9} & \cellcolor[rgb]{0.909,0.939,0.909}{2} & \cellcolor[rgb]{0.909,0.939,0.909}{2} & \cellcolor[rgb]{1.000,1.000,1.000}{0} & \cellcolor[rgb]{1.000,1.000,1.000}{0} & \cellcolor[rgb]{0.320,0.544,0.320}{15} \\
+    gemini-2.0-flash-exp false negatief & \cellcolor[rgb]{1.000,1.000,1.000}{0} & \cellcolor[rgb]{1.000,1.000,1.000}{0} & \cellcolor[rgb]{1.000,1.000,1.000}{0} & \cellcolor[rgb]{0.864,0.909,0.864}{3} & \cellcolor[rgb]{0.955,0.970,0.955}{1} & \cellcolor[rgb]{0.909,0.939,0.909}{2} & \cellcolor[rgb]{0.819,0.878,0.819}{4} & \cellcolor[rgb]{0.547,0.696,0.547}{10} \\
+    mode false positief & \cellcolor[rgb]{1.000,1.000,1.000}{0} & \cellcolor[rgb]{1.000,1.000,1.000}{0} & \cellcolor[rgb]{0.909,0.939,0.909}{2} & \cellcolor[rgb]{0.909,0.939,0.909}{2} & \cellcolor[rgb]{0.909,0.939,0.909}{2} & \cellcolor[rgb]{1.000,1.000,1.000}{0} & \cellcolor[rgb]{0.909,0.939,0.909}{2} & \cellcolor[rgb]{0.637,0.757,0.637}{8} \\
+    mode false negatief & \cellcolor[rgb]{0.955,0.970,0.955}{1} & \cellcolor[rgb]{1.000,1.000,1.000}{0} & \cellcolor[rgb]{1.000,1.000,1.000}{0} & \cellcolor[rgb]{0.728,0.818,0.728}{6} & \cellcolor[rgb]{0.909,0.939,0.909}{2} & \cellcolor[rgb]{0.864,0.909,0.864}{3} & \cellcolor[rgb]{0.819,0.878,0.819}{4} & \cellcolor[rgb]{0.275,0.514,0.275}{16} \\
+    \bottomrule
+\end{tabularx}
+\end{table}
+
 \pagebreak
 \subsection{Analyseren}
 \begin{multicols}{2}
 \paragraph*{Opbouw analyse} Om een toets betrouwbaar te analyseren moet met verschillende dingen rekening houden. Een van de belangrijkste dingen voor een analyse is het doel van de docent vaststellen. Wil een docent een kennismeting doen waar de mensen die het half snappen een onvoldoende krijgen of dat die net een 5.5 krijgen. Wil een docent dat het goed genoeg begrijpen van de stof beloont wordt met een 8.0 of met een 6.0. Deze dingen zijn belangrijk voor het beoogde gemiddelde en de standaarddeviatie van een toets.
 \begin{minipage}{1\linewidth}
     
-\textbf{Gemmidelde: }
+\textbf{gemiddelde: }
 \[
 \mu = \frac{1}{N} \sum_{i=1}^N x_i
 \]
@@ -1193,10 +1407,10 @@ waarbij:
 \end{minipage}
 \end{multicols}
 \vspace{3em}
-% TODO: gemmidelde en aanpassingen daarop uitleggen en totale cijferberekeningen
-\begin{multicols}{2}
+% TODO: gemiddelde en aanpassingen daarop uitleggen en totale cijferberekeningen
 
 \pagebreak
+\begin{multicols}{2}
 \paragraph*{Vraagniveau} Om met deze waardes een analyse te doen van een toets op vraagniveau kan je bepaalde berekeningen gebruiken. Als je wilt weten of een vraag in de toets thuishoortkan je de correlatie berekenen tussen hoe de leerlingen de vraag hebben gemaakt ten opzichte van de rest van de toets (\cite{ding2013item, ding2009item}).
 \begin{minipage}{\linewidth}% chatgpt
 \textbf{De RIR} meet de correlatie tussen de score van een item en de totale score, exclusief dat item:
@@ -1245,7 +1459,7 @@ Het is ook mogelijk om hier opvallende correlaties tussen vragen weer te geven. 
 \\
 Het kan ook mogelijk zijn om de correlaties tussen leerlingen te tonen om eventuele spiekers te vangen. Hierbij moet wel rekening gehouden worden met het feit dat 2 mensen met een hoog cijfer, waarschijnlijk beide dezelfde vragen goed en fout hebben. Deze coorelatie wordt wel interessant bij bijvoorbeeld 2 6.5'en en precies dezelfde fouten.\\
 \\
-Op \textbf{het bewerkscherm} kunnen bijvoorbeeld een aantal velden komen met de doelen van een docent. Bijvoorbeeld: een veld om het gewilde gemiddelde en de gewilde standaardeviatie in te stellen. Daarmee berekent hij dat een nieuwe formule. Hier kan ook worden of een lineare of non-lineare formule gebruikt wordt. Bij een non-lineare formule behoudt iedereen met een onvoldoende zijn onvoldoende, maar zijn die onvoldoendes minder hoog. \\
+Op \textbf{het bewerkscherm} kunnen bijvoorbeeld een aantal velden komen met de doelen van een docent. Bijvoorbeeld: een veld om het gewilde gemiddelde en de gewilde standaarddeviatie in te stellen. Daarmee berekent hij dat een nieuwe formule. Hier kan ook worden of een lineare of non-lineare formule gebruikt wordt. Bij een non-lineare formule behoudt iedereen met een onvoldoende zijn onvoldoende, maar zijn die onvoldoendes minder hoog. \\
 Hier kan ook op vraagniveau een scherm zijn om vragen eruit te gooien of half te laten meetellen, als blijkt dat ze wegnemen van de kennismeting van de toets.
 % TODO: foto linear en non-linear
 \end{multicols}
@@ -1256,7 +1470,7 @@ Hier kan ook op vraagniveau een scherm zijn om vragen eruit te gooien of half te
 
 \noindent
 \begin{table}[H]
-    \caption{Bent u bekend met het concept van (generatieve) AI? vs lesgeef evraring}
+    \caption{Bent u bekend met het concept van (generatieve) AI? vs lesgeef ervaring}
     \begin{tabular}{l c c c c c}
         \toprule
         \textbf{Docent?} & \textbf{Ja} & \textbf{Gehoord} & \textbf{Nee} & \textbf{Grand Total} \\
@@ -1487,7 +1701,7 @@ Voor het maken van deze lijst is voor het sorteren en overzichtelijk maken van d
 \end{enumerate}
 
 \pagebreak
-\subsection{Toets}
+\subsection{Praktijktest}
 
 \pagebreak
 \section{conclusie}
@@ -1495,7 +1709,7 @@ Voor het maken van deze lijst is voor het sorteren en overzichtelijk maken van d
 \textbf{Vragen:}\\
 \textbf{1. Welke manieren zijn er om een de vraagsecties op een foto te scheiden?} 
 \begin{multicols}{2}
-Van de 3 manieren die we hebben getest blijkt dat 1 methode onbruikbaar is en de andere 2 bruikbaar, maar in andere omstandigheden.\\
+Van de 3 manieren die we hebben getest blijkt dat 1 methode onbruikbaar is en de andere 2 bruikbaar, maar in andere omstandigheden Tabel.\\
 De methode die niet werkt is de kantlijnmethode. Het is niet mogelijk om ervan uit te gaan dat leerlingen alleen maar vraagnummers in de kantlijn zetten en daar alle secites op te baseren, want een kleine textherkennings fout kan antwoord op een vraag splitsen, waardoor iemand alle punten misloopt. \\
 \\
 De \textbf{QR-code} methode werkt goed voor werkbladen. Bijvoorbeeld een examen waar een leerling zo min mogelijk wil uitprinten. De leerling zou dan bijvoorbeeld een examenvraag uitprinten met daaronder direct het qr-antwoordveld, daar een foto van nemen die dan direct nagekeken wordt. 
@@ -1505,15 +1719,13 @@ De \textbf{Checkbox} methode is de methode die het beste toepasbaar is voor een 
 % TODO: vergelijking met hypothese
 \end{multicols}
 
-
+\pagebreak
 \noindent\textbf{2. Wat is de beste manier om tekst uit een ingescande sectie te halen?}
 \begin{multicols}{2}
 Uit de tests kunnen we ten eerste vaststellen dat de modellen van Google sneller zijn dan de modellen van OpenAI, zie:tabel \ref{fig:time-model}. Zoals verwacht zijn de flash modellen het snelst, maar we vonden het wel opvallend dat het verschil oploopt tot wel 3x sneller. \\
-We verwachtten dat het \"nieuwste\" model meestal de beste score zou hebben, maar dat is kennenlijk niet helemaal waar, want de tekstherkenning van 1.5 pro heeft een betere gemmidelde score dan de gemini flash 2.0, die midden december 2024 is uitgekomen. Zie:tabel \ref{fig:score-model}. Dat is vooral te zien aan het gemmidelde aantal aanpassingen in een tekst, die bij flash 2.0 meer dan 2x zo groot is als 1.5 pro. Het (verwaarloosbare) nadeel is dat de standaarddeviatie van gemnini 1.5 pro meer dan 6x zo groot is als die van flash 2.0. \\
-\\
-Zoals we verwacht hadden geeft geeft een langere prompt een beter resultaat, zie:tabel \ref{fig:score-command}. Daarom hebben we ervoor gekozen om hiermee onze 3e klas toets in te scannen. 
-\\
-Wat ons ook opviel is dat de context van de hele toets de beste inscanresultaten gaf. Wij hadden verwacht dat de rubric en de vraag de laagste (beste) score zou geven, maar het blijkt dat de toets de beste context geeft. Kennelijk begrijpen de modellen beter welke woorden iemand wil gebruiken als ze de hele toets hebben. Dat is ook te zien aan de gemmidelde veranderingen. Het is wel opvallend dat bij de rubric en de vraag geeft ook zo'n lage change count. De standaarddeviatie is daarintegen wel hoog, dus die combinatie is bij sommige vragen misschien beter dan de hele toets. Toch gaan we kiezen voor de vraag en antwoordmodel additie, want een hele toets zorgt voor een grote vermeerdering in tokens/kosten. Daarnaast neem de tijd per request toe.\\
+\indent We verwachtten dat het \"nieuwste\" model meestal de beste score zou hebben, maar dat is kennenlijk niet helemaal waar, want de tekstherkenning van 1.5 pro heeft een betere gemiddelde score dan de gemini flash 2.0, die midden december 2024 is uitgekomen. Zie:tabel \ref{fig:score-model}. Dat is vooral te zien aan het gemiddelde aantal aanpassingen in een tekst, die bij flash 2.0 meer dan 2x zo groot is als 1.5 pro. Het (verwaarloosbare) nadeel is dat de standaarddeviatie van gemnini 1.5 pro meer dan 6x zo groot is als die van flash 2.0. \\
+\indent Zoals we verwacht hadden geeft geeft een langere prompt een beter resultaat, zie:tabel \ref{fig:score-command}. Daarom hebben we ervoor gekozen om hiermee onze 3e klas toets in te scannen. \\
+\indent Wat ons ook opviel is dat de context van de hele toets de beste inscanresultaten gaf, zie tabel \ref{fig:score-addition}. Wij hadden verwacht dat de rubric en de vraag de laagste (beste) score zou geven, maar het blijkt dat de toets de beste context geeft. Kennelijk begrijpen de modellen beter welke woorden iemand wil gebruiken als ze de hele toets hebben. Dat is ook te zien aan de gemiddelde veranderingen. Het is wel opvallend dat bij de rubric en de vraag geeft ook zo'n lage change count. De standaarddeviatie is daarintegen wel hoog, dus die combinatie is bij sommige vragen misschien beter dan de hele toets. Toch gaan we kiezen voor de vraag en antwoordmodel additie, want een hele toets zorgt voor een grote vermeerdering in tokens/kosten. Daarnaast neem de tijd per request toe.\\
 \\
 \noindent De opdracht die we gaan gebruiken:\\
 \begin{tabularx}{\textwidth}{ll}
@@ -1524,16 +1736,15 @@ Wat ons ook opviel is dat de context van de hele toets de beste inscanresultaten
 \end{tabularx}
 
 \end{multicols}
-
+\pagebreak
 \subsection{Nakijken}
 
 
 \subsection{Analyseren}
 \begin{multicols}{2}
-% TODO: zeggen dat dit met ai gemaakt is
 Dit onderzoek analyseert toetsresultaten, met als doel betrouwbare kennismetingen. Cruciaal is dat de analyse aansluit bij het beoogde doel van de docent, wat invloed heeft op het gewenste gemiddelde en de standaarddeviatie.
 
-Naast bekende statistische maten als gemiddelde, standaarddeviatie en covariantie, zijn op vraagniveau de Item-Rest Correlatie (RIR) en Item-Totaal Correlatie (RIT) toegepast om de bijdrage van individuele vragen aan de totale score te beoordelen.
+Naast bekende statistische maten als gemiddelde, standaarddeviatie en covariantie, zijn op vraagniveau de Item-Rest Correlatie (RIR) en Item-Totaal Correlatie (RIT) toegepast om de bijdrage van individuele vragen aan de totale score te beoordelen. Deze visulizaties zijn gemaakt m.b.v Google Gemini 1.5 pro.
 
 Een voorgestelde gebruikersinterface (UI) met een input-, analyse- en bewerkscherm faciliteert de praktische toepassing. 
 \begin{itemize}
@@ -1545,7 +1756,7 @@ Een voorgestelde gebruikersinterface (UI) met een input-, analyse- en bewerksche
 \subsection{Enquete}
 
 
-\subsection{Toets}
+\subsection{Praktijktest}
 
 \pagebreak
 \section{Discussie}
@@ -1563,10 +1774,16 @@ $\bullet$ We hebben geen echte toetsen geanalyseerd, omdat de toets die we zoude
 $\bullet$ Tijdens het toetsje zijn een aantal vragen verkeerd ingescand, omdat een leerling de checkbox verkeerd had ingevult. Het zou netter zijn om dit als een popup aan een docent te laten zien die dit dan corrigeert.\\
 
 \subsubsection{Enquête}
-$\bullet$ We kregen terug van een aantal docenten dat de vraag aantal leerlingen die het oneens is met een becijfering niet exact gedefineerd was.\\
-$\bullet$ Er waren relatief weinig gamma resultaten, waardoor hun reactie statisch gezien minder waarde heeft.\\
+$\bullet$ We kregen terug van een aantal docenten dat de vraag aantal leerlingen die het oneens is met een beoordeling niet exact gedefineerd was.\\
+$\bullet$ Er waren relatief weinig gamma resultaten, waardoor hun reactie statistisch gezien minder waarde heeft.\\
 $\bullet$ Dit is een enquête gestuurd naar docenten van Het Amsterdams Lyceum en hiermee kunnen we nog weinig zeggen over of docenten in de rest van Nederland andere problemen hebben.\\
-\subsubsection{Toets}
+\subsubsection{Praktijktest}
+$\bullet$ We hebben dit toetsje afgenomen bij een hele lieve gymnasium klas. Het is de vraag op andere klassen andere manieren vinden om het blaadje zo toe te takelen dat het nakijkprocess wordt verhinderd.\\
+\subsection{Terugblik en dankwoord}
+
+\paragraph*{Reflectie Joost} Dit project heb ik veel geleerd over het overstappen naar een andere methode. Voor de inscanmodule had ik in het begin ingeschat dat ik maar 10 uur nodig had voor het inscannen. De daadwerkelijke tijd was een stuk meer. De methode die ik had bedacht (tekstherkenning in de kantlijn) bleek niet te werken, maar ik heb wel (onnodig) veel tijd besteed aan het optimaliseren van dat proces. Ik heb ook veel gehad aan het gebruiken van de Google Gemini API, die gebruik ik nu vaak om kleine simpele taakjes op te lossen. Ook heb ik Google Sheets pivot tables leren gebruiken om snel de enquete, inscan en toets resultaten in tabellen te zetten (die ik daarna met Google Gemini naar de latex/pdf tabellen heb omgezet). Het inscan en nakijksysteem zal ik waarschijnlijk in een ander project gaan gebruiken. Waar volgend jaar misschien rekening mee gehouden kan worden is dat de rubrics van het PWS niet duidelijk de opdracht van het PWS weerspiegelen. Tot fase 3 is eigenlijk literatuuronderzoek en een paar beantwoorde deelvragen. Fase 4 is het onderdeel waar je het "grote" onderzoek moet uitvoeren. Ik vond dat wie die fase pas laat kregen en dat er dingen miste in de rubric die ik wel verwacht in een wetenschappelijk onderzoek (bijvoorbeeld de indeling of het hebben van resultaten). Ik zie dit PWS meer als een eigen project dan als een opdracht voor school en eigen projectjes vind ik leuk om te doen, zie: \href{https://github.com/TanteJossa}{Mijn Github}.  
+\paragraph*{Reflectie Jonathan}
+\paragraph*{Dankwoord} 
 
 
 \subsection{vervolgonderzoek}
@@ -1580,22 +1797,21 @@ $\bullet$ Een onderzoek naar hoe zo'n systeem geïntegreerd kan worden in het hu
 \pagebreak
 \section{Samenvatting onderzoek}
 \begin{multicols}{2}
-Het doel van dit onderzoek was om een programma te maken die het nakijken uit de handen van een docent neemt. \\
+Uit de enquete blijkt dat het grootste deel van de docenten de tijdsbesparing het grootste voordeel vindt. Dit doel hebben we bereikt door een toets van een klas in te scannen en na te kijken in een paar minuten. Afgezien van het inscannen in een kopieerapparaat, kost het geen extra (nakijk)moeite.\\
 \\
-Uit de enquete blijkt dat het grootste deel van de docenten de tijdsbesparing het grootste voordeel vindt. Dit doel hebben we bereikt doore en klas in te scannen in een paar minuten en na te kijken in een paar minuten. Daarnaast kost het geen extra moeite, naast het inscannen in een printer.\\
+De grootste zorg die docenten hadden is dat een ai te weinig aandacht had voor subjectieve beoordelingen en technische fouten. Uit het toetsje wat we hebben gegeven blijkt dat een mens en de computer een correlatie hadden van 0.96, dit is een stuk hoger dan wat sommige docenten hebben met de twee corrector. Voor een formatieve toets moet dit zeker voldoende zijn. Het mooie van GPT's is dat ze alleen maar beter worden.\\
 \\
-De grootste zorg die docenten hadden is dat een ai te weinig aandacht had voor subjectieve beoordelingen en technische fouten. Uit het toetsje wat we hebben gegeven blijkt dat 
-TODO: wat blijkt uit het toetsje
+Alle code voor dit systeem is open-source, waardoor iedereen er gebruik van kan maken voor een volgend onderzoek. Daarnaast kunnen mensen die een beetje verstand hebben van API's een server die wij hebben opgezet gratis gebruiken, zodat docenten zelf niets hoeven te berekenen of installeren op hun eigen computer.\\
 \\
-TODO: afsluiting
-    
+Het doel van dit onderzoek was om een programma te maken dat het nakijken uit de handen van een docent kan nemen. Dat is gelukt. We hebben een systeem opgebouwd dat ervoor zorgt dat docenten met vertrouwen in technologie een extra feedbackmoment kunnen toevoegen door bij wijze van spreken de eerste 10 minuten van de les een toets af te nemen (die toets kan door AI gegenereerd zijn), zijn uitleg geven, leerlingen zelfstandig aan het werk zetten, foto's door de scanner halen (met telefoon of kopieerapparaat) en 2 minuten later de leerlingen hun scores terug geven, waarbij bij elk rubric punt duidelijk staat wat de leerlingen wel en niet goed heeft gedaan, zodat die daar iets aan heeft in de rest van de les. \\ 
 \end{multicols}
 
 \section{Referenties}
 
-\printbibliography
+\printbibliography[heading=none]
 
-\section{Appendix} %TODO; appendix of bijlagen
+\pagebreak
+\section{Appendix} 
 
 \Large Methode - Inscannen - Score
 \noindent\large Cruijff
@@ -1677,6 +1893,115 @@ je mag de gemaakte punten in categoriën groepen, maar je moet altijd zo objecti
 
 \pagebreak
 \section{logboek}
+\subsubsection*{Fase 4}
+\footnotesize
+\begin{longtable}{@{}p{2.5cm} p{1cm} p{1.5cm} p{5cm} p{5cm}}
+Datum  & Uren Joost & Uren Jonathan & Joost wat is er gedaan? & Jonathan wat is er gedaan? \\
+\midrule
+\endhead
+09/10/24 wo & 0.0 & 3.0 &  & Toets nakijker Vertouwen toegevoegd  \\
+14/10/24 ma & 1.0 & 3.0 & analyseren secties toevoegen & Aan de toetsen gewerkt \\
+16/10/24 wo & 0.5 & 0.0 & mini onderzoek enquete opgesteld: incl. vraag, methode, hypothese enz &  \\
+19/10/24 za & 0.5 & 0.0 & normaalverdelingen toegevoegd aan de analyse site &  \\
+21/10/24 ma & 0.0 & 2.0 &  & Forced JSON \\
+27/10/24 zo & 0.0 & 3.0 &  & Temperaturen getsest \\
+31/10/24 do & 0.0 & 2.0 &  & Prompts getest \\
+02/11/24 za & 1.0 & 0.0 & toetsblaadje pdf afgemaakt &  \\
+07/11/24 do & 2.0 & 0.0 & google cloud function voor de inscanner &  \\
+08/11/24 vr & 3.0 & 0.0 & afmaken functions docker containerizing &  \\
+09/11/24 za & 2.0 & 0.0 & website en opnieuw proberen te containen &  \\
+11/11/24 ma & 1.0 & 0.0 & qr code creator in iupyter notebook gemaakt &  \\
+12/11/24 di & 1.0 & 0.0 & omgezet naar de api en toegevoegd aan de vuejs site &  \\
+13/11/24 wo & 0.0 & 2.0 &  & Implementatie Gemini \\
+17/11/24 zo & 0.0 & 2.0 &  & Gemini met afbeeldingen \\
+22/11/24 vr & 1.0 & 0.0 & api route toegevoegd die alles kan &  \\
+23/11/24 za & 0.0 & 2.0 &  & Begonnen met implementatie klassengemiddelden \\
+25/11/24 ma & 1.0 & 0.0 & api route die alles kan geintegreert in ui. bugs in square detector gefixed &  \\
+30/11/24 za & 1.0 & 0.0 & enquete resultaten on tabellen zetten &  \\
+01/12/24 zo & 1.0 & 0.0 & inscan onderzoek resultaten in tabellen zetten &  \\
+04/12/24 wo & 2.5 & 1.5 & methode inscannen & Toets gemaakt \\
+06/12/24 vr & 1.0 & 0.0 & verder met methode inscannen &  \\
+07/12/24 za & 3.0 & 0.0 & methode inscannen afgerond en gestart methode analyseren &  \\
+09/12/24 ma & 0.0 & 1.5 &  & Rubric aangepast \\
+10/12/24 di & 2.0 & 0.0 & resultaten tabellen inscannen &  \\
+11/12/24 wo & 2.0 & 0.0 & latex package bug fixen en verder met tabellen &  \\
+12/12/24 do & 1.0 & 0.0 & in mediatheek gemini 2.0 flash testen &  \\
+13/12/24 vr & 3.0 & 2.0 & Praktijktest gegeven 3e klas eerste nakijktest & Praktijktest gegeven 3e klas \\
+14/12/24 za & 1.0 & 1.5 & conclusie geschreven inscannen en analyseren & Handmatig toets nagekeken \\
+15/12/24 zo & 1.5 & 0.0 & tests met inscansite &  \\
+16/12/24 ma & 1.0 & 0.0 & foutanalyse mijn onderdelen + vervolgonderzoek + opzet samenvatting onderzoek &  \\
+17/12/24 di & 0.0 & 5.0 &  & Toets met 6 modellen nagekeken \\
+18/12/24 wo & 2.0 & 3.5 & nakijk resultaten geformateerd + uitleg instellen latex vscode & nakijk methode geschreven \\
+19/12/24 do & 2.0 & 4.5 & afmaken document + conclusie schrijven &  \\
+\midrule 
+Totalen & 38.0 & 38.5 & & \\
+\bottomrule
+\end{longtable}
+\normalsize
 
+\subsubsection*{Fase 3}
+\footnotesize
+\begin{longtable}{@{}p{2.5cm} p{1cm} p{1.5cm} p{5cm} p{5cm}}
+\toprule
+Datum  & Uren Joost & Uren Jonathan & Joost wat is er gedaan? & Jonathan wat is er gedaan? \\
+\hline
+\midrule
+\endhead
+16/06/24 zo & 0.0 & 2.0 &  & Proef LLM model gemaakt m.b.v. PyReft \\
+21/06/24 vr & 0.0 & 2.0 &  & Toetsdata geanonimiseerd \\
+09/09/24 ma & 1.0 & 0.0 & Gestart met brief aan Studente &  \\
+14/09/24 za & 2.0 & 0.0 & PDF -> image, rode pen weggehaald (dmv python), gestart met het opsplitsen van antwoorden in secties &  \\
+19/09/24 do & 1.0 & 0.0 & Joost gesprek met begeleider &  \\
+21/09/24 za & 4.0 & 0.0 & gestart gebruikt handbook en eerste secties onderscheiden. logboek &  \\
+28/09/24 za & 1.5 & 3.0 & Joost correctie toegeveogd voor foute opdrachtnummer herkenning ('b' -> 6) & Begin met website voor toetsen analyseren. Start gemaakt met de routing en templates voor de website. \\
+01/10/24 di & 0.0 & 2.0 &  & Verder gegaan met programma voor de openAI API-requests. \\
+03/10/24 do & 1.5 & 0.0 & Fase 3 bestand opmaken, correlatie en covariatie toegevoegd aan de classes &  \\
+05/10/24 za & 2.0 & 3.0 & vuejs test site gemaakt, contact met daniel markus & Legacy output geherstructureerd \\
+06/10/24 zo & 2.0 & 0.0 & fase 3 2 bronnen toegevoegd, nieuwe output indeling inscan modules. nieuwe tabel in analyseren &  \\
+\midrule
+Totalen & 15.0 & 12.0 & & \\
+\bottomrule
+\end{longtable}
+\normalsize
+\pagebreak
+\subsubsection*{Fase 1 \& 2}
+\footnotesize
+\begin{longtable}{@{}p{2.5cm} p{1cm} p{1.5cm} p{5cm} p{5cm}}
+\toprule
+Datum  & Uren Joost & Uren Jonathan & Joost wat is er gedaan? & Jonathan wat is er gedaan?  \\
+\hline
+\midrule
+\endhead
+18/03/24 ma & 0.5 & 0.5 & Begin aan de motivatiebrief; de opzet en samenwerking & Begin aan de motivatiebrief; de opzet en samenwerking. \\
+19/03/24 di & 1.5 & 1.5 & Afschrijven van de motivatiebrief & Afschrijven van de motivatiebrief. \\
+08/05/24 wo & 0.5 & 0.0 & filmpje NOS en format fase 2 &  \\
+13/05/24 ma & 1.0 & 0.0 & Layout fase 2 document en  literatuuronderzoek &  \\
+14/05/24 di & 0.0 & 2.5 &  & Drie studies uitgekozen en samengevat. \\
+15/05/24 wo & 1.0 & 1.0 & Voorbereiden op gesprek begeleider. & Voorbereiden op gesprek begeleider. \\
+28/05/24 di & 1.0 & 0.0 & Eén studie samengevat. &  \\
+03/06/24 ma & 1.5 & 0.0 & De planning van fase 2 en 3 gemaakt. &  \\
+04/06/24 di & 0.0 & 1.0 &  & Onderzoek gedaan naar Finetuning van LLMs \\
+06/06/24 do & 0.0 & 1.5 &  & Onderzoek gedaan  naar REFT, PYREFT \& LORA. \\
+06/06/24 do & 0.5 & 0.0 & Samenvatting An automatic short-answer grading model for semi-open-ended questions &  \\
+\midrule
+Totalen & 7.5 & 8.0 & & \\
+\bottomrule
+
+\end{longtable}
+
+\normalsize
+\subsubsection*{Totaal}
+\footnotesize
+\begin{longtable}{@{}p{2.5cm} p{1cm} p{1.5cm} p{5cm} p{5cm}}
+\toprule
+Datum  & Uren Joost & Uren Jonathan & Joost wat is er gedaan? & Jonathan wat is er gedaan?  \\
+\endhead
+\midrule
+Totalen & 86.0 & 84.0 & & \\
+\bottomrule
+
+\end{longtable}
+
+\normalsize
 
 \end{document}
