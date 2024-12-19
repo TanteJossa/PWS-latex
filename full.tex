@@ -26,6 +26,19 @@
 \usepackage{minted}
 \usepackage{colortbl}
 \usepackage{xcolor}
+\usepackage{siunitx}
+\sisetup{
+    round-mode=places,
+    round-precision=2,
+    table-number-alignment=center,
+    table-space-text-post=\%
+}
+\usepackage[dutch]{babel}
+\addto\captionsdutch{%
+  \renewcommand{\contentsname}{Inhoudsopgave}%
+  \renewcommand{\figurename}{Figuur}
+  \renewcommand{\tablename}{Tabel}
+}
 
 % makecell
 \usepackage{makecell}
@@ -138,41 +151,48 @@ Deze vraag hebben we onderverdeeld in 4 deelvragen:\\
 
 
 \section{Hypothesen}
-\subsection{Inscannen}
 \begin{multicols}{2}
+\noindent\begin{minipage}{\linewidth}
+\subsection{Inscannen}
 Een probleem bij handgeschreven teksten is het herkennen waar de juiste tekst staat, als er meerdere vragen op 1 bladzijde staan. Mensen kunnen heel makkelijk zien welke tekst bij welke vraag hoort, maar voor een programma is het heel lastig om dit concreet uit te werken. Als ons programma niet slaagt in het opsplitsen van de vragen zal het nakijken niet goed gaan, omdat je dan het antwoord op een andere vraag aan het vergelijken bent en dat gaat natuurlijk niet goed. Dit wordt ook de eerste stap van dit onderdeel.\\
 Wij denken dat, als je de secties hebt geëxtraheerd, het inscannen van tekst meestal goed zal gaan. Dat komt omdat op elke telefoon al foto tekstherkenning zit (als je op een foto in de gallerij een tekst ingedrukt houdt op nieuwere telefoons). 
 \\\\
 In dit onderzoek zullen we vooral focussen op handgeschreven teksten, omdat wij denken dat het inscannen van tekeningen zeer lastig zal zijn, omdat de tekening omgezet moet worden naar tekstuele data of een dataobject die bijhouden wat er wel en niet getekend is. In een tekening kan heel veel fout zijn, wat niet in die datastructuur zou zitten. Dan zou een leering punten krijgen voor een fout antwoord. Het betrouwbaar extraheren van die diagram features zal ook lastig worden.
+\end{minipage}
 % \end{multicols}
 
+\noindent\begin{minipage}{\linewidth}
 \subsection{Nakijken}
 % \begin{multicols}{2}
-TODO: @jonathan moet ff goeie hypothese\\
 Computerprogramma's die gebruikmaken van kunstmatige intelligentie, zoals getrainde transformer-modellen en grote taalmodellen, kunnen toetsen met korte open vragen met een nauwkeurigheid en consistentie vergelijkbaar aan of hoger dan die van menselijke beoordelaars automatisch nakijken; echter, om ethische overwegingen en mogelijke vooroordelen in de beoordelingen aan te pakken, blijft menselijk toezicht noodzakelijk (\cite{gobrecht2024humansubjectivityerrornovel, kumar2020scoredusingautosas, schneider2024llmbasedautogradingshorttextual}).
 \\
 Wij verwachten dat onze AI bij scheikunde toetsen beter zal presteren bij open vragen met een duidelijk goed antwoord. Denk aan een simpele leg uit vraag.
 Echter, bij handgeschreven tekeningen en structuurdiagrammen (zoals molecuulstructuren of reactieschema's) voorzien wij de volgende problemen: 
-\begin{itemize} 
-    \item AI kan moeite hebben met het herkennen van subtiele verschillen in handgetekende diagrammen, zoals kleine verschuivingen in atomen of atoombindingen. 
+    
+\noindent\begin{itemize} 
+    \item AI kan moeite hebben met het herkennen  van subtiele verschillen in handgetekende diagrammen, zoals kleine verschuivingen in atomen of atoombindingen. 
     \item De interpretatie van scheikundige notaties (zoals pijlen, ladingen, of dubbele bindingen) kan uitdagend zijn zonder expliciete training van het AI-model op scheikundige contexten. 
 \end{itemize}
+\end{minipage}
 % \end{multicols}
 % \subsection{Analyseren}
 
 \pagebreak
+\noindent\begin{minipage}{\linewidth}
+    
 \subsection{Enquete}
 
 % \begin{multicols}{2}
 We hebben docenten gevraagd naar hun mening over AI in een nakijksysteem voor toetsen. We verwachten dat er verschillen zullen zijn tussen beta en alfa docenten en dat het op de hoogte zijn van AI een grotere impact heeft dan aantal jaar lesgeef-ervaring.
 Zie materiaal en methode voor vragen.
 Wij denken dat docenten over het algemeen pessimistisch zullen zijn over ai. \\
-\begin{itemize}
+\noindent\begin{itemize}
 \item \textbf{Bekendheid:} Meer dan de helft denk ervaren te zijn met AI en een heel klein deel is niet bekend met AI.
 \item \textbf{Voordelen:} tijdbesparing gaat een belangrijke zijn en er zullen ook docenten zijn (die vermoedelijk niet bekend zijn met ai) die het nooit zullen gebruiken
 \item \textbf{Weerzijde AI:}technische fouten en privacy zullen een grote rol spelen. We denken dat de talen secties pessimistischer in het gebruik van ai zullen zijn dan de exacte vakken, want niet beta vakken zijn minder objectief.
 \item \textbf{Aantal leerlingen oneens over toets:} meeste docenten zullen drie of vier antwoorden, maar een brede standaarddeviatie (miss wel 3 of groter) want de sfeer om het oneens met een antwoord te zijn verschilt per docent.
 \end{itemize}
+\end{minipage}
 
 % \pagebreak
 \subsection{Praktijktest}
@@ -187,7 +207,7 @@ Toen we begonnen was het niet duidelijk wat wel en niet mogelijk was met de huid
 \\\\
 Ook moeten we, omdat we ons PWS bij het vak scheikunde doen, een proefje uitvoeren. We gaan dat doen in de vorm van een practicum tijdens een toets.
 \\\\
-Tijdens ons onderzoek hebben we naast een aantal bronnen ook een interview gedaan bij Daniel Marcus, een co-eigenaar van het bedrijf LevelUp Group. Een bedrijf die reclame analyse doet en gebruikt maakt van AI. In de methodes zullen we het noemen als er iets uit dat interview naar boven is gekomen wat handig bleek te zijn.
+Tijdens ons onderzoek hebben we naast een aantal bronnen ook een interview gedaan bij Daniël Markus, een co-eigenaar van het bedrijf LevelUp Group. Een bedrijf die reclame analyse doet en gebruikt maakt van AI. In de methodes zullen we het noemen als er iets uit dat interview naar boven is gekomen wat handig bleek te zijn.
 \\\\
 Voor elke onderdeel hebben we een "hoofdverantwoordelijke" aangesteld, omdat het extra tijd kost om met zijn tweeën tegelijkertijd aan hetzelfde code project te werken. Als het nodig was hebben we elkaar natuurlijk wel geholpen in elkaars onderdelen. 
 \\\\
@@ -272,18 +292,26 @@ Hieronder wordt in een diagram getoond welk plan van aanpak we in onze motivatie
 In dit onderdeel wordt een foto of scan van de toets omgezet naar computertekst. Alle code die in de komende module staat is zelf geschreven en is open-source. Dat betekent dat iedereen deze code kan gebruiken en aanpassen om zelf onderzoek mee te doen. Voor de inscanmodule heb ik een eigen API gemaakt die iedereen gratis kan gebruiken. Die API wordt in een docker omgeving gehost en alle code is te vinden op de volgende site, zodat de lezer het zelf ook kan uittesten. \\
 \textbf{Code: }\url{https://github.com/TanteJossa/PWS-inscannen}\\
 \textbf{Website: }\url{https://toetspws.web.app/}
-\\\\
-Ik zal in dit onderdeel niet alle iteraties beschrijven die we afgelopen jaar hebben ontworpen. Alle versies zijn op de Github terug te vinden, zodat gezien kan worden wat er wanneer is toegevoegd. 
-\\\\
-Daarnaast kan iedereen deze module gebruiken om zelf toetsen in te scannen door een POST request naar de volgende website te sturen: \\
-\url{https://toetspws-function-771520566941.europe-west4.run.app}\\
+\\
+We zullen in dit onderdeel niet alle iteraties beschrijven die we afgelopen jaar hebben ontworpen. Alle versies zijn op de Github terug te vinden, zodat gezien kan worden wat er wanneer is toegevoegd. 
+\\
+Daarnaast kan iedereen deze module gebruiken om zelf toetsen in te scannen door een POST of GET request naar de volgende website te sturen: \\
+\textbf{Onze server URL:} \\ \url{https://toetspws-function-771520566941.europe-west4.run.app}\\
+% \noindent\fbox{% \begin{minipage}{\linewidth}
+\textbf{Vraag:} Waarom is water nat, geef een uitleg?\\
+\textbf{Rubric:}\\
+punt 1: Geantwoord dat water nat is\\
+punt 2: Een kloppende uitleg gegeven
+\\
+\textbf{Gegeven Antwoord:} Water is nat, want er zit water op water en als ergens water op zit is het nat.\\
+\textbf{Link die voorbeeld in browser opent:} \href{https://toetspws-function-771520566941.europe-west4.run.app/grade?rubric=punt%201%3A%20Geantwoord%20dat%20water%20nat%20is%0Apunt%202%3A%20Een%20kloppende%20uitleg%20gegeven&question=Waarom%20is%20water%20nat%2C%20geef%20een%20uitleg%3F&answer=Water%20is%20nat%2C%20want%20er%20zit%20water%20op%20water%20en%20als%20ergens%20water%20op%20zit%20is%20het%20nat}{Klikbare link in PDF}\\
+% \end{minipage}
+% }
 De routes en keys kunnen gevonden worden in het volgende bestand: \\
-\href{https://github.com/TanteJossa/PWS-inscannen/blob/main/section_scanner/app/main.py}{MainFlaskApp.py}
-\\\\
+\href{https://github.com/TanteJossa/PWS-inscannen/blob/main/section_scanner/app/main.py}{MainFlaskApp.py}\\
 Hierna zal ik een selectie laten zien van goedwerkende of opvallende resultaten die in ik tegen ben gekomen tijdens het testen. De stappen zijn bedacht door het grote probleem in steeds kleinere onderdeeltjes/doelen te delen die na genoeg breuken oplosbaar zijn. 
 \end{multicols}
 \pagebreak
-\begin{minipage}{\textwidth}
 \noindent Deze module bestaat uit een aantal stappen: \\
 \begin{tabularx}{\linewidth}{@{}lX}
     1.\textbf{ Croppen } & 
@@ -300,19 +328,22 @@ Hierna zal ik een selectie laten zien van goedwerkende of opvallende resultaten 
     \\
         
     4.\textbf{ Vraagherkenning} & 
-        \adjustbox{valign=t}{\begin{tabularx}{\linewidth}{@{}lX}
+        
+        
+        \adjustbox{valign=t}{\makecell{\begin{tabularx}{\linewidth}{@{}lX}
             1.\textbf{ Handgeschreven} & Gebruik een tekstherkenningssoftware om het vraagnummer te lezen in de kantlijn \\
             2.\textbf{ Checkbox} & 
-                $\bullet$ Gebruik code om vierkantjes te herkennen en kijken welke het meeste is ingevult \\
-                $\bullet$ Gebruik een GPT model om te zeggen welk vakje is gekozen, dit kan rekening houden met pijlen en andere veranderingen zoals uitkrassen
+                \adjustbox{valign=t}{\makecell{$\bullet$ Gebruik code om vierkantjes te herkennen \\ en kijken welke het meeste is ingevult\\ 
+                $\bullet$ Gebruik een GPT model om te zeggen\\ welk vakje is gekozen, dit kan \\ rekening houden met pijlen \\en andere veranderingen zoals uitkrassen
+                }}
             \\
             3.\textbf{ QR-code} & Vraaginformatie in QR-code
-        \end{tabularx}} 
+        \end{tabularx}}}
     \\
     5.\textbf{ Tekstherkenning} & De tekst wordt uit het antwoordgebied gehaald door een GPT of tekstherkenningssoftware.
 \end{tabularx}
-\end{minipage}
 \textit{Hier volgt een uitwerking van de genomen stappen. }
+\pagebreak
 \paragraph*{Croppen}
 \begin{multicols}{2} 
 Voor het croppen hebben we 2 verschillende manieren geprobeerd. De eerste is een neural network dat hoeken van een blaadje herkent op een foto waarna je het kan uitknippen met openCV (\cite{opencvManual}). Er was een probleem met herkennen van een blaadje, soms knipte hij alleen het Amsterdams logo als pagina.
@@ -355,7 +386,7 @@ Daarom zijn we daarna overgestapt op een openCV systeem.
 
 \paragraph*{Preprocessing} 
 De rode tekst wordt verwijderd door te checken voor elke pixel met een te hoge rode waarde en een te lage blauwe en groene. \\
-\begin{figure}
+\begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth]{./images/methoden/inscannen/preprocessing/pre_red_pen.png}
     \caption{Code voor de rode pen extractie}
@@ -409,7 +440,7 @@ We zijn gestart met deze versie intwikkelen na het interview met Daniel Markus w
 
 % \begin{multicols}{2} 
 
-Om dit in te scannen zijn er 2 dingen nodig: \\
+\noindent Om dit in te scannen zijn er 2 dingen nodig: \\
 \textbf{1. } Sectieherkenning\\
 \textbf{2. } Vraagnummer herkenning \\
 
@@ -494,7 +525,7 @@ De volgende foto:
     \caption{Vraagnummer sectie Azure}
     \label{fig:sec-azure}
 \end{figure}
-Gaf het volgende resultaat: 
+\noindent Gaf het volgende resultaat: 
 \begin{listing}[H]
 \begin{minted}[frame=single,
                framesep=3mm,
@@ -552,7 +583,7 @@ Input:
 \end{multicols}
 \pagebreak
 
-\textbf{Google Gemini 1.5pro} : Werkt
+\textbf{Google Gemini 1.5pro} : Geeft juiste antwoord, maar percentage gevuld klopt niet
 \begin{listing}[H]
     
     \begin{minted}[frame=single,
@@ -638,11 +669,11 @@ Input:
 \end{minted}
 \end{listing}
 \noindent We kunnen nu de secties scheiden en de vraagnummers relatief betrouwbaar extraheren.
+\paragraph*{QR-code}De qr code maakt gebruikt van een scanner die de qrcodes linksboven en rechtsonder het antwoordveld herkent. Waardoor je direct kan gaan snijden.\\
 \end{samepage}
 
-\pagebreak
 
-\paragraph*{QR-code}De qr code maakt gebruikt van een scanner die de qrcodes linksboven en rechtsonder het antwoordveld herkent. Waardoor je direct kan gaan snijden.\\
+\pagebreak
 
 \noindent
 \textbf{Tekstherkenning}
@@ -670,9 +701,9 @@ De temperatuur heeft te maken met de creativiteit van het antwoord:\ref{fig:scor
     \item 1.5
 \end{itemize}
 \end{minipage}
-\end{multicols}
-\pagebreak
-\begin{multicols}{2}
+% \end{multicols}
+% \pagebreak
+% \begin{multicols}{2}
 Om te test waarmee hij moeite had hebben we 5 antwoordfoto's getest:
 \begin{figure}[H]
     \centering
@@ -750,8 +781,9 @@ de student\_handwriting\_percent is hoe leesbaar het handschrift van een leerlin
 voer deze opdracht zo goed mogelijk uit.\" \\
 \end{itemize}
 
-\begin{minipage}{0.45\linewidth}
+\begin{multicols}{2}
     
+\noindent\begin{minipage}{\linewidth}
 \noindent Daarnaast nog onderdelen van de stof en van de toets in verschillende combinaties:
 \begin{itemize}
     \item les stof uit boek
@@ -761,7 +793,7 @@ voer deze opdracht zo goed mogelijk uit.\" \\
     \item specifieke vraag
 \end{itemize}
 \end{minipage}%
-\begin{minipage}{0.45\linewidth}
+\noindent\begin{minipage}{\linewidth}
 In de volgende combinaties
 \begin{itemize}
     \item stof
@@ -771,8 +803,8 @@ In de volgende combinaties
     \item stof, antwoordmodel bij vraag en specifieke vraag
     \item antwoordmodel bij vraag en specifieke vraag"
 \end{itemize}
-
 \end{minipage}
+\end{multicols}
 
 
 \vspace{3em}
@@ -786,7 +818,7 @@ Om te weten welk resultaat een correct resultaat geeft wordt voor elk resultaat 
 \hspace{3em}\textit{Een leerling heeft vermoedelijke een Nederlands antwoord geschreven, dus een Nederlands resultaat is beter. Er wordt ook rekening gehouden met de betekenis van het resultaat vs het beoogde resultaat.}\\
 \\
 \begin{minipage}{0.5\linewidth}
-Voor het berekenen van de score wordt eerst de BLEU score gebruikt die een database heeft van alle Nederlandse woorden en die de betekenis van een zin kan begrijpen (\cite{academypublicationBLEUtranslation, aclBLEUevaluation, mediumBLEU}). Hij geeft een score dichter bij als twee zinnen qua betekenis en Nederlands meer op elkaar lijken. \\
+Voor het berekenen van de score wordt eerst de BLEU score gebruikt die een database heeft van alle Nederlandse woorden en die de betekenis van een zin kan begrijpen (\cite{academypublicationBLEUtranslation, aclBLEUevaluation, mediumBLEU}). BLEU geeft een score dichter bij de 1 als twee zinnen qua betekenis en Nederlands meer op elkaar lijken. \\
 \\
 Daarnaast wordt gekeken naar de veranderingen van de reference naar de gegenereerde tekst. Hoe langer de fout hoe groter de aftrek. \\
 \\
@@ -806,7 +838,7 @@ Zie de appendix voor tests.
 %Fase 3 bestand
 \pagebreak
 
-\subsubsection{Nakijken}
+\subsubsection{Nakijken} \label{methode-nakijken}
 \noindent\begin{tabularx}{\linewidth}{ll}
     \textbf{Eigenaar: } & \textit{Jonathan} \\ \\
     \textbf{Doel(en): } & 
@@ -972,7 +1004,7 @@ Daarnaast hosten we zelf de website op \url{https://toetspws.web.app/analyze}, w
     \textbf{Eigenaar: } & \textit{Jonathan en Joost} \\
     \textbf{Doel(en): } & 
         \makecell[tl]{
-            $\bullet$ Inzicht krijgen in de mogelijkheid in de integratie van AI bij docenten op Het Amsterdams Lyceum \\
+            $\bullet$ Inzicht krijgen in de mogelijkheid in de integratie van AI \\ bij docenten op Het Amsterdams Lyceum \\
         } \\
     \textbf{Subvragen: } & 
         \makecell[tl]{
@@ -997,9 +1029,9 @@ Om een betrouwbare enquête te maken moet je als eerste het doel van de enquête
 \end{minipage}
 Daarnaast moet elke vraag ook een duidelijk doel hebben, anders is het mogelijk dat je 2x dezelfde vraag stelt of naar informatie gaat vragen niet niet relevant is.\\
 Ten slotte moesten we bij elke vraag nagaan of de vraag op verschillende manieren geïnterpreteerd kan worden.\\
-Dit waren de vragen die we hebben bedacht:
-
 \end{multicols}%
+
+\pagebreak
 \begin{longtable}{p{0.5\linewidth}|p{0.25\linewidth}|p{0.25\linewidth}}
     Vraag & Doel & Verklaring \\
     \endhead
@@ -1151,6 +1183,56 @@ Voor het analyseren gaan we Google Sheet pivot tables gebruiken om snel verbande
         }\\
     \parbox[t]{3cm}{\raggedright\textbf{Geschatte  tijdskosten:} } & 15 uur \\
 \end{tabularx}
+
+\subsubsection*{Onderzoekspopulatie}
+De deelnemers aan dit onderzoek zijn leerlingen uit \emph{3 VWO} die een scheikundetoets afleggen als onderdeel van hun reguliere curriculum. De selectie van de klas gebeurt in overleg met de betrokken docent, waarbij gestreefd wordt naar een representatieve afspiegeling van het niveau en de voorkennis van de leerlingen. Het verwachte aantal deelnemers ligt tussen de 20 en 30 leerlingen, zodat er voldoende data verzameld kan worden voor de analyse.
+
+\subsubsection*{Materiaal}
+\paragraph{De toets} 
+De scheikundetoets bestaat uit een set open vragen en één tekenvraag ontwikkeld door een vakdocent en ons.Deze vraag gaat over het tekenen van chloroform. De toets behandelt leerstof uit het voorafgaande hoofdstuk of thema.
+\begin{itemize}
+    \item \textbf{Open vragen:} 6 vragen die inzicht vereisen in probleemoplossend denken, redeneren en toepassen van concepten.
+    \item \textbf{Tekenvraag:} één vraag dat het grafische vermogen van het model test.
+\end{itemize}
+
+\paragraph{AI Correctiemodule} 
+Er wordt gebruikgemaakt van een prototype (computer)programma ontwikkeld door het onderzoeksteam. Dit programma maakt gebruik van een Large Language Model (LLM). Elke toets zal door meerdere modellen worden nagekeken. Dit is verder uitgewerkt in (\ref{methode-nakijken}), waarin de methode voor de nakijkmodule nader wordt beschreven.
+\begin{itemize}
+    \item \textbf{Antwoordmodellen (rubrics)} voor de open vragen, ontwikkeld in samenspraak met een vakdocent.
+    \item \textbf{De modellen} om de vragen na te kijken.
+\end{itemize}
+
+\paragraph{Analyse-instrumenten} 
+Naast de AI-module wordt een statistisch softwarepakket gebruikt voor het verwerken van de resultaten en het genereren van overzichten (gemiddeldes, spreidingen, item-analyse). Deze worden niet in de resultaten van de toets, maar in de resultaten van het nakijken verwerkt, omdat het daar meer mee te maken heeft.
+
+\subsubsection*{Procedure}
+
+\paragraph{Toetsafname} 
+De toets wordt gedurende een reguliere lestijd afgenomen in de klas, onder toezicht van de docent en onszelf. Alle leerlingen maken dezelfde toets zonder toegang tot internet of ongeoorloofde hulpmiddelen. De verwachting is dat de afname ongeveer 30 minuten duurt.
+
+\paragraph{Verzamelen van Antwoorden} 
+Na afloop van de toets leveren de leerlingen hun antwoorden in. De antwoorden worden gedigitaliseerd met behulp van het inscan programma. Mogelijke foutieve beoordelingen zullen hier dus ook vanaf hangen.
+
+\paragraph{Automatische Correctie} 
+De ingevoerde leerlingantwoorden worden vervolgens door het AI-systeem verwerkt. Dit is verder uitgewerkt in (MIST REFERENTIE NAAR METHODE NAKIJKEN), waarin de methode voor de nakijkmodule nader wordt beschreven.
+
+
+\paragraph{Validatie door Mens} 
+Vervolgens kijkt een mens de toets handmatig na. Deze menselijke beoordeling wordt als de gouden standaard beschouwd, waarmee de AI-resultaten worden vergeleken.
+
+\subsubsection*{Data-analyse}
+Na het verzamelen van alle scores wordt de data geanalyseerd om:
+\begin{itemize}
+    \item De overeenstemming tussen de AI-scores en de menselijke (docent)scores te meten, bijvoorbeeld middels een correlatiecoëfficiënt of Cohen’s kappa.
+\end{itemize}
+Dit zal allemaal verwerkt worden in de resultaten van het nakijken.
+
+\subsubsection*{Ethiek en Privacy}
+Alle gegevens worden anoniem verwerkt en alleen gebruikt voor onderzoeksdoeleinden. De namen van leerlingen worden vervangen door leerlingennummers. De docent en leerlingen worden vooraf geïnformeerd over het doel van het onderzoek en geven toestemming voor hun deelname.
+
+
+
+
 \pagebreak
 \section{Resultaten}
 \subsection{Inscannen}
@@ -1159,8 +1241,8 @@ We hebben deze tabellen gekozen om te kijken wat de beste inputs voor ons inscan
 Een lagere score is beter dan een hogere score, want hoe meer fouten hoe hoger de score. Ook willen we liever een lage standaarddeviatie, want dan is ons model voorspelbaarder. \\
 In de appendix is zijn een aantal test gegeven in een tabel met een quote van Johan Cruijff die een goed beeld geven van wat een score betekent en een aantal andere tests.\\
 De resultaten zijn niet normaal verdeeld, omdat een score niet kleiner dan 0 kan zijn, daardoor zal die vaak hoger zijn dan je zou denken. Er wordt vooral gekeken naar verschillende standaarddeviaties ten opzichte van elkaar. 
-
-\href{https://docs.google.com/spreadsheets/d/1wbHiG81i-UJ18s6gP3i_WtsPD-FBQTqg7AwNjN8Rm2g}{Resultaten}
+\\
+\noindent\href{https://docs.google.com/spreadsheets/d/1wbHiG81i-UJ18s6gP3i_WtsPD-FBQTqg7AwNjN8Rm2g}{Resultaten}
 
 \noindent\begin{table}[H]
 \caption{\# per model}
@@ -1303,40 +1385,42 @@ De resultaten zijn niet normaal verdeeld, omdat een score niet kleiner dan 0 kan
 
 \href{https://docs.google.com/spreadsheets/d/10NNihuDYj4w9L_6Zt7fzNZCPK-7qFkCTgRn8BRHSbsM}{resultaten}
 
+
 \noindent\begin{table}[H]
 \caption{Correlatie modellen onder elkaar}
 \label{fig:correlatie-model}
 Kijk vooral naar de correlatie vs de mens, want die wordt gezien als "correct".
-\begin{tabularx}{\textwidth}{p{4cm} XXXXXXX}
+
+\begin{tabularx}{\textwidth}{p{4cm} XXXXXXXX}
     \toprule
-    \textbf{Model} & \textbf{Mens} & \textbf{g-2.0-flash} & \textbf{g-1.5-pro} & \textbf{g-1.5-flash} & \textbf{4o} & \textbf{4o-mini} & \textbf{mode AI} \\
+    \textbf{Model} & \textbf{Human} & \textbf{gemini-2.0-flash-exp} & \textbf{gemini-1.5-pro} & \textbf{gemini-1.5-flash} & \textbf{4o} & \textbf{4o-mini} & \textbf{mode AI} & \textbf{o1-mini} \\
     \midrule
-    Mens & \cellcolor[rgb]{0.275,0.514,0.275}{1.0000} \\
-    gemini-2.0-flash-exp & \cellcolor[rgb]{0.560,0.705,0.560}{0.9616} & \cellcolor[rgb]{0.275,0.514,0.275}{1.0000} \\
-    gemini-1.5-pro & \cellcolor[rgb]{0.978,0.986,0.978}{0.9054} & \cellcolor[rgb]{0.802,0.867,0.802}{0.9291} & \cellcolor[rgb]{0.275,0.514,0.275}{1.0000} \\
-    gemini-1.5-flash & \cellcolor[rgb]{0.951,0.967,0.951}{0.9090} & \cellcolor[rgb]{1.000,1.000,1.000}{0.9025} & \cellcolor[rgb]{0.648,0.764,0.648}{0.9497} & \cellcolor[rgb]{0.275,0.514,0.275}{1.0000} \\
-    4o & \cellcolor[rgb]{0.640,0.759,0.640}{0.9509} & \cellcolor[rgb]{0.596,0.729,0.596}{0.9568} & \cellcolor[rgb]{0.716,0.810,0.716}{0.9406} & \cellcolor[rgb]{0.658,0.770,0.658}{0.9485} & \cellcolor[rgb]{0.275,0.514,0.275}{1.0000} \\
-    4o-mini & \cellcolor[rgb]{0.914,0.942,0.914}{0.9141} & \cellcolor[rgb]{0.804,0.868,0.804}{0.9289} & \cellcolor[rgb]{0.914,0.943,0.914}{0.9140} & \cellcolor[rgb]{0.846,0.897,0.846}{0.9232} & \cellcolor[rgb]{0.726,0.816,0.726}{0.9394} & \cellcolor[rgb]{0.275,0.514,0.275}{1.0000} \\
-    mode AI & \cellcolor[rgb]{0.614,0.741,0.614}{0.9544} & \cellcolor[rgb]{0.512,0.673,0.512}{0.9680} & \cellcolor[rgb]{0.550,0.698,0.550}{0.9630} & \cellcolor[rgb]{0.633,0.754,0.633}{0.9518} & \cellcolor[rgb]{0.357,0.569,0.357}{0.9889} & \cellcolor[rgb]{0.673,0.781,0.673}{0.9464} & \cellcolor[rgb]{0.275,0.514,0.275}{1.0000} \\
+    Human & \cellcolor[rgb]{0.275,0.514,0.275}1.0000 &  &  &  &  &  &  &  \\
+    gemini-2.0-flash-exp & \cellcolor[rgb]{0.468,0.644,0.468}0.9671 & \cellcolor[rgb]{0.275,0.514,0.275}1.0000 &  &  &  &  &  &  \\
+    gemini-1.5-pro & \cellcolor[rgb]{0.818,0.878,0.818}0.9074 & \cellcolor[rgb]{0.713,0.807,0.713}0.9254 & \cellcolor[rgb]{0.275,0.514,0.275}1.0000 &  &  &  &  &  \\
+    gemini-1.5-flash & \cellcolor[rgb]{0.784,0.855,0.784}0.9133 & \cellcolor[rgb]{0.880,0.920,0.880}0.8969 & \cellcolor[rgb]{0.586,0.722,0.586}0.9471 & \cellcolor[rgb]{0.275,0.514,0.275}1.0000 &  &  &  &  \\
+    4o & \cellcolor[rgb]{0.541,0.692,0.541}0.9548 & \cellcolor[rgb]{0.542,0.693,0.542}0.9545 & \cellcolor[rgb]{0.641,0.760,0.641}0.9376 & \cellcolor[rgb]{0.593,0.727,0.593}0.9458 & \cellcolor[rgb]{0.275,0.514,0.275}1.0000 &  &  &  \\
+    4o-mini & \cellcolor[rgb]{0.777,0.850,0.777}0.9145 & \cellcolor[rgb]{0.718,0.811,0.718}0.9246 & \cellcolor[rgb]{0.808,0.871,0.808}0.9092 & \cellcolor[rgb]{0.755,0.836,0.755}0.9183 & \cellcolor[rgb]{0.653,0.767,0.653}0.9357 & \cellcolor[rgb]{0.275,0.514,0.275}1.0000 &  &  \\
+    mode AI & \cellcolor[rgb]{0.518,0.677,0.518}0.9586 & \cellcolor[rgb]{0.473,0.646,0.473}0.9664 & \cellcolor[rgb]{0.504,0.667,0.504}0.9611 & \cellcolor[rgb]{0.573,0.714,0.573}0.9492 & \cellcolor[rgb]{0.344,0.560,0.344}0.9883 & \cellcolor[rgb]{0.610,0.738,0.610}0.9430 & \cellcolor[rgb]{0.275,0.514,0.275}1.0000 &  \\
+    o1-mini & \cellcolor[rgb]{0.556,0.702,0.556}0.9522 & \cellcolor[rgb]{0.658,0.771,0.658}0.9348 & \cellcolor[rgb]{0.759,0.838,0.759}0.9176 & \cellcolor[rgb]{0.937,0.958,0.937}0.8873 & \cellcolor[rgb]{0.614,0.741,0.614}0.9423 & \cellcolor[rgb]{1.000,1.000,1.000}0.8765 & \cellcolor[rgb]{0.542,0.693,0.542}0.9545 & \cellcolor[rgb]{0.275,0.514,0.275}1.0000 \\
     \bottomrule
 \end{tabularx}
 \end{table}
-
 
 \noindent\begin{table}[H]
 \caption{Verschil met mens per nagekeken vraag \%}
 Hier is te zien dat de meeste modellen geen problemen hebben met vraag 1\\
 Vraag 5 is interessant om naar te kijken want dat was de foto/teken vraag.
-\begin{tabularx}{\textwidth}{X rrrrrrrr}
+\begin{tabularx}{\textwidth}{X rrrrrrr}
     \toprule
-    \multicolumn{1}{c}{\textbf{Model}} & \multicolumn{1}{c}{\textbf{1}} & \multicolumn{1}{c}{\textbf{2}} & \multicolumn{1}{c}{\textbf{3}} & \multicolumn{1}{c}{\textbf{4}} & \multicolumn{1}{c}{\textbf{5}} & \multicolumn{1}{c}{\textbf{6}} & \multicolumn{1}{c}{\textbf{7}} & \multicolumn{1}{c}{\textbf{GrandTotal}} \\
+    \multicolumn{1}{c}{\textbf{Model}} & \multicolumn{1}{c}{\textbf{1}} & \multicolumn{1}{c}{\textbf{2}} & \multicolumn{1}{c}{\textbf{3}} & \multicolumn{1}{c}{\textbf{4}} & \multicolumn{1}{c}{\textbf{5}} & \multicolumn{1}{c}{\textbf{6}} & \multicolumn{1}{c}{\textbf{7}} \\
     \midrule
-    gemini-2.0-flash-exp & \cellcolor[rgb]{0.275,0.514,0.275}{0.00} & \cellcolor[rgb]{0.442,0.626,0.442}{4.44} & \cellcolor[rgb]{0.881,0.921,0.881}{16.09} & \cellcolor[rgb]{0.543,0.693,0.543}{7.11} & \cellcolor[rgb]{0.543,0.694,0.543}{7.12} & \cellcolor[rgb]{0.450,0.631,0.450}{4.65} & \cellcolor[rgb]{0.639,0.758,0.639}{9.67} & \cellcolor[rgb]{0.565,0.708,0.565}{7.69} \\
-    4o & \cellcolor[rgb]{0.439,0.624,0.439}{4.35} & \cellcolor[rgb]{0.360,0.571,0.360}{2.27} & \cellcolor[rgb]{0.510,0.671,0.510}{6.23} & \cellcolor[rgb]{0.683,0.787,0.683}{10.82} & \cellcolor[rgb]{0.458,0.637,0.458}{4.87} & \cellcolor[rgb]{0.608,0.737,0.608}{8.83} & \cellcolor[rgb]{0.717,0.810,0.717}{11.74} & \cellcolor[rgb]{0.554,0.701,0.554}{7.41} \\
-    gemini-1.5-flash & \cellcolor[rgb]{0.439,0.624,0.439}{4.35} & \cellcolor[rgb]{0.275,0.514,0.275}{0.00} & \cellcolor[rgb]{0.772,0.847,0.772}{13.19} & \cellcolor[rgb]{0.880,0.920,0.880}{16.06} & \cellcolor[rgb]{0.623,0.747,0.623}{9.23} & \cellcolor[rgb]{0.450,0.631,0.450}{4.65} & \cellcolor[rgb]{0.975,0.983,0.975}{18.56} & \cellcolor[rgb]{0.675,0.782,0.675}{10.63} \\
-    gemini-1.5-pro & \cellcolor[rgb]{0.439,0.624,0.439}{4.35} & \cellcolor[rgb]{0.360,0.571,0.360}{2.27} & \cellcolor[rgb]{0.931,0.953,0.931}{17.39} & \cellcolor[rgb]{0.767,0.844,0.767}{13.05} & \cellcolor[rgb]{0.623,0.747,0.623}{9.23} & \cellcolor[rgb]{0.608,0.737,0.608}{8.83} & \cellcolor[rgb]{0.918,0.945,0.918}{17.07} & \cellcolor[rgb]{0.694,0.795,0.694}{11.13} \\
-    o1-mini & \cellcolor[rgb]{0.275,0.514,0.275}{0.00} & \cellcolor[rgb]{0.903,0.935,0.903}{16.65} & \cellcolor[rgb]{0.829,0.885,0.829}{14.69} & \cellcolor[rgb]{0.387,0.589,0.387}{2.98} & \cellcolor[rgb]{1.000,1.000,1.000}{19.23} & \cellcolor[rgb]{0.450,0.631,0.450}{4.65} & \cellcolor[rgb]{0.556,0.703,0.556}{7.47} & \cellcolor[rgb]{0.656,0.769,0.656}{10.11} \\
-    mode & \cellcolor[rgb]{0.439,0.624,0.439}{4.35} & \cellcolor[rgb]{0.275,0.514,0.275}{0.00} & \cellcolor[rgb]{0.435,0.621,0.435}{4.25} & \cellcolor[rgb]{0.683,0.787,0.683}{10.82} & \cellcolor[rgb]{0.623,0.747,0.623}{9.23} & \cellcolor[rgb]{0.531,0.686,0.531}{6.79} & \cellcolor[rgb]{0.790,0.859,0.790}{13.66} & \cellcolor[rgb]{0.554,0.701,0.554}{7.41} \\
+    gemini-2.0-flash-exp & \cellcolor[rgb]{0.275,0.514,0.275}{0.00} & \cellcolor[rgb]{0.442,0.626,0.442}{4.44} & \cellcolor[rgb]{0.881,0.921,0.881}{16.09} & \cellcolor[rgb]{0.543,0.693,0.543}{7.11} & \cellcolor[rgb]{0.543,0.694,0.543}{7.12} & \cellcolor[rgb]{0.450,0.631,0.450}{4.65} & \cellcolor[rgb]{0.639,0.758,0.639}{9.67}  \\
+    4o & \cellcolor[rgb]{0.439,0.624,0.439}{4.35} & \cellcolor[rgb]{0.360,0.571,0.360}{2.27} & \cellcolor[rgb]{0.510,0.671,0.510}{6.23} & \cellcolor[rgb]{0.683,0.787,0.683}{10.82} & \cellcolor[rgb]{0.458,0.637,0.458}{4.87} & \cellcolor[rgb]{0.608,0.737,0.608}{8.83} & \cellcolor[rgb]{0.717,0.810,0.717}{11.74} \\
+    gemini-1.5-flash & \cellcolor[rgb]{0.439,0.624,0.439}{4.35} & \cellcolor[rgb]{0.275,0.514,0.275}{0.00} & \cellcolor[rgb]{0.772,0.847,0.772}{13.19} & \cellcolor[rgb]{0.880,0.920,0.880}{16.06} & \cellcolor[rgb]{0.623,0.747,0.623}{9.23} & \cellcolor[rgb]{0.450,0.631,0.450}{4.65} & \cellcolor[rgb]{0.975,0.983,0.975}{18.56}\\
+    gemini-1.5-pro & \cellcolor[rgb]{0.439,0.624,0.439}{4.35} & \cellcolor[rgb]{0.360,0.571,0.360}{2.27} & \cellcolor[rgb]{0.931,0.953,0.931}{17.39} & \cellcolor[rgb]{0.767,0.844,0.767}{13.05} & \cellcolor[rgb]{0.623,0.747,0.623}{9.23} & \cellcolor[rgb]{0.608,0.737,0.608}{8.83} & \cellcolor[rgb]{0.918,0.945,0.918}{17.07}\\
+    o1-mini & \cellcolor[rgb]{0.275,0.514,0.275}{0.00} & \cellcolor[rgb]{0.903,0.935,0.903}{16.65} & \cellcolor[rgb]{0.829,0.885,0.829}{14.69} & \cellcolor[rgb]{0.387,0.589,0.387}{2.98} & \cellcolor[rgb]{1.000,1.000,1.000}{19.23} & \cellcolor[rgb]{0.450,0.631,0.450}{4.65} & \cellcolor[rgb]{0.556,0.703,0.556}{7.47} \\
+    mode & \cellcolor[rgb]{0.439,0.624,0.439}{4.35} & \cellcolor[rgb]{0.275,0.514,0.275}{0.00} & \cellcolor[rgb]{0.435,0.621,0.435}{4.25} & \cellcolor[rgb]{0.683,0.787,0.683}{10.82} & \cellcolor[rgb]{0.623,0.747,0.623}{9.23} & \cellcolor[rgb]{0.531,0.686,0.531}{6.79} & \cellcolor[rgb]{0.790,0.859,0.790}{13.66} \\
     \bottomrule
 \end{tabularx}
 \end{table}
@@ -1711,6 +1795,48 @@ Voor het maken van deze lijst is voor het sorteren en overzichtelijk maken van d
 
 \pagebreak
 \subsection{Praktijktest}
+\begin{multicols}{2}
+    
+
+In dit gedeelte worden de resultaten van de afgenomen toets weergegeven. We beperken ons tot de beschrijving en interpretatie van de ruwe toetsresultaten, zonder hier nader in te gaan op de gebruikte beoordelingsmethode.
+
+\subsubsection*{Verloop van de Afname}
+De toets werd in een reguliere lesomgeving afgenomen, onder toezicht van de docent en ons. Alle leerlingen kregen 30 minuten de tijd om de toets te maken. Tijdens de afname deden zich geen noemenswaardige incidenten voor. De meeste leerlingen leverden hun antwoorden binnen de gestelde tijd in, en er waren geen signalen van technische problemen of externe afleiding. Deze omstandigheden suggereren dat de gemeten prestaties onder normale testcondities tot stand zijn gekomen.
+
+In dit gedeelte worden de resultaten van de toets weergegeven. Deze cijfers zijn verkregen uit de automatisch verwerkte data (zonder hier in te gaan op hoe de AI dit heeft gedaan) en kunnen, afhankelijk van het verdere onderzoek, worden vergeleken met een menselijke beoordeling of andere referentiewaarden.
+
+\subsubsection*{Algemeen Overzicht}
+De toets bestond uit meerdere vragen, verdeeld over verschillende rubric-secties. De maximale score per vraag lijkt, op basis van de verstrekte data, gelijk te zijn aan 1 punt. Bij alle vragen is er sprake van enige variatie in de behaalde scores, zoals blijkt uit de standaarddeviaties.
+
+\noindent In onderstaande tabel zijn per vraag het aantal deelnemers (N), het gemiddelde en de standaarddeviatie (SD) weergegeven. Daarnaast is het percentage leerlingen gegeven dat de vraag volledig goed (1 punt) heeft behaald. Omdat de vragen binaire scoring hebben (0 of 1), kun je de gemiddelde score interpreteren als het fractionele deel van leerlingen dat 1 punt heeft behaald.
+\end{multicols}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{llS[table-format=2.0]S[table-format=1.2]S[table-format=1.2]S[table-format=3.0]}
+\toprule
+\textbf{Rubric Sectie} & \textbf{Vraag} & \textbf{N} & \textbf{Gemiddelde} & \textbf{SD} & \textbf{\% 1-punt}\\
+\midrule
+1 & 1 & 23 & 1.00 & 0.00 & 100\\
+1 & 2 & 22 & 0.09 & 0.29 & 9\\
+1 & 3 & 23 & 0.48 & 0.51 & 48\\
+1 & 4 & 22 & 0.64 & 0.49 & 64\\
+1 & 5 & 20 & 0.75 & 0.44 & 75\\
+1 & 6 & 21 & 0.86 & 0.36 & 86\\
+1 & 7 & 19 & 0.11 & 0.32 & 11\\
+\midrule
+2 & 2 & 22 & 0.09 & 0.29 & 9\\
+2 & 3 & 23 & 0.48 & 0.51 & 48\\
+2 & 4 & 22 & 0.68 & 0.48 & 68\\
+2 & 5 & 20 & 0.75 & 0.44 & 75\\
+2 & 6 & 21 & 0.86 & 0.36 & 86\\
+2 & 7 & 19 & 0.58 & 0.51 & 58\\
+\midrule
+3 & 4 & 22 & 0.55 & 0.51 & 55\\
+\bottomrule
+\end{tabular}
+\caption{Overzicht resultaten per vraag. N = aantal leerlingen, Gemiddelde = fractie leerlingen met 1 punt, SD = standaarddeviatie, \% 1-punt = percentage leerlingen dat de sectie volledig goed beantwoordde.}
+\end{table}
 
 \pagebreak
 \section{conclusie}
@@ -1748,24 +1874,54 @@ Uit de tests kunnen we ten eerste vaststellen dat de modellen van Google sneller
 \pagebreak
 \subsection{Nakijken}
 
+% TODO: checken of dit enin moet blijven
+% \subsection{Analyseren}
+% \begin{multicols}{2}
 
-\subsection{Analyseren}
-\begin{multicols}{2}
-Dit onderzoek analyseert toetsresultaten, met als doel betrouwbare kennismetingen. Cruciaal is dat de analyse aansluit bij het beoogde doel van de docent, wat invloed heeft op het gewenste gemiddelde en de standaarddeviatie.
+% Naast bekende statistische maten als gemiddelde, standaarddeviatie en covariantie, zijn op vraagniveau de Item-Rest Correlatie (RIR) en Item-Totaal Correlatie (RIT) toegepast om de bijdrage van individuele vragen aan de totale score te beoordelen. Deze visulizaties zijn gemaakt m.b.v Google Gemini 1.5 pro.
 
-Naast bekende statistische maten als gemiddelde, standaarddeviatie en covariantie, zijn op vraagniveau de Item-Rest Correlatie (RIR) en Item-Totaal Correlatie (RIT) toegepast om de bijdrage van individuele vragen aan de totale score te beoordelen. Deze visulizaties zijn gemaakt m.b.v Google Gemini 1.5 pro.
+% Een voorgestelde gebruikersinterface (UI) met een input-, analyse- en bewerkscherm faciliteert de praktische toepassing. 
+% \noindent\begin{itemize}
+%     \item \textbf{Input:} Toetsresultaten uploaden en leerdoelen koppelen.
+%     \item \textbf{Analyse:} Prestaties op vraag- en leerlingniveau, inclusief correlaties.
+%     \item \textbf{Bewerking:} Gewenst gemiddelde/standaarddeviatie instellen, vragen aanpassen.
+% \end{itemize}
+% \end{multicols}
 
-Een voorgestelde gebruikersinterface (UI) met een input-, analyse- en bewerkscherm faciliteert de praktische toepassing. 
-\begin{itemize}
-    \item \textbf{Input:} Toetsresultaten uploaden en leerdoelen koppelen.
-    \item \textbf{Analyse:} Prestaties op vraag- en leerlingniveau, inclusief correlaties.
-    \item \textbf{Bewerking:} Gewenst gemiddelde/standaarddeviatie instellen, vragen aanpassen.
-\end{itemize}
-\end{multicols}
+\pagebreak
 \subsection{Enquete}
+\begin{multicols}{2}
+Uit de resultaten van de enquête komt naar voren dat er onder docenten een redelijk goede bekendheid is met het concept van (generatieve) AI, maar dat de mate van bekendheid en de perceptie van mogelijke inzet ervan varieert. Er zijn duidelijke verschillen waarneembaar tussen docenten met uiteenlopende leservaring en vakgroepsachtergronden. 
 
+Allereerst laat de data zien dat docenten met meer onderwijservaring niet per definitie bekender zijn met AI-concepten dan docenten met minder ervaring. Bovendien zijn meningen over de potentiële inzet van AI voor het nakijken van toetsen verdeeld. Docenten met kortere werkervaring lijken iets positiever te staan tegenover de mogelijkheid dat AI zelfstandig kan corrigeren, terwijl docenten met meer dan tien jaar ervaring terughoudender zijn. 
 
+Er zijn eveneens verschillen tussen vakgroepen te onderscheiden. Docenten uit de ‘gamma’-groepen lijken minder vaak op de hoogte te zijn van generatieve AI dan docenten uit ‘alpha’- en ‘beta’-richtingen. Tegelijkertijd blijkt ook het aantal leerlingen dat toetsbeoordelingen in twijfel trekt te verschillen per vakgroep, waarbij docenten uit de ‘gamma’-groep aangeven dat hun beoordeling gemiddeld vaker in twijfel wordt getrokken dan vakgroepen. 
+
+Als verwachtte voordelen wordt vooral tijdsbesparing, objectiviteit, en het verminderen van de werkdruk genoemd als motivatie om AI in te zetten voor het nakijkproces. Belangrijke zorgen betreffen echter de subjectiviteit van AI, mogelijke technische fouten en een verminderd empathisch vermogen. De angst dat het menselijk, relationeel aspect van onderwijs verloren gaat, komt hierbij naar voren. Er bestaan zorgen dat docenten minder voeling krijgen met het individuele leerproces van leerlingen, en dat door toenemende inzet van AI de persoonlijke relatie tussen docent en leerling kan verzwakken. 
+
+Tegelijkertijd zijn er ook meer genuanceerde of positieve verwachtingen. Sommige docenten geven aan dat AI, mits verantwoord geïmplementeerd, de relatie kan verbeteren. Dit komt doordat docenten meer tijd vrijspelen voor persoonlijke begeleiding. Daarnaast kan AI zorgen voor een objectievere en transparantere beoordeling. Hierdoor ontstaat er minder discussie over puntenaantallen. Tot slot is er een groep die denkt dat AI weinig tot geen invloed zal hebben. Zij geloven dat menselijk contact en interactie blijven domineren.
+
+Kortom, de bevindingen tonen een verdeeld landschap. Docenten zijn zich meer bewust van AI. Ze zien voordelen op het gebied van efficiëntie en objectiviteit. Tegelijkertijd uiten ze zorgen over verlies aan menselijkheid en verminderde professionele autonomie. Ook vrezen ze een afname van diepgaand contact met leerlingen. De uiteindelijke invloed hangt sterk af van de wijze waarop AI wordt ingezet. Belangrijk is dat docenten hun professionele beoordelingsvermogen blijven benutten. Daarnaast moet de relatie met de leerling persoonlijk en ondersteunend blijven.
+\end{multicols}
+\pagebreak
 \subsection{Praktijktest}
+Op basis van de bovenstaande resultaten zijn enkele observaties en mogelijke conclusies te trekken:
+
+\noindent\begin{itemize}
+    \item \textbf{Makkelijke vragen:} De resultaten voor Rubric Sectie 1, Vraag 1 (Gemiddelde: 1.00, SD: 0.00) tonen aan dat alle leerlingen deze vraag probleemloos beantwoordden. Ook voor de vragen 5 en 6 in zowel Sectie 1 als Sectie 2 liggen de gemiddelde scores rond of boven de 0.75 met relatief lage spreiding, wat suggereert dat deze onderwerpen goed worden begrepen.
+    
+    \item \textbf{Moeilijke vragen:} De zeer lage gemiddelde scores voor Vraag 2 in Sectie 1 en Sectie 2 (beide Gemiddelden: 0.09) en Vraag 7 in Sectie 1 (Gemiddelde: 0.11) duiden erop dat deze vragen als moeilijk of onduidelijk werden ervaren door de leerlingen. De geringe spreiding (relatief lage standaarddeviatie in vergelijking met de gemiddelde score) bij deze vragen suggereert dat vrijwel niemand op deze onderdelen goed scoorde.
+    
+    \item \textbf{Heterogene resultaten:} Bij vragen met gemiddelde scores rond de 0.5 en een standaarddeviatie rond 0.5, zoals Vraag 3 en Vraag 4 in meerdere rubric-secties, is sprake van een grote variatie in de prestaties. Dit kan betekenen dat sommige leerlingen de gevraagde vaardigheden of kennis goed beheersen, terwijl anderen er duidelijk moeite mee hebben.
+    
+    \item \textbf{Consistentie tussen rubric-secties:} Sommige vragen (bijvoorbeeld Vraag 4 en 5) vertonen vergelijkbare gemiddelde en spreidingspatronen in verschillende rubric-secties, wat kan wijzen op een stabiele moeilijkheidsgraad. Daarentegen levert Vraag 7 in Sectie 2 (Gemiddelde: 0.58) significant betere resultaten op dan in Sectie 1 (Gemiddelde: 0.11), wat zou kunnen duiden op een verschil in context, formulering, of voorkennis.
+    
+    \item \textbf{Aanbevelingen:}  
+    De resultaten suggereren dat bepaalde concepten of vaardigheden (zoals die in Vraag 2 en Vraag 7, Sectie 1) extra aandacht nodig hebben in de lespraktijk. Verder kunnen docenten overwegen om de formulering of instructies bij de moeilijkere vragen aan te scherpen om leerlingen beter voor te bereiden of te ondersteunen.
+\end{itemize}
+
+Samengevat geven de data inzicht in welke onderdelen van de leerstof leerlingen goed of minder goed beheersen en kunnen deze resultaten als basis dienen voor verdere verbeteringen in de toetsing en de didactische aanpak.
+
 
 \pagebreak
 \section{Discussie}
@@ -1781,25 +1937,40 @@ $\bullet$ Tijdens het toetsje zijn een aantal vragen verkeerd ingescand, omdat e
 $\bullet$ De bedachte UI is niet getest, waardoor er niet een 2e iteratie verbeteringen is gedaan.\\
 $\bullet$ We hebben geen echte toetsen geanalyseerd, omdat de toets die we zouden krijgen zo slecht gemaakt was dat er niets te analyseren was.\\
 $\bullet$ Tijdens het toetsje zijn een aantal vragen verkeerd ingescand, omdat een leerling de checkbox verkeerd had ingevult. Het zou netter zijn om dit als een popup aan een docent te laten zien die dit dan corrigeert.\\
-
+\begin{minipage}{\linewidth}
+    
 \subsubsection{Enquête}
 $\bullet$ We kregen terug van een aantal docenten dat de vraag aantal leerlingen die het oneens is met een beoordeling niet exact gedefineerd was.\\
 $\bullet$ Er waren relatief weinig gamma resultaten, waardoor hun reactie statistisch gezien minder waarde heeft.\\
 $\bullet$ Dit is een enquête gestuurd naar docenten van Het Amsterdams Lyceum en hiermee kunnen we nog weinig zeggen over of docenten in de rest van Nederland andere problemen hebben.\\
+\end{minipage}
+\begin{minipage}{\linewidth}
 \subsubsection{Praktijktest}
 $\bullet$ We hebben dit toetsje afgenomen bij een hele lieve gymnasium klas. Het is de vraag op andere klassen andere manieren vinden om het blaadje zo toe te takelen dat het nakijkprocess wordt verhinderd.\\
-\subsection{Terugblik en dankwoord}
-
-\paragraph*{Reflectie Joost} Dit project heb ik veel geleerd over het overstappen naar een andere methode. Voor de inscanmodule had ik in het begin ingeschat dat ik maar 10 uur nodig had voor het inscannen. De daadwerkelijke tijd was een stuk meer. De methode die ik had bedacht (tekstherkenning in de kantlijn) bleek niet te werken, maar ik heb wel (onnodig) veel tijd besteed aan het optimaliseren van dat proces. Ik heb ook veel gehad aan het gebruiken van de Google Gemini API, die gebruik ik nu vaak om kleine simpele taakjes op te lossen. Ook heb ik Google Sheets pivot tables leren gebruiken om snel de enquete, inscan en toets resultaten in tabellen te zetten (die ik daarna met Google Gemini naar de latex/pdf tabellen heb omgezet). Het inscan en nakijksysteem zal ik waarschijnlijk in een ander project gaan gebruiken. Waar volgend jaar misschien rekening mee gehouden kan worden is dat de rubrics van het PWS niet duidelijk de opdracht van het PWS weerspiegelen. Tot fase 3 is eigenlijk literatuuronderzoek en een paar beantwoorde deelvragen. Fase 4 is het onderdeel waar je het "grote" onderzoek moet uitvoeren. Ik vond dat wie die fase pas laat kregen en dat er dingen miste in de rubric die ik wel verwacht in een wetenschappelijk onderzoek (bijvoorbeeld de indeling of het hebben van resultaten). Ik zie dit PWS meer als een eigen project dan als een opdracht voor school en eigen projectjes vind ik leuk om te doen, zie: \href{https://github.com/TanteJossa}{Mijn Github}.  
-\paragraph*{Reflectie Jonathan}
-\paragraph*{Dankwoord} 
-
-
+\end{minipage}
+\pagebreak
 \subsection{vervolgonderzoek}
 $\bullet$ Een onderzoek/test naar een interface die docenten kunnen gebruiken om de inscan en nakijk modules makkelijk tegebruiken\\
 $\bullet$ Een onderzoek naar wat docenten op andere scholen belangrijk vinden\\
 $\bullet$ Een onderzoek naar wat docenten van ons de resultaten van ons toetsje vinden en of dit hun mening verandert over de mogelijkheden van nakijken met AI\\
 $\bullet$ Een onderzoek naar hoe zo'n systeem geïntegreerd kan worden in het huidige onderwijs. Denk hierbij aan het printen van de custom toetsblaadjes of het omzetten van huidige toetsen naar een computerformat  die een ai kan gebruiken.\\
+
+
+\subsection{Terugblik en dankwoord}
+
+\paragraph*{Reflectie Joost} Dit project heb ik veel geleerd over het overstappen naar een andere methode. Voor de inscanmodule had ik in het begin ingeschat dat ik maar 10 uur nodig had voor het inscannen. De daadwerkelijke tijd was een stuk meer. De methode die ik had bedacht (tekstherkenning in de kantlijn) bleek niet te werken, maar ik heb wel (onnodig) veel tijd besteed aan het optimaliseren van dat proces. Ik heb ook veel gehad aan het gebruiken van de Google Gemini API, die gebruik ik nu vaak om kleine simpele taakjes op te lossen. Ook heb ik Google Sheets pivot tables leren gebruiken om snel de enquete, inscan en toets resultaten in tabellen te zetten (die ik daarna met Google Gemini naar de latex/pdf tabellen heb omgezet). Het inscan en nakijksysteem zal ik waarschijnlijk in een ander project gaan gebruiken. Waar volgend jaar misschien rekening mee gehouden kan worden is dat de rubrics van het PWS niet duidelijk de opdracht van het PWS weerspiegelen. Tot fase 3 is eigenlijk literatuuronderzoek en een paar beantwoorde deelvragen. Fase 4 is het onderdeel waar je het "grote" onderzoek moet uitvoeren. Ik vond dat wie die fase pas laat kregen en dat er dingen miste in de rubric die ik wel verwacht in een wetenschappelijk onderzoek (bijvoorbeeld de indeling of het hebben van resultaten). Ik zie dit PWS meer als een eigen project dan als een opdracht voor school en eigen projectjes vind ik leuk om te doen, zie: \href{https://github.com/TanteJossa}{Mijn Github}.  
+\paragraph*{Reflectie Jonathan}
+\paragraph*{Dankwoord} 
+Dit project hebben we niet alleen kunnen doen. Als eerste willen we graag onze begeleider, \textbf{Philip Hermarij}, bedanken voor het mogelijk maken van onze praktijktest. Daarnaast vonden we het fijn dat hij ons liet concentreren op het maken van het systeem, in plaats van ons achterna zitten met de opdracht en rubric.\\
+Daarnaast willen we graag \textbf{Deirdre Vos} bedanken voor 2 dingen:
+\noindent\begin{itemize}
+    \item  Het ondersteunen van het analyseer onderzoek, door ons geanonimiseerde toetsresultaten te geven. Daarnaast heeft ze ook input gegeven voor wat haar handig lijkt in een mogelijke interface, zoals het toewijzen van rubricpunten aan leerdoelen. Ook hebben de lessen wiskunde D over statistiek en kansen ons geholpen in het analyseren van de toets enquête en nakijkresultaten\\
+    \item Ons in contact brengen met Daniël Markus. 
+\end{itemize}
+Bij \textbf{Daniël Markus} hebben we een interview afgenomen over gebruik van AI voor het nakijken en inscannen. Bij dat interview was een onderzoeken naar AI die ons ook belangrijke inzichten heeft gegeven, bijvoorbeeld voor de checkbox inscanmethode.\\
+\\
+Als laatste willen we alle \textbf{docenten} die tijd hebben genomen om onze enquête in te vullen  bedanken. We konden daardoor een duidelijk doel bepalen en inzicht krijgen in de grootste problemen die docenten met een nakijksysteem hebben.
+
 
 \end{multicols}
 
@@ -1814,7 +1985,7 @@ Alle code voor dit systeem is open-source, waardoor iedereen er gebruik van kan 
 \\
 Het doel van dit onderzoek was om een programma te maken dat het nakijken uit de handen van een docent kan nemen. Dat is gelukt. We hebben een systeem opgebouwd dat ervoor zorgt dat docenten met vertrouwen in technologie een extra feedbackmoment kunnen toevoegen door bij wijze van spreken de eerste 10 minuten van de les een toets af te nemen (die toets kan door AI gegenereerd zijn), zijn uitleg geven, leerlingen zelfstandig aan het werk zetten, foto's door de scanner halen (met telefoon of kopieerapparaat) en 2 minuten later de leerlingen hun scores terug geven, waarbij bij elk rubric punt duidelijk staat wat de leerlingen wel en niet goed heeft gedaan, zodat die daar iets aan heeft in de rest van de les. \\ 
 \end{multicols}
-
+\pagebreak
 \section{Referenties}
 
 \printbibliography[heading=none]
@@ -1900,8 +2071,17 @@ je mag de gemaakte punten in categoriën groepen, maar je moet altijd zo objecti
 \{\href{https://docs.google.com/spreadsheets/d/10Z6uwL6eRiDsPIC6HQ5hyizUN8RciJKFSDRZBGiKdDI}{Resultaten}\}
 \end{minipage}}
 
+\subsubsection*{Fases}
+\noindent\begin{itemize}
+    \item \textbf{Fase 1: }\href{https://docs.google.com/document/d/1GbDkCxC9d_qvIaFt9WLgdqDdbehZgxvDl6xok6A8UG4}{Link} 
+    \item \textbf{Fase 2: }\href{https://docs.google.com/document/d/1dRJIgrINIqM23WWmCmnGbnBuHpgw_vz0cuFKtMpCIMs}{Link} 
+    \item \textbf{Fase 3: }\href{https://docs.google.com/document/d/1c8uWC6ebqpnVRqx3ldwISSlsHXozZ7VrJujyB8FCNq4}{Link} 
+    \item \textbf{Fase 4: }\href{https://docs.google.com/document/d/1G-Xw7bRIdZ-OzQIb8x2kHXSOT6rMff9jRx3bLR63h5I}{Link} 
+\end{itemize}
+
 \pagebreak
 \section{logboek}
+\noindent\textbf{Logboek: }\href{https://docs.google.com/spreadsheets/d/1iMSadKjVQ10j7RvIdU1Dxt36Q_K4ckz7q1kMr5_YCWw/edit?usp=sharing}{Link} 
 \subsubsection*{Fase 4}
 \footnotesize
 \begin{longtable}{@{}p{2.5cm} p{1cm} p{1.5cm} p{5cm} p{5cm}}

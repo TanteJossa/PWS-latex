@@ -1,3 +1,4 @@
+\babel@toc {dutch}{}\relax 
 \contentsline {section}{\numberline {1}Introductie}{3}{section.1}%
 \contentsline {subsection}{\numberline {A}Achtergrond/Doelstelling}{3}{subsection.1.1}%
 \contentsline {subsection}{\numberline {B}Probleemstelling}{3}{subsection.1.2}%
@@ -10,10 +11,17 @@
 \contentsline {subsection}{\numberline {A}Onderzoeksopzet}{6}{subsection.3.1}%
 \contentsline {subsection}{\numberline {B}Methode}{7}{subsection.3.2}%
 \contentsline {subsubsection}{\numberline {B.1}Inscannen}{7}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {B.2}Nakijken}{23}{subsubsection.3.2.2}%
-\contentsline {subsubsection}{\numberline {B.3}Analyseren}{30}{subsubsection.3.2.3}%
-\contentsline {subsubsection}{\numberline {B.4}Enquete}{31}{subsubsection.3.2.4}%
-\contentsline {subsubsection}{\numberline {B.5}Praktijktest}{35}{subsubsection.3.2.5}%
+\contentsline {subsubsection}{\numberline {B.2}Nakijken}{22}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {B.3}Analyseren}{29}{subsubsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {B.4}Enquete}{30}{subsubsection.3.2.4}%
+\contentsline {subsubsection}{\numberline {B.5}Praktijktest}{34}{subsubsection.3.2.5}%
+\contentsline {paragraph}{De toets}{34}{section*.32}%
+\contentsline {paragraph}{AI Correctiemodule}{34}{section*.33}%
+\contentsline {paragraph}{Analyse-instrumenten}{34}{section*.34}%
+\contentsline {paragraph}{Toetsafname}{34}{section*.36}%
+\contentsline {paragraph}{Verzamelen van Antwoorden}{35}{section*.37}%
+\contentsline {paragraph}{Automatische Correctie}{35}{section*.38}%
+\contentsline {paragraph}{Validatie door Mens}{35}{section*.39}%
 \contentsline {section}{\numberline {4}Resultaten}{36}{section.4}%
 \contentsline {subsection}{\numberline {A}Inscannen}{36}{subsection.4.1}%
 \contentsline {subsection}{\numberline {B}Nakijken}{39}{subsection.4.2}%
@@ -23,19 +31,18 @@
 \contentsline {section}{\numberline {5}conclusie}{48}{section.5}%
 \contentsline {subsection}{\numberline {A}Inscannen}{48}{subsection.5.1}%
 \contentsline {subsection}{\numberline {B}Nakijken}{50}{subsection.5.2}%
-\contentsline {subsection}{\numberline {C}Analyseren}{50}{subsection.5.3}%
-\contentsline {subsection}{\numberline {D}Enquete}{50}{subsection.5.4}%
-\contentsline {subsection}{\numberline {E}Praktijktest}{50}{subsection.5.5}%
-\contentsline {section}{\numberline {6}Discussie}{51}{section.6}%
-\contentsline {subsection}{\numberline {A}Foutenanalyse}{51}{subsection.6.1}%
-\contentsline {subsubsection}{\numberline {A.1}Inscannen}{51}{subsubsection.6.1.1}%
-\contentsline {subsubsection}{\numberline {A.2}Nakijken}{51}{subsubsection.6.1.2}%
-\contentsline {subsubsection}{\numberline {A.3}Analyseren}{51}{subsubsection.6.1.3}%
-\contentsline {subsubsection}{\numberline {A.4}Enquête}{51}{subsubsection.6.1.4}%
-\contentsline {subsubsection}{\numberline {A.5}Praktijktest}{51}{subsubsection.6.1.5}%
-\contentsline {subsection}{\numberline {B}Terugblik en dankwoord}{51}{subsection.6.2}%
-\contentsline {subsection}{\numberline {C}vervolgonderzoek}{52}{subsection.6.3}%
-\contentsline {section}{\numberline {7}Samenvatting onderzoek}{53}{section.7}%
-\contentsline {section}{\numberline {8}Referenties}{53}{section.8}%
-\contentsline {section}{\numberline {9}Appendix}{56}{section.9}%
-\contentsline {section}{\numberline {10}logboek}{60}{section.10}%
+\contentsline {subsection}{\numberline {C}Enquete}{51}{subsection.5.3}%
+\contentsline {subsection}{\numberline {D}Praktijktest}{52}{subsection.5.4}%
+\contentsline {section}{\numberline {6}Discussie}{53}{section.6}%
+\contentsline {subsection}{\numberline {A}Foutenanalyse}{53}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {A.1}Inscannen}{53}{subsubsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {A.2}Nakijken}{53}{subsubsection.6.1.2}%
+\contentsline {subsubsection}{\numberline {A.3}Analyseren}{53}{subsubsection.6.1.3}%
+\contentsline {subsubsection}{\numberline {A.4}Enquête}{53}{subsubsection.6.1.4}%
+\contentsline {subsubsection}{\numberline {A.5}Praktijktest}{53}{subsubsection.6.1.5}%
+\contentsline {subsection}{\numberline {B}vervolgonderzoek}{54}{subsection.6.2}%
+\contentsline {subsection}{\numberline {C}Terugblik en dankwoord}{54}{subsection.6.3}%
+\contentsline {section}{\numberline {7}Samenvatting onderzoek}{55}{section.7}%
+\contentsline {section}{\numberline {8}Referenties}{56}{section.8}%
+\contentsline {section}{\numberline {9}Appendix}{58}{section.9}%
+\contentsline {section}{\numberline {10}logboek}{62}{section.10}%
