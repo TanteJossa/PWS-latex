@@ -1,23 +1,19 @@
 [0] Config.pm:308> INFO - This is Biber 2.20
-[0] Config.pm:311> INFO - Logfile is 'full.blg'
-[162] biber-MSWIN64:340> INFO - === 
-[217] Biber.pm:420> INFO - Reading 'full.bcf'
-[431] Biber.pm:994> INFO - Found 26 citekeys in bib section 0
-[467] Biber.pm:4463> INFO - Processing section 0
-[486] Biber.pm:4654> INFO - Looking for bibtex file 'references.bib' for section 0
-[558] bibtex.pm:1713> INFO - LaTeX decoding ...
-[618] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
-[713] Utils.pm:410> ERROR - Name "Hattie, J., & Timperley, H." has too many commas, skipping entry 'powerFeedback'
-[973] UCollate.pm:68> INFO - Overriding locale 'nl-NL' defaults 'variable = shifted' with 'variable = non-ignorable'
-[973] UCollate.pm:68> INFO - Overriding locale 'nl-NL' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[973] Biber.pm:4283> INFO - Sorting list 'nyt/apasortcite//global/global/global' of type 'entry' with template 'nyt' and locale 'nl-NL'
-[973] Biber.pm:4289> INFO - No sort tailoring available for locale 'nl-NL'
-[1072] UCollate.pm:68> INFO - Overriding locale 'nl-NL' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1072] UCollate.pm:68> INFO - Overriding locale 'nl-NL' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1072] Biber.pm:4283> INFO - Sorting list 'nyt/global//global/global/global' of type 'entry' with template 'nyt' and locale 'nl-NL'
-[1072] Biber.pm:4289> INFO - No sort tailoring available for locale 'nl-NL'
-[1127] bbl.pm:676> INFO - Writing 'full.bbl' with encoding 'UTF-8'
-[1186] bbl.pm:779> INFO - Output to full.bbl
-[1187] Biber.pm:131> WARN - Entry with key 'powerFeedback' in section '0' is cited and found but not created (likely due to sourcemap)
-[1187] Biber.pm:133> INFO - WARNINGS: 1
-[1187] Biber.pm:136> INFO - ERRORS: 1
+[1] Config.pm:311> INFO - Logfile is 'full.blg'
+[158] biber-MSWIN64:340> INFO - === 
+[209] Biber.pm:420> INFO - Reading 'full.bcf'
+[412] Biber.pm:994> INFO - Found 26 citekeys in bib section 0
+[446] Biber.pm:4463> INFO - Processing section 0
+[465] Biber.pm:4654> INFO - Looking for bibtex file 'references.bib' for section 0
+[534] bibtex.pm:1713> INFO - LaTeX decoding ...
+[594] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
+[914] UCollate.pm:68> INFO - Overriding locale 'nl-NL' defaults 'variable = shifted' with 'variable = non-ignorable'
+[914] UCollate.pm:68> INFO - Overriding locale 'nl-NL' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[914] Biber.pm:4283> INFO - Sorting list 'nyt/apasortcite//global/global/global' of type 'entry' with template 'nyt' and locale 'nl-NL'
+[914] Biber.pm:4289> INFO - No sort tailoring available for locale 'nl-NL'
+[1011] UCollate.pm:68> INFO - Overriding locale 'nl-NL' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1011] UCollate.pm:68> INFO - Overriding locale 'nl-NL' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1011] Biber.pm:4283> INFO - Sorting list 'nyt/global//global/global/global' of type 'entry' with template 'nyt' and locale 'nl-NL'
+[1011] Biber.pm:4289> INFO - No sort tailoring available for locale 'nl-NL'
+[1065] bbl.pm:676> INFO - Writing 'full.bbl' with encoding 'UTF-8'
+[1121] bbl.pm:779> INFO - Output to full.bbl

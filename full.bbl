@@ -415,6 +415,53 @@
       \verb https://ai.google.dev/gemini-api
       \endverb
     \endentry
+    \entry{powerFeedback}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=e855373e7a94305176fc84d24fee9368}{%
+           family={Hattie},
+           familyi={H\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c939eeb0171708b0589e220748dac2bb}{%
+           family={Timperley},
+           familyi={T\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b83db4b86337058eed41c1e6b820e2ed}
+      \strng{fullhash}{b83db4b86337058eed41c1e6b820e2ed}
+      \strng{fullhashraw}{b83db4b86337058eed41c1e6b820e2ed}
+      \strng{bibnamehash}{b83db4b86337058eed41c1e6b820e2ed}
+      \strng{authorbibnamehash}{b83db4b86337058eed41c1e6b820e2ed}
+      \strng{authornamehash}{b83db4b86337058eed41c1e6b820e2ed}
+      \strng{authorfullhash}{b83db4b86337058eed41c1e6b820e2ed}
+      \strng{authorfullhashraw}{b83db4b86337058eed41c1e6b820e2ed}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Review of Educational Research}
+      \field{number}{1}
+      \field{title}{The Power of Feedback}
+      \field{volume}{77}
+      \field{year}{2007}
+      \field{pages}{81\bibrangedash 112}
+      \range{pages}{32}
+      \verb{doi}
+      \verb 10.3102/003465430298487
+      \endverb
+      \verb{urlraw}
+      \verb https://journals.sagepub.com/doi/abs/10.3102/003465430298487
+      \endverb
+      \verb{url}
+      \verb https://journals.sagepub.com/doi/abs/10.3102/003465430298487
+      \endverb
+    \endentry
     \entry{pytesseractManual}{misc}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=f8ce7e99badcb9b68360c2db3c488e0d}{%
@@ -1573,6 +1620,53 @@
       \endverb
       \verb{url}
       \verb https://ai.google.dev/gemini-api
+      \endverb
+    \endentry
+    \entry{powerFeedback}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=e855373e7a94305176fc84d24fee9368}{%
+           family={Hattie},
+           familyi={H\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c939eeb0171708b0589e220748dac2bb}{%
+           family={Timperley},
+           familyi={T\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b83db4b86337058eed41c1e6b820e2ed}
+      \strng{fullhash}{b83db4b86337058eed41c1e6b820e2ed}
+      \strng{fullhashraw}{b83db4b86337058eed41c1e6b820e2ed}
+      \strng{bibnamehash}{b83db4b86337058eed41c1e6b820e2ed}
+      \strng{authorbibnamehash}{b83db4b86337058eed41c1e6b820e2ed}
+      \strng{authornamehash}{b83db4b86337058eed41c1e6b820e2ed}
+      \strng{authorfullhash}{b83db4b86337058eed41c1e6b820e2ed}
+      \strng{authorfullhashraw}{b83db4b86337058eed41c1e6b820e2ed}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Review of Educational Research}
+      \field{number}{1}
+      \field{title}{The Power of Feedback}
+      \field{volume}{77}
+      \field{year}{2007}
+      \field{pages}{81\bibrangedash 112}
+      \range{pages}{32}
+      \verb{doi}
+      \verb 10.3102/003465430298487
+      \endverb
+      \verb{urlraw}
+      \verb https://journals.sagepub.com/doi/abs/10.3102/003465430298487
+      \endverb
+      \verb{url}
+      \verb https://journals.sagepub.com/doi/abs/10.3102/003465430298487
       \endverb
     \endentry
     \entry{pytesseractManual}{misc}{}{}

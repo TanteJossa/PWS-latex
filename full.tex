@@ -26,6 +26,7 @@
 \usepackage{minted}
 \usepackage{colortbl}
 \usepackage{xcolor}
+\usepackage{csquotes}
 \usepackage{siunitx}
 \sisetup{
     round-mode=places,
@@ -52,6 +53,8 @@
 \usetikzlibrary{arrows}
 \usetikzlibrary{shapes.geometric, arrows}
 \usepackage{pgfplots}
+
+
 
 \addbibresource{references.bib}
 
@@ -309,7 +312,7 @@ punt 2: Een kloppende uitleg gegeven
 % }
 De routes en keys kunnen gevonden worden in het volgende bestand: \\
 \href{https://github.com/TanteJossa/PWS-inscannen/blob/main/section_scanner/app/main.py}{MainFlaskApp.py}\\
-Hierna zal ik een selectie laten zien van goedwerkende of opvallende resultaten die in ik tegen ben gekomen tijdens het testen. De stappen zijn bedacht door het grote probleem in steeds kleinere onderdeeltjes/doelen te delen die na genoeg breuken oplosbaar zijn. 
+Hierna zal ik een selectie laten zien van goedwerkende of opvallende onderdelen die in ik tegen ben gekomen tijdens het testen. De stappen zijn bedacht door het grote probleem in steeds kleinere onderdeeltjes/doelen te delen die na genoeg breuken oplosbaar zijn. 
 \end{multicols}
 \pagebreak
 \noindent Deze module bestaat uit een aantal stappen: \\
@@ -1409,6 +1412,7 @@ Kijk vooral naar de correlatie vs de mens, want die wordt gezien als "correct".
 
 \noindent\begin{table}[H]
 \caption{Verschil met mens per nagekeken vraag \%}
+\label{fig:verschil-mens}
 Hier is te zien dat de meeste modellen geen problemen hebben met vraag 1\\
 Vraag 5 is interessant om naar te kijken want dat was de foto/teken vraag.
 \begin{tabularx}{\textwidth}{X rrrrrrr}
@@ -1873,7 +1877,40 @@ Uit de tests kunnen we ten eerste vaststellen dat de modellen van Google sneller
 \end{multicols}
 \pagebreak
 \subsection{Nakijken}
+\begin{multicols}{2}
+Uit de resultaten blijkt dat grote taalmodellen in staat zijn om korte open scheikundevragen op tekstuele basis nauwkeurig na te kijken, met een correlatie die dicht in de buurt kan komen van menselijke beoordelaars. Er zijn echter aanzienlijke verschillen tussen de diverse geteste modellen en hun prestaties, met name wanneer we kijken naar de correlatiecijfers, de verschillen per vraag, en de frequentie van fout-positieven en fout-negatieven.
 
+\paragraph*{Correlatie tussen Modellen en de Menselijke Beoordelaar} (Tabel "Correlatie modellen onder elkaar" \ref{fig:correlatie-model}):
+In deze tabel valt direct op dat de menselijke beoordeling als de ‘gouden standaard’ fungeert. De correlaties met het menselijke oordeel worden voor elk AI-model weergegeven. Gemini-2.0-flash-exp laat een zeer hoge correlatie zien met de menselijke beoordeling (rond de 0.95 en hoger). Deze sterke correlatie duidt erop dat deze modellen in veel gevallen vergelijkbaar beoordelen als een menselijke corrector, zeker bij eenvoudige, eenduidige open vragen.
+
+Andere modellen, zoals “gemini-1.5-pro” en “gemini-1.5-flash”, tonen ook een sterke, maar iets lagere correlatie met de mens. Over het algemeen presteren alle getoonde modellen redelijk goed, met correlaties die vaak boven de 0.9 liggen. Dit geeft aan dat ze allemaal op tekstueel vlak redelijk in lijn liggen met de menselijke maatstaf, maar er zijn dus wel verschillen in nauwkeurigheid en consistentie.
+
+\paragraph*{Verschil met Mens per Nagekeken Vraag} (Tabel “Verschil met mens per nagekeken vraag \%” \ref{fig:verschil-mens}):
+Deze tabel geeft inzicht in de mate waarin de beoordeling van de modellen afwijkt van die van de menselijke beoordelaar, uitgesplitst per vraag. Hier zien we dat de meeste modellen bij vraag 1 vrijwel geen probleem hebben: sommige modellen tonen zelfs 0\% verschil met de menselijke beoordeling bij deze vraag. Dit is logisch omdat vraag 1 een multiple-choice vraag is.
+
+Echter, het wordt interessanter bij andere vragen. Zo zien we bij meer complexe vragen vraag 5, de visueel-georiënteerde vraag met een foto of tekening dat het verschil met de mens ineens sterk toeneemt. Modellen die het bij tekstuele vragen goed deden, scoren bij vraag 5 duidelijk minder. Dit duidt erop dat modellen moeilijkheden ondervinden als niet puur tekstuele interpretatie vereist is. De verschillen van ruim boven de 10\% geven aan dat de AI hier echt niet op het niveau van een mens presteert.
+
+Samenvattend illustreert deze tabel dat AI-modellen uitblinken in standaard, tekstuele en eenduidige vragen. Alleen nog wel zwakker zijn bij complexere en visuele vragen. Elk model heeft zo zijn eigen profiel: sommige zijn beter in standaardvragen, andere houden zich iets beter staande bij complexere vragen, maar geen enkel model evenaart de mens volledig op het visuele vlak.
+
+\paragraph{Aantal Valse Positieven en Aantal Valse Negatieven} (Tabel “Aantal valse positieve en aantal valse negatieve” \ref{fig:false-pos-neg}):
+De laatste tabel toont ons in detail wanneer het model ten onrechte punten toekent (false positive) of ten onrechte aftrekt (false negative) ten opzichte van de menselijke beoordeling. Een false positive betekent dat de AI een leerling te veel krediet geeft voor een antwoord dat volgens de mens niet correct is. Een false negative betekent dat de AI punten aftrekt terwijl de mens dit niet zou doen, dus de leerling wordt hier strenger beoordeeld.
+
+Hier zien we bijvoorbeeld dat “gemini-2.0-flash-exp” niet altijd gelijkmatig presteert. Bij bepaalde vragen ontstaan meerdere false positives of false negatives, wat in totaal tot 15 of meer incorrecte oordelen kan leiden als we dit over de gehele set bekijken.
+
+Opvallend is dat de complexere vragen niet alleen leiden tot een hoger percentage afwijking, maar ook tot meer onjuiste beoordelingen in termen van false positives en false negatives. Dit betekent dat de AI niet alleen anders scoort dan de mens, maar dat die afwijking in sommige gevallen systematisch kan zijn (bijvoorbeeld consequente overschatting van een bepaalde fout of onderschatting van een bepaald correct element).
+
+\paragraph{Relatie tot Menselijke Beoordeling en Hybride Aanpak}
+De tabellen samen suggereren dat voor standaard open vragen, vooral wanneer het antwoord eenduidig en tekstueel is, AI-modellen erg dicht bij de menselijke beoordeling kunnen komen. Dit biedt perspectief op grootschalige inzet voor eerste selecties, voorbeoordelingen of als tijdbesparend instrument bij het nakijken. Echter, voor complexere taken (bijvoorbeeld vragen die berusten op visuele interpretaties, subtiele chemische notaties, of context-specifieke nuances) blijft er een duidelijk gat. Deze kloof uit zich in verhoogde verschillen per vraag en een hoger aantal false positives en false negatives.
+
+De bevindingen tonen hiermee de noodzaak van menselijk toezicht. Hoewel AI de potentiële efficiëntie en consistentie kan verhogen, is menselijke interventie nodig om complexere, visuele of dubbelzinnige gevallen correct te beoordelen.Een hybride aanpak, waarin menselijke beoordelaars en AI-systemen samenwerken, lijkt hierdoor de optimale strategie. De mens kan zich dan richten op de lastige, subtiele of visuele aspecten, terwijl de AI het grote aandeel van de standaard vragen snel en consistent verwerkt.
+
+\paragraph*{Algemene Conclusie}
+De verschillen tussen de modellen zijn subtiel maar betekenisvol: sommige modellen hebben een hogere correlatie met de menselijke beoordeling, andere hebben een lagere frequentie van valse positieven of negatieven. Bij eenvoudige, eenduidige tekstuele vragen kunnen de beste modellen bijna even goed of zelfs even goed als een mens scoren. Bij complexere vraagtypes, waaronder visuele of notatiegevoelige taken, zien we echter een duidelijke terugval in nauwkeurigheid en betrouwbaarheid.
+
+Kortom, AI-systemen zijn een waardevolle aanvulling op, maar (nog) geen vervanging voor menselijk nakijken. De resultaten tonen een duidelijke meerwaarde voor tijdsbesparing en consistentie, maar ook de blijvende noodzaak van menselijke expertise bij complexe of visueel-gedreven examenonderdelen.
+
+
+\end{multicols}
 % TODO: checken of dit enin moet blijven
 % \subsection{Analyseren}
 % \begin{multicols}{2}
