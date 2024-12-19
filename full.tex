@@ -1964,12 +1964,26 @@ Samengevat geven de data inzicht in welke onderdelen van de leerstof leerlingen 
 \section{Discussie}
 \subsection{Foutenanalyse}
 \begin{multicols}{2}
+\noindent\begin{minipage}{\linewidth}
+    
 \subsubsection{Inscannen}
 $\bullet$ Tijdens het testen van instellingen zijn er een aantal gefaalt, omdat er te veel requests per seconde werden gestuurd. Dit kan ervoor hebben gezorgd dat de resultaten verdraaid zijn.\\
 $\bullet$ Er kan meer getest worden met de ideale prompt die een beter resultaat geeft. \\
 $\bullet$ Tijdens het toetsje zijn een aantal vragen verkeerd ingescand, omdat een leerling de checkbox verkeerd had ingevult. Het zou netter zijn om dit als een popup aan een docent te laten zien die dit dan corrigeert.\\
+\end{minipage}
 
+\noindent\begin{minipage}{\linewidth}
 \subsubsection{Nakijken}
+$\bullet$ \textbf{Complexe, visuele vragen zijn een uitdaging:} Meer fout-positieve en fout-negatieve beoordelingen, vooral bij handgetekende structuren, schema's en grafische voorstellingen.\\
+$\bullet$ \textbf{Inscannen kan ook fouten geven:} Het is mogelijk dat fouten door het inscannen van de vragen komen, en niet door de AI.\\
+$\bullet$ \textbf{Verschillen tussen modellen:} De meeste modellen presteren vergelijkbaar met andere benchmarks, maar \textbf{o1-mini} presteert slechter bij visuele vragen.\\
+$\bullet$ \textbf{Verbeterpunten:}\\
+\hspace{3em}\begin{minipage}{0.9\linewidth}
+$\bullet$ \textbf{Fine-tuning:} Trainen op chemische datasets met visuele representaties.\\
+$\bullet$ \textbf{Promptoptimalisatie:} Betere prompts en consistentiecontroles.\\
+$\bullet$ \textbf{Mens-AI samenwerking:} AI voor eenvoudige vragen, mens voor complexe vragen.
+\end{minipage}
+\end{minipage}
 \subsubsection{Analyseren}
 $\bullet$ De bedachte UI is niet getest, waardoor er niet een 2e iteratie verbeteringen is gedaan.\\
 $\bullet$ We hebben geen echte toetsen geanalyseerd, omdat de toets die we zouden krijgen zo slecht gemaakt was dat er niets te analyseren was.\\
@@ -1985,25 +1999,54 @@ $\bullet$ Dit is een enquête gestuurd naar docenten van Het Amsterdams Lyceum e
 \subsubsection{Praktijktest}
 $\bullet$ We hebben dit toetsje afgenomen bij een hele lieve gymnasium klas. Het is de vraag op andere klassen andere manieren vinden om het blaadje zo toe te takelen dat het nakijkprocess wordt verhinderd.\\
 \end{minipage}
-\pagebreak
+\begin{minipage}{\linewidth}
+    
 \subsection{vervolgonderzoek}
 $\bullet$ Een onderzoek/test naar een interface die docenten kunnen gebruiken om de inscan en nakijk modules makkelijk tegebruiken\\
 $\bullet$ Een onderzoek naar wat docenten op andere scholen belangrijk vinden\\
 $\bullet$ Een onderzoek naar wat docenten van ons de resultaten van ons toetsje vinden en of dit hun mening verandert over de mogelijkheden van nakijken met AI\\
 $\bullet$ Een onderzoek naar hoe zo'n systeem geïntegreerd kan worden in het huidige onderwijs. Denk hierbij aan het printen van de custom toetsblaadjes of het omzetten van huidige toetsen naar een computerformat  die een ai kan gebruiken.\\
-
+\end{minipage}
+\end{multicols}
+\pagebreak
 
 \subsection{Terugblik en dankwoord}
-
+\begin{multicols}{2}
+\noindent\begin{minipage}{\linewidth}
+    
 \paragraph*{Reflectie Joost} Dit project heb ik veel geleerd over het overstappen naar een andere methode. Voor de inscanmodule had ik in het begin ingeschat dat ik maar 10 uur nodig had voor het inscannen. De daadwerkelijke tijd was een stuk meer. De methode die ik had bedacht (tekstherkenning in de kantlijn) bleek niet te werken, maar ik heb wel (onnodig) veel tijd besteed aan het optimaliseren van dat proces. Ik heb ook veel gehad aan het gebruiken van de Google Gemini API, die gebruik ik nu vaak om kleine simpele taakjes op te lossen. Ook heb ik Google Sheets pivot tables leren gebruiken om snel de enquete, inscan en toets resultaten in tabellen te zetten (die ik daarna met Google Gemini naar de latex/pdf tabellen heb omgezet). Het inscan en nakijksysteem zal ik waarschijnlijk in een ander project gaan gebruiken. Waar volgend jaar misschien rekening mee gehouden kan worden is dat de rubrics van het PWS niet duidelijk de opdracht van het PWS weerspiegelen. Tot fase 3 is eigenlijk literatuuronderzoek en een paar beantwoorde deelvragen. Fase 4 is het onderdeel waar je het "grote" onderzoek moet uitvoeren. Ik vond dat wie die fase pas laat kregen en dat er dingen miste in de rubric die ik wel verwacht in een wetenschappelijk onderzoek (bijvoorbeeld de indeling of het hebben van resultaten). Ik zie dit PWS meer als een eigen project dan als een opdracht voor school en eigen projectjes vind ik leuk om te doen, zie: \href{https://github.com/TanteJossa}{Mijn Github}.  
-\paragraph*{Reflectie Jonathan}
+\end{minipage}
+\begin{minipage}{\linewidth}
+\paragraph*{Reflectie Jonathan} Tijdens dit project heb ik een scheikundetoets gemaakt en een nakijksysteem ontwikkeld. 
+Ik heb hierbij veel geleerd over het gebruik van technologie om processen makkelijker en sneller te maken. \\
+In het begin dacht ik dat het nakijken van de toets vrij simpel zou zijn, maar uiteindelijk bleek het toch lastiger dan verwacht. 
+Vooral het opzetten van de automatische correctie kostte meer tijd, omdat ik veel moest testen om te zorgen dat alles goed werkte.\\
+
+Een belangrijk onderdeel van het project was het gebruik van API requests naar OpenAI.
+Hiermee kon ik data sturen en automatisch antwoorden of feedback ontvangen, wat het nakijksysteem efficiënter maakte.
+Ik leerde hoe ik de API kon aanroepen en de resultaten kon verwerken, wat ik erg handig vond. Dit was de eerste keer dat ik met API’s werkte 
+en het heeft me laten zien hoe krachtig en flexibel ze kunnen zijn voor dit soort taken.\\
+
+Daarnaast heb ik veel tijd besteed aan het testen van variabelen in het nakijksysteem.
+Door kleine aanpassingen te doen en telkens opnieuw te testen, kon ik het nakijkproces steeds een beetje beter maken.
+Dit was soms best frustrerend, omdat het niet altijd meteen werkte.
+Uiteindelijk was het het toch waard toen het systeem op z'n best werkte.\\
+
+Dit project heeft me laten zien hoe technologie kan helpen bij het automatiseren van taken zoals nakijken.
+Ik vond het leuk om te zien hoe het stukje bij beetje in elkaar viel.
+Als ik dit project vergelijk met andere schoolopdrachten, voelde het meer als een eigen project waar ik echt zelf de controle over had.
+Hierdoor vond ik het ook leuker en heb ik veel geleerd, bijvoorbeeld over API’s en het testen van systemen.
+Ik denk dat ik de kennis die ik nu heb opgedaan in toekomstige projecten zeker ga gebruiken!
+\end{minipage}
 \paragraph*{Dankwoord} 
 Dit project hebben we niet alleen kunnen doen. Als eerste willen we graag onze begeleider, \textbf{Philip Hermarij}, bedanken voor het mogelijk maken van onze praktijktest. Daarnaast vonden we het fijn dat hij ons liet concentreren op het maken van het systeem, in plaats van ons achterna zitten met de opdracht en rubric.\\
+\noindent\begin{minipage}{ \linewidth}
 Daarnaast willen we graag \textbf{Deirdre Vos} bedanken voor 2 dingen:
 \noindent\begin{itemize}
     \item  Het ondersteunen van het analyseer onderzoek, door ons geanonimiseerde toetsresultaten te geven. Daarnaast heeft ze ook input gegeven voor wat haar handig lijkt in een mogelijke interface, zoals het toewijzen van rubricpunten aan leerdoelen. Ook hebben de lessen wiskunde D over statistiek en kansen ons geholpen in het analyseren van de toets enquête en nakijkresultaten\\
     \item Ons in contact brengen met Daniël Markus. 
 \end{itemize}
+\end{minipage}
 Bij \textbf{Daniël Markus} hebben we een interview afgenomen over gebruik van AI voor het nakijken en inscannen. Bij dat interview was een onderzoeken naar AI die ons ook belangrijke inzichten heeft gegeven, bijvoorbeeld voor de checkbox inscanmethode.\\
 \\
 Als laatste willen we alle \textbf{docenten} die tijd hebben genomen om onze enquête in te vullen  bedanken. We konden daardoor een duidelijk doel bepalen en inzicht krijgen in de grootste problemen die docenten met een nakijksysteem hebben.
