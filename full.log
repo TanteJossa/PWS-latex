@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.11)  19 DEC 2024 23:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.11)  20 DEC 2024 00:49
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1630,10 +1630,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 492--498
 \pydata@fh@_E9DC924F238FA6CC29465942875FE8F0.data.minted=\write8
 \openout8 = `_E9DC924F238FA6CC29465942875FE8F0.data.minted'.
 
-runsystem(latexminted config  --timestamp 20241219235915 E9DC924F238FA6CC29465942875FE8F0)...executed.
+runsystem(latexminted config  --timestamp 20241220004951 E9DC924F238FA6CC29465942875FE8F0)...executed.
 
 (_E9DC924F238FA6CC29465942875FE8F0.config.minted)
-runsystem(latexminted cleanconfig  --timestamp 20241219235915 E9DC924F238FA6CC29465942875FE8F0)...executed.
+runsystem(latexminted cleanconfig  --timestamp 20241220004951 E9DC924F238FA6CC29465942875FE8F0)...executed.
 
  (_minted/default.style.minted) (_minted/867809D514D1C5F22F4E88019D72ADF8.highlight.minted)
 Package hyperref Info: bookmark level for unknown listing defaults to 0 on input line 515.
@@ -2049,6 +2049,11 @@ Overfull \hbox (178.0705pt too wide) in alignment at lines 1188--1188
  []
 
 
+Overfull \hbox (2.08104pt too wide) in paragraph at lines 1202--1203
+ []\T1/cmr/bx/n/12 AI Cor-rec-tie-mo-dule[] \T1/cmr/m/n/12 Er wordt ge-bruik-ge-maakt van een pro-to-type (com-pu-ter)programma.
+ []
+
+
 
 [34]
 
@@ -2112,8 +2117,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 1383--1383
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1383--1383
-[]|\T1/cmr/bx/n/12 Grand
+Overfull \hbox (29.44731pt too wide) in paragraph at lines 1383--1383
+[]|\T1/cmr/bx/n/12 Gemiddelde| 
  []
 
 
@@ -2375,7 +2380,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1437--1450
 [40]
 
 [41]
-<./images/methoden/analyseren/ui/inlaad-pagina.png, id=651, 1445.4pt x 685.8122pt>
+<./images/methoden/analyseren/ui/inlaad-pagina.png, id=652, 1445.4pt x 685.8122pt>
 File: ./images/methoden/analyseren/ui/inlaad-pagina.png Graphic file (type png)
 <use ./images/methoden/analyseren/ui/inlaad-pagina.png>
 Package pdftex.def Info: ./images/methoden/analyseren/ui/inlaad-pagina.png  used on input line 1538.
@@ -2385,7 +2390,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1534--1541
 
  []
 
-<./images/methoden/analyseren/Niet-lineaire.png, id=652, 192.72pt x 115.632pt>
+<./images/methoden/analyseren/Niet-lineaire.png, id=653, 192.72pt x 115.632pt>
 File: ./images/methoden/analyseren/Niet-lineaire.png Graphic file (type png)
 <use ./images/methoden/analyseren/Niet-lineaire.png>
 Package pdftex.def Info: ./images/methoden/analyseren/Niet-lineaire.png  used on input line 1552.
@@ -2405,7 +2410,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1542--1555
 
  []
 
-<./images/methoden/analyseren/linair.png, id=653, 451.6875pt x 286.82156pt>
+<./images/methoden/analyseren/linair.png, id=654, 451.6875pt x 286.82156pt>
 File: ./images/methoden/analyseren/linair.png Graphic file (type png)
 <use ./images/methoden/analyseren/linair.png>
 Package pdftex.def Info: ./images/methoden/analyseren/linair.png  used on input line 1558.
@@ -2446,6 +2451,11 @@ Underfull \hbox (badness 10000) in alignment at lines 1875--1875
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1864--1876
+[]\T1/cmr/m/n/12 We ver-wacht-ten dat het "nieuw-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1864--1876
 
  []
 
@@ -2478,771 +2488,781 @@ Underfull \hbox (badness 10000) in paragraph at lines 1982--1985
  []
 
 
-Underfull \hbox (badness 5970) in paragraph at lines 1994--1997
+Underfull \hbox (badness 5374) in paragraph at lines 1989--1992
+\T1/cmr/m/n/12 ver-keerd in-ge-scand, om-dat een leer-ling
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1989--1992
+
+ []
+
+
+Underfull \hbox (badness 5970) in paragraph at lines 1996--1999
 \T1/cmr/m/n/12 waar-door hun re-ac-tie sta-tis-tisch ge-zien
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1994--1997
+Underfull \hbox (badness 10000) in paragraph at lines 1996--1999
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2000--2001
+Underfull \hbox (badness 10000) in paragraph at lines 2002--2003
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2005--2009
+Underfull \hbox (badness 10000) in paragraph at lines 2007--2012
 
  []
-
-
 
 [54]
-Underfull \hbox (badness 10000) in paragraph at lines 2020--2024
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2025--2029
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2030--2034
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2046--2047
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2042--2053
-
- []
 
 [55]
+Underfull \hbox (badness 10000) in paragraph at lines 2023--2027
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2028--2032
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2033--2037
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2049--2050
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2045--2056
+
+ []
 
 [56]
-Underfull \hbox (badness 10000) in paragraph at lines 2060--2067
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2060--2067
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2060--2067
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2060--2067
-
- []
-
-
 
 [57]
-Overfull \hbox (0.46713pt too wide) in paragraph at lines 2071--2071
-[][]\T1/cmr/m/n/12 Library, O. S. C. V. (2024). OpenCV Do-cu-men-ta-tion [Of-fi-cial do-cu-men-ta-tion for the OpenCV
+Underfull \hbox (badness 10000) in paragraph at lines 2063--2070
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2063--2070
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2063--2070
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2063--2070
+
  []
 
 
 
 [58]
+Overfull \hbox (0.46713pt too wide) in paragraph at lines 2074--2074
+[][]\T1/cmr/m/n/12 Library, O. S. C. V. (2024). OpenCV Do-cu-men-ta-tion [Of-fi-cial do-cu-men-ta-tion for the OpenCV
+ []
+
+
 
 [59]
-Overfull \hbox (1.42273pt too wide) in paragraph at lines 2081--2081
+
+[60]
+Overfull \hbox (1.42273pt too wide) in paragraph at lines 2084--2084
 []|\T1/cmr/bx/n/10.95 Score| 
  []
 
 
-Overfull \hbox (12.80403pt too wide) in paragraph at lines 2081--2082
+Overfull \hbox (12.80403pt too wide) in paragraph at lines 2084--2085
 []|\T1/cmr/bx/n/10.95 Change
  []
 
 
-Overfull \hbox (5.52199pt too wide) in paragraph at lines 2081--2082
+Overfull \hbox (5.52199pt too wide) in paragraph at lines 2084--2085
 \T1/cmr/bx/n/10.95 Count| 
  []
 
 
-Overfull \hbox (40.21436pt too wide) in alignment at lines 2079--2083
+Overfull \hbox (40.21436pt too wide) in alignment at lines 2082--2086
  [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (40.21436pt too wide) in alignment at lines 2083--2085
+Overfull \hbox (40.21436pt too wide) in alignment at lines 2086--2088
  [] [] [] [] [] [] [] 
  []
 
 
-Underfull \hbox (badness 3158) in paragraph at lines 2087--2087
+Underfull \hbox (badness 3158) in paragraph at lines 2090--2090
 []|\T1/cmr/m/n/10.95 Je moet schie-ten,
  []
 
 
-Underfull \hbox (badness 3158) in paragraph at lines 2087--2087
+Underfull \hbox (badness 3158) in paragraph at lines 2090--2090
 []|\T1/cmr/m/n/10.95 Je moet schie-ten,
  []
 
 
-Underfull \hbox (badness 1502) in paragraph at lines 2087--2087
+Underfull \hbox (badness 1502) in paragraph at lines 2090--2090
 \T1/cmr/m/n/10.95 nders kun je niet
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2087--2087
+Underfull \hbox (badness 10000) in paragraph at lines 2090--2090
 []|\T1/cmr/m/n/10.95 enkele let-ter-
  []
 
 
-Overfull \hbox (2.06165pt too wide) in paragraph at lines 2087--2087
+Overfull \hbox (2.06165pt too wide) in paragraph at lines 2090--2090
 []|\T1/cmr/m/n/10.95 0.1937| 
  []
 
 
-Underfull \hbox (badness 3158) in paragraph at lines 2089--2089
+Underfull \hbox (badness 3158) in paragraph at lines 2092--2092
 []|\T1/cmr/m/n/10.95 Je moet schie-ten,
  []
 
 
-Underfull \hbox (badness 5607) in paragraph at lines 2089--2089
+Underfull \hbox (badness 5607) in paragraph at lines 2092--2092
 []|\T1/cmr/m/n/10.95 Je moet scho-ten,
  []
 
 
-Underfull \hbox (badness 2261) in paragraph at lines 2089--2089
+Underfull \hbox (badness 2261) in paragraph at lines 2092--2092
 []|\T1/cmr/m/n/10.95 enkele woord-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2089--2089
+Underfull \hbox (badness 10000) in paragraph at lines 2092--2092
 \T1/cmr/m/n/10.95 ver-an-de-ring,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2089--2089
+Underfull \hbox (badness 10000) in paragraph at lines 2092--2092
 \T1/cmr/m/n/10.95 geen be-te-ke-
  []
 
 
-Overfull \hbox (2.06165pt too wide) in paragraph at lines 2089--2089
+Overfull \hbox (2.06165pt too wide) in paragraph at lines 2092--2092
 []|\T1/cmr/m/n/10.95 0.2146| 
  []
 
 
-Underfull \hbox (badness 3158) in paragraph at lines 2091--2091
+Underfull \hbox (badness 3158) in paragraph at lines 2094--2094
 []|\T1/cmr/m/n/10.95 Je moet schie-ten,
  []
 
 
-Underfull \hbox (badness 5607) in paragraph at lines 2091--2091
+Underfull \hbox (badness 5607) in paragraph at lines 2094--2094
 []|\T1/cmr/m/n/10.95 Je moet scho-ten,
  []
 
 
-Overfull \hbox (3.63911pt too wide) in paragraph at lines 2091--2091
+Overfull \hbox (3.63911pt too wide) in paragraph at lines 2094--2094
 []|\T1/cmr/m/n/10.95 woordweglating| 
  []
 
 
-Overfull \hbox (2.06165pt too wide) in paragraph at lines 2091--2091
+Overfull \hbox (2.06165pt too wide) in paragraph at lines 2094--2094
 []|\T1/cmr/m/n/10.95 0.2146| 
  []
 
 
-Underfull \hbox (badness 3158) in paragraph at lines 2093--2093
+Underfull \hbox (badness 3158) in paragraph at lines 2096--2096
 []|\T1/cmr/m/n/10.95 Je moet schie-ten,
  []
 
 
-Underfull \hbox (badness 2261) in paragraph at lines 2093--2093
+Underfull \hbox (badness 2261) in paragraph at lines 2096--2096
 []|\T1/cmr/m/n/10.95 enkele woord-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2093--2093
+Underfull \hbox (badness 10000) in paragraph at lines 2096--2096
 \T1/cmr/m/n/10.95 ver-an-de-ring,
  []
 
 
-Overfull \hbox (2.06165pt too wide) in paragraph at lines 2093--2093
+Overfull \hbox (2.06165pt too wide) in paragraph at lines 2096--2096
 []|\T1/cmr/m/n/10.95 0.3282| 
  []
 
 
-Underfull \hbox (badness 3158) in paragraph at lines 2095--2095
+Underfull \hbox (badness 3158) in paragraph at lines 2098--2098
 []|\T1/cmr/m/n/10.95 Je moet schie-ten,
  []
 
 
-Overfull \hbox (11.56892pt too wide) in paragraph at lines 2095--2095
+Overfull \hbox (11.56892pt too wide) in paragraph at lines 2098--2098
 []|\T1/cmr/m/n/10.95 zinsdeelweglating| 
  []
 
 
-Overfull \hbox (2.06165pt too wide) in paragraph at lines 2095--2095
+Overfull \hbox (2.06165pt too wide) in paragraph at lines 2098--2098
 []|\T1/cmr/m/n/10.95 1.1590| 
  []
 
 
-Underfull \hbox (badness 3158) in paragraph at lines 2097--2097
+Underfull \hbox (badness 3158) in paragraph at lines 2100--2100
 []|\T1/cmr/m/n/10.95 Je moet schie-ten,
  []
 
 
-Overfull \hbox (40.21436pt too wide) in alignment at lines 2085--2099
+Overfull \hbox (40.21436pt too wide) in alignment at lines 2088--2102
  [] [] [] [] [] [] [] 
  []
 
 
 
-[60]
-Overfull \hbox (12.80403pt too wide) in paragraph at lines 2106--2107
+[61]
+Overfull \hbox (12.80403pt too wide) in paragraph at lines 2109--2110
 []|\T1/cmr/bx/n/10.95 Change
  []
 
 
-Overfull \hbox (5.52199pt too wide) in paragraph at lines 2106--2107
+Overfull \hbox (5.52199pt too wide) in paragraph at lines 2109--2110
 \T1/cmr/bx/n/10.95 Count| 
  []
 
 
-Overfull \hbox (49.61147pt too wide) in alignment at lines 2104--2108
+Overfull \hbox (49.61147pt too wide) in alignment at lines 2107--2111
  [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (49.61147pt too wide) in alignment at lines 2108--2110
+Overfull \hbox (49.61147pt too wide) in alignment at lines 2111--2113
  [] [] [] [] [] [] [] 
  []
 
 
-Underfull \hbox (badness 6575) in paragraph at lines 2112--2112
+Underfull \hbox (badness 6575) in paragraph at lines 2115--2115
 []|\T1/cmr/m/n/10.95 Ik heb een heel
  []
 
 
-Underfull \hbox (badness 6575) in paragraph at lines 2112--2112
+Underfull \hbox (badness 6575) in paragraph at lines 2115--2115
 []|\T1/cmr/m/n/10.95 Ik heb een heel
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2114--2114
+Underfull \hbox (badness 10000) in paragraph at lines 2117--2117
 []|\T1/cmr/m/n/10.95 enkele let-ter-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2114--2114
+Underfull \hbox (badness 10000) in paragraph at lines 2117--2117
 \T1/cmr/m/n/10.95 ver-an-de-ring ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2114--2114
+Underfull \hbox (badness 10000) in paragraph at lines 2117--2117
 \T1/cmr/m/n/10.95 geen be-te-ke-
  []
 
 
-Overfull \hbox (3.63911pt too wide) in paragraph at lines 2116--2116
+Overfull \hbox (3.63911pt too wide) in paragraph at lines 2119--2119
 []|\T1/cmr/m/n/10.95 woordweglating| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2118--2118
+Underfull \hbox (badness 10000) in paragraph at lines 2121--2121
 []|\T1/cmr/m/n/10.95 Rrrrrr, hah, is
  []
 
 
-Underfull \hbox (badness 2689) in paragraph at lines 2118--2118
+Underfull \hbox (badness 2689) in paragraph at lines 2121--2121
 \T1/cmr/m/n/10.95 Ha, jij bent vies
  []
 
 
-Underfull \hbox (badness 1048) in paragraph at lines 2118--2118
+Underfull \hbox (badness 1048) in paragraph at lines 2121--2121
 \T1/cmr/m/n/10.95 ner. In de club,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2118--2118
+Underfull \hbox (badness 10000) in paragraph at lines 2121--2121
 \T1/cmr/m/n/10.95 kom je moe-der
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2118--2118
+Underfull \hbox (badness 10000) in paragraph at lines 2121--2121
 \T1/cmr/m/n/10.95 je moet vroe-ger
  []
 
 
-Underfull \hbox (badness 4328) in paragraph at lines 2118--2118
+Underfull \hbox (badness 4328) in paragraph at lines 2121--2121
 \T1/cmr/m/n/10.95 kwijt, maar floes
  []
 
 
-Underfull \hbox (badness 3078) in paragraph at lines 2118--2118
+Underfull \hbox (badness 3078) in paragraph at lines 2121--2121
 \T1/cmr/m/n/10.95 zon-des af en toe
  []
 
 
-Underfull \hbox (badness 2443) in paragraph at lines 2118--2118
+Underfull \hbox (badness 2443) in paragraph at lines 2121--2121
 \T1/cmr/m/n/10.95 mij. Van alarm
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2118--2118
+Underfull \hbox (badness 10000) in paragraph at lines 2121--2121
 \T1/cmr/m/n/10.95 voor-zien aan de
  []
 
 
-Underfull \hbox (badness 3514) in paragraph at lines 2118--2118
+Underfull \hbox (badness 3514) in paragraph at lines 2121--2121
 \T1/cmr/m/n/10.95 ach-ter-kant. Dus
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2118--2118
+Underfull \hbox (badness 10000) in paragraph at lines 2121--2121
 []|\T1/cmr/m/n/10.95 Rrrrrr, hah, is
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2118--2118
+Underfull \hbox (badness 10000) in paragraph at lines 2121--2121
 \T1/cmr/m/n/10.95 ge-woon Boef
  []
 
 
-Underfull \hbox (badness 2302) in paragraph at lines 2118--2118
+Underfull \hbox (badness 2302) in paragraph at lines 2121--2121
 \T1/cmr/m/n/10.95 man.test, jij bent
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2118--2118
+Underfull \hbox (badness 10000) in paragraph at lines 2121--2121
 \T1/cmr/m/n/10.95 kom-test moe-der
  []
 
 
-Underfull \hbox (badness 3078) in paragraph at lines 2118--2118
+Underfull \hbox (badness 3078) in paragraph at lines 2121--2121
 \T1/cmr/m/n/10.95 zon-des af en toe
  []
 
 
-Underfull \hbox (badness 1424) in paragraph at lines 2118--2118
+Underfull \hbox (badness 1424) in paragraph at lines 2121--2121
 \T1/cmr/m/n/10.95 uit eten voor een
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2118--2118
+Underfull \hbox (badness 10000) in paragraph at lines 2121--2121
 \T1/cmr/m/n/10.95 een uit-ge-ver, ze
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2118--2118
+Underfull \hbox (badness 10000) in paragraph at lines 2121--2121
 []|\T1/cmr/m/n/10.95 random toe-
  []
 
 
-Underfull \hbox (badness 1259) in paragraph at lines 2118--2118
+Underfull \hbox (badness 1259) in paragraph at lines 2121--2121
 \T1/cmr/m/n/10.95 voe-ging woor-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2120--2120
+Underfull \hbox (badness 10000) in paragraph at lines 2123--2123
 []|\T1/cmr/m/n/10.95 Ik be-grijp niet
  []
 
 
-Underfull \hbox (badness 2197) in paragraph at lines 2120--2120
+Underfull \hbox (badness 2197) in paragraph at lines 2123--2123
 \T1/cmr/m/n/10.95 ne-ga-tief en ver-ve-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2120--2120
+Underfull \hbox (badness 10000) in paragraph at lines 2123--2123
 \T1/cmr/m/n/10.95 wij op-ti-mis-tisch
  []
 
 
-Underfull \hbox (badness 4303) in paragraph at lines 2120--2120
+Underfull \hbox (badness 4303) in paragraph at lines 2123--2123
 \T1/cmr/m/n/10.95 zijn! La-ten we
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2120--2120
+Underfull \hbox (badness 10000) in paragraph at lines 2123--2123
 \T1/cmr/m/n/10.95 VOC-mentaliteit,
  []
 
 
-Underfull \hbox (badness 1502) in paragraph at lines 2120--2120
+Underfull \hbox (badness 1502) in paragraph at lines 2123--2123
 \T1/cmr/m/n/10.95 over gren-zen heen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2120--2120
+Underfull \hbox (badness 10000) in paragraph at lines 2123--2123
 \T1/cmr/m/n/10.95 kij-ken, dy-na-miek!
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2120--2120
+Underfull \hbox (badness 10000) in paragraph at lines 2123--2123
 []|\T1/cmr/m/n/10.95 Ik be-grijp niet
  []
 
 
-Underfull \hbox (badness 2197) in paragraph at lines 2120--2120
+Underfull \hbox (badness 2197) in paragraph at lines 2123--2123
 \T1/cmr/m/n/10.95 ne-ga-tief en ver-ve-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2120--2120
+Underfull \hbox (badness 10000) in paragraph at lines 2123--2123
 \T1/cmr/m/n/10.95 wij op-ti-mis-tisch
  []
 
 
-Underfull \hbox (badness 4303) in paragraph at lines 2120--2120
+Underfull \hbox (badness 4303) in paragraph at lines 2123--2123
 \T1/cmr/m/n/10.95 zijn! La-ten we
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2120--2120
+Underfull \hbox (badness 10000) in paragraph at lines 2123--2123
 []|\T1/cmr/m/n/10.95 weglating
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2120--2120
+Underfull \hbox (badness 10000) in paragraph at lines 2123--2123
 \T1/cmr/m/n/10.95 einde van
  []
 
 
-Underfull \hbox (badness 2065) in paragraph at lines 2122--2122
+Underfull \hbox (badness 2065) in paragraph at lines 2125--2125
 []|\T1/cmr/m/n/10.95 Ik heb nooit last
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2122--2122
+Underfull \hbox (badness 10000) in paragraph at lines 2125--2125
 \T1/cmr/m/n/10.95 van hoog-te-vrees,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2122--2122
+Underfull \hbox (badness 10000) in paragraph at lines 2125--2125
 \T1/cmr/m/n/10.95 hoog-te-vrees, well
  []
 
 
-Underfull \hbox (badness 6396) in paragraph at lines 2122--2122
+Underfull \hbox (badness 6396) in paragraph at lines 2125--2125
 []|\T1/cmr/m/n/10.95 Youp van 't
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2122--2122
+Underfull \hbox (badness 10000) in paragraph at lines 2125--2125
 []|\T1/cmr/m/n/10.95 enkele let-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2122--2122
+Underfull \hbox (badness 10000) in paragraph at lines 2125--2125
 \T1/cmr/m/n/10.95 ter-weg-la-ting,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2122--2122
+Underfull \hbox (badness 10000) in paragraph at lines 2125--2125
 \T1/cmr/m/n/10.95 be-te-ke-nis-ver-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2124--2124
+Underfull \hbox (badness 10000) in paragraph at lines 2127--2127
 []|\T1/cmr/m/n/10.95 Praat Ne-der-lands
  []
 
 
-Underfull \hbox (badness 4954) in paragraph at lines 2124--2124
+Underfull \hbox (badness 4954) in paragraph at lines 2127--2127
 \T1/cmr/m/n/10.95 met me. Even
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2124--2124
+Underfull \hbox (badness 10000) in paragraph at lines 2127--2127
 \T1/cmr/m/n/10.95 Ne-der-lands met
  []
 
 
-Underfull \hbox (badness 1242) in paragraph at lines 2124--2124
+Underfull \hbox (badness 1242) in paragraph at lines 2127--2127
 \T1/cmr/m/n/10.95 me. Mijn ge-voel
  []
 
 
-Underfull \hbox (badness 3815) in paragraph at lines 2124--2124
+Underfull \hbox (badness 3815) in paragraph at lines 2127--2127
 \T1/cmr/m/n/10.95 zegt mij dat wij
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2124--2124
+Underfull \hbox (badness 10000) in paragraph at lines 2127--2127
 \T1/cmr/m/n/10.95 van-avond sa-men
  []
 
 
-Underfull \hbox (badness 2042) in paragraph at lines 2124--2124
+Underfull \hbox (badness 2042) in paragraph at lines 2127--2127
 \T1/cmr/m/n/10.95 kij-ken. Naar de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2124--2124
+Underfull \hbox (badness 10000) in paragraph at lines 2127--2127
 \T1/cmr/m/n/10.95 Champs-Élysées
  []
 
 
-Underfull \hbox (badness 1424) in paragraph at lines 2124--2124
+Underfull \hbox (badness 1424) in paragraph at lines 2127--2127
 \T1/cmr/m/n/10.95 en naar de No-tre
  []
 
 
-Underfull \hbox (badness 1194) in paragraph at lines 2124--2124
+Underfull \hbox (badness 1194) in paragraph at lines 2127--2127
 \T1/cmr/m/n/10.95 Dame en naar de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2124--2124
+Underfull \hbox (badness 10000) in paragraph at lines 2127--2127
 []|\T1/cmr/m/n/10.95 Praat Ne-der-tands
  []
 
 
-Underfull \hbox (badness 4954) in paragraph at lines 2124--2124
+Underfull \hbox (badness 4954) in paragraph at lines 2127--2127
 \T1/cmr/m/n/10.95 met me. Even
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2124--2124
+Underfull \hbox (badness 10000) in paragraph at lines 2127--2127
 \T1/cmr/m/n/10.95 Ne-ter-lands met
  []
 
 
-Underfull \hbox (badness 1242) in paragraph at lines 2124--2124
+Underfull \hbox (badness 1242) in paragraph at lines 2127--2127
 \T1/cmr/m/n/10.95 me. Mijn te-voet
  []
 
 
-Underfull \hbox (badness 3815) in paragraph at lines 2124--2124
+Underfull \hbox (badness 3815) in paragraph at lines 2127--2127
 \T1/cmr/m/n/10.95 zegt mij dat wij
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2124--2124
+Underfull \hbox (badness 10000) in paragraph at lines 2127--2127
 \T1/cmr/m/n/10.95 vanatond sa-met
  []
 
 
-Underfull \hbox (badness 1776) in paragraph at lines 2124--2124
+Underfull \hbox (badness 1776) in paragraph at lines 2127--2127
 \T1/cmr/m/n/10.95 kit-ken. Naar de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2124--2124
+Underfull \hbox (badness 10000) in paragraph at lines 2127--2127
 \T1/cmr/m/n/10.95 Champs-Éltsées
  []
 
 
-Underfull \hbox (badness 1424) in paragraph at lines 2124--2124
+Underfull \hbox (badness 1424) in paragraph at lines 2127--2127
 \T1/cmr/m/n/10.95 en naar de No-tre
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2126--2126
+Underfull \hbox (badness 10000) in paragraph at lines 2129--2129
 []|\T1/cmr/m/n/10.95 weglating in
  []
 
 
-Underfull \hbox (badness 1400) in paragraph at lines 2130--2130
+Underfull \hbox (badness 1400) in paragraph at lines 2133--2133
 []|\T1/cmr/m/n/10.95 Ik ge-loof in God,
  []
 
 
-Underfull \hbox (badness 1881) in paragraph at lines 2130--2130
+Underfull \hbox (badness 1881) in paragraph at lines 2133--2133
 []|\T1/cmr/m/n/10.95 weglating aan
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2132--2132
+Underfull \hbox (badness 10000) in paragraph at lines 2135--2135
 []|\T1/cmr/m/n/10.95 dubbelle
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2132--2132
+Underfull \hbox (badness 10000) in paragraph at lines 2135--2135
 \T1/cmr/m/n/10.95 woord-weg-la-
  []
 
 
-Overfull \hbox (49.61147pt too wide) in alignment at lines 2110--2134
+Overfull \hbox (49.61147pt too wide) in alignment at lines 2113--2137
  [] [] [] [] [] [] [] 
  []
 
-[61]
-
 [62]
-Underfull \hbox (badness 10000) in paragraph at lines 2152--2152
+
+[63]
+Underfull \hbox (badness 10000) in paragraph at lines 2155--2155
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2152--2152
+Underfull \hbox (badness 10000) in paragraph at lines 2155--2155
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2152--2152
+Underfull \hbox (badness 10000) in paragraph at lines 2155--2155
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2152--2152
+Underfull \hbox (badness 10000) in paragraph at lines 2155--2155
 
  []
 
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 2137--2153
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 2140--2156
 [] 
  []
 
 
 
-[63]
-Underfull \hbox (badness 10000) in paragraph at lines 2168--2168
+[64]
+Underfull \hbox (badness 10000) in paragraph at lines 2171--2171
 []|\T1/cmr/m/n/10 Uren
  []
 
 
-Underfull \hbox (badness 1924) in paragraph at lines 2168--2168
+Underfull \hbox (badness 1924) in paragraph at lines 2171--2171
 []|\T1/cmr/m/n/10 Uren Jo-
  []
 
 
-Overfull \hbox (11.03632pt too wide) in alignment at lines 2167--2170
+Overfull \hbox (11.03632pt too wide) in alignment at lines 2170--2173
  [] [] [] [] [] 
  []
 
 
-Underfull \hbox (badness 1377) in paragraph at lines 2173--2173
+Underfull \hbox (badness 1377) in paragraph at lines 2176--2176
 []|\T1/cmr/m/n/10 mini on-der-zoek en-quete op-ge-
  []
 
 
-Underfull \hbox (badness 3735) in paragraph at lines 2174--2174
+Underfull \hbox (badness 3735) in paragraph at lines 2177--2177
 []|\T1/cmr/m/n/10 normaalverdelingen toe-ge-voegd
  []
 
 
-Underfull \hbox (badness 8019) in paragraph at lines 2187--2188
+Underfull \hbox (badness 8019) in paragraph at lines 2190--2191
 []|\T1/cmr/m/n/10 Begonnen met im-ple-men-ta-tie
  []
 
 
-Underfull \hbox (badness 1082) in paragraph at lines 2199--2199
+Underfull \hbox (badness 1082) in paragraph at lines 2202--2202
 []|\T1/cmr/m/n/10 conclusie ge-schre-ven in-scan-nen
  []
 
 
-Underfull \hbox (badness 2119) in paragraph at lines 2201--2201
+Underfull \hbox (badness 2119) in paragraph at lines 2204--2204
 \T1/cmr/m/n/10 ver-volg-on-der-zoek + op-zet sa-
  []
 
 
-Overfull \hbox (11.03632pt too wide) in alignment at lines 2170--2208
+Overfull \hbox (11.03632pt too wide) in alignment at lines 2173--2211
  [] [] [] [] [] 
  []
 
-[64]
-Underfull \hbox (badness 10000) in paragraph at lines 2215--2215
+[65]
+Underfull \hbox (badness 10000) in paragraph at lines 2218--2218
 []|\T1/cmr/m/n/10 Uren
  []
 
 
-Underfull \hbox (badness 1924) in paragraph at lines 2215--2215
+Underfull \hbox (badness 1924) in paragraph at lines 2218--2218
 []|\T1/cmr/m/n/10 Uren Jo-
  []
 
 
-Overfull \hbox (11.03632pt too wide) in alignment at lines 2213--2218
+Overfull \hbox (11.03632pt too wide) in alignment at lines 2216--2221
  [] [] [] [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2219--2220
+Underfull \hbox (badness 10000) in paragraph at lines 2222--2223
 []|\T1/cmr/m/n/10 Proef LLM mo-del ge-maakt
  []
 
 
-Underfull \hbox (badness 1648) in paragraph at lines 2224--2224
+Underfull \hbox (badness 1648) in paragraph at lines 2227--2227
 []|\T1/cmr/m/n/10 gestart ge-bruikt hand-book en
  []
 
 
-Underfull \hbox (badness 1337) in paragraph at lines 2229--2229
+Underfull \hbox (badness 1337) in paragraph at lines 2232--2232
 []|\T1/cmr/m/n/10 fase 3 2 bron-nen toe-ge-voegd,
  []
 
 
-Underfull \hbox (badness 1275) in paragraph at lines 2229--2229
+Underfull \hbox (badness 1275) in paragraph at lines 2232--2232
 \T1/cmr/m/n/10 nieuwe out-put in-de-ling in-scan
  []
 
 
-Overfull \hbox (11.03632pt too wide) in alignment at lines 2218--2233
+Overfull \hbox (11.03632pt too wide) in alignment at lines 2221--2236
  [] [] [] [] [] 
  []
 
 
 
-[65]
-Underfull \hbox (badness 10000) in paragraph at lines 2240--2240
+[66]
+Underfull \hbox (badness 10000) in paragraph at lines 2243--2243
 []|\T1/cmr/m/n/10 Uren
  []
 
 
-Underfull \hbox (badness 1924) in paragraph at lines 2240--2240
+Underfull \hbox (badness 1924) in paragraph at lines 2243--2243
 []|\T1/cmr/m/n/10 Uren Jo-
  []
 
 
-Overfull \hbox (11.03632pt too wide) in alignment at lines 2238--2243
+Overfull \hbox (11.03632pt too wide) in alignment at lines 2241--2246
  [] [] [] [] [] 
  []
 
 
-Underfull \hbox (badness 2134) in paragraph at lines 2245--2246
+Underfull \hbox (badness 2134) in paragraph at lines 2248--2249
 []|\T1/cmr/m/n/10 Afschrijven van de mo-ti-va-tie-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2254--2254
+Underfull \hbox (badness 10000) in paragraph at lines 2257--2257
 []|\T1/cmr/m/n/10 Samenvatting An au-to-ma-tic
  []
 
 
-Overfull \hbox (11.03632pt too wide) in alignment at lines 2243--2259
+Overfull \hbox (11.03632pt too wide) in alignment at lines 2246--2262
  [] [] [] [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2266--2266
+Underfull \hbox (badness 10000) in paragraph at lines 2269--2269
 []|\T1/cmr/m/n/10 Uren
  []
 
 
-Underfull \hbox (badness 1924) in paragraph at lines 2266--2266
+Underfull \hbox (badness 1924) in paragraph at lines 2269--2269
 []|\T1/cmr/m/n/10 Uren Jo-
  []
 
 
-Overfull \hbox (11.03632pt too wide) in alignment at lines 2264--2267
+Overfull \hbox (11.03632pt too wide) in alignment at lines 2267--2270
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (11.03632pt too wide) in alignment at lines 2267--2272
+Overfull \hbox (11.03632pt too wide) in alignment at lines 2270--2275
  [] [] [] [] [] 
  []
 
 
 
-[66] (full.aux)
+[67] (full.aux)
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
@@ -3254,17 +3274,17 @@ Package logreq Info: Writing requests to 'full.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 55273 strings out of 473681
- 1299580 string characters out of 5719193
- 2362707 words of memory out of 5000000
- 77318 multiletter control sequences out of 15000+600000
+ 55272 strings out of 473681
+ 1299584 string characters out of 5719193
+ 2361707 words of memory out of 5000000
+ 77316 multiletter control sequences out of 15000+600000
  578605 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,36n,133p,1546b,2895s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1440.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1000.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tctt0800.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt0800.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2986.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.pk><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on full.pdf (66 pages, 22277007 bytes).
+Output written on full.pdf (67 pages, 22277705 bytes).
 PDF statistics:
- 1802 PDF objects out of 2073 (max. 8388607)
- 273 named destinations out of 1000 (max. 500000)
+ 1807 PDF objects out of 2073 (max. 8388607)
+ 274 named destinations out of 1000 (max. 500000)
  538 words of extra memory for PDF output out of 10000 (max. 10000000)
 
