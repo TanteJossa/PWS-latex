@@ -212,7 +212,7 @@ Ook moeten we, omdat we ons PWS bij het vak scheikunde doen, een proefje uitvoer
 \\\\
 Tijdens ons onderzoek hebben we naast een aantal bronnen ook een interview gedaan bij Daniël Markus, een co-eigenaar van het bedrijf LevelUp Group. Een bedrijf die reclame analyse doet en gebruikt maakt van AI. In de methodes zullen we het noemen als er iets uit dat interview naar boven is gekomen wat handig bleek te zijn.
 \\\\
-Voor elke onderdeel hebben we een "hoofdverantwoordelijke" aangesteld, omdat het extra tijd kost om met zijn tweeën tegelijkertijd aan hetzelfde code project te werken. Als het nodig was hebben we elkaar natuurlijk wel geholpen in elkaars onderdelen. 
+Voor elke onderdeel hebben we een "hoofdverantwoordelijke\textquotedblright \  aangesteld, omdat het extra tijd kost om met zijn tweeën tegelijkertijd aan hetzelfde code project te werken. Als het nodig was hebben we elkaar natuurlijk wel geholpen in elkaars onderdelen. 
 \\\\
 Hieronder wordt in een diagram getoond welk plan van aanpak we in onze motivatiebrief hebben gebruikt om te laten zien hoe we ons programma modulair wilden opbouwen, welke data waar nodig is en welke verwachte outputs er nodig zijn. De hoofdlijnen van dit plan hebben we op deze wijze uitgevoerd.
 \end{multicols}
@@ -336,7 +336,7 @@ Hierna zal ik een selectie laten zien van goedwerkende of opvallende onderdelen 
         \adjustbox{valign=t}{\makecell{\begin{tabularx}{\linewidth}{@{}lX}
             1.\textbf{ Handgeschreven} & Gebruik een tekstherkenningssoftware om het vraagnummer te lezen in de kantlijn \\
             2.\textbf{ Checkbox} & 
-                \adjustbox{valign=t}{\makecell{$\bullet$ Gebruik code om vierkantjes te herkennen \\ en kijken welke het meeste is ingevult\\ 
+                \adjustbox{valign=t}{\makecell{$\bullet$ Gebruik code om vierkantjes te herkennen \\ en kijken welke het meeste is ingevuld\\ 
                 $\bullet$ Gebruik een GPT model om te zeggen\\ welk vakje is gekozen, dit kan \\ rekening houden met pijlen \\en andere veranderingen zoals uitkrassen
                 }}
             \\
@@ -963,7 +963,7 @@ De prompt bepaalt hoe duidelijk de vraag, rubric, context en opdracht van het na
     \end{itemize}
 \end{itemize}
 
-\noindent De combinatie van een optimale temperatuur en een zorgvuldig opgebouwde prompt zorgt ervoor dat de feedback nauwkeuriger en betrouwbaarder wordt. Dit wordt getest door verschillende instellingen uit te proberen op een set van voorbeeldantwoorden en de uitkomsten te vergelijken met menselijke beoordelingen. Per vraag testte we drie verschillende antwoorden. Een goed antwoord, en helemaal fout antwoord en een half goed, half fout antwoord.
+\noindent De combinatie van een optimale temperatuur en een zorgvuldig opgebouwde prompt zorgt ervoor dat de feedback nauwkeuriger en betrouwbaarder wordt. Dit wordt getest door verschillende instellingen uit te proberen op een set van voorbeeldantwoorden en de uitkomsten te vergelijken met menselijke beoordelingen. Per vraag testten we drie verschillende antwoorden. Een goed antwoord, en helemaal fout antwoord en een half goed, half fout antwoord.
 
 
 \pagebreak
@@ -1967,9 +1967,9 @@ Samengevat geeft de data inzicht in welke onderdelen van de leerstof leerlingen 
 \noindent\begin{minipage}{\linewidth}
     
 \subsubsection{Inscannen}
-$\bullet$ Tijdens het testen van instellingen zijn er een aantal gefaalt, omdat er te veel requests per seconde werden gestuurd. Dit kan ervoor hebben gezorgd dat de resultaten verdraaid zijn.\\
+$\bullet$ Tijdens het testen van instellingen zijn er een aantal gefaald, omdat er te veel requests per seconde werden gestuurd. Dit kan ervoor hebben gezorgd dat de resultaten verdraaid zijn.\\
 $\bullet$ Er kan meer getest worden met de ideale prompt die een beter resultaat geeft. \\
-$\bullet$ Tijdens het toetsje zijn een aantal vragen verkeerd ingescand, omdat een leerling de checkbox verkeerd had ingevult. Het zou netter zijn om dit als een popup aan een docent te laten zien die dit dan corrigeert.\\
+$\bullet$ Tijdens het toetsje zijn een aantal vragen verkeerd ingescand, omdat een leerling de checkbox verkeerd had ingevuld. Het zou netter zijn om dit als een popup aan een docent te laten zien die dit dan corrigeert.\\
 \end{minipage}
 
 \noindent\begin{minipage}{\linewidth}
@@ -1988,7 +1988,7 @@ $\bullet$ \textbf{Verbeterpunten:}\\
 \subsubsection{Analyseren}
 $\bullet$ De bedachte UI is niet getest, waardoor er niet een 2e iteratie verbeteringen is gedaan.\\
 $\bullet$ We hebben geen echte toetsen geanalyseerd, omdat de toets die we zouden krijgen zo slecht gemaakt was dat er niets te analyseren was.\\
-$\bullet$ Tijdens het toetsje zijn een aantal vragen verkeerd ingescand, omdat een leerling de checkbox verkeerd had ingevult. Het zou netter zijn om dit als een popup aan een docent te laten zien die dit dan corrigeert.\\
+$\bullet$ Tijdens het toetsje zijn een aantal vragen verkeerd ingescand, omdat een leerling de checkbox verkeerd had ingevuld. Het zou netter zijn om dit als een popup aan een docent te laten zien die dit dan corrigeert.\\
 \end{minipage}
 \begin{minipage}{\linewidth}
 
@@ -2017,7 +2017,7 @@ $\bullet$ De avond voor het inleveren van dit PWS heeft Google een nieuw model g
 \begin{multicols}{2}
 \noindent\begin{minipage}{\linewidth}
     
-\paragraph*{Reflectie Joost} Dit project heb ik veel geleerd over het overstappen naar een andere methode. Voor de inscanmodule had ik in het begin ingeschat dat ik maar 10 uur nodig had voor het inscannen. De daadwerkelijke tijd was een stuk meer. De methode die ik had bedacht (tekstherkenning in de kantlijn) bleek niet te werken, maar ik heb wel (onnodig) veel tijd besteed aan het optimaliseren van dat proces. Ik heb ook veel gehad aan het gebruiken van de Google Gemini API, die gebruik ik nu vaak om kleine simpele taakjes op te lossen. Ook heb ik Google Sheets pivot tables leren gebruiken om snel de enquete, inscan en toets resultaten in tabellen te zetten (die ik daarna met Google Gemini naar de latex/pdf tabellen heb omgezet). Het inscan en nakijksysteem zal ik waarschijnlijk in een ander project gaan gebruiken. Waar volgend jaar misschien rekening mee gehouden kan worden is dat de rubrics van het PWS niet duidelijk de opdracht van het PWS weerspiegelen. Tot fase 3 is eigenlijk literatuuronderzoek en een paar beantwoorde deelvragen. Fase 4 is het onderdeel waar je het "grote" onderzoek moet uitvoeren. Ik vond dat wie die fase pas laat kregen en dat er dingen miste in de rubric die ik wel verwacht in een wetenschappelijk onderzoek (bijvoorbeeld de indeling of het hebben van resultaten). Ik zie dit PWS meer als een eigen project dan als een opdracht voor school en eigen projectjes vind ik leuk om te doen, zie: \href{https://github.com/TanteJossa}{Mijn Github}.  
+\paragraph*{Reflectie Joost} Dit project heb ik veel geleerd over het overstappen naar een andere methode. Voor de inscanmodule had ik in het begin ingeschat dat ik maar 10 uur nodig had voor het inscannen. De daadwerkelijke tijd was een stuk meer. De methode die ik had bedacht (tekstherkenning in de kantlijn) bleek niet te werken, maar ik heb wel (onnodig) veel tijd besteed aan het optimaliseren van dat proces. Ik heb ook veel gehad aan het gebruiken van de Google Gemini API, die gebruik ik nu vaak om kleine simpele taakjes op te lossen. Ook heb ik Google Sheets pivot tables leren gebruiken om snel de enquete, inscan en toets resultaten in tabellen te zetten (die ik daarna met Google Gemini naar de latex/pdf tabellen heb omgezet). Het inscan en nakijksysteem zal ik waarschijnlijk in een ander project gaan gebruiken. Waar volgend jaar misschien rekening mee gehouden kan worden is dat de rubrics van het PWS niet duidelijk de opdracht van het PWS weerspiegelen. Tot fase 3 is eigenlijk literatuuronderzoek en een paar beantwoorde deelvragen. Fase 4 is het onderdeel waar je het "grote" onderzoek moet uitvoeren. Ik vond dat we die fase pas laat kregen en dat er dingen misten in de rubric die ik wel verwacht in een wetenschappelijk onderzoek (bijvoorbeeld de indeling of het hebben van resultaten). Ik zie dit PWS meer als een eigen project dan als een opdracht voor school en eigen projectjes vind ik leuk om te doen, zie: \href{https://github.com/TanteJossa}{Mijn Github}.  
 \end{minipage}
 \begin{minipage}{\linewidth}
 \paragraph*{Reflectie Jonathan} Tijdens dit project heb ik een scheikundetoets gemaakt en een nakijksysteem ontwikkeld. 
@@ -2160,6 +2160,7 @@ je mag de gemaakte punten in categoriën groepen, maar je moet altijd zo objecti
     \item \textbf{Fase 2: }\href{https://docs.google.com/document/d/1dRJIgrINIqM23WWmCmnGbnBuHpgw_vz0cuFKtMpCIMs}{Link} 
     \item \textbf{Fase 3: }\href{https://docs.google.com/document/d/1c8uWC6ebqpnVRqx3ldwISSlsHXozZ7VrJujyB8FCNq4}{Link} 
     \item \textbf{Fase 4: }\href{https://docs.google.com/document/d/1G-Xw7bRIdZ-OzQIb8x2kHXSOT6rMff9jRx3bLR63h5I}{Link} 
+    \item \textbf{Drive met logboeken + resultaten: }\href{https://drive.google.com/drive/folders/13nWxB8IXRV8BVmQFYKsMhVHrp6tId7Cc?usp=drive_link}{Link} 
 \end{itemize}
 
 \pagebreak
@@ -2203,10 +2204,10 @@ Datum  & Uren Joost & Uren Jonathan & Joost wat is er gedaan? & Jonathan wat is 
 15/12/24 zo & 1.5 & 0.0 & tests met inscansite &  \\
 16/12/24 ma & 1.0 & 0.0 & foutanalyse mijn onderdelen + vervolgonderzoek + opzet samenvatting onderzoek &  \\
 17/12/24 di & 0.0 & 5.0 &  & Toets met 6 modellen nagekeken \\
-18/12/24 wo & 2.0 & 3.5 & nakijk resultaten geformateerd + uitleg instellen latex vscode & nakijk methode geschreven \\
-19/12/24 do & 2.0 & 4.5 & afmaken document + conclusie schrijven &  \\
+18/12/24 wo & 4.0 & 3.5 & nakijk resultaten geformateerd + uitleg instellen latex vscode & nakijk methode geschreven \\
+19/12/24 do & 4.5 & 4.5 & afmaken document + conclusie schrijven &  \\
 \midrule 
-Totalen & 38.0 & 38.5 & & \\
+Totalen & 42.5 & 38.5 & & \\
 \bottomrule
 \end{longtable}
 \normalsize
@@ -2269,7 +2270,7 @@ Totalen & 7.5 & 8.0 & & \\
 Datum  & Uren Joost & Uren Jonathan & Joost wat is er gedaan? & Jonathan wat is er gedaan?  \\
 \endhead
 \midrule
-Totalen & 86.0 & 84.0 & & \\
+Totalen & 90.5 & 84.0 & & \\
 \bottomrule
 
 \end{longtable}

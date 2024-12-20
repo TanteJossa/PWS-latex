@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.11)  20 DEC 2024 00:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.11)  20 DEC 2024 09:31
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1407,16 +1407,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 209--218
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 209--218
-\T1/cmr/m/n/12 Voor elke on-der-deel heb-ben we een
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 209--218
-\T1/cmr/m/n/12 "hoofdverantwoordelijke-aangesteld, om-dat
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 209--218
 
  []
 
@@ -1630,10 +1620,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 492--498
 \pydata@fh@_E9DC924F238FA6CC29465942875FE8F0.data.minted=\write8
 \openout8 = `_E9DC924F238FA6CC29465942875FE8F0.data.minted'.
 
-runsystem(latexminted config  --timestamp 20241220004951 E9DC924F238FA6CC29465942875FE8F0)...executed.
+runsystem(latexminted config  --timestamp 20241220093100 E9DC924F238FA6CC29465942875FE8F0)...executed.
 
 (_E9DC924F238FA6CC29465942875FE8F0.config.minted)
-runsystem(latexminted cleanconfig  --timestamp 20241220004951 E9DC924F238FA6CC29465942875FE8F0)...executed.
+runsystem(latexminted cleanconfig  --timestamp 20241220093100 E9DC924F238FA6CC29465942875FE8F0)...executed.
 
  (_minted/default.style.minted) (_minted/867809D514D1C5F22F4E88019D72ADF8.highlight.minted)
 Package hyperref Info: bookmark level for unknown listing defaults to 0 on input line 515.
@@ -3124,139 +3114,139 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 2140--2156
 
 
 [64]
-Underfull \hbox (badness 10000) in paragraph at lines 2171--2171
+Underfull \hbox (badness 10000) in paragraph at lines 2172--2172
 []|\T1/cmr/m/n/10 Uren
  []
 
 
-Underfull \hbox (badness 1924) in paragraph at lines 2171--2171
+Underfull \hbox (badness 1924) in paragraph at lines 2172--2172
 []|\T1/cmr/m/n/10 Uren Jo-
  []
 
 
-Overfull \hbox (11.03632pt too wide) in alignment at lines 2170--2173
+Overfull \hbox (11.03632pt too wide) in alignment at lines 2171--2174
  [] [] [] [] [] 
  []
 
 
-Underfull \hbox (badness 1377) in paragraph at lines 2176--2176
+Underfull \hbox (badness 1377) in paragraph at lines 2177--2177
 []|\T1/cmr/m/n/10 mini on-der-zoek en-quete op-ge-
  []
 
 
-Underfull \hbox (badness 3735) in paragraph at lines 2177--2177
+Underfull \hbox (badness 3735) in paragraph at lines 2178--2178
 []|\T1/cmr/m/n/10 normaalverdelingen toe-ge-voegd
  []
 
 
-Underfull \hbox (badness 8019) in paragraph at lines 2190--2191
+Underfull \hbox (badness 8019) in paragraph at lines 2191--2192
 []|\T1/cmr/m/n/10 Begonnen met im-ple-men-ta-tie
  []
 
 
-Underfull \hbox (badness 1082) in paragraph at lines 2202--2202
+Underfull \hbox (badness 1082) in paragraph at lines 2203--2203
 []|\T1/cmr/m/n/10 conclusie ge-schre-ven in-scan-nen
  []
 
 
-Underfull \hbox (badness 2119) in paragraph at lines 2204--2204
+Underfull \hbox (badness 2119) in paragraph at lines 2205--2205
 \T1/cmr/m/n/10 ver-volg-on-der-zoek + op-zet sa-
  []
 
 
-Overfull \hbox (11.03632pt too wide) in alignment at lines 2173--2211
+Overfull \hbox (11.03632pt too wide) in alignment at lines 2174--2212
  [] [] [] [] [] 
  []
 
 [65]
-Underfull \hbox (badness 10000) in paragraph at lines 2218--2218
+Underfull \hbox (badness 10000) in paragraph at lines 2219--2219
 []|\T1/cmr/m/n/10 Uren
  []
 
 
-Underfull \hbox (badness 1924) in paragraph at lines 2218--2218
+Underfull \hbox (badness 1924) in paragraph at lines 2219--2219
 []|\T1/cmr/m/n/10 Uren Jo-
  []
 
 
-Overfull \hbox (11.03632pt too wide) in alignment at lines 2216--2221
+Overfull \hbox (11.03632pt too wide) in alignment at lines 2217--2222
  [] [] [] [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2222--2223
+Underfull \hbox (badness 10000) in paragraph at lines 2223--2224
 []|\T1/cmr/m/n/10 Proef LLM mo-del ge-maakt
  []
 
 
-Underfull \hbox (badness 1648) in paragraph at lines 2227--2227
+Underfull \hbox (badness 1648) in paragraph at lines 2228--2228
 []|\T1/cmr/m/n/10 gestart ge-bruikt hand-book en
  []
 
 
-Underfull \hbox (badness 1337) in paragraph at lines 2232--2232
+Underfull \hbox (badness 1337) in paragraph at lines 2233--2233
 []|\T1/cmr/m/n/10 fase 3 2 bron-nen toe-ge-voegd,
  []
 
 
-Underfull \hbox (badness 1275) in paragraph at lines 2232--2232
+Underfull \hbox (badness 1275) in paragraph at lines 2233--2233
 \T1/cmr/m/n/10 nieuwe out-put in-de-ling in-scan
  []
 
 
-Overfull \hbox (11.03632pt too wide) in alignment at lines 2221--2236
+Overfull \hbox (11.03632pt too wide) in alignment at lines 2222--2237
  [] [] [] [] [] 
  []
 
 
 
 [66]
-Underfull \hbox (badness 10000) in paragraph at lines 2243--2243
+Underfull \hbox (badness 10000) in paragraph at lines 2244--2244
 []|\T1/cmr/m/n/10 Uren
  []
 
 
-Underfull \hbox (badness 1924) in paragraph at lines 2243--2243
+Underfull \hbox (badness 1924) in paragraph at lines 2244--2244
 []|\T1/cmr/m/n/10 Uren Jo-
  []
 
 
-Overfull \hbox (11.03632pt too wide) in alignment at lines 2241--2246
+Overfull \hbox (11.03632pt too wide) in alignment at lines 2242--2247
  [] [] [] [] [] 
  []
 
 
-Underfull \hbox (badness 2134) in paragraph at lines 2248--2249
+Underfull \hbox (badness 2134) in paragraph at lines 2249--2250
 []|\T1/cmr/m/n/10 Afschrijven van de mo-ti-va-tie-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2257--2257
+Underfull \hbox (badness 10000) in paragraph at lines 2258--2258
 []|\T1/cmr/m/n/10 Samenvatting An au-to-ma-tic
  []
 
 
-Overfull \hbox (11.03632pt too wide) in alignment at lines 2246--2262
+Overfull \hbox (11.03632pt too wide) in alignment at lines 2247--2263
  [] [] [] [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2269--2269
+Underfull \hbox (badness 10000) in paragraph at lines 2270--2270
 []|\T1/cmr/m/n/10 Uren
  []
 
 
-Underfull \hbox (badness 1924) in paragraph at lines 2269--2269
+Underfull \hbox (badness 1924) in paragraph at lines 2270--2270
 []|\T1/cmr/m/n/10 Uren Jo-
  []
 
 
-Overfull \hbox (11.03632pt too wide) in alignment at lines 2267--2270
+Overfull \hbox (11.03632pt too wide) in alignment at lines 2268--2271
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (11.03632pt too wide) in alignment at lines 2270--2275
+Overfull \hbox (11.03632pt too wide) in alignment at lines 2271--2276
  [] [] [] [] [] 
  []
 
@@ -3276,15 +3266,15 @@ Package logreq Info: Writing requests to 'full.run.xml'.
 Here is how much of TeX's memory you used:
  55272 strings out of 473681
  1299584 string characters out of 5719193
- 2361707 words of memory out of 5000000
+ 2361709 words of memory out of 5000000
  77316 multiletter control sequences out of 15000+600000
  578605 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,36n,133p,1546b,2895s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1440.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1000.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tctt0800.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt0800.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2986.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\joost\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.pk><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/joost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on full.pdf (67 pages, 22277705 bytes).
+Output written on full.pdf (67 pages, 22277877 bytes).
 PDF statistics:
- 1807 PDF objects out of 2073 (max. 8388607)
+ 1808 PDF objects out of 2073 (max. 8388607)
  274 named destinations out of 1000 (max. 500000)
  538 words of extra memory for PDF output out of 10000 (max. 10000000)
 
