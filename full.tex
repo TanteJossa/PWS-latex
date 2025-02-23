@@ -117,7 +117,7 @@
 \thispagestyle{empty}
 \pagebreak
 
-{\footnotesize\tableofcontents \normalsize}
+{\scriptsize\tableofcontents \normalsize}
 
 \pagebreak
 \section{Introductie}
@@ -337,7 +337,8 @@ Hierna zal ik een selectie laten zien van goedwerkende of opvallende onderdelen 
             1.\textbf{ Handgeschreven} & Gebruik een tekstherkenningssoftware om het vraagnummer te lezen in de kantlijn \\
             2.\textbf{ Checkbox} & 
                 \adjustbox{valign=t}{\makecell{$\bullet$ Gebruik code om vierkantjes te herkennen \\ en kijken welke het meeste is ingevuld\\ 
-                $\bullet$ Gebruik een GPT model om te zeggen\\ welk vakje is gekozen, dit kan \\ rekening houden met pijlen \\en andere veranderingen zoals uitkrassen
+                $\bullet$ Gebruik een GPT model om te zeggen\\ welk vakje is gekozen, dit kan \\ rekening houden met pijlen \\en andere veranderingen zoals uitkrassen\\
+                $\bullet$ Gebruik een eigen model \\ die getraint is in checkbox herkenning.
                 }}
             \\
             3.\textbf{ QR-code} & Vraaginformatie in QR-code
@@ -671,6 +672,30 @@ Input:
 }
 \end{minted}
 \end{listing}
+
+\noindent Dit systeem werkt redelijk betrouwbaar, maar is relatief duur (8000 tokens per foto $\cdot$ 15 secties per pagina $\cdot$ 30 leerlingen = 3,600,000 tokens). Ook duurt deze methode ongeveer 4s per foto. Dit is te lang, dus we zijn naar een custom methode overgestap. We hebben met \href{https://github.com/ultralytics/yolov5}{Yolov5} een eigen model getraint met \href{http://makesense.ai}{makesense.ai} die de locatie en groote van checkboxes kan herkenning, zodat we daarna met cv2 het percentage gevuld kunnen bekijken \parencite{ultralytics2021yolov5,opencvManual}.
+\begin{longtable}{@{}p{0.25\linewidth}|p{0.375\linewidth}|p{0.375\linewidth}}
+\multicolumn{1}{c}{Stap} & \multicolumn{1}{c}{Code} & \multicolumn{1}{c}{Voorbeeld}
+    \\
+    \endhead
+    1. checkbox herkenning & 
+            \adjustbox{valign=t}{\includegraphics[width=\linewidth]{./images/methoden/inscannen/sectie/checkbox/vraagnummer/yolov_code.png}}
+           &
+            \adjustbox{valign=t}{\includegraphics[width=\linewidth]{./images/methoden/inscannen/sectie/checkbox/yolov5.jpg}}
+           \\
+    \hline
+    \hline
+    2. Meest gevulde checkbox kiezen  & 
+        \adjustbox{valign=t}{\includegraphics[width=\linewidth]{./images/methoden/inscannen/sectie/checkbox/vraagnummer/yolov_test.png}}
+           &
+
+           \adjustbox{valign=t}{
+            \includegraphics[width=\linewidth]{./images/methoden/inscannen/sectie/checkbox/result.jpg}}
+           
+           \\
+\end{longtable}
+
+
 \noindent We kunnen nu de secties scheiden en de vraagnummers relatief betrouwbaar extraheren.
 \paragraph*{QR-code}De qr code maakt gebruikt van een scanner die de qrcodes linksboven en rechtsonder het antwoordveld herkent. Waardoor je direct kan gaan snijden.\\
 \end{samepage}
@@ -1348,7 +1373,7 @@ De resultaten zijn niet normaal verdeeld, omdat een score niet kleiner dan 0 kan
 
 
 \noindent\begin{table}[H]
-\caption{zekerheid en handschriftscore per model} 
+\caption{Tijd} 
 \label{fig:time-model} 
 \begin{tabularx}{\textwidth}{X *2{r}}
     \toprule
@@ -1366,7 +1391,7 @@ De resultaten zijn niet normaal verdeeld, omdat een score niet kleiner dan 0 kan
 \end{table}
 
 \noindent\begin{table}[H]
-\caption{}
+\caption{zekerheid en handschriftscore per model}
 \label{fig:certainty-model}
 \begin{tabularx}{\textwidth}{X *4{r}}
     \toprule
@@ -1843,7 +1868,7 @@ De toets bestond uit meerdere vragen, verdeeld over verschillende rubric-secties
 \end{table}
 
 \pagebreak
-\section{conclusie}
+\section{Conclusie}
 \subsection{Inscannen}
 \textbf{Vragen:}\\
 \textbf{1. Welke manieren zijn er om een de vraagsecties op een foto te scheiden?} 
@@ -1958,6 +1983,128 @@ Op basis van de bovenstaande resultaten zijn enkele observaties en mogelijke con
 \end{itemize}
 
 Samengevat geeft de data inzicht in welke onderdelen van de leerstof leerlingen goed of minder goed beheersen en kunnen deze resultaten als basis dienen voor verdere verbeteringen in de toetsing en de didactische aanpak.
+\pagebreak
+\section{Demo}
+\subsection{Opzet}
+Online hebben we een demo op: \href{https://toetspws.web.app/}\\
+Wij vonden het belangrijk dat de docent 100\% controle heeft over een toets. Dus elk tekstveld is aanpassbaar, zodat een fout van AI altijd aangepast kan worden. \\
+Ook kunnen docenten zelf bepalen welk model en provider voor alles wordt gebruikt, om te testen welke het beste werkt. Sommige modellen werken niet voor elke feature.
+\\
+Hieronder is informatie te vinden over hoe deze site werkt en hoe hij gebruikt kan worden.\\
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{./images/demo/overview.png}
+    \caption{Overview site}
+    \label{fig:demo-overview}
+\end{figure}
+
+\noindent Hier kan een docent zien wat er nu bezig is en kan alles stoppen als iets te lang duurt of als hij iets wilt aanpassen.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{./images/demo/requests.png}
+    \caption{Request Manager}
+    \label{fig:request-manager}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{./images/demo/stack.png}
+    \caption{Techstack}
+    \label{fig:tech-stack}
+\end{figure}
+
+\pagebreak
+\subsection{Toets omzetting/generatie}
+
+Toetsen hebben vragen en leerdoelen, zodat de docent aan het einde kan zien welke leerdoelen wel en niet behaald zijn. Ook is elk punt gekoppelt aan een leerdoel, deze worden automatisch gegenereerd.\\
+Er zijn 2 methodes om een toets in te laden:\\
+\begin{itemize}
+    \item Upload: gooi de pdf en rubric van de toets in de file uploaders. Selecteer het onderdelen menu en laad de structuur in. Het geselecteerde gpt model zal de tekst en foto's uit die pdf's omzetten naar een toets model.
+    \item Toets generatie mbv AI. Vul informatie over de toets die je wilt geven in in het menu. Nakijkregels gaan er later voor zorgen dat de dingen die een docent automatisch doet en niet in de rubric staan toch worden meegenomen in de beoordeling. Dit kost ongeveer 30s.
+\end{itemize}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{./images/demo/generation/settings.png}
+    \caption{Gpt settings}
+    \label{fig:gpt-gen-settings}
+\end{figure}
+\pagebreak
+\paragraph{Printen} Print de toets daarna naar docx of pdf. De meeste tekstvelden hebben support voor markdown en latex formules tussen dollar tekens. Dit werkt ook in de output naar docx. Zie \href{https://github.com/TanteJossa/PWS-inscannen/tree/main/flask_apps/doc_gen}{doc-gen-git}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{./images/demo/generation/word.png}
+    \caption{Word output met formules}
+    \label{fig:word-gen}
+\end{figure}
+
+\subsection{Inscannen}
+Docenten kunnen de foto's van de de toetsblaadjes per stuk fotograferen en importeren, of een ingescande pdf uit een printen uploaden. Daarna kunnen de foto laten uitsnijden (als de foto met een telefoon is gemaakt) en de rode pen weghalen als het al is nagekeken. Ook kunnen gedraaide fotos geflipt worden en lege pagina's verwijderd.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{./images/demo/scanning/load.png}
+    \caption{Antwoorden inladen}
+    \label{fig:load-student-pdf}
+\end{figure}
+Daarna kan worden de secties herkent en de vraagnummers herkent.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{./images/demo/scanning/checkbox.png}
+    \caption{Vraag sectie herkenning}
+    \label{fig:scan-checkbox}
+\end{figure}
+Daarna kan een docent automatisch de tekst inladen van elke vraag van elke leerling. Dit kan in bulk of per vraag.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{./images/demo/scanning/text.png}
+    \caption{Vraag text herkenning}
+    \label{fig:scan-text}
+\end{figure}
+
+\pagebreak
+\subsection{Nakijken}
+Daarna kan een docent de toets laten nakijken. De modellen geven feedback op elk punt, waardoor een leerling er meer aan heeft. Ook kijkt hij naar verbeterpunten, ookal is een antwoord goed (zie voorbeeld).
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{./images/demo/grading/grade.png}
+    \caption{Nakijken}
+    \label{fig:grade-result}
+\end{figure}
+\pagebreak
+\subsection{Analyseren/terugkoppeling gebruiker}
+Er is terugkoppeling voor de docent en voor de leerling. Een docent kan per leerling (of allemaal tegelijk) een pdf uitprinten met daarin de resultaten van de toets en feedback. Ook krijgt een leerling te zien welke leerdoelen goed en minder goed gaan.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{./images/demo/analisys/question.png}
+    \caption{Resultaat per vraag per leerling}
+    \label{fig:result-per-question}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{./images/demo/analisys/target.png}
+    \caption{Resultaat per leedoel}
+    \label{fig:result-per-target}
+\end{figure}
+\pagebreak
+Ook kunen docenten een overview krijgen van alle resultaten.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{./images/demo/analisys/overview.png}
+    \caption{Overview}
+    \label{fig:teacher-overview}
+\end{figure}
+\pagebreak
+\subsection{Vervolg}
+\begin{itemize}
+    \item In het vervolg zouden we een database achter de site kunnen zetten, zodat docenten toetsen en resulaten kunnen opslaan om later mee verder te gaan. Ook zouden docenten dan hun toetsen publiek kunnen maken, zodat andere docenten de resultaten kunnen bekijken. 
+    \item Toetsen uitbreiden zodat die ook foto's kunnen hebben in zowel de antwoorden als in de vraag/context van de vraag.
+\end{itemize}
+\noindent Een deel van deze ideeën zijn in de "database" branch te vinden (\href{https://github.com/TanteJossa/PWS-teacher-web-app/tree/database}) 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{./images/demo/browser.png}
+    \caption{Zoekfunctie/toetsen opslaan}
+    \label{fig:browser-preview}
+\end{figure}
 
 
 \pagebreak
@@ -2162,6 +2309,14 @@ je mag de gemaakte punten in categoriën groepen, maar je moet altijd zo objecti
     \item \textbf{Fase 4: }\href{https://docs.google.com/document/d/1G-Xw7bRIdZ-OzQIb8x2kHXSOT6rMff9jRx3bLR63h5I}{Link} 
     \item \textbf{Drive met logboeken + resultaten: }\href{https://drive.google.com/drive/folders/13nWxB8IXRV8BVmQFYKsMhVHrp6tId7Cc?usp=drive_link}{Link} 
 \end{itemize}
+
+\subsubsection*{Source Code}
+\noindent\begin{itemize}
+    \item \textbf{Latex Document: }\href{https://github.com/TanteJossa/PWS-latex/blob/main/full.tex}{Link} 
+    \item \textbf{Flask Apps: }\href{https://github.com/TanteJossa/PWS-inscannen}{Link} 
+    \item \textbf{Web App: }\href{https://github.com/TanteJossa/PWS-teacher-web-app}{Link} 
+\end{itemize}
+
 
 \pagebreak
 \section{logboek}

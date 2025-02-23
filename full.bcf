@@ -3084,18 +3084,20 @@
     <bcf:citekey order="9" intorder="2">pytesseractManual</bcf:citekey>
     <bcf:citekey order="10" intorder="1">azureManual</bcf:citekey>
     <bcf:citekey order="10" intorder="2">googlecloudvisionManual</bcf:citekey>
-    <bcf:citekey order="11" intorder="1">geminiproManual</bcf:citekey>
-    <bcf:citekey order="11" intorder="2">openaiManual</bcf:citekey>
-    <bcf:citekey order="12" intorder="1">academypublicationBLEUtranslation</bcf:citekey>
-    <bcf:citekey order="12" intorder="2">aclBLEUevaluation</bcf:citekey>
-    <bcf:citekey order="12" intorder="3">mediumBLEU</bcf:citekey>
-    <bcf:citekey order="13" intorder="1">Farquhar2024</bcf:citekey>
-    <bcf:citekey order="14" intorder="1">peeperkorn2024temperature</bcf:citekey>
-    <bcf:citekey order="15" intorder="1">qian2024long</bcf:citekey>
-    <bcf:citekey order="16" intorder="1">vuejsManual</bcf:citekey>
-    <bcf:citekey order="17" intorder="1">vuetifyManual</bcf:citekey>
-    <bcf:citekey order="18" intorder="1">ding2013item</bcf:citekey>
-    <bcf:citekey order="18" intorder="2">ding2009item</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">ultralytics2021yolov5</bcf:citekey>
+    <bcf:citekey order="11" intorder="2">opencvManual</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">geminiproManual</bcf:citekey>
+    <bcf:citekey order="12" intorder="2">openaiManual</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">academypublicationBLEUtranslation</bcf:citekey>
+    <bcf:citekey order="13" intorder="2">aclBLEUevaluation</bcf:citekey>
+    <bcf:citekey order="13" intorder="3">mediumBLEU</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">Farquhar2024</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">peeperkorn2024temperature</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">qian2024long</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">vuejsManual</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">vuetifyManual</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">ding2013item</bcf:citekey>
+    <bcf:citekey order="19" intorder="2">ding2009item</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

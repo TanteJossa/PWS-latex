@@ -1095,6 +1095,32 @@
       \verb https://www.sciencedirect.com/science/article/pii/0734189X85900167
       \endverb
     \endentry
+    \entry{ultralytics2021yolov5}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=88f069848482a556e416f713d2819905}{%
+           family={Ultralytics},
+           familyi={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{88f069848482a556e416f713d2819905}
+      \strng{fullhash}{88f069848482a556e416f713d2819905}
+      \strng{fullhashraw}{88f069848482a556e416f713d2819905}
+      \strng{bibnamehash}{88f069848482a556e416f713d2819905}
+      \strng{authorbibnamehash}{88f069848482a556e416f713d2819905}
+      \strng{authornamehash}{88f069848482a556e416f713d2819905}
+      \strng{authorfullhash}{88f069848482a556e416f713d2819905}
+      \strng{authorfullhashraw}{88f069848482a556e416f713d2819905}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://docs.ultralytics.com}}
+      \field{note}{Accessed: insert date here}
+      \field{title}{{YOLOv5}: {A} state-of-the-art real-time object detection system}
+      \field{year}{2021}
+    \endentry
     \entry{vuejsManual}{misc}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=210acc4851961df7553144e8b1d77f6f}{%
@@ -2301,6 +2327,32 @@
       \verb{url}
       \verb https://www.sciencedirect.com/science/article/pii/0734189X85900167
       \endverb
+    \endentry
+    \entry{ultralytics2021yolov5}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=88f069848482a556e416f713d2819905}{%
+           family={Ultralytics},
+           familyi={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{88f069848482a556e416f713d2819905}
+      \strng{fullhash}{88f069848482a556e416f713d2819905}
+      \strng{fullhashraw}{88f069848482a556e416f713d2819905}
+      \strng{bibnamehash}{88f069848482a556e416f713d2819905}
+      \strng{authorbibnamehash}{88f069848482a556e416f713d2819905}
+      \strng{authornamehash}{88f069848482a556e416f713d2819905}
+      \strng{authorfullhash}{88f069848482a556e416f713d2819905}
+      \strng{authorfullhashraw}{88f069848482a556e416f713d2819905}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://docs.ultralytics.com}}
+      \field{note}{Accessed: insert date here}
+      \field{title}{{YOLOv5}: {A} state-of-the-art real-time object detection system}
+      \field{year}{2021}
     \endentry
     \entry{vuejsManual}{misc}{}{}
       \name{author}{1}{}{%
